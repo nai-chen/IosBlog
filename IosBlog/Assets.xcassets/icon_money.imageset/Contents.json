@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
+      "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "icon_yue_big@2x.png",
-      "idiom" : "iphone",
+      "filename" : "icon_money@2x.png",
+      "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "icon_yue_big@3x.png",
-      "idiom" : "iphone",
+      "filename" : "icon_money@3x.png",
+      "idiom" : "universal",
       "scale" : "3x"
     }
   ],
