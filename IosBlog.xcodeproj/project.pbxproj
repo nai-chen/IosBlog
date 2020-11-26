@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045F303A256FA33500DA31BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3039256FA33500DA31BC /* AppDelegate.m */; };
+		045F3040256FA33500DA31BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F303F256FA33500DA31BC /* ViewController.m */; };
+		045F3043256FA33500DA31BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F3041256FA33500DA31BC /* Main.storyboard */; };
+		045F3045256FA33600DA31BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045F3044256FA33600DA31BC /* Assets.xcassets */; };
+		045F3048256FA33600DA31BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F3046256FA33600DA31BC /* LaunchScreen.storyboard */; };
+		045F304B256FA33600DA31BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F304A256FA33600DA31BC /* main.m */; };
+		045F3056256FA49100DA31BC /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3055256FA49100DA31BC /* Item.m */; };
+		045F305A256FA55A00DA31BC /* UIColor+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3058256FA55A00DA31BC /* UIColor+Tool.m */; };
+		045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3061256FA63600DA31BC /* UIColorViewController.m */; };
+		045F3067256FA66A00DA31BC /* NSNoticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3066256FA66A00DA31BC /* NSNoticationViewController.m */; };
+		045F306D256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F306A256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m */; };
+		045F306E256FA69C00DA31BC /* AttributeStringNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F306C256FA69C00DA31BC /* AttributeStringNormalViewController.m */; };
+		045F3080256FA7DC00DA31BC /* UIViewCALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3079256FA7DC00DA31BC /* UIViewCALayerViewController.m */; };
+		045F3081256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F307A256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m */; };
+		045F3082256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F307C256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m */; };
+		045F3083256FA7DC00DA31BC /* UIViewFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F307E256FA7DC00DA31BC /* UIViewFrameViewController.m */; };
+		045F308D256FA82800DA31BC /* UITextFieldKeyBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3085256FA82800DA31BC /* UITextFieldKeyBoardViewController.m */; };
+		045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3086256FA82800DA31BC /* UITextFieldNormalViewController.m */; };
+		045F308F256FA82800DA31BC /* UITextFieldNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3089256FA82800DA31BC /* UITextFieldNotificationViewController.m */; };
+		045F3090256FA82800DA31BC /* UITextFieldReturnTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F308A256FA82800DA31BC /* UITextFieldReturnTypeViewController.m */; };
+		045F309A256FA85900DA31BC /* UILabelOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3094256FA85900DA31BC /* UILabelOtherViewController.m */; };
+		045F309B256FA85900DA31BC /* UILabelBreakModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3096256FA85900DA31BC /* UILabelBreakModeViewController.m */; };
+		045F309C256FA85900DA31BC /* UILabelTextAlignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3097256FA85900DA31BC /* UILabelTextAlignmentViewController.m */; };
+		045F309D256FA85900DA31BC /* UILabelBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3099256FA85900DA31BC /* UILabelBoundsViewController.m */; };
+		045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F309F256FA87800DA31BC /* UIImageViewAnimationViewController.m */; };
+		045F30A4256FA87800DA31BC /* UIImageViewContentModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30A2256FA87800DA31BC /* UIImageViewContentModeViewController.m */; };
+		045F30AA256FA88900DA31BC /* UIControlViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30A8256FA88900DA31BC /* UIControlViewViewController.m */; };
+		045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30A9256FA88900DA31BC /* UICustomControl.m */; };
+		045F30B3256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30AD256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m */; };
+		045F30B4256FA89A00DA31BC /* UIButtonNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30B0256FA89A00DA31BC /* UIButtonNormalViewController.m */; };
+		045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30B2256FA89A00DA31BC /* UIButtonStyleViewController.m */; };
+		045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30B9256FA92300DA31BC /* SVProgressHUDNormalViewController.m */; };
+		04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DD890B256FAA9A00B007ED /* DemoTableViewCell.m */; };
+		921983AA05F7E29B05BCA2E1 /* libPods-IosBlog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BDF9B69106A61200EE3D10 /* libPods-IosBlog.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		045F3035256FA33500DA31BC /* IosBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045F3038256FA33500DA31BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		045F3039256FA33500DA31BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		045F303E256FA33500DA31BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		045F303F256FA33500DA31BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		045F3042256FA33500DA31BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		045F3044256FA33600DA31BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045F3047256FA33600DA31BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045F3049256FA33600DA31BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045F304A256FA33600DA31BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		045F3054256FA49100DA31BC /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		045F3055256FA49100DA31BC /* Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		045F3058256FA55A00DA31BC /* UIColor+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tool.m"; sourceTree = "<group>"; };
+		045F3059256FA55A00DA31BC /* UIColor+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tool.h"; sourceTree = "<group>"; };
+		045F3061256FA63600DA31BC /* UIColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorViewController.m; sourceTree = "<group>"; };
+		045F3062256FA63600DA31BC /* UIColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorViewController.h; sourceTree = "<group>"; };
+		045F3065256FA66A00DA31BC /* NSNoticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNoticationViewController.h; sourceTree = "<group>"; };
+		045F3066256FA66A00DA31BC /* NSNoticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNoticationViewController.m; sourceTree = "<group>"; };
+		045F3069256FA69C00DA31BC /* AttributeStringNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringNormalViewController.h; sourceTree = "<group>"; };
+		045F306A256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringParagraphStyleViewController.m; sourceTree = "<group>"; };
+		045F306B256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringParagraphStyleViewController.h; sourceTree = "<group>"; };
+		045F306C256FA69C00DA31BC /* AttributeStringNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringNormalViewController.m; sourceTree = "<group>"; };
+		045F3078256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewGestureRecongnizerViewController.h; sourceTree = "<group>"; };
+		045F3079256FA7DC00DA31BC /* UIViewCALayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewCALayerViewController.m; sourceTree = "<group>"; };
+		045F307A256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewClipsToBoundsViewController.m; sourceTree = "<group>"; };
+		045F307B256FA7DC00DA31BC /* UIViewCALayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewCALayerViewController.h; sourceTree = "<group>"; };
+		045F307C256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewGestureRecongnizerViewController.m; sourceTree = "<group>"; };
+		045F307D256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewClipsToBoundsViewController.h; sourceTree = "<group>"; };
+		045F307E256FA7DC00DA31BC /* UIViewFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewFrameViewController.m; sourceTree = "<group>"; };
+		045F307F256FA7DC00DA31BC /* UIViewFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewFrameViewController.h; sourceTree = "<group>"; };
+		045F3085256FA82800DA31BC /* UITextFieldKeyBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldKeyBoardViewController.m; sourceTree = "<group>"; };
+		045F3086256FA82800DA31BC /* UITextFieldNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldNormalViewController.m; sourceTree = "<group>"; };
+		045F3087256FA82800DA31BC /* UITextFieldNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldNotificationViewController.h; sourceTree = "<group>"; };
+		045F3088256FA82800DA31BC /* UITextFieldKeyBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldKeyBoardViewController.h; sourceTree = "<group>"; };
+		045F3089256FA82800DA31BC /* UITextFieldNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldNotificationViewController.m; sourceTree = "<group>"; };
+		045F308A256FA82800DA31BC /* UITextFieldReturnTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldReturnTypeViewController.m; sourceTree = "<group>"; };
+		045F308B256FA82800DA31BC /* UITextFieldNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldNormalViewController.h; sourceTree = "<group>"; };
+		045F308C256FA82800DA31BC /* UITextFieldReturnTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldReturnTypeViewController.h; sourceTree = "<group>"; };
+		045F3092256FA85900DA31BC /* UILabelBreakModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelBreakModeViewController.h; sourceTree = "<group>"; };
+		045F3093256FA85900DA31BC /* UILabelBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelBoundsViewController.h; sourceTree = "<group>"; };
+		045F3094256FA85900DA31BC /* UILabelOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelOtherViewController.m; sourceTree = "<group>"; };
+		045F3095256FA85900DA31BC /* UILabelTextAlignmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelTextAlignmentViewController.h; sourceTree = "<group>"; };
+		045F3096256FA85900DA31BC /* UILabelBreakModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelBreakModeViewController.m; sourceTree = "<group>"; };
+		045F3097256FA85900DA31BC /* UILabelTextAlignmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelTextAlignmentViewController.m; sourceTree = "<group>"; };
+		045F3098256FA85900DA31BC /* UILabelOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelOtherViewController.h; sourceTree = "<group>"; };
+		045F3099256FA85900DA31BC /* UILabelBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelBoundsViewController.m; sourceTree = "<group>"; };
+		045F309F256FA87800DA31BC /* UIImageViewAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewAnimationViewController.m; sourceTree = "<group>"; };
+		045F30A0256FA87800DA31BC /* UIImageViewContentModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewContentModeViewController.h; sourceTree = "<group>"; };
+		045F30A1256FA87800DA31BC /* UIImageViewAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewAnimationViewController.h; sourceTree = "<group>"; };
+		045F30A2256FA87800DA31BC /* UIImageViewContentModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewContentModeViewController.m; sourceTree = "<group>"; };
+		045F30A6256FA88900DA31BC /* UIControlViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControlViewViewController.h; sourceTree = "<group>"; };
+		045F30A7256FA88900DA31BC /* UICustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomControl.h; sourceTree = "<group>"; };
+		045F30A8256FA88900DA31BC /* UIControlViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIControlViewViewController.m; sourceTree = "<group>"; };
+		045F30A9256FA88900DA31BC /* UICustomControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomControl.m; sourceTree = "<group>"; };
+		045F30AD256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonEdgeInsetsViewController.m; sourceTree = "<group>"; };
+		045F30AE256FA89A00DA31BC /* UIButtonNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonNormalViewController.h; sourceTree = "<group>"; };
+		045F30AF256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonEdgeInsetsViewController.h; sourceTree = "<group>"; };
+		045F30B0256FA89A00DA31BC /* UIButtonNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonNormalViewController.m; sourceTree = "<group>"; };
+		045F30B1256FA89A00DA31BC /* UIButtonStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonStyleViewController.h; sourceTree = "<group>"; };
+		045F30B2256FA89A00DA31BC /* UIButtonStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonStyleViewController.m; sourceTree = "<group>"; };
+		045F30B9256FA92300DA31BC /* SVProgressHUDNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDNormalViewController.m; sourceTree = "<group>"; };
+		045F30BA256FA92300DA31BC /* SVProgressHUDNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDNormalViewController.h; sourceTree = "<group>"; };
+		04DD890A256FAA9A00B007ED /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
+		04DD890B256FAA9A00B007ED /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
+		3488934F00A8985485936B73 /* Pods-IosBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.debug.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.debug.xcconfig"; sourceTree = "<group>"; };
+		A642423E7AD405A3E0489109 /* Pods-IosBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.release.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.release.xcconfig"; sourceTree = "<group>"; };
+		D9BDF9B69106A61200EE3D10 /* libPods-IosBlog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosBlog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045F3032256FA33500DA31BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921983AA05F7E29B05BCA2E1 /* libPods-IosBlog.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045F302C256FA33500DA31BC = {
+			isa = PBXGroup;
+			children = (
+				045F3037256FA33500DA31BC /* IosBlog */,
+				045F3036256FA33500DA31BC /* Products */,
+				5005C2E3C95CF408F7CF89B7 /* Pods */,
+				C62BD4679EF0DCB0B33E0175 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		045F3036256FA33500DA31BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045F3035256FA33500DA31BC /* IosBlog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045F3037256FA33500DA31BC /* IosBlog */ = {
+			isa = PBXGroup;
+			children = (
+				045F30B7256FA8C500DA31BC /* Third */,
+				045F3071256FA6CD00DA31BC /* Widget */,
+				045F305D256FA5D700DA31BC /* Basic */,
+				045F3038256FA33500DA31BC /* AppDelegate.h */,
+				045F3039256FA33500DA31BC /* AppDelegate.m */,
+				04DD890A256FAA9A00B007ED /* DemoTableViewCell.h */,
+				04DD890B256FAA9A00B007ED /* DemoTableViewCell.m */,
+				045F303E256FA33500DA31BC /* ViewController.h */,
+				045F303F256FA33500DA31BC /* ViewController.m */,
+				045F3054256FA49100DA31BC /* Item.h */,
+				045F3055256FA49100DA31BC /* Item.m */,
+				045F3059256FA55A00DA31BC /* UIColor+Tool.h */,
+				045F3058256FA55A00DA31BC /* UIColor+Tool.m */,
+				045F3041256FA33500DA31BC /* Main.storyboard */,
+				045F3044256FA33600DA31BC /* Assets.xcassets */,
+				045F3046256FA33600DA31BC /* LaunchScreen.storyboard */,
+				045F3049256FA33600DA31BC /* Info.plist */,
+				045F304A256FA33600DA31BC /* main.m */,
+			);
+			path = IosBlog;
+			sourceTree = "<group>";
+		};
+		045F305D256FA5D700DA31BC /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				045F3060256FA60800DA31BC /* UIColor */,
+				045F305F256FA5FE00DA31BC /* NSNotificationCenter */,
+				045F305E256FA5F200DA31BC /* AttributeString */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		045F305E256FA5F200DA31BC /* AttributeString */ = {
+			isa = PBXGroup;
+			children = (
+				045F3069256FA69C00DA31BC /* AttributeStringNormalViewController.h */,
+				045F306C256FA69C00DA31BC /* AttributeStringNormalViewController.m */,
+				045F306B256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.h */,
+				045F306A256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m */,
+			);
+			path = AttributeString;
+			sourceTree = "<group>";
+		};
+		045F305F256FA5FE00DA31BC /* NSNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				045F3065256FA66A00DA31BC /* NSNoticationViewController.h */,
+				045F3066256FA66A00DA31BC /* NSNoticationViewController.m */,
+			);
+			path = NSNotificationCenter;
+			sourceTree = "<group>";
+		};
+		045F3060256FA60800DA31BC /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				045F3062256FA63600DA31BC /* UIColorViewController.h */,
+				045F3061256FA63600DA31BC /* UIColorViewController.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		045F3071256FA6CD00DA31BC /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				045F3077256FA70800DA31BC /* UIView */,
+				045F3076256FA70000DA31BC /* UITextField */,
+				045F3075256FA6F500DA31BC /* UILabel */,
+				045F3074256FA6EC00DA31BC /* UIImageView */,
+				045F3073256FA6E400DA31BC /* UIControl */,
+				045F3072256FA6DA00DA31BC /* UIButton */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		045F3072256FA6DA00DA31BC /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				045F30AF256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.h */,
+				045F30AD256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m */,
+				045F30AE256FA89A00DA31BC /* UIButtonNormalViewController.h */,
+				045F30B0256FA89A00DA31BC /* UIButtonNormalViewController.m */,
+				045F30B1256FA89A00DA31BC /* UIButtonStyleViewController.h */,
+				045F30B2256FA89A00DA31BC /* UIButtonStyleViewController.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		045F3073256FA6E400DA31BC /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				045F30A6256FA88900DA31BC /* UIControlViewViewController.h */,
+				045F30A8256FA88900DA31BC /* UIControlViewViewController.m */,
+				045F30A7256FA88900DA31BC /* UICustomControl.h */,
+				045F30A9256FA88900DA31BC /* UICustomControl.m */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		045F3074256FA6EC00DA31BC /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				045F30A1256FA87800DA31BC /* UIImageViewAnimationViewController.h */,
+				045F309F256FA87800DA31BC /* UIImageViewAnimationViewController.m */,
+				045F30A0256FA87800DA31BC /* UIImageViewContentModeViewController.h */,
+				045F30A2256FA87800DA31BC /* UIImageViewContentModeViewController.m */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		045F3075256FA6F500DA31BC /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				045F3093256FA85900DA31BC /* UILabelBoundsViewController.h */,
+				045F3099256FA85900DA31BC /* UILabelBoundsViewController.m */,
+				045F3092256FA85900DA31BC /* UILabelBreakModeViewController.h */,
+				045F3096256FA85900DA31BC /* UILabelBreakModeViewController.m */,
+				045F3098256FA85900DA31BC /* UILabelOtherViewController.h */,
+				045F3094256FA85900DA31BC /* UILabelOtherViewController.m */,
+				045F3095256FA85900DA31BC /* UILabelTextAlignmentViewController.h */,
+				045F3097256FA85900DA31BC /* UILabelTextAlignmentViewController.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		045F3076256FA70000DA31BC /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				045F3088256FA82800DA31BC /* UITextFieldKeyBoardViewController.h */,
+				045F3085256FA82800DA31BC /* UITextFieldKeyBoardViewController.m */,
+				045F308B256FA82800DA31BC /* UITextFieldNormalViewController.h */,
+				045F3086256FA82800DA31BC /* UITextFieldNormalViewController.m */,
+				045F3087256FA82800DA31BC /* UITextFieldNotificationViewController.h */,
+				045F3089256FA82800DA31BC /* UITextFieldNotificationViewController.m */,
+				045F308C256FA82800DA31BC /* UITextFieldReturnTypeViewController.h */,
+				045F308A256FA82800DA31BC /* UITextFieldReturnTypeViewController.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		045F3077256FA70800DA31BC /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				045F307B256FA7DC00DA31BC /* UIViewCALayerViewController.h */,
+				045F3079256FA7DC00DA31BC /* UIViewCALayerViewController.m */,
+				045F307D256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.h */,
+				045F307A256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m */,
+				045F307F256FA7DC00DA31BC /* UIViewFrameViewController.h */,
+				045F307E256FA7DC00DA31BC /* UIViewFrameViewController.m */,
+				045F3078256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.h */,
+				045F307C256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		045F30B7256FA8C500DA31BC /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				045F30B8256FA8D200DA31BC /* SVProgressHUD */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		045F30B8256FA8D200DA31BC /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				045F30BA256FA92300DA31BC /* SVProgressHUDNormalViewController.h */,
+				045F30B9256FA92300DA31BC /* SVProgressHUDNormalViewController.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		5005C2E3C95CF408F7CF89B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3488934F00A8985485936B73 /* Pods-IosBlog.debug.xcconfig */,
+				A642423E7AD405A3E0489109 /* Pods-IosBlog.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C62BD4679EF0DCB0B33E0175 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9BDF9B69106A61200EE3D10 /* libPods-IosBlog.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045F3034256FA33500DA31BC /* IosBlog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045F304E256FA33600DA31BC /* Build configuration list for PBXNativeTarget "IosBlog" */;
+			buildPhases = (
+				31EE54638A61D7E4D6ABDDE3 /* [CP] Check Pods Manifest.lock */,
+				045F3031256FA33500DA31BC /* Sources */,
+				045F3032256FA33500DA31BC /* Frameworks */,
+				045F3033256FA33500DA31BC /* Resources */,
+				5B22220B10120762F0E79955 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IosBlog;
+			productName = IosBlog;
+			productReference = 045F3035256FA33500DA31BC /* IosBlog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045F302D256FA33500DA31BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					045F3034256FA33500DA31BC = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 045F3030256FA33500DA31BC /* Build configuration list for PBXProject "IosBlog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045F302C256FA33500DA31BC;
+			productRefGroup = 045F3036256FA33500DA31BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045F3034256FA33500DA31BC /* IosBlog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045F3033256FA33500DA31BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045F3048256FA33600DA31BC /* LaunchScreen.storyboard in Resources */,
+				045F3045256FA33600DA31BC /* Assets.xcassets in Resources */,
+				045F3043256FA33500DA31BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31EE54638A61D7E4D6ABDDE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IosBlog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B22220B10120762F0E79955 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosBlog/Pods-IosBlog-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosBlog/Pods-IosBlog-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IosBlog/Pods-IosBlog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045F3031256FA33500DA31BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045F309C256FA85900DA31BC /* UILabelTextAlignmentViewController.m in Sources */,
+				045F30AA256FA88900DA31BC /* UIControlViewViewController.m in Sources */,
+				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
+				045F309A256FA85900DA31BC /* UILabelOtherViewController.m in Sources */,
+				045F306E256FA69C00DA31BC /* AttributeStringNormalViewController.m in Sources */,
+				045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */,
+				045F3081256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m in Sources */,
+				045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */,
+				045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */,
+				045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */,
+				045F306D256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m in Sources */,
+				045F3082256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m in Sources */,
+				045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */,
+				045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */,
+				045F3056256FA49100DA31BC /* Item.m in Sources */,
+				045F3040256FA33500DA31BC /* ViewController.m in Sources */,
+				045F3090256FA82800DA31BC /* UITextFieldReturnTypeViewController.m in Sources */,
+				045F303A256FA33500DA31BC /* AppDelegate.m in Sources */,
+				045F30A4256FA87800DA31BC /* UIImageViewContentModeViewController.m in Sources */,
+				045F304B256FA33600DA31BC /* main.m in Sources */,
+				045F309B256FA85900DA31BC /* UILabelBreakModeViewController.m in Sources */,
+				045F308D256FA82800DA31BC /* UITextFieldKeyBoardViewController.m in Sources */,
+				045F3080256FA7DC00DA31BC /* UIViewCALayerViewController.m in Sources */,
+				045F3083256FA7DC00DA31BC /* UIViewFrameViewController.m in Sources */,
+				045F30B3256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m in Sources */,
+				045F30B4256FA89A00DA31BC /* UIButtonNormalViewController.m in Sources */,
+				045F3067256FA66A00DA31BC /* NSNoticationViewController.m in Sources */,
+				045F305A256FA55A00DA31BC /* UIColor+Tool.m in Sources */,
+				045F308F256FA82800DA31BC /* UITextFieldNotificationViewController.m in Sources */,
+				045F309D256FA85900DA31BC /* UILabelBoundsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		045F3041256FA33500DA31BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045F3042256FA33500DA31BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		045F3046256FA33600DA31BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045F3047256FA33600DA31BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045F304C256FA33600DA31BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		045F304D256FA33600DA31BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045F304F256FA33600DA31BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3488934F00A8985485936B73 /* Pods-IosBlog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IosBlog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blog.demo.IosBlog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045F3050256FA33600DA31BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A642423E7AD405A3E0489109 /* Pods-IosBlog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IosBlog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blog.demo.IosBlog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045F3030256FA33500DA31BC /* Build configuration list for PBXProject "IosBlog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045F304C256FA33600DA31BC /* Debug */,
+				045F304D256FA33600DA31BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045F304E256FA33600DA31BC /* Build configuration list for PBXNativeTarget "IosBlog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045F304F256FA33600DA31BC /* Debug */,
+				045F3050256FA33600DA31BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045F302D256FA33500DA31BC /* Project object */;
+}
