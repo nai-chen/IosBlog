@@ -146,6 +146,7 @@
 		045F3037256FA33500DA31BC /* IosBlog */ = {
 			isa = PBXGroup;
 			children = (
+				0461915B257E00380038E674 /* Tool */,
 				045F30B7256FA8C500DA31BC /* Third */,
 				045F3071256FA6CD00DA31BC /* Widget */,
 				045F305D256FA5D700DA31BC /* Basic */,
@@ -157,8 +158,6 @@
 				045F303F256FA33500DA31BC /* ViewController.m */,
 				045F3054256FA49100DA31BC /* Item.h */,
 				045F3055256FA49100DA31BC /* Item.m */,
-				045F3059256FA55A00DA31BC /* UIColor+Tool.h */,
-				045F3058256FA55A00DA31BC /* UIColor+Tool.m */,
 				045F3041256FA33500DA31BC /* Main.storyboard */,
 				045F3044256FA33600DA31BC /* Assets.xcassets */,
 				045F3046256FA33600DA31BC /* LaunchScreen.storyboard */,
@@ -315,6 +314,15 @@
 				045F30B9256FA92300DA31BC /* SVProgressHUDNormalViewController.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		0461915B257E00380038E674 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				045F3059256FA55A00DA31BC /* UIColor+Tool.h */,
+				045F3058256FA55A00DA31BC /* UIColor+Tool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		5005C2E3C95CF408F7CF89B7 /* Pods */ = {
