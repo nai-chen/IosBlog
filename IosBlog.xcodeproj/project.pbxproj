@@ -40,6 +40,9 @@
 		045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30B2256FA89A00DA31BC /* UIButtonStyleViewController.m */; };
 		045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30B9256FA92300DA31BC /* SVProgressHUDNormalViewController.m */; };
 		04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DD890B256FAA9A00B007ED /* DemoTableViewCell.m */; };
+		04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5639E25C138B2006798D5 /* UITextViewNormalViewController.m */; };
+		04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A225C15921006798D5 /* UITextViewInputViewController.m */; };
+		04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A625C15E4D006798D5 /* UITextViewDelegateViewController.m */; };
 		921983AA05F7E29B05BCA2E1 /* libPods-IosBlog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BDF9B69106A61200EE3D10 /* libPods-IosBlog.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +111,12 @@
 		045F30BA256FA92300DA31BC /* SVProgressHUDNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDNormalViewController.h; sourceTree = "<group>"; };
 		04DD890A256FAA9A00B007ED /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
 		04DD890B256FAA9A00B007ED /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
+		04F5639D25C138B2006798D5 /* UITextViewNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewNormalViewController.h; sourceTree = "<group>"; };
+		04F5639E25C138B2006798D5 /* UITextViewNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewNormalViewController.m; sourceTree = "<group>"; };
+		04F563A125C15921006798D5 /* UITextViewInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewInputViewController.h; sourceTree = "<group>"; };
+		04F563A225C15921006798D5 /* UITextViewInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewInputViewController.m; sourceTree = "<group>"; };
+		04F563A525C15E4D006798D5 /* UITextViewDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewDelegateViewController.h; sourceTree = "<group>"; };
+		04F563A625C15E4D006798D5 /* UITextViewDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewDelegateViewController.m; sourceTree = "<group>"; };
 		3488934F00A8985485936B73 /* Pods-IosBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.debug.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.debug.xcconfig"; sourceTree = "<group>"; };
 		A642423E7AD405A3E0489109 /* Pods-IosBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.release.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.release.xcconfig"; sourceTree = "<group>"; };
 		D9BDF9B69106A61200EE3D10 /* libPods-IosBlog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosBlog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +218,7 @@
 		045F3071256FA6CD00DA31BC /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				04F5639C25C13881006798D5 /* UITextView */,
 				045F3077256FA70800DA31BC /* UIView */,
 				045F3076256FA70000DA31BC /* UITextField */,
 				045F3075256FA6F500DA31BC /* UILabel */,
@@ -323,6 +333,19 @@
 				045F3058256FA55A00DA31BC /* UIColor+Tool.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		04F5639C25C13881006798D5 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				04F5639D25C138B2006798D5 /* UITextViewNormalViewController.h */,
+				04F5639E25C138B2006798D5 /* UITextViewNormalViewController.m */,
+				04F563A125C15921006798D5 /* UITextViewInputViewController.h */,
+				04F563A225C15921006798D5 /* UITextViewInputViewController.m */,
+				04F563A525C15E4D006798D5 /* UITextViewDelegateViewController.h */,
+				04F563A625C15E4D006798D5 /* UITextViewDelegateViewController.m */,
+			);
+			path = UITextView;
 			sourceTree = "<group>";
 		};
 		5005C2E3C95CF408F7CF89B7 /* Pods */ = {
@@ -457,10 +480,12 @@
 			files = (
 				045F309C256FA85900DA31BC /* UILabelTextAlignmentViewController.m in Sources */,
 				045F30AA256FA88900DA31BC /* UIControlViewViewController.m in Sources */,
+				04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */,
 				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
 				045F309A256FA85900DA31BC /* UILabelOtherViewController.m in Sources */,
 				045F306E256FA69C00DA31BC /* AttributeStringNormalViewController.m in Sources */,
 				045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */,
+				04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */,
 				045F3081256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m in Sources */,
 				045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */,
 				045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */,
@@ -468,6 +493,7 @@
 				045F306D256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m in Sources */,
 				045F3082256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m in Sources */,
 				045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */,
+				04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */,
 				045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */,
 				045F3056256FA49100DA31BC /* Item.m in Sources */,
 				045F3040256FA33500DA31BC /* ViewController.m in Sources */,

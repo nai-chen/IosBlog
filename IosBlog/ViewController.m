@@ -34,6 +34,9 @@
 #import "UITextFieldKeyBoardViewController.h"
 #import "UITextFieldReturnTypeViewController.h"
 #import "UITextFieldNotificationViewController.h"
+#import "UITextViewNormalViewController.h"
+#import "UITextViewInputViewController.h"
+#import "UITextViewDelegateViewController.h"
 
 #import "SVProgressHUDNormalViewController.h"
 
@@ -184,8 +187,23 @@
     Item* uiTextFieldItem = [[Item alloc] initWithTitle:@"UITextField"];
     uiTextFieldItem.children = @[uiTextFieldNormalItem, uiTextFieldKeyBoardItem, uiTextFieldReturnTypeItem, uiTextFieldNotificationItem];
     
+    // UITextView
+    Item* uiTextViewNormalItem = [[Item alloc] initWithTitle:@"UITextViewNormal"];
+    uiTextViewNormalItem.vc = [[UITextViewNormalViewController alloc] init];
+    
+    Item* uiTextViewInputItem = [[Item alloc] initWithTitle:@"UITextViewInput"];
+    uiTextViewInputItem.vc = [[UITextViewInputViewController alloc] init];
+    
+    Item* uiTextViewDelegateItem = [[Item alloc] initWithTitle:@"UITextViewDelegate"];
+    uiTextViewDelegateItem.vc = [[UITextViewDelegateViewController alloc] init];
+    
+    Item* uiTextViewItem = [[Item alloc] initWithTitle:@"UITextView"];
+    uiTextViewItem.children = @[uiTextViewNormalItem, uiTextViewInputItem, uiTextViewDelegateItem];
+    
+    // UITextView end
+    
     Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
-    widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem];
+    widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem, uiTextViewItem];
     
     return widgetItem;
 }

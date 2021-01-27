@@ -45,7 +45,6 @@
     NSMutableAttributedString* lineText = [[NSMutableAttributedString alloc] initWithString:@"删除线下划线"];
     [lineText addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlineStyleSingle|NSUnderlinePatternDot) range:NSMakeRange(0, 3)];
     [lineText addAttribute:NSStrikethroughColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 3)];
-    [lineText addAttribute:NSBaselineOffsetAttributeName value:@(0) range:NSMakeRange(0, 3)];
     
     [lineText addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:NSMakeRange(3, 3)];
     [lineText addAttribute:NSUnderlineColorAttributeName value:[UIColor blueColor] range:NSMakeRange(3, 3)];
