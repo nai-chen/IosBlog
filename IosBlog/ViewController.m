@@ -37,6 +37,7 @@
 #import "UITextViewNormalViewController.h"
 #import "UITextViewInputViewController.h"
 #import "UITextViewDelegateViewController.h"
+#import "UISwitchNormalViewController.h"
 
 #import "SVProgressHUDNormalViewController.h"
 
@@ -200,10 +201,14 @@
     Item* uiTextViewItem = [[Item alloc] initWithTitle:@"UITextView"];
     uiTextViewItem.children = @[uiTextViewNormalItem, uiTextViewInputItem, uiTextViewDelegateItem];
     
+    // UISwitch
+    Item* uiSwitchItem = [[Item alloc] initWithTitle:@"UISwitch"];
+    uiSwitchItem.vc = [[UISwitchNormalViewController alloc] init];
+    
     // UITextView end
     
     Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
-    widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem, uiTextViewItem];
+    widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem, uiTextViewItem, uiSwitchItem];
     
     return widgetItem;
 }

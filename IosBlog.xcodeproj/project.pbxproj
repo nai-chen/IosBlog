@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04015F792615D31C00E2EA46 /* UISwitchNormalViewController.m */; };
 		045F303A256FA33500DA31BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3039256FA33500DA31BC /* AppDelegate.m */; };
 		045F3040256FA33500DA31BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F303F256FA33500DA31BC /* ViewController.m */; };
 		045F3043256FA33500DA31BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F3041256FA33500DA31BC /* Main.storyboard */; };
@@ -47,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04015F782615D31C00E2EA46 /* UISwitchNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISwitchNormalViewController.h; sourceTree = "<group>"; };
+		04015F792615D31C00E2EA46 /* UISwitchNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchNormalViewController.m; sourceTree = "<group>"; };
 		045F3035256FA33500DA31BC /* IosBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045F3038256FA33500DA31BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		045F3039256FA33500DA31BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,6 +137,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04015F772615D2E900E2EA46 /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				04015F782615D31C00E2EA46 /* UISwitchNormalViewController.h */,
+				04015F792615D31C00E2EA46 /* UISwitchNormalViewController.m */,
+			);
+			path = UISwitch;
+			sourceTree = "<group>";
+		};
 		045F302C256FA33500DA31BC = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +230,7 @@
 		045F3071256FA6CD00DA31BC /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				04015F772615D2E900E2EA46 /* UISwitch */,
 				04F5639C25C13881006798D5 /* UITextView */,
 				045F3077256FA70800DA31BC /* UIView */,
 				045F3076256FA70000DA31BC /* UITextField */,
@@ -493,6 +506,7 @@
 				045F306D256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m in Sources */,
 				045F3082256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m in Sources */,
 				045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */,
+				04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */,
 				04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */,
 				045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */,
 				045F3056256FA49100DA31BC /* Item.m in Sources */,
