@@ -38,6 +38,8 @@
 #import "UITextViewInputViewController.h"
 #import "UITextViewDelegateViewController.h"
 #import "UISwitchNormalViewController.h"
+#import "UIPageControlViewController.h"
+#import "UISegmentedControlViewController.h"
 
 #import "SVProgressHUDNormalViewController.h"
 
@@ -205,10 +207,18 @@
     Item* uiSwitchItem = [[Item alloc] initWithTitle:@"UISwitch"];
     uiSwitchItem.vc = [[UISwitchNormalViewController alloc] init];
     
-    // UITextView end
+    // UIPageControlViewController
+    Item* uiPageControlItem = [[Item alloc] initWithTitle:@"UIPageControl"];
+    uiPageControlItem.vc = [[UIPageControlViewController alloc] init];
     
+    // UISegmentedControlViewController
+    Item* uiSegmentedControlItem = [[Item alloc] initWithTitle:@"UISegmentedControl"];
+    uiSegmentedControlItem.vc = [[UISegmentedControlViewController alloc] init];
+    
+    // UITextView end
     Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
-    widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem, uiTextViewItem, uiSwitchItem];
+    widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,
+                            uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem];
     
     return widgetItem;
 }
