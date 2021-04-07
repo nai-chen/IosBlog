@@ -39,7 +39,10 @@
 #import "UITextViewDelegateViewController.h"
 #import "UISwitchNormalViewController.h"
 #import "UIPageControlViewController.h"
-#import "UISegmentedControlViewController.h"
+#import "UISegmentedControlNormalViewController.h"
+#import "UISegmentedControlSetViewController.h"
+#import "UISegmentedControlOperationViewController.h"
+#import "UISegmentedControlEventViewController.h"
 
 #import "SVProgressHUDNormalViewController.h"
 
@@ -212,9 +215,22 @@
     uiPageControlItem.vc = [[UIPageControlViewController alloc] init];
     
     // UISegmentedControlViewController
-    Item* uiSegmentedControlItem = [[Item alloc] initWithTitle:@"UISegmentedControl"];
-    uiSegmentedControlItem.vc = [[UISegmentedControlViewController alloc] init];
+    Item* uiSegmentedControlNormalItem = [[Item alloc] initWithTitle:@"UISegmentedControlNormal"];
+    uiSegmentedControlNormalItem.vc = [[UISegmentedControlNormalViewController alloc] init];
     
+    // UISegmentedControlSetViewController
+    Item* uiSegmentedControlSetItem = [[Item alloc] initWithTitle:@"UISegmentedControlSet"];
+    uiSegmentedControlSetItem.vc = [[UISegmentedControlSetViewController alloc] init];
+
+    Item* uiSegmentedControlOperationItem = [[Item alloc] initWithTitle:@"UISegmentedControlOperation"];
+    uiSegmentedControlOperationItem.vc = [[UISegmentedControlOperationViewController alloc] init];
+    
+    Item* uiSegmentedControlEventItem = [[Item alloc] initWithTitle:@"UISegmentedControlEvent"];
+    uiSegmentedControlEventItem.vc = [[UISegmentedControlEventViewController alloc] init];
+    
+    Item* uiSegmentedControlItem = [[Item alloc] initWithTitle:@"UISegmentedControl"];
+    uiSegmentedControlItem.children = @[uiSegmentedControlNormalItem, uiSegmentedControlSetItem, uiSegmentedControlOperationItem, uiSegmentedControlEventItem];
+        
     // UITextView end
     Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,

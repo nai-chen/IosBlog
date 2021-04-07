@@ -1,5 +1,5 @@
 //
-//  UISegmentedControlViewController.h
+//  UISegmentedControlSetViewController.h
 //  IosBlog
 //
 //  Created by PeterChen on 2021/4/6.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UISegmentedControlViewController : UIViewController
+@interface UISegmentedControlSetViewController : UIViewController
 
 @end
 

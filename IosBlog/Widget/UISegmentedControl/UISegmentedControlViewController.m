@@ -5,15 +5,15 @@
 //  Created by PeterChen on 2021/4/6.
 //
 
-#import "UISegmentedControlViewController.h"
+#import "UISegmentedControlNormalViewController.h"
 
-@interface UISegmentedControlViewController ()
+@interface UISegmentedControlNormalViewController ()
 
 @property (nonatomic, assign) NSArray* titleArray;
 
 @end
 
-@implementation UISegmentedControlViewController
+@implementation UISegmentedControlNormalViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -41,7 +41,10 @@
 		045F30B4256FA89A00DA31BC /* UIButtonNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30B0256FA89A00DA31BC /* UIButtonNormalViewController.m */; };
 		045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30B2256FA89A00DA31BC /* UIButtonStyleViewController.m */; };
 		045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30B9256FA92300DA31BC /* SVProgressHUDNormalViewController.m */; };
-		04CBE2FF261C4B2A0068982B /* UISegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlViewController.m */; };
+		04623776261D520E0034D421 /* UISegmentedControlEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623775261D520E0034D421 /* UISegmentedControlEventViewController.m */; };
+		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
+		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
+		04CBE30D261C5EE10068982B /* UISegmentedControlSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE30C261C5EE10068982B /* UISegmentedControlSetViewController.m */; };
 		04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DD890B256FAA9A00B007ED /* DemoTableViewCell.m */; };
 		04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5639E25C138B2006798D5 /* UITextViewNormalViewController.m */; };
 		04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A225C15921006798D5 /* UITextViewInputViewController.m */; };
@@ -116,8 +119,14 @@
 		045F30B2256FA89A00DA31BC /* UIButtonStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonStyleViewController.m; sourceTree = "<group>"; };
 		045F30B9256FA92300DA31BC /* SVProgressHUDNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDNormalViewController.m; sourceTree = "<group>"; };
 		045F30BA256FA92300DA31BC /* SVProgressHUDNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDNormalViewController.h; sourceTree = "<group>"; };
-		04CBE2FD261C4B2A0068982B /* UISegmentedControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlViewController.h; sourceTree = "<group>"; };
-		04CBE2FE261C4B2A0068982B /* UISegmentedControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlViewController.m; sourceTree = "<group>"; };
+		04623774261D520E0034D421 /* UISegmentedControlEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlEventViewController.h; sourceTree = "<group>"; };
+		04623775261D520E0034D421 /* UISegmentedControlEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlEventViewController.m; sourceTree = "<group>"; };
+		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
+		04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlNormalViewController.m; sourceTree = "<group>"; };
+		04CBE307261C5A080068982B /* UISegmentedControlOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlOperationViewController.h; sourceTree = "<group>"; };
+		04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlOperationViewController.m; sourceTree = "<group>"; };
+		04CBE30B261C5EE10068982B /* UISegmentedControlSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlSetViewController.h; sourceTree = "<group>"; };
+		04CBE30C261C5EE10068982B /* UISegmentedControlSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlSetViewController.m; sourceTree = "<group>"; };
 		04DD890A256FAA9A00B007ED /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
 		04DD890B256FAA9A00B007ED /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
 		04F5639D25C138B2006798D5 /* UITextViewNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewNormalViewController.h; sourceTree = "<group>"; };
@@ -368,8 +377,14 @@
 		04CBE2FC261C4B1B0068982B /* UISegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
-				04CBE2FD261C4B2A0068982B /* UISegmentedControlViewController.h */,
-				04CBE2FE261C4B2A0068982B /* UISegmentedControlViewController.m */,
+				04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */,
+				04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */,
+				04CBE307261C5A080068982B /* UISegmentedControlOperationViewController.h */,
+				04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */,
+				04CBE30B261C5EE10068982B /* UISegmentedControlSetViewController.h */,
+				04CBE30C261C5EE10068982B /* UISegmentedControlSetViewController.m */,
+				04623774261D520E0034D421 /* UISegmentedControlEventViewController.h */,
+				04623775261D520E0034D421 /* UISegmentedControlEventViewController.m */,
 			);
 			path = UISegmentedControl;
 			sourceTree = "<group>";
@@ -524,11 +539,12 @@
 				045F309A256FA85900DA31BC /* UILabelOtherViewController.m in Sources */,
 				045F306E256FA69C00DA31BC /* AttributeStringNormalViewController.m in Sources */,
 				045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */,
-				04CBE2FF261C4B2A0068982B /* UISegmentedControlViewController.m in Sources */,
+				04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */,
 				04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */,
 				045F3081256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m in Sources */,
 				045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */,
 				045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */,
+				04623776261D520E0034D421 /* UISegmentedControlEventViewController.m in Sources */,
 				045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */,
 				045F306D256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m in Sources */,
 				045F3082256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m in Sources */,
@@ -543,9 +559,11 @@
 				045F30A4256FA87800DA31BC /* UIImageViewContentModeViewController.m in Sources */,
 				045F304B256FA33600DA31BC /* main.m in Sources */,
 				045F309B256FA85900DA31BC /* UILabelBreakModeViewController.m in Sources */,
+				04CBE30D261C5EE10068982B /* UISegmentedControlSetViewController.m in Sources */,
 				045F308D256FA82800DA31BC /* UITextFieldKeyBoardViewController.m in Sources */,
 				045F3080256FA7DC00DA31BC /* UIViewCALayerViewController.m in Sources */,
 				045F3083256FA7DC00DA31BC /* UIViewFrameViewController.m in Sources */,
+				04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */,
 				04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */,
 				045F30B3256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m in Sources */,
 				045F30B4256FA89A00DA31BC /* UIButtonNormalViewController.m in Sources */,
