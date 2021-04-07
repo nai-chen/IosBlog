@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(UIColor*) colorWithHexString:(NSString*)hexString alpha:(CGFloat)alpha;
 
+-(UIImage*) colorToImage;
+
 @end
 
 NS_ASSUME_NONNULL_END

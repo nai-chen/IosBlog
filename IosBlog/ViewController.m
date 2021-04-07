@@ -43,6 +43,7 @@
 #import "UISegmentedControlSetViewController.h"
 #import "UISegmentedControlOperationViewController.h"
 #import "UISegmentedControlEventViewController.h"
+#import "UISliderViewController.h"
 
 #import "SVProgressHUDNormalViewController.h"
 
@@ -230,11 +231,15 @@
     
     Item* uiSegmentedControlItem = [[Item alloc] initWithTitle:@"UISegmentedControl"];
     uiSegmentedControlItem.children = @[uiSegmentedControlNormalItem, uiSegmentedControlSetItem, uiSegmentedControlOperationItem, uiSegmentedControlEventItem];
-        
+    
+    // UISlider
+    Item* uiSliderItem = [[Item alloc] initWithTitle:@"UISlider"];
+    uiSliderItem.vc = [[UISliderViewController alloc] init];
+    
     // UITextView end
     Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,
-                            uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem];
+                            uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem, uiSliderItem];
     
     return widgetItem;
 }

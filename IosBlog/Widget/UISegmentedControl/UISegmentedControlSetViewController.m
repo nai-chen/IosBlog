@@ -7,6 +7,8 @@
 
 #import "UISegmentedControlSetViewController.h"
 
+#import "UIColor+Tool.h"
+
 @interface UISegmentedControlSetViewController ()
 
 @end
@@ -28,11 +30,11 @@
     [normalSegmentedControl setWidth:120 forSegmentAtIndex:4];
 
     if (@available(iOS 13, *)) {
-        [normalSegmentedControl setBackgroundImage:[self imageWithColor:[UIColor whiteColor]]
+        [normalSegmentedControl setBackgroundImage:[[UIColor whiteColor] colorToImage]
                     forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-        [normalSegmentedControl setBackgroundImage:[self imageWithColor:[UIColor blueColor]]
+        [normalSegmentedControl setBackgroundImage:[[UIColor blueColor] colorToImage]
                     forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
-        [normalSegmentedControl setDividerImage:[self imageWithColor:[UIColor blueColor]]
+        [normalSegmentedControl setDividerImage:[[UIColor blueColor] colorToImage]
                     forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal
                     barMetrics:UIBarMetricsDefault];
         [normalSegmentedControl setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blueColor]}
@@ -46,17 +48,6 @@
         normalSegmentedControl.tintColor = [UIColor blueColor];
     }
     normalSegmentedControl.selectedSegmentIndex = 0;
-}
-
-- (UIImage *)imageWithColor: (UIColor *)color {
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return theImage;
 }
 
 @end
