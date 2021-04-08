@@ -43,6 +43,8 @@
 		045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30B9256FA92300DA31BC /* SVProgressHUDNormalViewController.m */; };
 		04623776261D520E0034D421 /* UISegmentedControlEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623775261D520E0034D421 /* UISegmentedControlEventViewController.m */; };
 		04623782261D7A4E0034D421 /* UISliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623781261D7A4E0034D421 /* UISliderViewController.m */; };
+		04623787261DB2A10034D421 /* UIActivityIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623786261DB2A10034D421 /* UIActivityIndicatorViewController.m */; };
+		04623793261DBB790034D421 /* UIProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623792261DBB790034D421 /* UIProgressViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
 		04CBE30D261C5EE10068982B /* UISegmentedControlSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE30C261C5EE10068982B /* UISegmentedControlSetViewController.m */; };
@@ -124,6 +126,10 @@
 		04623775261D520E0034D421 /* UISegmentedControlEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlEventViewController.m; sourceTree = "<group>"; };
 		04623780261D7A4E0034D421 /* UISliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISliderViewController.h; sourceTree = "<group>"; };
 		04623781261D7A4E0034D421 /* UISliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISliderViewController.m; sourceTree = "<group>"; };
+		04623785261DB2A10034D421 /* UIActivityIndicatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIActivityIndicatorViewController.h; sourceTree = "<group>"; };
+		04623786261DB2A10034D421 /* UIActivityIndicatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIActivityIndicatorViewController.m; sourceTree = "<group>"; };
+		04623791261DBB790034D421 /* UIProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIProgressViewController.h; sourceTree = "<group>"; };
+		04623792261DBB790034D421 /* UIProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIProgressViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
 		04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlNormalViewController.m; sourceTree = "<group>"; };
 		04CBE307261C5A080068982B /* UISegmentedControlOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlOperationViewController.h; sourceTree = "<group>"; };
@@ -257,6 +263,8 @@
 		045F3071256FA6CD00DA31BC /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				0462378A261DB9E70034D421 /* UIProgressView */,
+				04623784261DB28A0034D421 /* UIActivityIndicatorView */,
 				04623778261D5D460034D421 /* UISlider */,
 				04CBE2FC261C4B1B0068982B /* UISegmentedControl */,
 				04213F9C2617050F00A27650 /* UIPageControl */,
@@ -385,6 +393,24 @@
 				04623781261D7A4E0034D421 /* UISliderViewController.m */,
 			);
 			path = UISlider;
+			sourceTree = "<group>";
+		};
+		04623784261DB28A0034D421 /* UIActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				04623785261DB2A10034D421 /* UIActivityIndicatorViewController.h */,
+				04623786261DB2A10034D421 /* UIActivityIndicatorViewController.m */,
+			);
+			path = UIActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		0462378A261DB9E70034D421 /* UIProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				04623791261DBB790034D421 /* UIProgressViewController.h */,
+				04623792261DBB790034D421 /* UIProgressViewController.m */,
+			);
+			path = UIProgressView;
 			sourceTree = "<group>";
 		};
 		04CBE2FC261C4B1B0068982B /* UISegmentedControl */ = {
@@ -578,10 +604,12 @@
 				045F3083256FA7DC00DA31BC /* UIViewFrameViewController.m in Sources */,
 				04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */,
 				04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */,
+				04623793261DBB790034D421 /* UIProgressViewController.m in Sources */,
 				045F30B3256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m in Sources */,
 				045F30B4256FA89A00DA31BC /* UIButtonNormalViewController.m in Sources */,
 				04623782261D7A4E0034D421 /* UISliderViewController.m in Sources */,
 				045F3067256FA66A00DA31BC /* NSNoticationViewController.m in Sources */,
+				04623787261DB2A10034D421 /* UIActivityIndicatorViewController.m in Sources */,
 				045F305A256FA55A00DA31BC /* UIColor+Tool.m in Sources */,
 				045F308F256FA82800DA31BC /* UITextFieldNotificationViewController.m in Sources */,
 				045F309D256FA85900DA31BC /* UILabelBoundsViewController.m in Sources */,
