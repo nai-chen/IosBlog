@@ -46,6 +46,7 @@
 #import "UISliderViewController.h"
 #import "UIActivityIndicatorViewController.h"
 #import "UIProgressViewController.h"
+#import "UIStepperViewController.h"
 
 #import "SVProgressHUDNormalViewController.h"
 
@@ -238,19 +239,23 @@
     Item* uiSliderItem = [[Item alloc] initWithTitle:@"UISlider"];
     uiSliderItem.vc = [[UISliderViewController alloc] init];
     
-    // UIActivityIndicatorViewController
+    // UIActivityIndicatorView
     Item* uiActivityIndicatorViewItem = [[Item alloc] initWithTitle:@"UIActivityIndicatorView"];
     uiActivityIndicatorViewItem.vc = [[UIActivityIndicatorViewController alloc] init];
     
-    // UIProgressViewController
+    // UIProgressView
     Item* uiProgressViewItem = [[Item alloc] initWithTitle:@"UIProgressView"];
     uiProgressViewItem.vc = [[UIProgressViewController alloc] init];
+    
+    // UIStepper
+    Item* uiStepperItem = [[Item alloc] initWithTitle:@"UIStepper"];
+    uiStepperItem.vc = [[UIStepperViewController alloc] init];
     
     // UITextView end
     Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,
                             uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem, uiSliderItem,
-                            uiActivityIndicatorViewItem, uiProgressViewItem];
+                            uiActivityIndicatorViewItem, uiProgressViewItem, uiStepperItem];
     
     return widgetItem;
 }

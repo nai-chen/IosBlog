@@ -45,6 +45,7 @@
 		04623782261D7A4E0034D421 /* UISliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623781261D7A4E0034D421 /* UISliderViewController.m */; };
 		04623787261DB2A10034D421 /* UIActivityIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623786261DB2A10034D421 /* UIActivityIndicatorViewController.m */; };
 		04623793261DBB790034D421 /* UIProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623792261DBB790034D421 /* UIProgressViewController.m */; };
+		047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D16261EA547001F4FA1 /* UIStepperViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
 		04CBE30D261C5EE10068982B /* UISegmentedControlSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE30C261C5EE10068982B /* UISegmentedControlSetViewController.m */; };
@@ -130,6 +131,8 @@
 		04623786261DB2A10034D421 /* UIActivityIndicatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIActivityIndicatorViewController.m; sourceTree = "<group>"; };
 		04623791261DBB790034D421 /* UIProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIProgressViewController.h; sourceTree = "<group>"; };
 		04623792261DBB790034D421 /* UIProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIProgressViewController.m; sourceTree = "<group>"; };
+		047F1D15261EA547001F4FA1 /* UIStepperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStepperViewController.h; sourceTree = "<group>"; };
+		047F1D16261EA547001F4FA1 /* UIStepperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStepperViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
 		04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlNormalViewController.m; sourceTree = "<group>"; };
 		04CBE307261C5A080068982B /* UISegmentedControlOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlOperationViewController.h; sourceTree = "<group>"; };
@@ -263,6 +266,7 @@
 		045F3071256FA6CD00DA31BC /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				047F1D14261EA539001F4FA1 /* UIStepper */,
 				0462378A261DB9E70034D421 /* UIProgressView */,
 				04623784261DB28A0034D421 /* UIActivityIndicatorView */,
 				04623778261D5D460034D421 /* UISlider */,
@@ -411,6 +415,15 @@
 				04623792261DBB790034D421 /* UIProgressViewController.m */,
 			);
 			path = UIProgressView;
+			sourceTree = "<group>";
+		};
+		047F1D14261EA539001F4FA1 /* UIStepper */ = {
+			isa = PBXGroup;
+			children = (
+				047F1D15261EA547001F4FA1 /* UIStepperViewController.h */,
+				047F1D16261EA547001F4FA1 /* UIStepperViewController.m */,
+			);
+			path = UIStepper;
 			sourceTree = "<group>";
 		};
 		04CBE2FC261C4B1B0068982B /* UISegmentedControl */ = {
@@ -585,6 +598,7 @@
 				045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */,
 				04623776261D520E0034D421 /* UISegmentedControlEventViewController.m in Sources */,
 				045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */,
+				047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */,
 				045F306D256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m in Sources */,
 				045F3082256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m in Sources */,
 				045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */,
