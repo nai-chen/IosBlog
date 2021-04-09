@@ -47,6 +47,11 @@
 #import "UIActivityIndicatorViewController.h"
 #import "UIProgressViewController.h"
 #import "UIStepperViewController.h"
+#import "UIPickerViewController.h"
+#import "UIDatePickerDateViewController.h"
+#import "UIDatePickerTimeViewController.h"
+#import "UIDatePickerDateAndTimeViewController.h"
+#import "UIDatePickerCountDownTimerViewController.h"
 
 #import "SVProgressHUDNormalViewController.h"
 
@@ -207,6 +212,7 @@
     Item* uiTextViewDelegateItem = [[Item alloc] initWithTitle:@"UITextViewDelegate"];
     uiTextViewDelegateItem.vc = [[UITextViewDelegateViewController alloc] init];
     
+    // UITextView end
     Item* uiTextViewItem = [[Item alloc] initWithTitle:@"UITextView"];
     uiTextViewItem.children = @[uiTextViewNormalItem, uiTextViewInputItem, uiTextViewDelegateItem];
     
@@ -214,15 +220,14 @@
     Item* uiSwitchItem = [[Item alloc] initWithTitle:@"UISwitch"];
     uiSwitchItem.vc = [[UISwitchNormalViewController alloc] init];
     
-    // UIPageControlViewController
+    // UIPageControl
     Item* uiPageControlItem = [[Item alloc] initWithTitle:@"UIPageControl"];
     uiPageControlItem.vc = [[UIPageControlViewController alloc] init];
     
-    // UISegmentedControlViewController
+    // UISegmentedControl
     Item* uiSegmentedControlNormalItem = [[Item alloc] initWithTitle:@"UISegmentedControlNormal"];
     uiSegmentedControlNormalItem.vc = [[UISegmentedControlNormalViewController alloc] init];
     
-    // UISegmentedControlSetViewController
     Item* uiSegmentedControlSetItem = [[Item alloc] initWithTitle:@"UISegmentedControlSet"];
     uiSegmentedControlSetItem.vc = [[UISegmentedControlSetViewController alloc] init];
 
@@ -232,6 +237,7 @@
     Item* uiSegmentedControlEventItem = [[Item alloc] initWithTitle:@"UISegmentedControlEvent"];
     uiSegmentedControlEventItem.vc = [[UISegmentedControlEventViewController alloc] init];
     
+    // UISegmentedControl end
     Item* uiSegmentedControlItem = [[Item alloc] initWithTitle:@"UISegmentedControl"];
     uiSegmentedControlItem.children = @[uiSegmentedControlNormalItem, uiSegmentedControlSetItem, uiSegmentedControlOperationItem, uiSegmentedControlEventItem];
     
@@ -251,11 +257,32 @@
     Item* uiStepperItem = [[Item alloc] initWithTitle:@"UIStepper"];
     uiStepperItem.vc = [[UIStepperViewController alloc] init];
     
-    // UITextView end
+    // UIPickerView
+    Item* uiPickerViewItem = [[Item alloc] initWithTitle:@"UIPickerView"];
+    uiPickerViewItem.vc = [[UIPickerViewController alloc] init];
+    
+    // UIDatePicker
+    Item* uiDatePickerDateItem = [[Item alloc] initWithTitle:@"UIDatePickerDate"];
+    uiDatePickerDateItem.vc = [[UIDatePickerDateViewController alloc] init];
+    
+    Item* uiDatePickerTimeItem = [[Item alloc] initWithTitle:@"UIDatePickerTime"];
+    uiDatePickerTimeItem.vc = [[UIDatePickerTimeViewController alloc] init];
+    
+    Item* uiDatePickerDateAndTimeItem = [[Item alloc] initWithTitle:@"UIDatePickerDateAndTime"];
+    uiDatePickerDateAndTimeItem.vc = [[UIDatePickerDateAndTimeViewController alloc] init];
+    
+    Item* uiDatePickerCountDownTimerItem = [[Item alloc] initWithTitle:@"UIDatePickerCountDownTimer"];
+    uiDatePickerCountDownTimerItem.vc = [[UIDatePickerCountDownTimerViewController alloc] init];
+    
+    // UIDatePicker end
+    Item* uiDatePickerItem = [[Item alloc] initWithTitle:@"UIDatePicker"];
+    uiDatePickerItem.children = @[uiDatePickerDateItem, uiDatePickerTimeItem, uiDatePickerDateAndTimeItem, uiDatePickerCountDownTimerItem];
+    
     Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,
                             uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem, uiSliderItem,
-                            uiActivityIndicatorViewItem, uiProgressViewItem, uiStepperItem];
+                            uiActivityIndicatorViewItem, uiProgressViewItem, uiStepperItem, uiPickerViewItem,
+                            uiDatePickerItem];
     
     return widgetItem;
 }
