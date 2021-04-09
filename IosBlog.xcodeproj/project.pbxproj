@@ -55,6 +55,7 @@
 		04EC5BBB2620254E008A4667 /* UIDatePickerTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC5BBA2620254E008A4667 /* UIDatePickerTimeViewController.m */; };
 		04EC5BBF2620281A008A4667 /* UIDatePickerDateAndTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC5BBE2620281A008A4667 /* UIDatePickerDateAndTimeViewController.m */; };
 		04EC5BC426202962008A4667 /* UIDatePickerCountDownTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC5BC326202962008A4667 /* UIDatePickerCountDownTimerViewController.m */; };
+		04EC5BC926203F22008A4667 /* UIAlertControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC5BC826203F22008A4667 /* UIAlertControllerViewController.m */; };
 		04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5639E25C138B2006798D5 /* UITextViewNormalViewController.m */; };
 		04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A225C15921006798D5 /* UITextViewInputViewController.m */; };
 		04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A625C15E4D006798D5 /* UITextViewDelegateViewController.m */; };
@@ -156,6 +157,8 @@
 		04EC5BBE2620281A008A4667 /* UIDatePickerDateAndTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerDateAndTimeViewController.m; sourceTree = "<group>"; };
 		04EC5BC226202962008A4667 /* UIDatePickerCountDownTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDatePickerCountDownTimerViewController.h; sourceTree = "<group>"; };
 		04EC5BC326202962008A4667 /* UIDatePickerCountDownTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerCountDownTimerViewController.m; sourceTree = "<group>"; };
+		04EC5BC726203F22008A4667 /* UIAlertControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAlertControllerViewController.h; sourceTree = "<group>"; };
+		04EC5BC826203F22008A4667 /* UIAlertControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAlertControllerViewController.m; sourceTree = "<group>"; };
 		04F5639D25C138B2006798D5 /* UITextViewNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewNormalViewController.h; sourceTree = "<group>"; };
 		04F5639E25C138B2006798D5 /* UITextViewNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewNormalViewController.m; sourceTree = "<group>"; };
 		04F563A125C15921006798D5 /* UITextViewInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewInputViewController.h; sourceTree = "<group>"; };
@@ -281,6 +284,7 @@
 		045F3071256FA6CD00DA31BC /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				04EC5BC626203F12008A4667 /* UIAlertController */,
 				04EC5BA9261FEEC0008A4667 /* UIPickerView */,
 				047F1D1F261EFCCF001F4FA1 /* UIDatePicker */,
 				047F1D14261EA539001F4FA1 /* UIStepper */,
@@ -482,6 +486,15 @@
 			path = UIPickerView;
 			sourceTree = "<group>";
 		};
+		04EC5BC626203F12008A4667 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				04EC5BC726203F22008A4667 /* UIAlertControllerViewController.h */,
+				04EC5BC826203F22008A4667 /* UIAlertControllerViewController.m */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
 		04F5639C25C13881006798D5 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -630,6 +643,7 @@
 				04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */,
 				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
 				045F309A256FA85900DA31BC /* UILabelOtherViewController.m in Sources */,
+				04EC5BC926203F22008A4667 /* UIAlertControllerViewController.m in Sources */,
 				045F306E256FA69C00DA31BC /* AttributeStringNormalViewController.m in Sources */,
 				045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */,
 				04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */,

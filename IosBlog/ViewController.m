@@ -52,6 +52,7 @@
 #import "UIDatePickerTimeViewController.h"
 #import "UIDatePickerDateAndTimeViewController.h"
 #import "UIDatePickerCountDownTimerViewController.h"
+#import "UIAlertControllerViewController.h"
 
 #import "SVProgressHUDNormalViewController.h"
 
@@ -278,11 +279,15 @@
     Item* uiDatePickerItem = [[Item alloc] initWithTitle:@"UIDatePicker"];
     uiDatePickerItem.children = @[uiDatePickerDateItem, uiDatePickerTimeItem, uiDatePickerDateAndTimeItem, uiDatePickerCountDownTimerItem];
     
+    // UIAlertController
+    Item* uiAlertControllerItem = [[Item alloc] initWithTitle:@"UIAlertController"];
+    uiAlertControllerItem.vc = [[UIAlertControllerViewController alloc] init];
+    
     Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,
                             uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem, uiSliderItem,
                             uiActivityIndicatorViewItem, uiProgressViewItem, uiStepperItem, uiPickerViewItem,
-                            uiDatePickerItem];
+                            uiDatePickerItem, uiAlertControllerItem];
     
     return widgetItem;
 }
