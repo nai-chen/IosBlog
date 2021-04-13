@@ -53,6 +53,9 @@
 #import "UIDatePickerDateAndTimeViewController.h"
 #import "UIDatePickerCountDownTimerViewController.h"
 #import "UIAlertControllerViewController.h"
+#import "UIScrollViewNormalViewController.h"
+#import "UIScrollViewZoomViewController.h"
+#import "UIScrollViewPageViewController.h"
 
 #import "SVProgressHUDNormalViewController.h"
 
@@ -283,11 +286,25 @@
     Item* uiAlertControllerItem = [[Item alloc] initWithTitle:@"UIAlertController"];
     uiAlertControllerItem.vc = [[UIAlertControllerViewController alloc] init];
     
+    // UIScrollView
+    Item* uiScrollViewNormalItem = [[Item alloc] initWithTitle:@"UIScrollViewNormal"];
+    uiScrollViewNormalItem.vc = [[UIScrollViewNormalViewController alloc] init];
+
+    Item* uiScrollViewZoomItem = [[Item alloc] initWithTitle:@"UIScrollViewZoom"];
+    uiScrollViewZoomItem.vc = [[UIScrollViewZoomViewController alloc] init];
+    
+    Item* uiScrollViewPageItem = [[Item alloc] initWithTitle:@"UIScrollViewPage"];
+    uiScrollViewPageItem.vc = [[UIScrollViewPageViewController alloc] init];
+    
+    // UIScrollView end
+    Item* uiScrollViewItem = [[Item alloc] initWithTitle:@"UIScrollView"];
+    uiScrollViewItem.children = @[uiScrollViewNormalItem, uiScrollViewZoomItem, uiScrollViewPageItem];
+    
     Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,
                             uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem, uiSliderItem,
                             uiActivityIndicatorViewItem, uiProgressViewItem, uiStepperItem, uiPickerViewItem,
-                            uiDatePickerItem, uiAlertControllerItem];
+                            uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem];
     
     return widgetItem;
 }

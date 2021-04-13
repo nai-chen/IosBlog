@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04015F792615D31C00E2EA46 /* UISwitchNormalViewController.m */; };
 		04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04213F9E2617051F00A27650 /* UIPageControlViewController.m */; };
+		044A7FAF26252E0C00F97EF7 /* UIScrollViewZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A7FAE26252E0C00F97EF7 /* UIScrollViewZoomViewController.m */; };
+		044A7FB42625343A00F97EF7 /* UIScrollViewNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A7FB32625343A00F97EF7 /* UIScrollViewNormalViewController.m */; };
+		044A7FB82625425700F97EF7 /* UIScrollViewPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A7FB72625425700F97EF7 /* UIScrollViewPageViewController.m */; };
 		045F303A256FA33500DA31BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3039256FA33500DA31BC /* AppDelegate.m */; };
 		045F3040256FA33500DA31BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F303F256FA33500DA31BC /* ViewController.m */; };
 		045F3043256FA33500DA31BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F3041256FA33500DA31BC /* Main.storyboard */; };
@@ -67,6 +70,12 @@
 		04015F792615D31C00E2EA46 /* UISwitchNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchNormalViewController.m; sourceTree = "<group>"; };
 		04213F9D2617051F00A27650 /* UIPageControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIPageControlViewController.h; sourceTree = "<group>"; };
 		04213F9E2617051F00A27650 /* UIPageControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIPageControlViewController.m; sourceTree = "<group>"; };
+		044A7FAD26252E0C00F97EF7 /* UIScrollViewZoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIScrollViewZoomViewController.h; sourceTree = "<group>"; };
+		044A7FAE26252E0C00F97EF7 /* UIScrollViewZoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewZoomViewController.m; sourceTree = "<group>"; };
+		044A7FB22625343A00F97EF7 /* UIScrollViewNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIScrollViewNormalViewController.h; sourceTree = "<group>"; };
+		044A7FB32625343A00F97EF7 /* UIScrollViewNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewNormalViewController.m; sourceTree = "<group>"; };
+		044A7FB62625425700F97EF7 /* UIScrollViewPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIScrollViewPageViewController.h; sourceTree = "<group>"; };
+		044A7FB72625425700F97EF7 /* UIScrollViewPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewPageViewController.m; sourceTree = "<group>"; };
 		045F3035256FA33500DA31BC /* IosBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045F3038256FA33500DA31BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		045F3039256FA33500DA31BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -200,6 +209,19 @@
 			path = UIPageControl;
 			sourceTree = "<group>";
 		};
+		044A7FAC26252C0D00F97EF7 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				044A7FB22625343A00F97EF7 /* UIScrollViewNormalViewController.h */,
+				044A7FB32625343A00F97EF7 /* UIScrollViewNormalViewController.m */,
+				044A7FAD26252E0C00F97EF7 /* UIScrollViewZoomViewController.h */,
+				044A7FAE26252E0C00F97EF7 /* UIScrollViewZoomViewController.m */,
+				044A7FB62625425700F97EF7 /* UIScrollViewPageViewController.h */,
+				044A7FB72625425700F97EF7 /* UIScrollViewPageViewController.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
 		045F302C256FA33500DA31BC = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +306,7 @@
 		045F3071256FA6CD00DA31BC /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				044A7FAC26252C0D00F97EF7 /* UIScrollView */,
 				04EC5BC626203F12008A4667 /* UIAlertController */,
 				04EC5BA9261FEEC0008A4667 /* UIPickerView */,
 				047F1D1F261EFCCF001F4FA1 /* UIDatePicker */,
@@ -661,6 +684,7 @@
 				04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */,
 				04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */,
 				045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */,
+				044A7FB42625343A00F97EF7 /* UIScrollViewNormalViewController.m in Sources */,
 				045F3056256FA49100DA31BC /* Item.m in Sources */,
 				045F3040256FA33500DA31BC /* ViewController.m in Sources */,
 				045F3090256FA82800DA31BC /* UITextFieldReturnTypeViewController.m in Sources */,
@@ -670,6 +694,8 @@
 				045F309B256FA85900DA31BC /* UILabelBreakModeViewController.m in Sources */,
 				04CBE30D261C5EE10068982B /* UISegmentedControlSetViewController.m in Sources */,
 				045F308D256FA82800DA31BC /* UITextFieldKeyBoardViewController.m in Sources */,
+				044A7FAF26252E0C00F97EF7 /* UIScrollViewZoomViewController.m in Sources */,
+				044A7FB82625425700F97EF7 /* UIScrollViewPageViewController.m in Sources */,
 				045F3080256FA7DC00DA31BC /* UIViewCALayerViewController.m in Sources */,
 				04EC5BC426202962008A4667 /* UIDatePickerCountDownTimerViewController.m in Sources */,
 				045F3083256FA7DC00DA31BC /* UIViewFrameViewController.m in Sources */,
