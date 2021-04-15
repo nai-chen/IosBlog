@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString* title;
 @property (nonatomic, strong) NSArray* children;
 @property (nonatomic, strong) UIViewController *vc;
+@property (nonatomic, copy) NSString* viewController;
 
 -(instancetype) initWithTitle:(NSString*) title;
 

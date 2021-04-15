@@ -11,54 +11,6 @@
 #import "Item.h"
 #import "DemoTableViewCell.h"
 
-#import "AttributeStringNormalViewController.h"
-#import "AttributeStringParagraphStyleViewController.h"
-#import "UIColorViewController.h"
-#import "NSNoticationViewController.h"
-
-#import "UIViewFrameViewController.h"
-#import "UIViewClipsToBoundsViewController.h"
-#import "UIViewGestureRecongnizerViewController.h"
-#import "UIViewCALayerViewController.h"
-#import "UILabelTextAlignmentViewController.h"
-#import "UILabelBreakModeViewController.h"
-#import "UILabelBoundsViewController.h"
-#import "UILabelOtherViewController.h"
-#import "UIImageViewAnimationViewController.h"
-#import "UIImageViewContentModeViewController.h"
-#import "UIControlViewViewController.h"
-#import "UIButtonNormalViewController.h"
-#import "UIButtonStyleViewController.h"
-#import "UIButtonEdgeInsetsViewController.h"
-#import "UITextFieldNormalViewController.h"
-#import "UITextFieldKeyBoardViewController.h"
-#import "UITextFieldReturnTypeViewController.h"
-#import "UITextFieldNotificationViewController.h"
-#import "UITextViewNormalViewController.h"
-#import "UITextViewInputViewController.h"
-#import "UITextViewDelegateViewController.h"
-#import "UISwitchNormalViewController.h"
-#import "UIPageControlViewController.h"
-#import "UISegmentedControlNormalViewController.h"
-#import "UISegmentedControlSetViewController.h"
-#import "UISegmentedControlOperationViewController.h"
-#import "UISegmentedControlEventViewController.h"
-#import "UISliderViewController.h"
-#import "UIActivityIndicatorViewController.h"
-#import "UIProgressViewController.h"
-#import "UIStepperViewController.h"
-#import "UIPickerViewController.h"
-#import "UIDatePickerDateViewController.h"
-#import "UIDatePickerTimeViewController.h"
-#import "UIDatePickerDateAndTimeViewController.h"
-#import "UIDatePickerCountDownTimerViewController.h"
-#import "UIAlertControllerViewController.h"
-#import "UIScrollViewNormalViewController.h"
-#import "UIScrollViewZoomViewController.h"
-#import "UIScrollViewPageViewController.h"
-
-#import "SVProgressHUDNormalViewController.h"
-
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView* tableView;
@@ -77,11 +29,14 @@
         // Widget item
         Item* widgetItem = [self widgetItem];
         
+        // Application item
+        Item* applicationItem = [self applicationItem];
+        
         // Third item
         Item* thirdItem = [self thirdItem];
         
         self.item = [[Item alloc] initWithTitle:@""];
-        self.item.children = @[basicItem, widgetItem, thirdItem];
+        self.item.children = @[basicItem, widgetItem, applicationItem, thirdItem];
     }
     
     _tableView = [[UITableView alloc] init];
@@ -97,10 +52,10 @@
 -(Item*) basicItem {
     // AttributeString
     Item* attributeStringNormalItem = [[Item alloc] initWithTitle:@"AttributeStringNormal"];
-    attributeStringNormalItem.vc = [[AttributeStringNormalViewController alloc] init];
+    attributeStringNormalItem.viewController = @"AttributeStringNormalViewController";
     
     Item* AttributeStringParagraphStyleItem = [[Item alloc] initWithTitle:@"AttributeStringParagraphStyle"];
-    AttributeStringParagraphStyleItem.vc = [[AttributeStringParagraphStyleViewController alloc] init];
+    AttributeStringParagraphStyleItem.viewController = @"AttributeStringParagraphStyleViewController";
     
     // AttributeString end
     Item* attributeStringItem = [[Item alloc] initWithTitle:@"AttributeString"];
@@ -108,13 +63,13 @@
     
     // UIColor
     Item* uiColorItem = [[Item alloc] initWithTitle:@"UIColor"];
-    uiColorItem.vc = [[UIColorViewController alloc] init];
+    uiColorItem.viewController = @"UIColorViewController";
     
     // UIColor end
     
     // NSNotificationCenter
     Item* notificationCenterItem = [[Item alloc] initWithTitle:@"NSNotificationCenter"];
-    notificationCenterItem.vc = [[NSNoticationViewController alloc] init];
+    notificationCenterItem.viewController = @"NSNoticationViewController";
     
     // end NSNotificationCenter
     
@@ -127,16 +82,16 @@
 -(Item*) widgetItem {
     // UIView
     Item* uiViewFrameItem = [[Item alloc] initWithTitle:@"UIViewFrame"];
-    uiViewFrameItem.vc = [[UIViewFrameViewController alloc] init];
+    uiViewFrameItem.viewController = @"UIViewFrameViewController";
     
     Item* uiViewClipsToBoundsItem = [[Item alloc] initWithTitle:@"UIViewClipsToBounds"];
-    uiViewClipsToBoundsItem.vc = [[UIViewClipsToBoundsViewController alloc] init];
+    uiViewClipsToBoundsItem.viewController = @"UIViewClipsToBoundsViewController";
     
     Item* uiViewGestureRecongnizerItem = [[Item alloc] initWithTitle:@"UIViewGestureRecongnizer"];
-    uiViewGestureRecongnizerItem.vc = [[UIViewGestureRecongnizerViewController alloc] init];
+    uiViewGestureRecongnizerItem.viewController = @"UIViewGestureRecongnizerViewController";
     
     Item* uiViewCALayerItem = [[Item alloc] initWithTitle:@"UIViewCALayer"];
-    uiViewCALayerItem.vc = [[UIViewCALayerViewController alloc] init];
+    uiViewCALayerItem.viewController = @"UIViewCALayerViewController";
 
     // UIView end
     Item* uiViewItem = [[Item alloc] initWithTitle:@"UIView"];
@@ -144,16 +99,16 @@
     
     // UILabel
     Item* uiLabelTextAlignmentItem = [[Item alloc] initWithTitle:@"UILabelTextAlignment"];
-    uiLabelTextAlignmentItem.vc = [[UILabelTextAlignmentViewController alloc] init];
+    uiLabelTextAlignmentItem.viewController = @"UILabelTextAlignmentViewController";
     
     Item* uiLabelBreakModeItem = [[Item alloc] initWithTitle:@"UILabelBreakMode"];
-    uiLabelBreakModeItem.vc = [[UILabelBreakModeViewController alloc] init];
+    uiLabelBreakModeItem.viewController = @"UILabelBreakModeViewController";
     
     Item* uiLabelBoundsItem = [[Item alloc] initWithTitle:@"UILabelBounds"];
-    uiLabelBoundsItem.vc = [[UILabelBoundsViewController alloc] init];
+    uiLabelBoundsItem.viewController = @"UILabelBoundsViewController";
     
     Item* uiLabelOtherItem = [[Item alloc] initWithTitle:@"UILabelOther"];
-    uiLabelOtherItem.vc = [[UILabelOtherViewController alloc] init];
+    uiLabelOtherItem.viewController = @"UILabelOtherViewController";
     
     // UILabel end
     Item* uiLabelItem = [[Item alloc] initWithTitle:@"UILabel"];
@@ -161,10 +116,10 @@
     
     // UIImageView
     Item* uiImageAnimationViewItem = [[Item alloc] initWithTitle:@"UIImageViewAnimation"];
-    uiImageAnimationViewItem.vc = [[UIImageViewAnimationViewController alloc] init];
+    uiImageAnimationViewItem.viewController = @"UIImageViewAnimationViewController";
     
     Item* uiImageContentModeViewItem = [[Item alloc] initWithTitle:@"UIImageViewContentMode"];
-    uiImageContentModeViewItem.vc = [[UIImageViewContentModeViewController alloc] init];
+    uiImageContentModeViewItem.viewController = @"UIImageViewContentModeViewController";
     
     // UIImageView end
     Item* uiImageViewItem = [[Item alloc] initWithTitle:@"UIImageView"];
@@ -172,18 +127,18 @@
     
     // UIControl
     Item* uiControlItem = [[Item alloc] initWithTitle:@"UIControl"];
-    uiControlItem.vc = [[UIControlViewViewController alloc] init];
+    uiControlItem.viewController = @"UIControlViewViewController";
     // UIControl end
     
     // UIButton
     Item* uiButtonNormalItem = [[Item alloc] initWithTitle:@"UIButtonNormal"];
-    uiButtonNormalItem.vc = [[UIButtonNormalViewController alloc] init];
+    uiButtonNormalItem.viewController = @"UIButtonNormalViewController";
     
     Item* uiButtonStyleItem = [[Item alloc] initWithTitle:@"UIButtonStyle"];
-    uiButtonStyleItem.vc = [[UIButtonStyleViewController alloc] init];
+    uiButtonStyleItem.viewController = @"UIButtonStyleViewController";
     
     Item* uiButtonEdgeInsetsItem = [[Item alloc] initWithTitle:@"UIButtonEdgeInsets"];
-    uiButtonEdgeInsetsItem.vc = [[UIButtonEdgeInsetsViewController alloc] init];
+    uiButtonEdgeInsetsItem.viewController = @"UIButtonEdgeInsetsViewController";
     
     // UIButton end
     Item* uiButtonItem = [[Item alloc] initWithTitle:@"UIButton"];
@@ -191,16 +146,16 @@
     
     // UITextField
     Item* uiTextFieldNormalItem = [[Item alloc] initWithTitle:@"UITextFieldNormal"];
-    uiTextFieldNormalItem.vc = [[UITextFieldNormalViewController alloc] init];
+    uiTextFieldNormalItem.viewController = @"UITextFieldNormalViewController";
     
     Item* uiTextFieldKeyBoardItem = [[Item alloc] initWithTitle:@"UITextFieldKeyBoard"];
-    uiTextFieldKeyBoardItem.vc = [[UITextFieldKeyBoardViewController alloc] init];
+    uiTextFieldKeyBoardItem.viewController = @"UITextFieldKeyBoardViewController";
     
     Item* uiTextFieldReturnTypeItem = [[Item alloc] initWithTitle:@"UITextFieldReturnType"];
-    uiTextFieldReturnTypeItem.vc = [[UITextFieldReturnTypeViewController alloc] init];
+    uiTextFieldReturnTypeItem.viewController = @"UITextFieldReturnTypeViewController";
     
     Item* uiTextFieldNotificationItem = [[Item alloc] initWithTitle:@"UITextFieldNotification"];
-    uiTextFieldNotificationItem.vc = [[UITextFieldNotificationViewController alloc] init];
+    uiTextFieldNotificationItem.viewController = @"UITextFieldNotificationViewController";
     
     // UITextField end
     Item* uiTextFieldItem = [[Item alloc] initWithTitle:@"UITextField"];
@@ -208,13 +163,13 @@
     
     // UITextView
     Item* uiTextViewNormalItem = [[Item alloc] initWithTitle:@"UITextViewNormal"];
-    uiTextViewNormalItem.vc = [[UITextViewNormalViewController alloc] init];
+    uiTextViewNormalItem.viewController = @"UITextViewNormalViewController";
     
     Item* uiTextViewInputItem = [[Item alloc] initWithTitle:@"UITextViewInput"];
-    uiTextViewInputItem.vc = [[UITextViewInputViewController alloc] init];
+    uiTextViewInputItem.viewController = @"UITextViewInputViewController";
     
     Item* uiTextViewDelegateItem = [[Item alloc] initWithTitle:@"UITextViewDelegate"];
-    uiTextViewDelegateItem.vc = [[UITextViewDelegateViewController alloc] init];
+    uiTextViewDelegateItem.viewController = @"UITextViewDelegateViewController";
     
     // UITextView end
     Item* uiTextViewItem = [[Item alloc] initWithTitle:@"UITextView"];
@@ -222,24 +177,24 @@
     
     // UISwitch
     Item* uiSwitchItem = [[Item alloc] initWithTitle:@"UISwitch"];
-    uiSwitchItem.vc = [[UISwitchNormalViewController alloc] init];
+    uiSwitchItem.viewController = @"UISwitchNormalViewController";
     
     // UIPageControl
     Item* uiPageControlItem = [[Item alloc] initWithTitle:@"UIPageControl"];
-    uiPageControlItem.vc = [[UIPageControlViewController alloc] init];
+    uiPageControlItem.viewController = @"UIPageControlViewController";
     
     // UISegmentedControl
     Item* uiSegmentedControlNormalItem = [[Item alloc] initWithTitle:@"UISegmentedControlNormal"];
-    uiSegmentedControlNormalItem.vc = [[UISegmentedControlNormalViewController alloc] init];
+    uiSegmentedControlNormalItem.viewController = @"UISegmentedControlNormalViewController";
     
     Item* uiSegmentedControlSetItem = [[Item alloc] initWithTitle:@"UISegmentedControlSet"];
-    uiSegmentedControlSetItem.vc = [[UISegmentedControlSetViewController alloc] init];
+    uiSegmentedControlSetItem.viewController = @"UISegmentedControlSetViewController";
 
     Item* uiSegmentedControlOperationItem = [[Item alloc] initWithTitle:@"UISegmentedControlOperation"];
-    uiSegmentedControlOperationItem.vc = [[UISegmentedControlOperationViewController alloc] init];
+    uiSegmentedControlOperationItem.viewController = @"UISegmentedControlOperationViewController";
     
     Item* uiSegmentedControlEventItem = [[Item alloc] initWithTitle:@"UISegmentedControlEvent"];
-    uiSegmentedControlEventItem.vc = [[UISegmentedControlEventViewController alloc] init];
+    uiSegmentedControlEventItem.viewController = @"UISegmentedControlEventViewController";
     
     // UISegmentedControl end
     Item* uiSegmentedControlItem = [[Item alloc] initWithTitle:@"UISegmentedControl"];
@@ -247,36 +202,36 @@
     
     // UISlider
     Item* uiSliderItem = [[Item alloc] initWithTitle:@"UISlider"];
-    uiSliderItem.vc = [[UISliderViewController alloc] init];
+    uiSliderItem.viewController = @"UISliderViewController";
     
     // UIActivityIndicatorView
     Item* uiActivityIndicatorViewItem = [[Item alloc] initWithTitle:@"UIActivityIndicatorView"];
-    uiActivityIndicatorViewItem.vc = [[UIActivityIndicatorViewController alloc] init];
+    uiActivityIndicatorViewItem.viewController = @"UIActivityIndicatorViewController";
     
     // UIProgressView
     Item* uiProgressViewItem = [[Item alloc] initWithTitle:@"UIProgressView"];
-    uiProgressViewItem.vc = [[UIProgressViewController alloc] init];
+    uiProgressViewItem.viewController = @"UIProgressViewController";
     
     // UIStepper
     Item* uiStepperItem = [[Item alloc] initWithTitle:@"UIStepper"];
-    uiStepperItem.vc = [[UIStepperViewController alloc] init];
+    uiStepperItem.viewController = @"UIStepperViewController";
     
     // UIPickerView
     Item* uiPickerViewItem = [[Item alloc] initWithTitle:@"UIPickerView"];
-    uiPickerViewItem.vc = [[UIPickerViewController alloc] init];
+    uiPickerViewItem.viewController = @"UIPickerViewController";
     
     // UIDatePicker
     Item* uiDatePickerDateItem = [[Item alloc] initWithTitle:@"UIDatePickerDate"];
-    uiDatePickerDateItem.vc = [[UIDatePickerDateViewController alloc] init];
+    uiDatePickerDateItem.viewController = @"UIDatePickerDateViewController";
     
     Item* uiDatePickerTimeItem = [[Item alloc] initWithTitle:@"UIDatePickerTime"];
-    uiDatePickerTimeItem.vc = [[UIDatePickerTimeViewController alloc] init];
+    uiDatePickerTimeItem.viewController = @"UIDatePickerTimeViewController";
     
     Item* uiDatePickerDateAndTimeItem = [[Item alloc] initWithTitle:@"UIDatePickerDateAndTime"];
-    uiDatePickerDateAndTimeItem.vc = [[UIDatePickerDateAndTimeViewController alloc] init];
+    uiDatePickerDateAndTimeItem.viewController = @"UIDatePickerDateAndTimeViewController";
     
     Item* uiDatePickerCountDownTimerItem = [[Item alloc] initWithTitle:@"UIDatePickerCountDownTimer"];
-    uiDatePickerCountDownTimerItem.vc = [[UIDatePickerCountDownTimerViewController alloc] init];
+    uiDatePickerCountDownTimerItem.viewController = @"UIDatePickerCountDownTimerViewController";
     
     // UIDatePicker end
     Item* uiDatePickerItem = [[Item alloc] initWithTitle:@"UIDatePicker"];
@@ -284,35 +239,67 @@
     
     // UIAlertController
     Item* uiAlertControllerItem = [[Item alloc] initWithTitle:@"UIAlertController"];
-    uiAlertControllerItem.vc = [[UIAlertControllerViewController alloc] init];
+    uiAlertControllerItem.viewController = @"UIAlertControllerViewController";
     
     // UIScrollView
     Item* uiScrollViewNormalItem = [[Item alloc] initWithTitle:@"UIScrollViewNormal"];
-    uiScrollViewNormalItem.vc = [[UIScrollViewNormalViewController alloc] init];
+    uiScrollViewNormalItem.viewController = @"UIScrollViewNormalViewController";
 
     Item* uiScrollViewZoomItem = [[Item alloc] initWithTitle:@"UIScrollViewZoom"];
-    uiScrollViewZoomItem.vc = [[UIScrollViewZoomViewController alloc] init];
+    uiScrollViewZoomItem.viewController = @"UIScrollViewZoomViewController";
     
     Item* uiScrollViewPageItem = [[Item alloc] initWithTitle:@"UIScrollViewPage"];
-    uiScrollViewPageItem.vc = [[UIScrollViewPageViewController alloc] init];
+    uiScrollViewPageItem.viewController = @"UIScrollViewPageViewController";
     
     // UIScrollView end
     Item* uiScrollViewItem = [[Item alloc] initWithTitle:@"UIScrollView"];
     uiScrollViewItem.children = @[uiScrollViewNormalItem, uiScrollViewZoomItem, uiScrollViewPageItem];
     
+    // UICollectionView
+    Item* uiCollectionViewNormalItem = [[Item alloc] initWithTitle:@"UICollectionViewNormal"];
+    uiCollectionViewNormalItem.viewController = @"UICollectionViewNormalViewController";
+    
+    Item* uiCollectionViewLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewLayout"];
+    uiCollectionViewLayoutItem.viewController = @"UICollectionViewLayoutViewController";
+    
+    Item* uiCollectionViewFlowLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewFlowLayout"];
+    uiCollectionViewFlowLayoutItem.viewController = @"UICollectionViewFlowLayoutViewController";
+    
+    Item* uiCollectionViewCircleLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewCircleLayout"];
+    uiCollectionViewCircleLayoutItem.viewController = @"UICollectionViewCircleLayoutViewController";
+
+    Item* uiCollectionViewWheelLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewWheelLayout"];
+    uiCollectionViewWheelLayoutItem.viewController = @"UICollectionViewWheelLayoutViewController";
+
+    // UICollectionView end
+    Item* uiCollectionViewItem = [[Item alloc] initWithTitle:@"UICollectionView"];
+    uiCollectionViewItem.children = @[uiCollectionViewNormalItem, uiCollectionViewLayoutItem, uiCollectionViewFlowLayoutItem,
+                                      uiCollectionViewCircleLayoutItem, uiCollectionViewWheelLayoutItem];
+    
     Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,
                             uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem, uiSliderItem,
                             uiActivityIndicatorViewItem, uiProgressViewItem, uiStepperItem, uiPickerViewItem,
-                            uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem];
+                            uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem, uiCollectionViewItem];
     
     return widgetItem;
+}
+
+-(Item*) applicationItem {
+    // SafeArea
+    Item* safeAreaItem = [[Item alloc] initWithTitle:@"SafeArea"];
+    safeAreaItem.viewController = @"SafeAreaNormalViewController";
+    
+    Item* applicationItem = [[Item alloc] initWithTitle:@"Application"];
+    applicationItem.children = @[safeAreaItem];
+    
+    return applicationItem;
 }
 
 -(Item*) thirdItem {
     // SVProgressHUD
     Item* svProgressHUDNormalItem = [[Item alloc] initWithTitle:@"SVProgressHUDNormal"];
-    svProgressHUDNormalItem.vc = [[SVProgressHUDNormalViewController alloc] init];
+    svProgressHUDNormalItem.viewController = @"SVProgressHUDNormalViewController";
     
     // SVProgressHUD end
     Item* svProgressHUDItem = [[Item alloc] initWithTitle:@"SVProgressHUD"];
@@ -349,11 +336,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Item* item = self.item.children[indexPath.row];
     if (item.children) {
-        ViewController* vc = [[ViewController alloc] init];
-        vc.item = item;
-        [self.navigationController pushViewController:vc animated:true];
+        ViewController* viewController = [[ViewController alloc] init];
+        viewController.item = item;
+        [self.navigationController pushViewController:viewController animated:true];
     } else {
-        [self.navigationController pushViewController:item.vc animated:true];
+        Class cls = NSClassFromString(item.viewController);
+        [self.navigationController pushViewController:[[cls alloc] init] animated:true];
     }
 }
 

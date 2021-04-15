@@ -20,6 +20,12 @@
     self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
     [self.window setBackgroundColor: [UIColor whiteColor]];
     
+    
+    NSLog(@"window.frame = %@", NSStringFromCGRect(self.window.frame));
+    NSLog(@"window.safeArea.layoutFrame = %@", NSStringFromCGRect(self.window.safeAreaLayoutGuide.layoutFrame));
+    NSLog(@"window.safeArea.edgeInsets = %@", NSStringFromUIEdgeInsets(self.window.safeAreaInsets));
+
+    
     ViewController* viewController = [[ViewController alloc] init];
     UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:viewController];
     [self.window setRootViewController:nav];
