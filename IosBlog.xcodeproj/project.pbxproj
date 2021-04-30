@@ -57,6 +57,7 @@
 		04623793261DBB790034D421 /* UIProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623792261DBB790034D421 /* UIProgressViewController.m */; };
 		04701A4E2626C2A100957DC4 /* UICollectionViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04701A4D2626C2A100957DC4 /* UICollectionViewLayoutViewController.m */; };
 		04701A552626F2BF00957DC4 /* SafeAreaNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04701A542626F2BF00957DC4 /* SafeAreaNormalViewController.m */; };
+		0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476AB86263BE45A00EAEADE /* NSURLConnectionViewController.m */; };
 		047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D16261EA547001F4FA1 /* UIStepperViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -173,6 +174,8 @@
 		04701A4D2626C2A100957DC4 /* UICollectionViewLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLayoutViewController.m; sourceTree = "<group>"; };
 		04701A532626F2BF00957DC4 /* SafeAreaNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeAreaNormalViewController.h; sourceTree = "<group>"; };
 		04701A542626F2BF00957DC4 /* SafeAreaNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeAreaNormalViewController.m; sourceTree = "<group>"; };
+		0476AB85263BE45A00EAEADE /* NSURLConnectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionViewController.h; sourceTree = "<group>"; };
+		0476AB86263BE45A00EAEADE /* NSURLConnectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionViewController.m; sourceTree = "<group>"; };
 		047F1D15261EA547001F4FA1 /* UIStepperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStepperViewController.h; sourceTree = "<group>"; };
 		047F1D16261EA547001F4FA1 /* UIStepperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStepperViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -318,6 +321,7 @@
 		045F305D256FA5D700DA31BC /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				0476AB84263BE42300EAEADE /* NSURLConnection */,
 				045F3060256FA60800DA31BC /* UIColor */,
 				045F305F256FA5FE00DA31BC /* NSNotificationCenter */,
 				045F305E256FA5F200DA31BC /* AttributeString */,
@@ -528,6 +532,15 @@
 				04701A542626F2BF00957DC4 /* SafeAreaNormalViewController.m */,
 			);
 			path = SafeArea;
+			sourceTree = "<group>";
+		};
+		0476AB84263BE42300EAEADE /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				0476AB85263BE45A00EAEADE /* NSURLConnectionViewController.h */,
+				0476AB86263BE45A00EAEADE /* NSURLConnectionViewController.m */,
+			);
+			path = NSURLConnection;
 			sourceTree = "<group>";
 		};
 		047F1D14261EA539001F4FA1 /* UIStepper */ = {
@@ -779,6 +792,7 @@
 				04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */,
 				04623793261DBB790034D421 /* UIProgressViewController.m in Sources */,
 				04EC5BBB2620254E008A4667 /* UIDatePickerTimeViewController.m in Sources */,
+				0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */,
 				045256C1262819F200E7D8CF /* MyLayout.m in Sources */,
 				045F30B3256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m in Sources */,
 				045F30B4256FA89A00DA31BC /* UIButtonNormalViewController.m in Sources */,

@@ -65,16 +65,16 @@
     Item* uiColorItem = [[Item alloc] initWithTitle:@"UIColor"];
     uiColorItem.viewController = @"UIColorViewController";
     
-    // UIColor end
-    
     // NSNotificationCenter
     Item* notificationCenterItem = [[Item alloc] initWithTitle:@"NSNotificationCenter"];
     notificationCenterItem.viewController = @"NSNoticationViewController";
-    
-    // end NSNotificationCenter
+
+    // NSURLConnection
+    Item* urlConnectionItem = [[Item alloc] initWithTitle:@"NSURLConnection"];
+    urlConnectionItem.viewController = @"NSURLConnectionViewController";
     
     Item* basicItem = [[Item alloc] initWithTitle:@"Basic"];
-    basicItem.children = @[attributeStringItem, uiColorItem, notificationCenterItem];
+    basicItem.children = @[attributeStringItem, uiColorItem, notificationCenterItem, urlConnectionItem];
     
     return basicItem;
 }
