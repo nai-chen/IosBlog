@@ -73,8 +73,13 @@
     Item* urlConnectionItem = [[Item alloc] initWithTitle:@"NSURLConnection"];
     urlConnectionItem.viewController = @"NSURLConnectionViewController";
     
+    // NSURLSession
+    Item* urlSessionItem = [[Item alloc] initWithTitle:@"NSURLSession"];
+    urlSessionItem.viewController = @"NSURLSessionViewController";
+    
     Item* basicItem = [[Item alloc] initWithTitle:@"Basic"];
-    basicItem.children = @[attributeStringItem, uiColorItem, notificationCenterItem, urlConnectionItem];
+    basicItem.children = @[attributeStringItem, uiColorItem, notificationCenterItem, urlConnectionItem,
+                urlSessionItem];
     
     return basicItem;
 }

@@ -58,6 +58,7 @@
 		04701A4E2626C2A100957DC4 /* UICollectionViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04701A4D2626C2A100957DC4 /* UICollectionViewLayoutViewController.m */; };
 		04701A552626F2BF00957DC4 /* SafeAreaNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04701A542626F2BF00957DC4 /* SafeAreaNormalViewController.m */; };
 		0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476AB86263BE45A00EAEADE /* NSURLConnectionViewController.m */; };
+		0476AB8D263BEF8E00EAEADE /* NSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476AB8C263BEF8E00EAEADE /* NSURLSessionViewController.m */; };
 		047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D16261EA547001F4FA1 /* UIStepperViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -176,6 +177,8 @@
 		04701A542626F2BF00957DC4 /* SafeAreaNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeAreaNormalViewController.m; sourceTree = "<group>"; };
 		0476AB85263BE45A00EAEADE /* NSURLConnectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionViewController.h; sourceTree = "<group>"; };
 		0476AB86263BE45A00EAEADE /* NSURLConnectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionViewController.m; sourceTree = "<group>"; };
+		0476AB8B263BEF8E00EAEADE /* NSURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLSessionViewController.h; sourceTree = "<group>"; };
+		0476AB8C263BEF8E00EAEADE /* NSURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionViewController.m; sourceTree = "<group>"; };
 		047F1D15261EA547001F4FA1 /* UIStepperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStepperViewController.h; sourceTree = "<group>"; };
 		047F1D16261EA547001F4FA1 /* UIStepperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStepperViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -321,6 +324,7 @@
 		045F305D256FA5D700DA31BC /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				0476AB90263BEF9900EAEADE /* NSURLSession */,
 				0476AB84263BE42300EAEADE /* NSURLConnection */,
 				045F3060256FA60800DA31BC /* UIColor */,
 				045F305F256FA5FE00DA31BC /* NSNotificationCenter */,
@@ -543,6 +547,15 @@
 			path = NSURLConnection;
 			sourceTree = "<group>";
 		};
+		0476AB90263BEF9900EAEADE /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				0476AB8B263BEF8E00EAEADE /* NSURLSessionViewController.h */,
+				0476AB8C263BEF8E00EAEADE /* NSURLSessionViewController.m */,
+			);
+			path = NSURLSession;
+			sourceTree = "<group>";
+		};
 		047F1D14261EA539001F4FA1 /* UIStepper */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +764,7 @@
 				04EC5BC926203F22008A4667 /* UIAlertControllerViewController.m in Sources */,
 				045F306E256FA69C00DA31BC /* AttributeStringNormalViewController.m in Sources */,
 				045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */,
+				0476AB8D263BEF8E00EAEADE /* NSURLSessionViewController.m in Sources */,
 				04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */,
 				045256CD26281D6B00E7D8CF /* UICollectionViewWheelLayoutViewController.m in Sources */,
 				04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */,
