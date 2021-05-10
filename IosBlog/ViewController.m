@@ -295,8 +295,23 @@
     Item* safeAreaItem = [[Item alloc] initWithTitle:@"SafeArea"];
     safeAreaItem.viewController = @"SafeAreaNormalViewController";
     
+    // Animation
+    Item* animationCurveItem = [[Item alloc] initWithTitle:@"AnimationCurve"];
+    animationCurveItem.viewController = @"AnimationCurveViewController";
+
+    Item* animationNormalItem = [[Item alloc] initWithTitle:@"AnimationNormal"];
+    animationNormalItem.viewController = @"AnimationNormalViewController";
+
+    Item* animationTransformItem = [[Item alloc] initWithTitle:@"AnimationTransform"];
+    animationTransformItem.viewController = @"AnimationTransformViewController";
+    
+    // Animtion end
+    Item* animationItem = [[Item alloc] initWithTitle:@"Animation"];
+    animationItem.children = @[animationCurveItem, animationNormalItem, animationTransformItem];
+
     Item* applicationItem = [[Item alloc] initWithTitle:@"Application"];
-    applicationItem.children = @[safeAreaItem];
+    applicationItem.children = @[safeAreaItem, animationItem];
+
     
     return applicationItem;
 }
@@ -310,8 +325,12 @@
     Item* svProgressHUDItem = [[Item alloc] initWithTitle:@"SVProgressHUD"];
     svProgressHUDItem.children = @[svProgressHUDNormalItem];
     
+    // AFNetworking
+    Item* afNetworkingItem = [[Item alloc] initWithTitle:@"AFNetworking"];
+    afNetworkingItem.viewController = @"AFNetworkingViewController";
+    
     Item* thirdItem = [[Item alloc] initWithTitle: @"Third"];
-    thirdItem.children = @[svProgressHUDItem];
+    thirdItem.children = @[svProgressHUDItem, afNetworkingItem];
     
     return thirdItem;
 }
