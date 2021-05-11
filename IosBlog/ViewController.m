@@ -296,18 +296,21 @@
     safeAreaItem.viewController = @"SafeAreaNormalViewController";
     
     // Animation
-    Item* animationCurveItem = [[Item alloc] initWithTitle:@"AnimationCurve"];
-    animationCurveItem.viewController = @"AnimationCurveViewController";
-
     Item* animationNormalItem = [[Item alloc] initWithTitle:@"AnimationNormal"];
     animationNormalItem.viewController = @"AnimationNormalViewController";
 
     Item* animationTransformItem = [[Item alloc] initWithTitle:@"AnimationTransform"];
     animationTransformItem.viewController = @"AnimationTransformViewController";
     
+    Item* animationCurveItem = [[Item alloc] initWithTitle:@"AnimationCurve"];
+    animationCurveItem.viewController = @"AnimationCurveViewController";
+
+    Item* animationSpringItem = [[Item alloc] initWithTitle:@"AnimationSpring"];
+    animationSpringItem.viewController = @"AnimationSpringViewController";
+    
     // Animtion end
     Item* animationItem = [[Item alloc] initWithTitle:@"Animation"];
-    animationItem.children = @[animationCurveItem, animationNormalItem, animationTransformItem];
+    animationItem.children = @[animationNormalItem, animationTransformItem, animationCurveItem, animationSpringItem];
 
     Item* applicationItem = [[Item alloc] initWithTitle:@"Application"];
     applicationItem.children = @[safeAreaItem, animationItem];

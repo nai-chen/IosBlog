@@ -56,6 +56,8 @@
 		04623787261DB2A10034D421 /* UIActivityIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623786261DB2A10034D421 /* UIActivityIndicatorViewController.m */; };
 		04623793261DBB790034D421 /* UIProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04623792261DBB790034D421 /* UIProgressViewController.m */; };
 		04639EEF2648D1C9008AD774 /* AnimationTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04639EEE2648D1C9008AD774 /* AnimationTransformViewController.m */; };
+		04639EF3264926A2008AD774 /* AnimationSpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04639EF2264926A2008AD774 /* AnimationSpringViewController.m */; };
+		04639EF72649324E008AD774 /* AnimationTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04639EF62649324E008AD774 /* AnimationTransitionViewController.m */; };
 		04701A4E2626C2A100957DC4 /* UICollectionViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04701A4D2626C2A100957DC4 /* UICollectionViewLayoutViewController.m */; };
 		04701A552626F2BF00957DC4 /* SafeAreaNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04701A542626F2BF00957DC4 /* SafeAreaNormalViewController.m */; };
 		0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476AB86263BE45A00EAEADE /* NSURLConnectionViewController.m */; };
@@ -177,6 +179,10 @@
 		04623792261DBB790034D421 /* UIProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIProgressViewController.m; sourceTree = "<group>"; };
 		04639EED2648D1C9008AD774 /* AnimationTransformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTransformViewController.h; sourceTree = "<group>"; };
 		04639EEE2648D1C9008AD774 /* AnimationTransformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTransformViewController.m; sourceTree = "<group>"; };
+		04639EF1264926A2008AD774 /* AnimationSpringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationSpringViewController.h; sourceTree = "<group>"; };
+		04639EF2264926A2008AD774 /* AnimationSpringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationSpringViewController.m; sourceTree = "<group>"; };
+		04639EF52649324E008AD774 /* AnimationTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTransitionViewController.h; sourceTree = "<group>"; };
+		04639EF62649324E008AD774 /* AnimationTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTransitionViewController.m; sourceTree = "<group>"; };
 		04701A4C2626C2A100957DC4 /* UICollectionViewLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLayoutViewController.h; sourceTree = "<group>"; };
 		04701A4D2626C2A100957DC4 /* UICollectionViewLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLayoutViewController.m; sourceTree = "<group>"; };
 		04701A532626F2BF00957DC4 /* SafeAreaNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeAreaNormalViewController.h; sourceTree = "<group>"; };
@@ -606,12 +612,16 @@
 		04C4ED392643E57B007C35EF /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				04CD2FB0264539530034360C /* AnimationCurveViewController.h */,
-				04CD2FB1264539530034360C /* AnimationCurveViewController.m */,
 				04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */,
 				04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */,
 				04639EED2648D1C9008AD774 /* AnimationTransformViewController.h */,
 				04639EEE2648D1C9008AD774 /* AnimationTransformViewController.m */,
+				04CD2FB0264539530034360C /* AnimationCurveViewController.h */,
+				04CD2FB1264539530034360C /* AnimationCurveViewController.m */,
+				04639EF1264926A2008AD774 /* AnimationSpringViewController.h */,
+				04639EF2264926A2008AD774 /* AnimationSpringViewController.m */,
+				04639EF52649324E008AD774 /* AnimationTransitionViewController.h */,
+				04639EF62649324E008AD774 /* AnimationTransitionViewController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -793,6 +803,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045F309C256FA85900DA31BC /* UILabelTextAlignmentViewController.m in Sources */,
+				04639EF72649324E008AD774 /* AnimationTransitionViewController.m in Sources */,
 				045F30AA256FA88900DA31BC /* UIControlViewViewController.m in Sources */,
 				04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */,
 				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
@@ -816,6 +827,7 @@
 				04701A4E2626C2A100957DC4 /* UICollectionViewLayoutViewController.m in Sources */,
 				045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */,
 				04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */,
+				04639EF3264926A2008AD774 /* AnimationSpringViewController.m in Sources */,
 				04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */,
 				045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */,
 				044A7FC32625919F00F97EF7 /* UICollectionViewNormalViewController.m in Sources */,

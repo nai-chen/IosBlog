@@ -73,7 +73,7 @@
 
 -(void) onRotationAnimationClick:(UIButton*)sender {
     [UIView animateWithDuration:2 animations:^{
-        self.imageView.transform = CGAffineTransformMakeRotation(-M_PI_2);
+        self.imageView.transform = CGAffineTransformMakeRotation(M_PI_2);
     }];
 }
 
