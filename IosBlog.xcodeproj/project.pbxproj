@@ -79,6 +79,7 @@
 		04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5639E25C138B2006798D5 /* UITextViewNormalViewController.m */; };
 		04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A225C15921006798D5 /* UITextViewInputViewController.m */; };
 		04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A625C15E4D006798D5 /* UITextViewDelegateViewController.m */; };
+		04FD1CED264A63CF00F9176E /* AnimationFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD1CEC264A63CF00F9176E /* AnimationFrameViewController.m */; };
 		921983AA05F7E29B05BCA2E1 /* libPods-IosBlog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BDF9B69106A61200EE3D10 /* libPods-IosBlog.a */; };
 /* End PBXBuildFile section */
 
@@ -225,6 +226,8 @@
 		04F563A225C15921006798D5 /* UITextViewInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewInputViewController.m; sourceTree = "<group>"; };
 		04F563A525C15E4D006798D5 /* UITextViewDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewDelegateViewController.h; sourceTree = "<group>"; };
 		04F563A625C15E4D006798D5 /* UITextViewDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewDelegateViewController.m; sourceTree = "<group>"; };
+		04FD1CEB264A63CF00F9176E /* AnimationFrameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationFrameViewController.h; sourceTree = "<group>"; };
+		04FD1CEC264A63CF00F9176E /* AnimationFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationFrameViewController.m; sourceTree = "<group>"; };
 		3488934F00A8985485936B73 /* Pods-IosBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.debug.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.debug.xcconfig"; sourceTree = "<group>"; };
 		A642423E7AD405A3E0489109 /* Pods-IosBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.release.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.release.xcconfig"; sourceTree = "<group>"; };
 		D9BDF9B69106A61200EE3D10 /* libPods-IosBlog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosBlog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -622,6 +625,8 @@
 				04639EF2264926A2008AD774 /* AnimationSpringViewController.m */,
 				04639EF52649324E008AD774 /* AnimationTransitionViewController.h */,
 				04639EF62649324E008AD774 /* AnimationTransitionViewController.m */,
+				04FD1CEB264A63CF00F9176E /* AnimationFrameViewController.h */,
+				04FD1CEC264A63CF00F9176E /* AnimationFrameViewController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -855,6 +860,7 @@
 				04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */,
 				04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */,
 				04623793261DBB790034D421 /* UIProgressViewController.m in Sources */,
+				04FD1CED264A63CF00F9176E /* AnimationFrameViewController.m in Sources */,
 				04EC5BBB2620254E008A4667 /* UIDatePickerTimeViewController.m in Sources */,
 				0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */,
 				04CD2FB2264539530034360C /* AnimationCurveViewController.m in Sources */,

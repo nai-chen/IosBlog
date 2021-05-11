@@ -308,9 +308,16 @@
     Item* animationSpringItem = [[Item alloc] initWithTitle:@"AnimationSpring"];
     animationSpringItem.viewController = @"AnimationSpringViewController";
     
+    Item* animationTranstionItem = [[Item alloc] initWithTitle:@"AnimationTransition"];
+    animationTranstionItem.viewController = @"AnimationTransitionViewController";
+    
+    Item* animationFrameItem = [[Item alloc] initWithTitle:@"AnimationFrame"];
+    animationFrameItem.viewController = @"AnimationFrameViewController";
+    
     // Animtion end
     Item* animationItem = [[Item alloc] initWithTitle:@"Animation"];
-    animationItem.children = @[animationNormalItem, animationTransformItem, animationCurveItem, animationSpringItem];
+    animationItem.children = @[animationNormalItem, animationTransformItem, animationCurveItem, animationSpringItem,
+                               animationTranstionItem, animationFrameItem];
 
     Item* applicationItem = [[Item alloc] initWithTitle:@"Application"];
     applicationItem.children = @[safeAreaItem, animationItem];
