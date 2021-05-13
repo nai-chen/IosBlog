@@ -64,6 +64,10 @@
     Item* uiFontItem = [[Item alloc] initWithTitle:@"UIFont"];
     uiFontItem.children = @[uiSystemFontItem, uiFontFamilyItem, uiPreferredFontItem];
     
+    // UserDefaults
+    Item* userDefaultsItem = [[Item alloc] initWithTitle:@"UserDefaults"];
+    userDefaultsItem.viewController = @"NSUserDefaultsViewController";
+    
     // AttributeString
     Item* attributeStringNormalItem = [[Item alloc] initWithTitle:@"AttributeStringNormal"];
     attributeStringNormalItem.viewController = @"AttributeStringNormalViewController";
@@ -92,7 +96,7 @@
     urlSessionItem.viewController = @"NSURLSessionViewController";
     
     Item* basicItem = [[Item alloc] initWithTitle:@"Basic"];
-    basicItem.children = @[uiFontItem, attributeStringItem, uiColorItem, notificationCenterItem,
+    basicItem.children = @[uiFontItem, userDefaultsItem, attributeStringItem, uiColorItem, notificationCenterItem,
                            urlConnectionItem, urlSessionItem];
     
     return basicItem;
