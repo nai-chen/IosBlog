@@ -63,6 +63,9 @@
 		0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476AB86263BE45A00EAEADE /* NSURLConnectionViewController.m */; };
 		0476AB8D263BEF8E00EAEADE /* NSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476AB8C263BEF8E00EAEADE /* NSURLSessionViewController.m */; };
 		0476AB95263BFAC200EAEADE /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476AB94263BFAC200EAEADE /* AFNetworkingViewController.m */; };
+		0477063E264CFA11004ED1AA /* LayerAnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477063D264CFA11004ED1AA /* LayerAnimationNormalViewController.m */; };
+		04770645264CFF79004ED1AA /* LayerAnimationTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770644264CFF79004ED1AA /* LayerAnimationTransactionViewController.m */; };
+		04770649264D007E004ED1AA /* LayerAnimationCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770648264D007E004ED1AA /* LayerAnimationCustomViewController.m */; };
 		047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D16261EA547001F4FA1 /* UIStepperViewController.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
@@ -194,6 +197,13 @@
 		0476AB8C263BEF8E00EAEADE /* NSURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionViewController.m; sourceTree = "<group>"; };
 		0476AB93263BFAC200EAEADE /* AFNetworkingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
 		0476AB94263BFAC200EAEADE /* AFNetworkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
+		0477063C264CFA11004ED1AA /* LayerAnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerAnimationNormalViewController.h; sourceTree = "<group>"; };
+		0477063D264CFA11004ED1AA /* LayerAnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerAnimationNormalViewController.m; sourceTree = "<group>"; };
+		04770640264CFA68004ED1AA /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		04770643264CFF79004ED1AA /* LayerAnimationTransactionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerAnimationTransactionViewController.h; sourceTree = "<group>"; };
+		04770644264CFF79004ED1AA /* LayerAnimationTransactionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerAnimationTransactionViewController.m; sourceTree = "<group>"; };
+		04770647264D007E004ED1AA /* LayerAnimationCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerAnimationCustomViewController.h; sourceTree = "<group>"; };
+		04770648264D007E004ED1AA /* LayerAnimationCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerAnimationCustomViewController.m; sourceTree = "<group>"; };
 		047F1D15261EA547001F4FA1 /* UIStepperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStepperViewController.h; sourceTree = "<group>"; };
 		047F1D16261EA547001F4FA1 /* UIStepperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStepperViewController.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
@@ -345,11 +355,11 @@
 		045F305D256FA5D700DA31BC /* Basic */ = {
 			isa = PBXGroup;
 			children = (
-				0476AB90263BEF9900EAEADE /* NSURLSession */,
-				0476AB84263BE42300EAEADE /* NSURLConnection */,
-				045F3060256FA60800DA31BC /* UIColor */,
-				045F305F256FA5FE00DA31BC /* NSNotificationCenter */,
 				045F305E256FA5F200DA31BC /* AttributeString */,
+				045F305F256FA5FE00DA31BC /* NSNotificationCenter */,
+				045F3060256FA60800DA31BC /* UIColor */,
+				0476AB84263BE42300EAEADE /* NSURLConnection */,
+				0476AB90263BEF9900EAEADE /* NSURLSession */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -386,25 +396,25 @@
 		045F3071256FA6CD00DA31BC /* Widget */ = {
 			isa = PBXGroup;
 			children = (
-				044A7FBF2625917A00F97EF7 /* UICollectionView */,
-				044A7FAC26252C0D00F97EF7 /* UIScrollView */,
-				04EC5BC626203F12008A4667 /* UIAlertController */,
-				04EC5BA9261FEEC0008A4667 /* UIPickerView */,
-				047F1D1F261EFCCF001F4FA1 /* UIDatePicker */,
-				047F1D14261EA539001F4FA1 /* UIStepper */,
-				0462378A261DB9E70034D421 /* UIProgressView */,
-				04623784261DB28A0034D421 /* UIActivityIndicatorView */,
-				04623778261D5D460034D421 /* UISlider */,
-				04CBE2FC261C4B1B0068982B /* UISegmentedControl */,
-				04213F9C2617050F00A27650 /* UIPageControl */,
-				04015F772615D2E900E2EA46 /* UISwitch */,
-				04F5639C25C13881006798D5 /* UITextView */,
-				045F3077256FA70800DA31BC /* UIView */,
-				045F3076256FA70000DA31BC /* UITextField */,
-				045F3075256FA6F500DA31BC /* UILabel */,
-				045F3074256FA6EC00DA31BC /* UIImageView */,
-				045F3073256FA6E400DA31BC /* UIControl */,
 				045F3072256FA6DA00DA31BC /* UIButton */,
+				045F3073256FA6E400DA31BC /* UIControl */,
+				045F3074256FA6EC00DA31BC /* UIImageView */,
+				045F3075256FA6F500DA31BC /* UILabel */,
+				045F3076256FA70000DA31BC /* UITextField */,
+				045F3077256FA70800DA31BC /* UIView */,
+				04F5639C25C13881006798D5 /* UITextView */,
+				04015F772615D2E900E2EA46 /* UISwitch */,
+				04213F9C2617050F00A27650 /* UIPageControl */,
+				04CBE2FC261C4B1B0068982B /* UISegmentedControl */,
+				04623778261D5D460034D421 /* UISlider */,
+				04623784261DB28A0034D421 /* UIActivityIndicatorView */,
+				0462378A261DB9E70034D421 /* UIProgressView */,
+				047F1D14261EA539001F4FA1 /* UIStepper */,
+				047F1D1F261EFCCF001F4FA1 /* UIDatePicker */,
+				04EC5BA9261FEEC0008A4667 /* UIPickerView */,
+				04EC5BC626203F12008A4667 /* UIAlertController */,
+				044A7FAC26252C0D00F97EF7 /* UIScrollView */,
+				044A7FBF2625917A00F97EF7 /* UICollectionView */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -512,6 +522,7 @@
 			children = (
 				045F3059256FA55A00DA31BC /* UIColor+Tool.h */,
 				045F3058256FA55A00DA31BC /* UIColor+Tool.m */,
+				04770640264CFA68004ED1AA /* Tool.h */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -546,8 +557,10 @@
 		04701A512626F29300957DC4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				04C4ED392643E57B007C35EF /* Animation */,
 				04701A522626F2AB00957DC4 /* SafeArea */,
+				04C4ED392643E57B007C35EF /* Animation */,
+				0477063B264CF9F0004ED1AA /* LayerAnimation */,
+				0477063A264CF891004ED1AA /* CoreAnimation */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -586,6 +599,26 @@
 				0476AB94263BFAC200EAEADE /* AFNetworkingViewController.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		0477063A264CF891004ED1AA /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		0477063B264CF9F0004ED1AA /* LayerAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0477063C264CFA11004ED1AA /* LayerAnimationNormalViewController.h */,
+				0477063D264CFA11004ED1AA /* LayerAnimationNormalViewController.m */,
+				04770643264CFF79004ED1AA /* LayerAnimationTransactionViewController.h */,
+				04770644264CFF79004ED1AA /* LayerAnimationTransactionViewController.m */,
+				04770647264D007E004ED1AA /* LayerAnimationCustomViewController.h */,
+				04770648264D007E004ED1AA /* LayerAnimationCustomViewController.m */,
+			);
+			path = LayerAnimation;
 			sourceTree = "<group>";
 		};
 		047F1D14261EA539001F4FA1 /* UIStepper */ = {
@@ -812,6 +845,7 @@
 				045F30AA256FA88900DA31BC /* UIControlViewViewController.m in Sources */,
 				04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */,
 				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
+				04770649264D007E004ED1AA /* LayerAnimationCustomViewController.m in Sources */,
 				045F309A256FA85900DA31BC /* UILabelOtherViewController.m in Sources */,
 				04EC5BC926203F22008A4667 /* UIAlertControllerViewController.m in Sources */,
 				045F306E256FA69C00DA31BC /* AttributeStringNormalViewController.m in Sources */,
@@ -829,6 +863,7 @@
 				045F306D256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m in Sources */,
 				045F3082256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m in Sources */,
 				04EC5BBF2620281A008A4667 /* UIDatePickerDateAndTimeViewController.m in Sources */,
+				04770645264CFF79004ED1AA /* LayerAnimationTransactionViewController.m in Sources */,
 				04701A4E2626C2A100957DC4 /* UICollectionViewLayoutViewController.m in Sources */,
 				045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */,
 				04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */,
@@ -873,6 +908,7 @@
 				04701A552626F2BF00957DC4 /* SafeAreaNormalViewController.m in Sources */,
 				04623787261DB2A10034D421 /* UIActivityIndicatorViewController.m in Sources */,
 				045F305A256FA55A00DA31BC /* UIColor+Tool.m in Sources */,
+				0477063E264CFA11004ED1AA /* LayerAnimationNormalViewController.m in Sources */,
 				04EC5BB726201B96008A4667 /* UIDatePickerDateViewController.m in Sources */,
 				045256C526281C3B00E7D8CF /* UICollectionViewCircleLayoutViewController.m in Sources */,
 				045F308F256FA82800DA31BC /* UITextFieldNotificationViewController.m in Sources */,

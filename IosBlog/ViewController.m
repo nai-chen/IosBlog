@@ -318,11 +318,24 @@
     Item* animationItem = [[Item alloc] initWithTitle:@"Animation"];
     animationItem.children = @[animationNormalItem, animationTransformItem, animationCurveItem, animationSpringItem,
                                animationTranstionItem, animationFrameItem];
-
-    Item* applicationItem = [[Item alloc] initWithTitle:@"Application"];
-    applicationItem.children = @[safeAreaItem, animationItem];
-
     
+    // Layer Animation
+    Item* layerAnimationNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    layerAnimationNormalItem.viewController = @"LayerAnimationNormalViewController";
+    
+    Item* layerAnimationTransactionItem = [[Item alloc] initWithTitle:@"Transaction"];
+    layerAnimationTransactionItem.viewController = @"LayerAnimationTransactionViewController";
+    
+    Item* layerAnimationCustomItem = [[Item alloc] initWithTitle:@"Custom"];
+    layerAnimationCustomItem.viewController = @"LayerAnimationCustomViewController";
+    
+    // Layer Animtion end
+    Item* layerAnimationItem = [[Item alloc] initWithTitle:@"LayerAnimation"];
+    layerAnimationItem.children = @[layerAnimationNormalItem, layerAnimationTransactionItem, layerAnimationCustomItem];
+                               
+    Item* applicationItem = [[Item alloc] initWithTitle:@"Application"];
+    applicationItem.children = @[safeAreaItem, animationItem, layerAnimationItem];
+
     return applicationItem;
 }
 
