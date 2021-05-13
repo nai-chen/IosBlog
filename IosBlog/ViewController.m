@@ -50,6 +50,20 @@
 }
 
 -(Item*) basicItem {
+    // UIFont
+    Item* uiSystemFontItem = [[Item alloc] initWithTitle:@"UISystemFont"];
+    uiSystemFontItem.viewController = @"UISystemFontViewController";
+    
+    Item* uiFontFamilyItem = [[Item alloc] initWithTitle:@"UIFontFamily"];
+    uiFontFamilyItem.viewController = @"UIFontFamilyViewController";
+    
+    Item* uiPreferredFontItem = [[Item alloc] initWithTitle:@"UIPreferredFont"];
+    uiPreferredFontItem.viewController = @"UIFontPreferredFontViewController";
+    
+    // UIFont end
+    Item* uiFontItem = [[Item alloc] initWithTitle:@"UIFont"];
+    uiFontItem.children = @[uiSystemFontItem, uiFontFamilyItem, uiPreferredFontItem];
+    
     // AttributeString
     Item* attributeStringNormalItem = [[Item alloc] initWithTitle:@"AttributeStringNormal"];
     attributeStringNormalItem.viewController = @"AttributeStringNormalViewController";
@@ -78,8 +92,8 @@
     urlSessionItem.viewController = @"NSURLSessionViewController";
     
     Item* basicItem = [[Item alloc] initWithTitle:@"Basic"];
-    basicItem.children = @[attributeStringItem, uiColorItem, notificationCenterItem, urlConnectionItem,
-                urlSessionItem];
+    basicItem.children = @[uiFontItem, attributeStringItem, uiColorItem, notificationCenterItem,
+                           urlConnectionItem, urlSessionItem];
     
     return basicItem;
 }

@@ -1,5 +1,5 @@
 //
-//  CATransitionViewController.h
+//  UIFontFamilyViewController.h
 //  IosBlog
 //
 //  Created by PeterChen on 2021/5/13.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CATransitionViewController : UIViewController
+@interface UIFontFamilyViewController : UIViewController
 
 @end
 
