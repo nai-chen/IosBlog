@@ -332,9 +332,26 @@
     // Layer Animtion end
     Item* layerAnimationItem = [[Item alloc] initWithTitle:@"LayerAnimation"];
     layerAnimationItem.children = @[layerAnimationNormalItem, layerAnimationTransactionItem, layerAnimationCustomItem];
+    
+    // Core Animation
+    Item* basicAnimationItem = [[Item alloc] initWithTitle:@"CABasicAnimation"];
+    basicAnimationItem.viewController = @"CABasicAnimationViewController";
+    
+    Item* keyframeAnimationValueItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Value"];
+    keyframeAnimationValueItem.viewController = @"CAKeyframeAnimationValueViewController";
+    
+    Item* keyframeAnimationPathItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Path"];
+    keyframeAnimationPathItem.viewController = @"CAKeyframeAnimationPathViewController";
+    
+    Item* animationGroupPathItem = [[Item alloc] initWithTitle:@"CAAnimationGroup"];
+    animationGroupPathItem.viewController = @"CAAnimationGroupViewController";
+    
+    // Core Animation end
+    Item* coreAnimationItem = [[Item alloc] initWithTitle:@"CoreAnimation"];
+    coreAnimationItem.children = @[basicAnimationItem, keyframeAnimationValueItem, keyframeAnimationPathItem, animationGroupPathItem];
                                
     Item* applicationItem = [[Item alloc] initWithTitle:@"Application"];
-    applicationItem.children = @[safeAreaItem, animationItem, layerAnimationItem];
+    applicationItem.children = @[safeAreaItem, animationItem, layerAnimationItem, coreAnimationItem];
 
     return applicationItem;
 }

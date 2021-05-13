@@ -66,6 +66,11 @@
 		0477063E264CFA11004ED1AA /* LayerAnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477063D264CFA11004ED1AA /* LayerAnimationNormalViewController.m */; };
 		04770645264CFF79004ED1AA /* LayerAnimationTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770644264CFF79004ED1AA /* LayerAnimationTransactionViewController.m */; };
 		04770649264D007E004ED1AA /* LayerAnimationCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770648264D007E004ED1AA /* LayerAnimationCustomViewController.m */; };
+		0477064D264D0254004ED1AA /* CABasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477064C264D0254004ED1AA /* CABasicAnimationViewController.m */; };
+		04770651264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770650264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m */; };
+		04770656264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770655264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m */; };
+		0477065A264D16FF004ED1AA /* CAAnimationGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770659264D16FF004ED1AA /* CAAnimationGroupViewController.m */; };
+		0477065E264D1A71004ED1AA /* CATransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477065D264D1A71004ED1AA /* CATransitionViewController.m */; };
 		047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D16261EA547001F4FA1 /* UIStepperViewController.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
@@ -204,6 +209,16 @@
 		04770644264CFF79004ED1AA /* LayerAnimationTransactionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerAnimationTransactionViewController.m; sourceTree = "<group>"; };
 		04770647264D007E004ED1AA /* LayerAnimationCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerAnimationCustomViewController.h; sourceTree = "<group>"; };
 		04770648264D007E004ED1AA /* LayerAnimationCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerAnimationCustomViewController.m; sourceTree = "<group>"; };
+		0477064B264D0254004ED1AA /* CABasicAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationViewController.h; sourceTree = "<group>"; };
+		0477064C264D0254004ED1AA /* CABasicAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationViewController.m; sourceTree = "<group>"; };
+		0477064F264D090B004ED1AA /* CAKeyframeAnimationValueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationValueViewController.h; sourceTree = "<group>"; };
+		04770650264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationValueViewController.m; sourceTree = "<group>"; };
+		04770654264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationPathViewController.h; sourceTree = "<group>"; };
+		04770655264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationPathViewController.m; sourceTree = "<group>"; };
+		04770658264D16FF004ED1AA /* CAAnimationGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAAnimationGroupViewController.h; sourceTree = "<group>"; };
+		04770659264D16FF004ED1AA /* CAAnimationGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAAnimationGroupViewController.m; sourceTree = "<group>"; };
+		0477065C264D1A71004ED1AA /* CATransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATransitionViewController.h; sourceTree = "<group>"; };
+		0477065D264D1A71004ED1AA /* CATransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATransitionViewController.m; sourceTree = "<group>"; };
 		047F1D15261EA547001F4FA1 /* UIStepperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStepperViewController.h; sourceTree = "<group>"; };
 		047F1D16261EA547001F4FA1 /* UIStepperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStepperViewController.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
@@ -604,6 +619,16 @@
 		0477063A264CF891004ED1AA /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				0477064B264D0254004ED1AA /* CABasicAnimationViewController.h */,
+				0477064C264D0254004ED1AA /* CABasicAnimationViewController.m */,
+				0477064F264D090B004ED1AA /* CAKeyframeAnimationValueViewController.h */,
+				04770650264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m */,
+				04770654264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.h */,
+				04770655264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m */,
+				04770658264D16FF004ED1AA /* CAAnimationGroupViewController.h */,
+				04770659264D16FF004ED1AA /* CAAnimationGroupViewController.m */,
+				0477065C264D1A71004ED1AA /* CATransitionViewController.h */,
+				0477065D264D1A71004ED1AA /* CATransitionViewController.m */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -857,6 +882,7 @@
 				045F3081256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m in Sources */,
 				045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */,
 				045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */,
+				04770651264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m in Sources */,
 				04623776261D520E0034D421 /* UISegmentedControlEventViewController.m in Sources */,
 				045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */,
 				047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */,
@@ -864,6 +890,7 @@
 				045F3082256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m in Sources */,
 				04EC5BBF2620281A008A4667 /* UIDatePickerDateAndTimeViewController.m in Sources */,
 				04770645264CFF79004ED1AA /* LayerAnimationTransactionViewController.m in Sources */,
+				0477065A264D16FF004ED1AA /* CAAnimationGroupViewController.m in Sources */,
 				04701A4E2626C2A100957DC4 /* UICollectionViewLayoutViewController.m in Sources */,
 				045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */,
 				04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */,
@@ -903,8 +930,10 @@
 				045256C1262819F200E7D8CF /* MyLayout.m in Sources */,
 				045F30B3256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m in Sources */,
 				045F30B4256FA89A00DA31BC /* UIButtonNormalViewController.m in Sources */,
+				0477065E264D1A71004ED1AA /* CATransitionViewController.m in Sources */,
 				04623782261D7A4E0034D421 /* UISliderViewController.m in Sources */,
 				045F3067256FA66A00DA31BC /* NSNoticationViewController.m in Sources */,
+				04770656264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m in Sources */,
 				04701A552626F2BF00957DC4 /* SafeAreaNormalViewController.m in Sources */,
 				04623787261DB2A10034D421 /* UIActivityIndicatorViewController.m in Sources */,
 				045F305A256FA55A00DA31BC /* UIColor+Tool.m in Sources */,
@@ -912,6 +941,7 @@
 				04EC5BB726201B96008A4667 /* UIDatePickerDateViewController.m in Sources */,
 				045256C526281C3B00E7D8CF /* UICollectionViewCircleLayoutViewController.m in Sources */,
 				045F308F256FA82800DA31BC /* UITextFieldNotificationViewController.m in Sources */,
+				0477064D264D0254004ED1AA /* CABasicAnimationViewController.m in Sources */,
 				045F309D256FA85900DA31BC /* UILabelBoundsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
