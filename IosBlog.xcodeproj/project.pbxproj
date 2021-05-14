@@ -428,12 +428,12 @@
 		045F3071256FA6CD00DA31BC /* Widget */ = {
 			isa = PBXGroup;
 			children = (
-				045F3072256FA6DA00DA31BC /* UIButton */,
-				045F3073256FA6E400DA31BC /* UIControl */,
-				045F3074256FA6EC00DA31BC /* UIImageView */,
-				045F3075256FA6F500DA31BC /* UILabel */,
-				045F3076256FA70000DA31BC /* UITextField */,
 				045F3077256FA70800DA31BC /* UIView */,
+				045F3075256FA6F500DA31BC /* UILabel */,
+				045F3074256FA6EC00DA31BC /* UIImageView */,
+				045F3073256FA6E400DA31BC /* UIControl */,
+				045F3072256FA6DA00DA31BC /* UIButton */,
+				045F3076256FA70000DA31BC /* UITextField */,
 				04F5639C25C13881006798D5 /* UITextView */,
 				04015F772615D2E900E2EA46 /* UISwitch */,
 				04213F9C2617050F00A27650 /* UIPageControl */,
@@ -504,14 +504,14 @@
 		045F3076256FA70000DA31BC /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
-				045F3088256FA82800DA31BC /* UITextFieldKeyBoardViewController.h */,
-				045F3085256FA82800DA31BC /* UITextFieldKeyBoardViewController.m */,
 				045F308B256FA82800DA31BC /* UITextFieldNormalViewController.h */,
 				045F3086256FA82800DA31BC /* UITextFieldNormalViewController.m */,
-				045F3087256FA82800DA31BC /* UITextFieldNotificationViewController.h */,
-				045F3089256FA82800DA31BC /* UITextFieldNotificationViewController.m */,
+				045F3088256FA82800DA31BC /* UITextFieldKeyBoardViewController.h */,
+				045F3085256FA82800DA31BC /* UITextFieldKeyBoardViewController.m */,
 				045F308C256FA82800DA31BC /* UITextFieldReturnTypeViewController.h */,
 				045F308A256FA82800DA31BC /* UITextFieldReturnTypeViewController.m */,
+				045F3087256FA82800DA31BC /* UITextFieldNotificationViewController.h */,
+				045F3089256FA82800DA31BC /* UITextFieldNotificationViewController.m */,
 			);
 			path = UITextField;
 			sourceTree = "<group>";
