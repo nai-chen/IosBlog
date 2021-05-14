@@ -375,6 +375,10 @@
 }
 
 -(Item*) thirdItem {
+    // MJExtension
+    Item* mjExtensionItem = [[Item alloc] initWithTitle:@"MJExtension"];
+    mjExtensionItem.viewController = @"MJExtensionViewController";
+    
     // SVProgressHUD
     Item* svProgressHUDNormalItem = [[Item alloc] initWithTitle:@"SVProgressHUDNormal"];
     svProgressHUDNormalItem.viewController = @"SVProgressHUDNormalViewController";
@@ -388,7 +392,7 @@
     afNetworkingItem.viewController = @"AFNetworkingViewController";
     
     Item* thirdItem = [[Item alloc] initWithTitle: @"Third"];
-    thirdItem.children = @[svProgressHUDItem, afNetworkingItem];
+    thirdItem.children = @[mjExtensionItem, svProgressHUDItem, afNetworkingItem];
     
     return thirdItem;
 }

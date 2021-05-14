@@ -75,6 +75,8 @@
 		04770672264D29BD004ED1AA /* UIFontPreferredFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770671264D29BD004ED1AA /* UIFontPreferredFontViewController.m */; };
 		04770677264D2E4B004ED1AA /* NSUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770676264D2E4B004ED1AA /* NSUserDefaultsViewController.m */; };
 		047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D16261EA547001F4FA1 /* UIStepperViewController.m */; };
+		04879A18264E17C7004FCD92 /* MJExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A17264E17C7004FCD92 /* MJExtensionViewController.m */; };
+		04879A32264E1DD7004FCD92 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A31264E1DD7004FCD92 /* Model.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -230,6 +232,10 @@
 		04770676264D2E4B004ED1AA /* NSUserDefaultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsViewController.m; sourceTree = "<group>"; };
 		047F1D15261EA547001F4FA1 /* UIStepperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStepperViewController.h; sourceTree = "<group>"; };
 		047F1D16261EA547001F4FA1 /* UIStepperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStepperViewController.m; sourceTree = "<group>"; };
+		04879A16264E17C7004FCD92 /* MJExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionViewController.h; sourceTree = "<group>"; };
+		04879A17264E17C7004FCD92 /* MJExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJExtensionViewController.m; sourceTree = "<group>"; };
+		04879A30264E1DD7004FCD92 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		04879A31264E1DD7004FCD92 /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
 		04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNormalViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -528,6 +534,7 @@
 		045F30B7256FA8C500DA31BC /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				04879A15264E17BB004FCD92 /* MJExtension */,
 				0476AB92263BFAB500EAEADE /* AFNetworking */,
 				045F30B8256FA8D200DA31BC /* SVProgressHUD */,
 			);
@@ -699,6 +706,17 @@
 				04EC5BC326202962008A4667 /* UIDatePickerCountDownTimerViewController.m */,
 			);
 			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
+		04879A15264E17BB004FCD92 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				04879A16264E17C7004FCD92 /* MJExtensionViewController.h */,
+				04879A17264E17C7004FCD92 /* MJExtensionViewController.m */,
+				04879A30264E1DD7004FCD92 /* Model.h */,
+				04879A31264E1DD7004FCD92 /* Model.m */,
+			);
+			path = MJExtension;
 			sourceTree = "<group>";
 		};
 		04C4ED392643E57B007C35EF /* Animation */ = {
@@ -925,6 +943,7 @@
 				0477065A264D16FF004ED1AA /* CAAnimationGroupViewController.m in Sources */,
 				04701A4E2626C2A100957DC4 /* UICollectionViewLayoutViewController.m in Sources */,
 				045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */,
+				04879A18264E17C7004FCD92 /* MJExtensionViewController.m in Sources */,
 				04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */,
 				04639EF3264926A2008AD774 /* AnimationSpringViewController.m in Sources */,
 				04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */,
@@ -960,6 +979,7 @@
 				0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */,
 				04CD2FB2264539530034360C /* AnimationCurveViewController.m in Sources */,
 				04639EEF2648D1C9008AD774 /* AnimationTransformViewController.m in Sources */,
+				04879A32264E1DD7004FCD92 /* Model.m in Sources */,
 				045256C1262819F200E7D8CF /* MyLayout.m in Sources */,
 				045F30B3256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m in Sources */,
 				045F30B4256FA89A00DA31BC /* UIButtonNormalViewController.m in Sources */,
