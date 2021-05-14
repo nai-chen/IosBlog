@@ -77,6 +77,8 @@
 		047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D16261EA547001F4FA1 /* UIStepperViewController.m */; };
 		04879A18264E17C7004FCD92 /* MJExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A17264E17C7004FCD92 /* MJExtensionViewController.m */; };
 		04879A32264E1DD7004FCD92 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A31264E1DD7004FCD92 /* Model.m */; };
+		04879A3A264E78E1004FCD92 /* 兰亭黑简.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04879A39264E788D004FCD92 /* 兰亭黑简.TTF */; };
+		04879A3E264E797E004FCD92 /* UIFontLangTingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A3D264E797E004FCD92 /* UIFontLangTingViewController.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -236,6 +238,9 @@
 		04879A17264E17C7004FCD92 /* MJExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJExtensionViewController.m; sourceTree = "<group>"; };
 		04879A30264E1DD7004FCD92 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		04879A31264E1DD7004FCD92 /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		04879A39264E788D004FCD92 /* 兰亭黑简.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "兰亭黑简.TTF"; sourceTree = "<group>"; };
+		04879A3C264E797E004FCD92 /* UIFontLangTingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFontLangTingViewController.h; sourceTree = "<group>"; };
+		04879A3D264E797E004FCD92 /* UIFontLangTingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFontLangTingViewController.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
 		04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNormalViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -342,6 +347,7 @@
 		045F302C256FA33500DA31BC = {
 			isa = PBXGroup;
 			children = (
+				04879A38264E787B004FCD92 /* Font */,
 				045F3037256FA33500DA31BC /* IosBlog */,
 				045F3036256FA33500DA31BC /* Products */,
 				5005C2E3C95CF408F7CF89B7 /* Pods */,
@@ -671,6 +677,8 @@
 				0477066D264D25E5004ED1AA /* UIFontFamilyViewController.m */,
 				04770670264D29BD004ED1AA /* UIFontPreferredFontViewController.h */,
 				04770671264D29BD004ED1AA /* UIFontPreferredFontViewController.m */,
+				04879A3C264E797E004FCD92 /* UIFontLangTingViewController.h */,
+				04879A3D264E797E004FCD92 /* UIFontLangTingViewController.m */,
 			);
 			path = UIFont;
 			sourceTree = "<group>";
@@ -717,6 +725,14 @@
 				04879A31264E1DD7004FCD92 /* Model.m */,
 			);
 			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		04879A38264E787B004FCD92 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				04879A39264E788D004FCD92 /* 兰亭黑简.TTF */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		04C4ED392643E57B007C35EF /* Animation */ = {
@@ -859,6 +875,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04879A3A264E78E1004FCD92 /* 兰亭黑简.TTF in Resources */,
 				045F3048256FA33600DA31BC /* LaunchScreen.storyboard in Resources */,
 				045F3045256FA33600DA31BC /* Assets.xcassets in Resources */,
 				045F3043256FA33500DA31BC /* Main.storyboard in Resources */,
@@ -971,6 +988,7 @@
 				045256BC262819B900E7D8CF /* UICollectionViewFlowLayoutViewController.m in Sources */,
 				04EC5BAC261FEED7008A4667 /* UIPickerViewController.m in Sources */,
 				045256D126281D8200E7D8CF /* MyWheelLayout.m in Sources */,
+				04879A3E264E797E004FCD92 /* UIFontLangTingViewController.m in Sources */,
 				04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */,
 				04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */,
 				04623793261DBB790034D421 /* UIProgressViewController.m in Sources */,

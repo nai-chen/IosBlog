@@ -60,9 +60,12 @@
     Item* uiPreferredFontItem = [[Item alloc] initWithTitle:@"UIPreferredFont"];
     uiPreferredFontItem.viewController = @"UIFontPreferredFontViewController";
     
+    Item* uiFontLangTingItem = [[Item alloc] initWithTitle:@"UIFontLangTing"];
+    uiFontLangTingItem.viewController = @"UIFontLangTingViewController";
+    
     // UIFont end
     Item* uiFontItem = [[Item alloc] initWithTitle:@"UIFont"];
-    uiFontItem.children = @[uiSystemFontItem, uiFontFamilyItem, uiPreferredFontItem];
+    uiFontItem.children = @[uiSystemFontItem, uiFontFamilyItem, uiPreferredFontItem, uiFontLangTingItem];
     
     // UserDefaults
     Item* userDefaultsItem = [[Item alloc] initWithTitle:@"UserDefaults"];
