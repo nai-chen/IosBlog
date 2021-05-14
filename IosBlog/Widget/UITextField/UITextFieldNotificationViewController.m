@@ -66,10 +66,10 @@
     float textFieldHeight = CGRectGetMaxY(self.textField.frame);
     NSLog(@"textField height = %f", textFieldHeight);
     
-    CGFloat height = self.view.frame.size.height - textFieldHeight;
-    CGFloat distance = height - 5.0 - keyboardHeight;
+    CGFloat bottomHeight = self.view.frame.size.height - textFieldHeight;
+    CGFloat distance = bottomHeight - 5.0 - keyboardHeight;
     
-    NSLog(@"height = %f", height);
+    NSLog(@"bottomHeight = %f", bottomHeight);
     NSLog(@"distance = %f", distance);
 
     if (distance < 0) {
