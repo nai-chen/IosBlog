@@ -79,6 +79,9 @@
 		04879A32264E1DD7004FCD92 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A31264E1DD7004FCD92 /* Model.m */; };
 		04879A3A264E78E1004FCD92 /* 兰亭黑简.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04879A39264E788D004FCD92 /* 兰亭黑简.TTF */; };
 		04879A3E264E797E004FCD92 /* UIFontLangTingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A3D264E797E004FCD92 /* UIFontLangTingViewController.m */; };
+		049B579026535E66001641E4 /* SandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B578F26535E66001641E4 /* SandboxViewController.m */; };
+		049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B579426539CE4001641E4 /* NSKeyedArchiverViewController.m */; };
+		049B57992653A729001641E4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B57982653A729001641E4 /* Person.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -241,6 +244,12 @@
 		04879A39264E788D004FCD92 /* 兰亭黑简.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "兰亭黑简.TTF"; sourceTree = "<group>"; };
 		04879A3C264E797E004FCD92 /* UIFontLangTingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFontLangTingViewController.h; sourceTree = "<group>"; };
 		04879A3D264E797E004FCD92 /* UIFontLangTingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFontLangTingViewController.m; sourceTree = "<group>"; };
+		049B578E26535E66001641E4 /* SandboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandboxViewController.h; sourceTree = "<group>"; };
+		049B578F26535E66001641E4 /* SandboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxViewController.m; sourceTree = "<group>"; };
+		049B579326539CE4001641E4 /* NSKeyedArchiverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSKeyedArchiverViewController.h; sourceTree = "<group>"; };
+		049B579426539CE4001641E4 /* NSKeyedArchiverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSKeyedArchiverViewController.m; sourceTree = "<group>"; };
+		049B57972653A729001641E4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		049B57982653A729001641E4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
 		04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNormalViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -398,6 +407,7 @@
 				045F3060256FA60800DA31BC /* UIColor */,
 				0476AB84263BE42300EAEADE /* NSURLConnection */,
 				0476AB90263BEF9900EAEADE /* NSURLSession */,
+				049B579226539CB0001641E4 /* NSKeyedArchiver */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -600,6 +610,7 @@
 				04C4ED392643E57B007C35EF /* Animation */,
 				0477063B264CF9F0004ED1AA /* LayerAnimation */,
 				0477063A264CF891004ED1AA /* CoreAnimation */,
+				049B578D26535E47001641E4 /* Sandbox */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -733,6 +744,26 @@
 				04879A39264E788D004FCD92 /* 兰亭黑简.TTF */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		049B578D26535E47001641E4 /* Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				049B578E26535E66001641E4 /* SandboxViewController.h */,
+				049B578F26535E66001641E4 /* SandboxViewController.m */,
+			);
+			path = Sandbox;
+			sourceTree = "<group>";
+		};
+		049B579226539CB0001641E4 /* NSKeyedArchiver */ = {
+			isa = PBXGroup;
+			children = (
+				049B579326539CE4001641E4 /* NSKeyedArchiverViewController.h */,
+				049B579426539CE4001641E4 /* NSKeyedArchiverViewController.m */,
+				049B57972653A729001641E4 /* Person.h */,
+				049B57982653A729001641E4 /* Person.m */,
+			);
+			path = NSKeyedArchiver;
 			sourceTree = "<group>";
 		};
 		04C4ED392643E57B007C35EF /* Animation */ = {
@@ -960,6 +991,7 @@
 				0477065A264D16FF004ED1AA /* CAAnimationGroupViewController.m in Sources */,
 				04701A4E2626C2A100957DC4 /* UICollectionViewLayoutViewController.m in Sources */,
 				045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */,
+				049B579026535E66001641E4 /* SandboxViewController.m in Sources */,
 				04879A18264E17C7004FCD92 /* MJExtensionViewController.m in Sources */,
 				04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */,
 				04639EF3264926A2008AD774 /* AnimationSpringViewController.m in Sources */,
@@ -986,6 +1018,7 @@
 				04EC5BC426202962008A4667 /* UIDatePickerCountDownTimerViewController.m in Sources */,
 				045F3083256FA7DC00DA31BC /* UIViewFrameViewController.m in Sources */,
 				045256BC262819B900E7D8CF /* UICollectionViewFlowLayoutViewController.m in Sources */,
+				049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */,
 				04EC5BAC261FEED7008A4667 /* UIPickerViewController.m in Sources */,
 				045256D126281D8200E7D8CF /* MyWheelLayout.m in Sources */,
 				04879A3E264E797E004FCD92 /* UIFontLangTingViewController.m in Sources */,
@@ -1012,6 +1045,7 @@
 				0477063E264CFA11004ED1AA /* LayerAnimationNormalViewController.m in Sources */,
 				04EC5BB726201B96008A4667 /* UIDatePickerDateViewController.m in Sources */,
 				045256C526281C3B00E7D8CF /* UICollectionViewCircleLayoutViewController.m in Sources */,
+				049B57992653A729001641E4 /* Person.m in Sources */,
 				045F308F256FA82800DA31BC /* UITextFieldNotificationViewController.m in Sources */,
 				0477064D264D0254004ED1AA /* CABasicAnimationViewController.m in Sources */,
 				045F309D256FA85900DA31BC /* UILabelBoundsViewController.m in Sources */,

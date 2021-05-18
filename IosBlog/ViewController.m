@@ -98,9 +98,13 @@
     Item* urlSessionItem = [[Item alloc] initWithTitle:@"NSURLSession"];
     urlSessionItem.viewController = @"NSURLSessionViewController";
     
+    // NSKeyedArchiver
+    Item* keyedarchiverItem = [[Item alloc] initWithTitle:@"NSKeyedArchiver"];
+    keyedarchiverItem.viewController = @"NSKeyedArchiverViewController";
+    
     Item* basicItem = [[Item alloc] initWithTitle:@"Basic"];
     basicItem.children = @[uiFontItem, userDefaultsItem, attributeStringItem, uiColorItem, notificationCenterItem,
-                           urlConnectionItem, urlSessionItem];
+                           urlConnectionItem, urlSessionItem, keyedarchiverItem];
     
     return basicItem;
 }
@@ -370,9 +374,13 @@
     // Core Animation end
     Item* coreAnimationItem = [[Item alloc] initWithTitle:@"CoreAnimation"];
     coreAnimationItem.children = @[basicAnimationItem, keyframeAnimationValueItem, keyframeAnimationPathItem, animationGroupPathItem];
-                               
+    
+    Item* sandboxItem = [[Item alloc] initWithTitle:@"Sandbox"];
+    sandboxItem.viewController = @"SandboxViewController";
+    
+    // Application
     Item* applicationItem = [[Item alloc] initWithTitle:@"Application"];
-    applicationItem.children = @[safeAreaItem, animationItem, layerAnimationItem, coreAnimationItem];
+    applicationItem.children = @[safeAreaItem, animationItem, layerAnimationItem, coreAnimationItem, sandboxItem];
 
     return applicationItem;
 }
