@@ -378,9 +378,13 @@
     Item* sandboxItem = [[Item alloc] initWithTitle:@"Sandbox"];
     sandboxItem.viewController = @"SandboxViewController";
     
+    // Core Data
+    Item* coreDataItem = [[Item alloc] initWithTitle:@"CoreData"];
+    coreDataItem.viewController = @"CoreDataViewController";
+    
     // Application
     Item* applicationItem = [[Item alloc] initWithTitle:@"Application"];
-    applicationItem.children = @[safeAreaItem, animationItem, layerAnimationItem, coreAnimationItem, sandboxItem];
+    applicationItem.children = @[safeAreaItem, animationItem, layerAnimationItem, coreAnimationItem, sandboxItem, coreDataItem];
 
     return applicationItem;
 }

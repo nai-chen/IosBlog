@@ -41,7 +41,6 @@
 		045F3090256FA82800DA31BC /* UITextFieldReturnTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F308A256FA82800DA31BC /* UITextFieldReturnTypeViewController.m */; };
 		045F309A256FA85900DA31BC /* UILabelOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3094256FA85900DA31BC /* UILabelOtherViewController.m */; };
 		045F309B256FA85900DA31BC /* UILabelBreakModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3096256FA85900DA31BC /* UILabelBreakModeViewController.m */; };
-		045F309C256FA85900DA31BC /* UILabelTextAlignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3097256FA85900DA31BC /* UILabelTextAlignmentViewController.m */; };
 		045F309D256FA85900DA31BC /* UILabelBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F3099256FA85900DA31BC /* UILabelBoundsViewController.m */; };
 		045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F309F256FA87800DA31BC /* UIImageViewAnimationViewController.m */; };
 		045F30A4256FA87800DA31BC /* UIImageViewContentModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F30A2256FA87800DA31BC /* UIImageViewContentModeViewController.m */; };
@@ -82,6 +81,9 @@
 		049B579026535E66001641E4 /* SandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B578F26535E66001641E4 /* SandboxViewController.m */; };
 		049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B579426539CE4001641E4 /* NSKeyedArchiverViewController.m */; };
 		049B57992653A729001641E4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B57982653A729001641E4 /* Person.m */; };
+		04BD2C4E2654A6F100A03652 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04BD2C4C2654A6F100A03652 /* Model.xcdatamodeld */; };
+		04BD2C532654A93900A03652 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD2C522654A93900A03652 /* CoreDataViewController.m */; };
+		04BD2C9626550B9F00A03652 /* CoreDataContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD2C9526550B9F00A03652 /* CoreDataContainerViewController.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -250,6 +252,15 @@
 		049B579426539CE4001641E4 /* NSKeyedArchiverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSKeyedArchiverViewController.m; sourceTree = "<group>"; };
 		049B57972653A729001641E4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		049B57982653A729001641E4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		04BD2C4D2654A6F100A03652 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		04BD2C512654A93900A03652 /* CoreDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
+		04BD2C522654A93900A03652 /* CoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
+		04BD2C892654F92000A03652 /* Staff+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Staff+CoreDataProperties.m"; path = "/Users/mac/Desktop/GitHub/IosBlog/IosBlog/Application/CoreData/Staff+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		04BD2C8A2654F92000A03652 /* Staff+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Staff+CoreDataProperties.h"; path = "/Users/mac/Desktop/GitHub/IosBlog/IosBlog/Application/CoreData/Staff+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		04BD2C8B2654F92100A03652 /* Staff+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Staff+CoreDataClass.m"; path = "/Users/mac/Desktop/GitHub/IosBlog/IosBlog/Application/CoreData/Staff+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		04BD2C8C2654F92100A03652 /* Staff+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Staff+CoreDataClass.h"; path = "/Users/mac/Desktop/GitHub/IosBlog/IosBlog/Application/CoreData/Staff+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		04BD2C9426550B9F00A03652 /* CoreDataContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataContainerViewController.h; sourceTree = "<group>"; };
+		04BD2C9526550B9F00A03652 /* CoreDataContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataContainerViewController.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
 		04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNormalViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -393,6 +404,7 @@
 				045F3046256FA33600DA31BC /* LaunchScreen.storyboard */,
 				045F3049256FA33600DA31BC /* Info.plist */,
 				045F304A256FA33600DA31BC /* main.m */,
+				04BD2C4C2654A6F100A03652 /* Model.xcdatamodeld */,
 			);
 			path = IosBlog;
 			sourceTree = "<group>";
@@ -611,6 +623,7 @@
 				0477063B264CF9F0004ED1AA /* LayerAnimation */,
 				0477063A264CF891004ED1AA /* CoreAnimation */,
 				049B578D26535E47001641E4 /* Sandbox */,
+				04BD2C502654A90A00A03652 /* CoreData */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -764,6 +777,21 @@
 				049B57982653A729001641E4 /* Person.m */,
 			);
 			path = NSKeyedArchiver;
+			sourceTree = "<group>";
+		};
+		04BD2C502654A90A00A03652 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				04BD2C8A2654F92000A03652 /* Staff+CoreDataProperties.h */,
+				04BD2C8C2654F92100A03652 /* Staff+CoreDataClass.h */,
+				04BD2C8B2654F92100A03652 /* Staff+CoreDataClass.m */,
+				04BD2C892654F92000A03652 /* Staff+CoreDataProperties.m */,
+				04BD2C512654A93900A03652 /* CoreDataViewController.h */,
+				04BD2C522654A93900A03652 /* CoreDataViewController.m */,
+				04BD2C9426550B9F00A03652 /* CoreDataContainerViewController.h */,
+				04BD2C9526550B9F00A03652 /* CoreDataContainerViewController.m */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		04C4ED392643E57B007C35EF /* Animation */ = {
@@ -962,7 +990,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045F309C256FA85900DA31BC /* UILabelTextAlignmentViewController.m in Sources */,
 				04639EF72649324E008AD774 /* AnimationTransitionViewController.m in Sources */,
 				045F30AA256FA88900DA31BC /* UIControlViewViewController.m in Sources */,
 				04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */,
@@ -982,6 +1009,7 @@
 				04770651264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m in Sources */,
 				0477066E264D25E5004ED1AA /* UIFontFamilyViewController.m in Sources */,
 				04623776261D520E0034D421 /* UISegmentedControlEventViewController.m in Sources */,
+				04BD2C9626550B9F00A03652 /* CoreDataContainerViewController.m in Sources */,
 				045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */,
 				047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */,
 				045F306D256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m in Sources */,
@@ -1016,6 +1044,7 @@
 				044A7FB82625425700F97EF7 /* UIScrollViewPageViewController.m in Sources */,
 				045F3080256FA7DC00DA31BC /* UIViewCALayerViewController.m in Sources */,
 				04EC5BC426202962008A4667 /* UIDatePickerCountDownTimerViewController.m in Sources */,
+				04BD2C532654A93900A03652 /* CoreDataViewController.m in Sources */,
 				045F3083256FA7DC00DA31BC /* UIViewFrameViewController.m in Sources */,
 				045256BC262819B900E7D8CF /* UICollectionViewFlowLayoutViewController.m in Sources */,
 				049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */,
@@ -1037,6 +1066,7 @@
 				04623782261D7A4E0034D421 /* UISliderViewController.m in Sources */,
 				045F3067256FA66A00DA31BC /* NSNoticationViewController.m in Sources */,
 				04770656264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m in Sources */,
+				04BD2C4E2654A6F100A03652 /* Model.xcdatamodeld in Sources */,
 				04701A552626F2BF00957DC4 /* SafeAreaNormalViewController.m in Sources */,
 				04623787261DB2A10034D421 /* UIActivityIndicatorViewController.m in Sources */,
 				04770672264D29BD004ED1AA /* UIFontPreferredFontViewController.m in Sources */,
@@ -1244,6 +1274,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04BD2C4C2654A6F100A03652 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04BD2C4D2654A6F100A03652 /* Model.xcdatamodel */,
+			);
+			currentVersion = 04BD2C4D2654A6F100A03652 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 045F302D256FA33500DA31BC /* Project object */;
 }
