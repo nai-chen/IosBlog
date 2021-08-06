@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(25, 100, kDeviceWidth - 50, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(25, 100, kDeviceWidth - 50, 30)];
     label.text = @"LangTing 17";
     [label setFont: [UIFont fontWithName:@"FZLTHJW--GB1-0" size:17]];
     [self.view addSubview:label];

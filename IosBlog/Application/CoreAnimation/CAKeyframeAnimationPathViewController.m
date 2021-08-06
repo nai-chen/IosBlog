@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) UIBezierPath *bezierPath;
 @property (nonatomic, strong) UIImageView *airPlaneImgView;
-@property (nonatomic, strong) UIButton* button;
+@property (nonatomic, strong) UIButton *button;
 
 @end
 

@@ -16,7 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIScrollView* scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 100, 240, 360)];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 100, 240, 360)];
     scrollView.bounces = YES;
 //    scrollView.alwaysBounceHorizontal = YES;
 //    scrollView.alwaysBounceVertical = NO;
@@ -29,7 +29,7 @@
 //    scrollView.scrollEnabled = NO;
     scrollView.delegate = self;
     
-    UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 480, 720)];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 480, 720)];
     imageView.image = [UIImage imageNamed:@"bg"];
     [scrollView addSubview:imageView];
     

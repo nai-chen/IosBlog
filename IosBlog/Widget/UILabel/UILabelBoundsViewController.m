@@ -16,9 +16,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString* text = @"Copyright (c) 2006-2018 Apple Inc. All rights reserved.";
+    NSString *text = @"Copyright (c) 2006-2018 Apple Inc. All rights reserved.";
     
-    UILabel* boundsLabel = [[UILabel alloc] init];
+    UILabel *boundsLabel = [[UILabel alloc] init];
     boundsLabel.backgroundColor = [UIColor brownColor];
     boundsLabel.text = text;
     boundsLabel.numberOfLines = 0;

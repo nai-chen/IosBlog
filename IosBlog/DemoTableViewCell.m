@@ -11,7 +11,7 @@
 
 @interface DemoTableViewCell()
 
-@property (nonatomic, strong) UILabel* titleLabel;
+@property (nonatomic, strong) UILabel *titleLabel;
 
 @end
 
@@ -25,7 +25,7 @@
     return self;
 }
 
--(void) setup {
+- (void)setup {
     [self.contentView addSubview:self.titleLabel];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(@20);
@@ -37,7 +37,7 @@
     [self.titleLabel setText: title];
 }
 
--(UILabel*) titleLabel {
+- (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
     }

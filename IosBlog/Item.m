@@ -9,7 +9,7 @@
 
 @implementation Item
 
--(instancetype) initWithTitle:(NSString*) title {
+- (instancetype)initWithTitle:(NSString *) title {
     if (self = [super init]) {
         _title = title;
     }

@@ -16,17 +16,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UIView* redView = [[UIView alloc] initWithFrame:CGRectMake(40, 100, 100, 100)];
+    UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(40, 100, 100, 100)];
     redView.backgroundColor = [UIColor redColor];
     [self.view addSubview:redView];
     
-    UITapGestureRecognizer* gestureRecognizer = [[UITapGestureRecognizer alloc] init];
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] init];
     [gestureRecognizer addTarget:self action:@selector(singleTap:)];
-//    UITapGestureRecognizer* gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTap:)];
+//    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTap:)];
     [redView addGestureRecognizer: gestureRecognizer];
 }
 
--(void) singleTap:(UITapGestureRecognizer*) sender {
+-(void) singleTap:(UITapGestureRecognizer *)sender {
     NSLog(@"SingleTap");
 }
 

@@ -26,7 +26,7 @@
 }
 
 -(UIButton*) buttonWithFrame:(CGRect)frame type:(UIButtonType)buttonType title:(NSString*)title {
-    UIButton* btn = [UIButton buttonWithType: buttonType];
+    UIButton *btn = [UIButton buttonWithType: buttonType];
     btn.frame = frame;
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];

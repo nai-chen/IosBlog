@@ -9,10 +9,10 @@
 
 @interface AnimationCurveViewController ()
 
-@property (nonatomic, strong) UIImageView* easeInOutImageView;
-@property (nonatomic, strong) UIImageView* easeInImageView;
-@property (nonatomic, strong) UIImageView* easeOutImageView;
-@property (nonatomic, strong) UIImageView* linearImageView;
+@property (nonatomic, strong) UIImageView *easeInOutImageView;
+@property (nonatomic, strong) UIImageView *easeInImageView;
+@property (nonatomic, strong) UIImageView *easeOutImageView;
+@property (nonatomic, strong) UIImageView *linearImageView;
 
 @end
 
@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UILabel* easeInOutLabel = [[UILabel alloc] initWithFrame:CGRectMake(25, 80, 82, 20)];
+    UILabel *easeInOutLabel = [[UILabel alloc] initWithFrame:CGRectMake(25, 80, 82, 20)];
     easeInOutLabel.text = @"inOut";
     easeInOutLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:easeInOutLabel];
@@ -30,7 +30,7 @@
     self.easeInOutImageView.image = [UIImage imageNamed:@"icon_star"];
     [self.view addSubview: self.easeInOutImageView];
     
-    UILabel* easeInLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 80, 82, 20)];
+    UILabel *easeInLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 80, 82, 20)];
     easeInLabel.text = @"in";
     easeInLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:easeInLabel];
@@ -39,7 +39,7 @@
     self.easeInImageView.image = [UIImage imageNamed:@"icon_star"];
     [self.view addSubview: self.easeInImageView];
     
-    UILabel* easeOutLabel = [[UILabel alloc] initWithFrame:CGRectMake(175, 80, 82, 20)];
+    UILabel *easeOutLabel = [[UILabel alloc] initWithFrame:CGRectMake(175, 80, 82, 20)];
     easeOutLabel.text = @"out";
     easeOutLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:easeOutLabel];
@@ -48,7 +48,7 @@
     self.easeOutImageView.image = [UIImage imageNamed:@"icon_star"];
     [self.view addSubview: self.easeOutImageView];
     
-    UILabel* linearLabel = [[UILabel alloc] initWithFrame:CGRectMake(250, 80, 82, 20)];
+    UILabel *linearLabel = [[UILabel alloc] initWithFrame:CGRectMake(250, 80, 82, 20)];
     linearLabel.text = @"linear";
     linearLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:linearLabel];
@@ -57,13 +57,13 @@
     self.linearImageView.image = [UIImage imageNamed:@"icon_star"];
     [self.view addSubview: self.linearImageView];
     
-    UIButton* curveButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 450, 100, 30)];
+    UIButton *curveButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 450, 100, 30)];
     [curveButton setTitle:@"animation" forState:UIControlStateNormal];
     [curveButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [curveButton addTarget:self action:@selector(onCurveAnimation:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: curveButton];
     
-    UIButton* resetButton = [[UIButton alloc] initWithFrame:CGRectMake(150, 450, 100, 30)];
+    UIButton *resetButton = [[UIButton alloc] initWithFrame:CGRectMake(150, 450, 100, 30)];
     [resetButton setTitle:@"reset" forState:UIControlStateNormal];
     [resetButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [resetButton addTarget:self action:@selector(onResetClick:) forControlEvents:UIControlEventTouchUpInside];

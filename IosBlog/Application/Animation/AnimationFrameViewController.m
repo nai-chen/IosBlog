@@ -9,7 +9,7 @@
 
 @interface AnimationFrameViewController ()
 
-@property (nonatomic, strong) UIView* magentaView;
+@property (nonatomic, strong) UIView *magentaView;
 
 @end
 
@@ -22,7 +22,7 @@
     self.magentaView.backgroundColor = [UIColor magentaColor];
     [self.view addSubview: self.magentaView];
     
-    UIButton* keyFramesButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 450, 200, 30)];
+    UIButton *keyFramesButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 450, 200, 30)];
     [keyFramesButton setTitle:@"KeyFrames animation" forState:UIControlStateNormal];
     [keyFramesButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [keyFramesButton addTarget:self action:@selector(onKeyFramesAnimation:) forControlEvents:UIControlEventTouchUpInside];

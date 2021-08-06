@@ -9,8 +9,8 @@
 
 @interface UIScrollViewPageViewController () <UIScrollViewDelegate>
 
-@property (nonatomic, strong) UIScrollView* scrollView;
-@property (nonatomic, strong) UIPageControl* pageControl;
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIPageControl *pageControl;
 
 @end
 
@@ -25,7 +25,7 @@
     self.scrollView.showsHorizontalScrollIndicator = NO;
     
     for (int index = 1; index <=5; index++) {
-        UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(320 * (index - 1), 0, 320, 150)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(320 * (index - 1), 0, 320, 150)];
         imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"switcher%d", index]];
         [self.scrollView addSubview:imageView];
     }
@@ -49,7 +49,7 @@
     self.pageControl.currentPage = page;
 }
 
--(void) onPageControlValueChanged:(UIPageControl*) sender {
+- (void)onPageControlValueChanged:(UIPageControl*) sender {
     NSInteger page = sender.currentPage;
     [self.scrollView setContentOffset:CGPointMake(320*page, 0) animated:YES];
 }

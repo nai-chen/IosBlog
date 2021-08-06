@@ -18,7 +18,7 @@
     
     CGFloat width = [UIScreen mainScreen].bounds.size.width - 20;
     
-    UILabel* titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 60, width, 50)];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 60, width, 50)];
     titleLabel.text = @"日期和时间模式";
     [titleLabel setFont: [UIFont boldSystemFontOfSize:17]];
     [self.view addSubview:titleLabel];
@@ -30,8 +30,8 @@
     [self datePickerWithStyle:UIDatePickerStyleInline frame:CGRectMake(10, 350, width, 200)];
 }
 
-- (UIDatePicker*) datePickerWithStyle:(UIDatePickerStyle)style frame: (CGRect)frame {
-    UIDatePicker* datePicker = [[UIDatePicker alloc] initWithFrame:frame];
+- (UIDatePicker *)datePickerWithStyle:(UIDatePickerStyle)style frame:(CGRect)frame {
+    UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:frame];
     datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     datePicker.preferredDatePickerStyle = style;
     datePicker.locale = [NSLocale localeWithLocaleIdentifier:@"zh"];

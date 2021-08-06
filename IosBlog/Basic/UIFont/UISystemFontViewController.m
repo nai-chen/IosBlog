@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(25, 100, kDeviceWidth - 50, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(25, 100, kDeviceWidth - 50, 30)];
     label.text = @"System Bold 17";
     [label setFont: [UIFont systemFontOfSize:17]];
     [self.view addSubview:label];
@@ -77,7 +77,7 @@
     [label setFont: [UIFont systemFontOfSize:17 weight:UIFontWeightBlack]];
     [self.view addSubview:label];
     
-    UIFont* font = [UIFont systemFontOfSize:17];
+    UIFont *font = [UIFont systemFontOfSize:17];
     NSLog(@"familyName = %@, fontName = %@ pointSize = %.2f lineHeight = %.2f capHeight = %.2f xHeight = %.2f",
           font.familyName, font.fontName, font.pointSize, font.lineHeight, font.capHeight, font.xHeight);
     

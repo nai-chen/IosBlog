@@ -18,9 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray* titleArray = @[@"东", @"南", @"西", @"北", @"这个选项有点长"];
+    NSArray *titleArray = @[@"东", @"南", @"西", @"北", @"这个选项有点长"];
     
-    UISegmentedControl* normalSegmentedControl = [[UISegmentedControl alloc] initWithItems:titleArray];
+    UISegmentedControl *normalSegmentedControl = [[UISegmentedControl alloc] initWithItems:titleArray];
     normalSegmentedControl.frame = CGRectMake(10, 100, [UIScreen mainScreen].bounds.size.width-20 , 44);
     [self.view addSubview:normalSegmentedControl];
     

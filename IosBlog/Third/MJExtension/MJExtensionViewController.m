@@ -45,14 +45,14 @@
         user.name, user.icon, user.age, user.height, user.money, user.sex, user.gay);
 }
 
--(void) json2Model {
+- (void)json2Model {
     // 定义一个JSON字符串
     NSString *jsonStr = @"{\"name\":\"Jack\", \"icon\":\"lufy.png\", \"age\":20}";
     User *user = [User mj_objectWithKeyValues:jsonStr];
     NSLog(@"MJ---%@----%@---%u", user.name, user.icon, user.age);
 }
 
--(void) complexDict2Model {
+- (void)complexDict2Model {
     //复杂的字典[模型中有个数组属性，数组里面又要装着其他模型的字典]
     NSDictionary *dict_m8m = @{
                   @"text" : @"Agree!Nice weather!",
@@ -81,9 +81,9 @@
     NSLog(@"mj-----text2=%@, name2=%@, icon2=%@", text2, name2, icon2);
 }
 
--(void) arrayProperty2Model {
+- (void)arrayProperty2Model {
     //模型中有个数组属性，数组里面又要装着其他模型
-    NSDictionary* dict_m8a = @{
+    NSDictionary *dict_m8a = @{
         @"statuses" : @[
                     @{
                             @"text" : @"Nice weather!",
@@ -143,7 +143,7 @@
     }
 }
 
--(void) propertyReplace2Model {
+- (void)propertyReplace2Model {
     NSDictionary *dict_nokey = @{
                 @"id" : @"20",
                 @"desciption" : @"kids",
@@ -189,7 +189,7 @@
     NSLog(@"bagName=%@, bagPrice=%f", stu.bag.name, stu.bag.price);
 }
 
--(void) array2Model {
+- (void)array2Model {
     NSArray *dictArray = @[
             @{
                     @"name" : @"Jack",
@@ -210,7 +210,7 @@
     }
 }
 
--(void) model2Dict {
+- (void)model2Dict {
     User *user = [[User alloc] init];
     user.name = @"Jack";
     user.icon = @"lufy.png";
@@ -224,7 +224,7 @@
     NSLog(@"%@", statusDict);
 }
 
--(void) model2Array {
+- (void)model2Array {
     //创建模型数组
     User *user1 = [[User alloc] init];
     user1.name = @"Jack";

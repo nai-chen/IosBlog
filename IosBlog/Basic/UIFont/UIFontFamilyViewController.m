@@ -16,10 +16,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    for (NSString* familyName in [UIFont familyNames]) {
+    for (NSString *familyName in [UIFont familyNames]) {
         NSLog(@"%@", familyName);
         
-        for (NSString* fontName in [UIFont fontNamesForFamilyName:familyName]) {
+        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
             NSLog(@"    %@", fontName);
         }
     }

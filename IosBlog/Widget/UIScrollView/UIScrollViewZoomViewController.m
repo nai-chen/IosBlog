@@ -9,7 +9,7 @@
 
 @interface UIScrollViewZoomViewController () <UIScrollViewDelegate>
 
-@property (nonatomic, strong) UIImageView* imageView;
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 @implementation UIScrollViewZoomViewController
@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIScrollView* scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 100, 320, 480)];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 100, 320, 480)];
     scrollView.minimumZoomScale = 1;
     scrollView.maximumZoomScale = 4;
     scrollView.zoomScale = 1;

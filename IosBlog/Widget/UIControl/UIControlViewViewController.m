@@ -9,7 +9,7 @@
 #import "UICustomControl.h"
 
 @interface UIControlViewViewController ()
-@property (nonatomic, strong) UICustomControl* control;
+@property (nonatomic, strong) UICustomControl *control;
 @end
 
 @implementation UIControlViewViewController
@@ -24,7 +24,7 @@
     
     [self.control addTarget:self action:@selector(receive:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(20, 220, 320, 30)];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(20, 220, 320, 30)];
     [button setTitle:@"send action" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     

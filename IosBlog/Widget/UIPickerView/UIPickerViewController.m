@@ -9,7 +9,7 @@
 
 @interface UIPickerViewController ()<UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (nonatomic, retain) NSArray* cityArray;
+@property (nonatomic, retain) NSArray *cityArray;
 @property (nonatomic, assign) NSInteger selectProvince;
 @property (nonatomic, assign) NSInteger selectCity;
 
@@ -31,7 +31,7 @@
                     }];
     
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    UIPickerView* pickView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 100, width, 200)];
+    UIPickerView *pickView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 100, width, 200)];
     pickView.delegate = self;
     pickView.dataSource = self;
     
@@ -50,7 +50,7 @@
     if (component == 0) {
         return self.cityArray.count;
     } else {
-        NSArray* city = self.cityArray[component][@"city"];
+        NSArray *city = self.cityArray[component][@"city"];
         return city.count;
     }
 }
@@ -60,7 +60,7 @@
     if (component == 0) {
         return self.cityArray[row][@"province"];
     } else {
-        NSArray* city = self.cityArray[self.selectProvince][@"city"];
+        NSArray *city = self.cityArray[self.selectProvince][@"city"];
         return city[row];
     }
 }

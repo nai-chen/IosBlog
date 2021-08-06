@@ -11,7 +11,7 @@
 @interface LayerAnimationTransactionViewController ()
 
 @property (nonatomic, strong) CALayer *colorLayer;
-@property (nonatomic, strong) UIButton* button;
+@property (nonatomic, strong) UIButton *button;
 
 @end
 

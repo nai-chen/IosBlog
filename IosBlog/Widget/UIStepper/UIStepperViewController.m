@@ -17,11 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIStepper* normalStepper = [[UIStepper alloc] initWithFrame:CGRectMake(50, 100, 200, 50)];
+    UIStepper *normalStepper = [[UIStepper alloc] initWithFrame:CGRectMake(50, 100, 200, 50)];
     [normalStepper addTarget:self action:@selector(onStepperValueChanged:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview: normalStepper];
     
-    UIStepper* valueStepper = [[UIStepper alloc] initWithFrame:CGRectMake(50, 150, 200, 50)];
+    UIStepper *valueStepper = [[UIStepper alloc] initWithFrame:CGRectMake(50, 150, 200, 50)];
     valueStepper.minimumValue = 2;
     valueStepper.maximumValue = 20;
     valueStepper.stepValue = 2;
@@ -31,7 +31,7 @@
     [valueStepper addTarget:self action:@selector(onStepperValueChanged:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview: valueStepper];
     
-    UIStepper* imageStepper = [[UIStepper alloc] initWithFrame:CGRectMake(50, 200, 200, 50)];
+    UIStepper *imageStepper = [[UIStepper alloc] initWithFrame:CGRectMake(50, 200, 200, 50)];
     [imageStepper setBackgroundImage:[[UIColor whiteColor] colorToImage] forState: UIControlStateNormal];
     [imageStepper setDividerImage:[[UIColor blueColor] colorToImage] forLeftSegmentState:UIControlStateNormal rightSegmentState: UIControlStateNormal];
     [imageStepper setDividerImage:[[UIColor blueColor] colorToImage] forLeftSegmentState:UIControlStateHighlighted rightSegmentState:UIControlStateNormal];
@@ -48,7 +48,7 @@
 
 }
 
--(void) onStepperValueChanged: (UIStepper*) sender {
+- (void)onStepperValueChanged:(UIStepper *)sender {
     NSLog(@"UIStepper.value = %f", sender.value);
 }
 

@@ -9,9 +9,9 @@
 
 @interface AnimationTransitionViewController ()
 
-@property (nonatomic, strong) UIView* magentaView;
-@property (nonatomic, strong) UIView* redView;
-@property (nonatomic, strong) UIView* blueView;
+@property (nonatomic, strong) UIView *magentaView;
+@property (nonatomic, strong) UIView *redView;
+@property (nonatomic, strong) UIView *blueView;
 
 @end
 
@@ -32,55 +32,55 @@
     self.blueView.backgroundColor = [UIColor blueColor];
 //    [self.magentaView addSubview: self.blueView];
 
-    UIButton* curlUpButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 300, 250, 30)];
+    UIButton *curlUpButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 300, 250, 30)];
     [curlUpButton setTitle:@"CurlUp animation" forState:UIControlStateNormal];
     [curlUpButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [curlUpButton addTarget:self action:@selector(onCurlUpAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: curlUpButton];
     
-    UIButton* curlDownButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 330, 250, 30)];
+    UIButton *curlDownButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 330, 250, 30)];
     [curlDownButton setTitle:@"CurlDown animation" forState:UIControlStateNormal];
     [curlDownButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [curlDownButton addTarget:self action:@selector(onCurlDownAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: curlDownButton];
     
-    UIButton* crossDissolveButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 360, 250, 30)];
+    UIButton *crossDissolveButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 360, 250, 30)];
     [crossDissolveButton setTitle:@"CrossDissolve animation" forState:UIControlStateNormal];
     [crossDissolveButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [crossDissolveButton addTarget:self action:@selector(onCrossDissolveAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: crossDissolveButton];
     
-    UIButton* flipFromLeftButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 390, 250, 30)];
+    UIButton *flipFromLeftButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 390, 250, 30)];
     [flipFromLeftButton setTitle:@"FlipFromLeft animation" forState:UIControlStateNormal];
     [flipFromLeftButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [flipFromLeftButton addTarget:self action:@selector(onFlipFromLeftAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: flipFromLeftButton];
     
-    UIButton* flipFromRightButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 420, 250, 30)];
+    UIButton *flipFromRightButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 420, 250, 30)];
     [flipFromRightButton setTitle:@"FlipFromRight animation" forState:UIControlStateNormal];
     [flipFromRightButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [flipFromRightButton addTarget:self action:@selector(onFlipFromRightAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: flipFromRightButton];
     
-    UIButton* flipFromTopButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 450, 250, 30)];
+    UIButton *flipFromTopButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 450, 250, 30)];
     [flipFromTopButton setTitle:@"FlipFromTop animation" forState:UIControlStateNormal];
     [flipFromTopButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [flipFromTopButton addTarget:self action:@selector(onFlipFromTopAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: flipFromTopButton];
     
-    UIButton* flipFromBottomButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 480, 250, 30)];
+    UIButton *flipFromBottomButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 480, 250, 30)];
     [flipFromBottomButton setTitle:@"FlipFromBottom animation" forState:UIControlStateNormal];
     [flipFromBottomButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [flipFromBottomButton addTarget:self action:@selector(onFlipFromBottomAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: flipFromBottomButton];
     
-    UIButton* transitionFromViewToViewButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 510, 250, 30)];
+    UIButton *transitionFromViewToViewButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 510, 250, 30)];
     [transitionFromViewToViewButton setTitle:@"TransitionFromViewToView animation" forState:UIControlStateNormal];
     [transitionFromViewToViewButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [transitionFromViewToViewButton addTarget:self action:@selector(onTransitionFromViewToViewClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: transitionFromViewToViewButton];
     
-    UIButton* resetButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 540, 250, 30)];
+    UIButton *resetButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 540, 250, 30)];
     [resetButton setTitle:@"Reset" forState:UIControlStateNormal];
     [resetButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [resetButton addTarget:self action:@selector(onResetClick:) forControlEvents:UIControlEventTouchUpInside];

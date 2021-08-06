@@ -16,13 +16,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UIActivityIndicatorView* activityIndicatorView = [[UIActivityIndicatorView alloc]
+    UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc]
                               initWithFrame:CGRectMake(100, 100, 50, 50)];
     activityIndicatorView.hidesWhenStopped = NO;
     [self.view addSubview: activityIndicatorView];
     [activityIndicatorView startAnimating];
     
-    UIActivityIndicatorView* largeActivityIndicatorView = [[UIActivityIndicatorView alloc]
+    UIActivityIndicatorView *largeActivityIndicatorView = [[UIActivityIndicatorView alloc]
                               initWithFrame:CGRectMake(220, 100, 50, 50)];
     largeActivityIndicatorView.color = [UIColor magentaColor];
     if (@available(iOS 13.0, *)) {

@@ -16,11 +16,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UIProgressView* progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(50, 100, 200, 50)];
+    UIProgressView *progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(50, 100, 200, 50)];
     progressView.progress = 0.3;
     [self.view addSubview: progressView];
     
-    UIProgressView* barProgressView = [[UIProgressView alloc] initWithFrame:CGRectMake(50, 150, 200, 50)];
+    UIProgressView *barProgressView = [[UIProgressView alloc] initWithFrame:CGRectMake(50, 150, 200, 50)];
     barProgressView.progress = 0.3;
     barProgressView.progressViewStyle = UIProgressViewStyleBar;
     barProgressView.progressTintColor = [UIColor greenColor];

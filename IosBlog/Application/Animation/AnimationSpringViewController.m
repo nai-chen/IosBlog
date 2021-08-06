@@ -9,12 +9,12 @@
 
 @interface AnimationSpringViewController ()
 
-@property (nonatomic, strong) UILabel* lowLabel;
-@property (nonatomic, strong) UILabel* middleLabel;
-@property (nonatomic, strong) UILabel* highLabel;
-@property (nonatomic, strong) UIImageView* lowImageView;
-@property (nonatomic, strong) UIImageView* middleImageView;
-@property (nonatomic, strong) UIImageView* highImageView;
+@property (nonatomic, strong) UILabel *lowLabel;
+@property (nonatomic, strong) UILabel *middleLabel;
+@property (nonatomic, strong) UILabel *highLabel;
+@property (nonatomic, strong) UIImageView *lowImageView;
+@property (nonatomic, strong) UIImageView *middleImageView;
+@property (nonatomic, strong) UIImageView *highImageView;
 
 @end
 
@@ -48,19 +48,19 @@
     [self.view addSubview: self.highImageView];
     
     
-    UIButton* dampingRatioButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 450, 200, 30)];
+    UIButton *dampingRatioButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 450, 200, 30)];
     [dampingRatioButton setTitle:@"dampingRatio animation" forState:UIControlStateNormal];
     [dampingRatioButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [dampingRatioButton addTarget:self action:@selector(onDampingRatioAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: dampingRatioButton];
     
-    UIButton* velocityButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 480, 200, 30)];
+    UIButton *velocityButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 480, 200, 30)];
     [velocityButton setTitle:@"velocity" forState:UIControlStateNormal];
     [velocityButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [velocityButton addTarget:self action:@selector(onVelocityAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: velocityButton];
 
-    UIButton* resetButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 510, 200, 30)];
+    UIButton *resetButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 510, 200, 30)];
     [resetButton setTitle:@"reset" forState:UIControlStateNormal];
     [resetButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [resetButton addTarget:self action:@selector(onResetClick:) forControlEvents:UIControlEventTouchUpInside];

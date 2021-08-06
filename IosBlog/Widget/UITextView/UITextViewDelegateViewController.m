@@ -16,18 +16,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UITextView* textView1 = [self textViewWithFrame:CGRectMake(20, 100, 320, 80)];
+    UITextView *textView1 = [self textViewWithFrame:CGRectMake(20, 100, 320, 80)];
     textView1.delegate = self;
     [self.view addSubview:textView1];
     
-    UITextView* textView2 = [self textViewWithFrame:CGRectMake(20, 200, 320, 80)];
+    UITextView *textView2 = [self textViewWithFrame:CGRectMake(20, 200, 320, 80)];
     textView2.delegate = self;
     textView2.editable = NO;
     [self.view addSubview:textView2];
 }
 
-- (UITextView*) textViewWithFrame: (CGRect)frame {
-    UITextView* textView = [[UITextView alloc] initWithFrame:frame];
+- (UITextView *) textViewWithFrame:(CGRect)frame {
+    UITextView *textView = [[UITextView alloc] initWithFrame:frame];
     textView.text = @"http://www.baidu.com";
     textView.textColor = [UIColor blackColor];
     [textView setFont: [UIFont systemFontOfSize: 17]];

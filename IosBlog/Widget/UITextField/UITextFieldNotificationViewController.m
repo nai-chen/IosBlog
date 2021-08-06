@@ -9,7 +9,7 @@
 
 @interface UITextFieldNotificationViewController () <UITextFieldDelegate>
 
-@property (nonatomic, strong) UITextField* textField;
+@property (nonatomic, strong) UITextField *textField;
 @property (nonatomic) BOOL move;
 
 @end
@@ -24,7 +24,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:)
              name:UIKeyboardWillHideNotification object:nil];
     
-    UITextField* textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, 320, 30)];
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, 320, 30)];
     textField.placeholder = @"请输入";
     textField.borderStyle = UITextBorderStyleRoundedRect;
     textField.delegate = self;
@@ -53,11 +53,11 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
--(void) keyboardWillShow:(NSNotification*) notification {
+-(void) keyboardWillShow:(NSNotification *) notification {
     NSLog(@"keyboardWillShow");
     
-    NSDictionary* userinfo = [notification userInfo];
-    NSValue* value = [userinfo objectForKey:UIKeyboardFrameEndUserInfoKey];
+    NSDictionary *userinfo = [notification userInfo];
+    NSValue *value = [userinfo objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGRect keyboardFrame = [value CGRectValue];
     NSLog(@"keyboard y = %f", keyboardFrame.origin.y);
     NSLog(@"keyboard Height = %f", keyboardFrame.size.height);
@@ -81,7 +81,7 @@
     }
 }
 
--(void) keyboardWillHide:(NSNotification*) notification {
+-(void) keyboardWillHide:(NSNotification *) notification {
     NSLog(@"keyboardWillHide");
     if (self.move) {
         self.move = FALSE;

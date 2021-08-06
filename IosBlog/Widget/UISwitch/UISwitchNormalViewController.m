@@ -16,31 +16,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UISwitch* normalSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(20, 100, 150, 50)];
+    UISwitch *normalSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(20, 100, 150, 50)];
     [normalSwitch addTarget:self action:@selector(onSwitchValueChange:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:normalSwitch];
     
-    UISwitch* frameSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(100, 100, 200, 75)];
+    UISwitch *frameSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(100, 100, 200, 75)];
     // 是否开启,默认是NO
     frameSwitch.on = YES;
     [self.view addSubview:frameSwitch];
     
-    UISwitch* largeSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(25, 150, 150, 50)];
+    UISwitch *largeSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(25, 150, 150, 50)];
     largeSwitch.transform = CGAffineTransformMakeScale(1.2, 1.2);
     [self.view addSubview:largeSwitch];
     
-    UISwitch* leftCustomSwitch = [self makeCustomSwitch];
+    UISwitch *leftCustomSwitch = [self makeCustomSwitch];
     leftCustomSwitch.frame = CGRectMake(20, 220, 150, 50);
     [self.view addSubview:leftCustomSwitch];
     
-    UISwitch* rightCustomSwitch = [self makeCustomSwitch];
+    UISwitch *rightCustomSwitch = [self makeCustomSwitch];
     rightCustomSwitch.frame = CGRectMake(100, 220, 150, 50);
     rightCustomSwitch.on = true;
     [self.view addSubview:rightCustomSwitch];
 }
 
--(UISwitch*) makeCustomSwitch {
-    UISwitch* customSwitch = [[UISwitch alloc] init];
+-(UISwitch *)makeCustomSwitch {
+    UISwitch *customSwitch = [[UISwitch alloc] init];
     // 控件开启状态的填充色
     customSwitch.onTintColor = [UIColor magentaColor];
     // 控件关闭状态的边界色
@@ -55,7 +55,7 @@
     return customSwitch;
 }
 
--(void) onSwitchValueChange: (UISwitch*)sender {
+-(void)onSwitchValueChange:(UISwitch *)sender {
     if (sender.isOn) {
         NSLog(@"on");
     } else {

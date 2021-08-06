@@ -9,7 +9,7 @@
 
 @interface UITextFieldKeyBoardViewController ()<UITextFieldDelegate>
 
-@property (nonatomic, strong) UITextField* textField;
+@property (nonatomic, strong) UITextField *textField;
 
 @end
 
@@ -38,7 +38,7 @@
 }
 
 -(void) textFieldWithFrame:(CGRect)frame hint:(NSString*) hint andKeyboardType:(UIKeyboardType)type {
-    UITextField* textField = [[UITextField alloc] initWithFrame:frame];
+    UITextField *textField = [[UITextField alloc] initWithFrame:frame];
     textField.placeholder = hint;
     textField.borderStyle = UITextBorderStyleRoundedRect;
     textField.delegate = self;

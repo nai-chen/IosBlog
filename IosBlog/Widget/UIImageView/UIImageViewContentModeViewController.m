@@ -34,7 +34,7 @@
 }
 
 -(void) imageView:(CGRect)rect contentMode:(UIViewContentMode)mode {
-    UIImageView* imageView = [[UIImageView alloc] initWithFrame:rect];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:rect];
     imageView.backgroundColor = [UIColor blackColor];
     imageView.image = [UIImage imageNamed:@"icon_iv_sample"];
     imageView.contentMode = mode;

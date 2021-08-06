@@ -10,7 +10,7 @@
 @class Item;
 @interface ViewController : UIViewController
 
-@property (nonatomic, retain) Item* item;
+@property (nonatomic, retain) Item *item;
 
 @end
 

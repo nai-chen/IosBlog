@@ -13,7 +13,7 @@
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) UITableView* tableView;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -24,16 +24,16 @@
 
     if (!self.item) {
         // Basic item
-        Item* basicItem = [self basicItem];
+        Item *basicItem = [self basicItem];
         
         // Widget item
-        Item* widgetItem = [self widgetItem];
+        Item *widgetItem = [self widgetItem];
         
         // Application item
-        Item* applicationItem = [self applicationItem];
+        Item *applicationItem = [self applicationItem];
         
         // Third item
-        Item* thirdItem = [self thirdItem];
+        Item *thirdItem = [self thirdItem];
         
         self.item = [[Item alloc] initWithTitle:@""];
         self.item.children = @[basicItem, widgetItem, applicationItem, thirdItem];
@@ -49,264 +49,264 @@
     }];
 }
 
--(Item*) basicItem {
+- (Item *)basicItem {
     // UIFont
-    Item* uiSystemFontItem = [[Item alloc] initWithTitle:@"UISystemFont"];
+    Item *uiSystemFontItem = [[Item alloc] initWithTitle:@"UISystemFont"];
     uiSystemFontItem.viewController = @"UISystemFontViewController";
     
-    Item* uiFontFamilyItem = [[Item alloc] initWithTitle:@"UIFontFamily"];
+    Item *uiFontFamilyItem = [[Item alloc] initWithTitle:@"UIFontFamily"];
     uiFontFamilyItem.viewController = @"UIFontFamilyViewController";
     
-    Item* uiPreferredFontItem = [[Item alloc] initWithTitle:@"UIPreferredFont"];
+    Item *uiPreferredFontItem = [[Item alloc] initWithTitle:@"UIPreferredFont"];
     uiPreferredFontItem.viewController = @"UIFontPreferredFontViewController";
     
-    Item* uiFontLangTingItem = [[Item alloc] initWithTitle:@"UIFontLangTing"];
+    Item *uiFontLangTingItem = [[Item alloc] initWithTitle:@"UIFontLangTing"];
     uiFontLangTingItem.viewController = @"UIFontLangTingViewController";
     
     // UIFont end
-    Item* uiFontItem = [[Item alloc] initWithTitle:@"UIFont"];
+    Item *uiFontItem = [[Item alloc] initWithTitle:@"UIFont"];
     uiFontItem.children = @[uiSystemFontItem, uiFontFamilyItem, uiPreferredFontItem, uiFontLangTingItem];
     
     // UserDefaults
-    Item* userDefaultsItem = [[Item alloc] initWithTitle:@"UserDefaults"];
+    Item *userDefaultsItem = [[Item alloc] initWithTitle:@"UserDefaults"];
     userDefaultsItem.viewController = @"NSUserDefaultsViewController";
     
     // AttributeString
-    Item* attributeStringNormalItem = [[Item alloc] initWithTitle:@"AttributeStringNormal"];
+    Item *attributeStringNormalItem = [[Item alloc] initWithTitle:@"AttributeStringNormal"];
     attributeStringNormalItem.viewController = @"AttributeStringNormalViewController";
     
-    Item* AttributeStringParagraphStyleItem = [[Item alloc] initWithTitle:@"AttributeStringParagraphStyle"];
+    Item *AttributeStringParagraphStyleItem = [[Item alloc] initWithTitle:@"AttributeStringParagraphStyle"];
     AttributeStringParagraphStyleItem.viewController = @"AttributeStringParagraphStyleViewController";
     
     // AttributeString end
-    Item* attributeStringItem = [[Item alloc] initWithTitle:@"AttributeString"];
+    Item *attributeStringItem = [[Item alloc] initWithTitle:@"AttributeString"];
     attributeStringItem.children = @[attributeStringNormalItem, AttributeStringParagraphStyleItem];
     
     // UIColor
-    Item* uiColorItem = [[Item alloc] initWithTitle:@"UIColor"];
+    Item *uiColorItem = [[Item alloc] initWithTitle:@"UIColor"];
     uiColorItem.viewController = @"UIColorViewController";
     
     // NSNotificationCenter
-    Item* notificationCenterItem = [[Item alloc] initWithTitle:@"NSNotificationCenter"];
+    Item *notificationCenterItem = [[Item alloc] initWithTitle:@"NSNotificationCenter"];
     notificationCenterItem.viewController = @"NSNoticationViewController";
 
     // NSURLConnection
-    Item* urlConnectionItem = [[Item alloc] initWithTitle:@"NSURLConnection"];
+    Item *urlConnectionItem = [[Item alloc] initWithTitle:@"NSURLConnection"];
     urlConnectionItem.viewController = @"NSURLConnectionViewController";
     
     // NSURLSession
-    Item* urlSessionItem = [[Item alloc] initWithTitle:@"NSURLSession"];
+    Item *urlSessionItem = [[Item alloc] initWithTitle:@"NSURLSession"];
     urlSessionItem.viewController = @"NSURLSessionViewController";
     
     // NSKeyedArchiver
-    Item* keyedarchiverItem = [[Item alloc] initWithTitle:@"NSKeyedArchiver"];
+    Item *keyedarchiverItem = [[Item alloc] initWithTitle:@"NSKeyedArchiver"];
     keyedarchiverItem.viewController = @"NSKeyedArchiverViewController";
     
-    Item* basicItem = [[Item alloc] initWithTitle:@"Basic"];
+    Item *basicItem = [[Item alloc] initWithTitle:@"Basic"];
     basicItem.children = @[uiFontItem, userDefaultsItem, attributeStringItem, uiColorItem, notificationCenterItem,
                            urlConnectionItem, urlSessionItem, keyedarchiverItem];
     
     return basicItem;
 }
 
--(Item*) widgetItem {
+- (Item *)widgetItem {
     // UIView
-    Item* uiViewFrameItem = [[Item alloc] initWithTitle:@"UIViewFrame"];
+    Item *uiViewFrameItem = [[Item alloc] initWithTitle:@"UIViewFrame"];
     uiViewFrameItem.viewController = @"UIViewFrameViewController";
     
-    Item* uiViewClipsToBoundsItem = [[Item alloc] initWithTitle:@"UIViewClipsToBounds"];
+    Item *uiViewClipsToBoundsItem = [[Item alloc] initWithTitle:@"UIViewClipsToBounds"];
     uiViewClipsToBoundsItem.viewController = @"UIViewClipsToBoundsViewController";
     
-    Item* uiViewGestureRecongnizerItem = [[Item alloc] initWithTitle:@"UIViewGestureRecongnizer"];
+    Item *uiViewGestureRecongnizerItem = [[Item alloc] initWithTitle:@"UIViewGestureRecongnizer"];
     uiViewGestureRecongnizerItem.viewController = @"UIViewGestureRecongnizerViewController";
     
-    Item* uiViewCALayerItem = [[Item alloc] initWithTitle:@"UIViewCALayer"];
+    Item *uiViewCALayerItem = [[Item alloc] initWithTitle:@"UIViewCALayer"];
     uiViewCALayerItem.viewController = @"UIViewCALayerViewController";
 
     // UIView end
-    Item* uiViewItem = [[Item alloc] initWithTitle:@"UIView"];
+    Item *uiViewItem = [[Item alloc] initWithTitle:@"UIView"];
     uiViewItem.children = @[uiViewFrameItem, uiViewClipsToBoundsItem, uiViewGestureRecongnizerItem, uiViewCALayerItem];
     
     // UILabel
-    Item* uiLabelTextAlignmentItem = [[Item alloc] initWithTitle:@"UILabelTextAlignment"];
+    Item *uiLabelTextAlignmentItem = [[Item alloc] initWithTitle:@"UILabelTextAlignment"];
     uiLabelTextAlignmentItem.viewController = @"UILabelTextAlignmentViewController";
     
-    Item* uiLabelBreakModeItem = [[Item alloc] initWithTitle:@"UILabelBreakMode"];
+    Item *uiLabelBreakModeItem = [[Item alloc] initWithTitle:@"UILabelBreakMode"];
     uiLabelBreakModeItem.viewController = @"UILabelBreakModeViewController";
     
-    Item* uiLabelBoundsItem = [[Item alloc] initWithTitle:@"UILabelBounds"];
+    Item *uiLabelBoundsItem = [[Item alloc] initWithTitle:@"UILabelBounds"];
     uiLabelBoundsItem.viewController = @"UILabelBoundsViewController";
     
-    Item* uiLabelOtherItem = [[Item alloc] initWithTitle:@"UILabelOther"];
+    Item *uiLabelOtherItem = [[Item alloc] initWithTitle:@"UILabelOther"];
     uiLabelOtherItem.viewController = @"UILabelOtherViewController";
     
     // UILabel end
-    Item* uiLabelItem = [[Item alloc] initWithTitle:@"UILabel"];
+    Item *uiLabelItem = [[Item alloc] initWithTitle:@"UILabel"];
     uiLabelItem.children = @[uiLabelTextAlignmentItem, uiLabelBreakModeItem, uiLabelBoundsItem, uiLabelOtherItem];
     
     // UIImageView
-    Item* uiImageAnimationViewItem = [[Item alloc] initWithTitle:@"UIImageViewAnimation"];
+    Item *uiImageAnimationViewItem = [[Item alloc] initWithTitle:@"UIImageViewAnimation"];
     uiImageAnimationViewItem.viewController = @"UIImageViewAnimationViewController";
     
-    Item* uiImageContentModeViewItem = [[Item alloc] initWithTitle:@"UIImageViewContentMode"];
+    Item *uiImageContentModeViewItem = [[Item alloc] initWithTitle:@"UIImageViewContentMode"];
     uiImageContentModeViewItem.viewController = @"UIImageViewContentModeViewController";
     
     // UIImageView end
-    Item* uiImageViewItem = [[Item alloc] initWithTitle:@"UIImageView"];
+    Item *uiImageViewItem = [[Item alloc] initWithTitle:@"UIImageView"];
     uiImageViewItem.children = @[uiImageAnimationViewItem, uiImageContentModeViewItem];
     
     // UIControl
-    Item* uiControlItem = [[Item alloc] initWithTitle:@"UIControl"];
+    Item *uiControlItem = [[Item alloc] initWithTitle:@"UIControl"];
     uiControlItem.viewController = @"UIControlViewViewController";
     // UIControl end
     
     // UIButton
-    Item* uiButtonNormalItem = [[Item alloc] initWithTitle:@"UIButtonNormal"];
+    Item *uiButtonNormalItem = [[Item alloc] initWithTitle:@"UIButtonNormal"];
     uiButtonNormalItem.viewController = @"UIButtonNormalViewController";
     
-    Item* uiButtonStyleItem = [[Item alloc] initWithTitle:@"UIButtonStyle"];
+    Item *uiButtonStyleItem = [[Item alloc] initWithTitle:@"UIButtonStyle"];
     uiButtonStyleItem.viewController = @"UIButtonStyleViewController";
     
-    Item* uiButtonEdgeInsetsItem = [[Item alloc] initWithTitle:@"UIButtonEdgeInsets"];
+    Item *uiButtonEdgeInsetsItem = [[Item alloc] initWithTitle:@"UIButtonEdgeInsets"];
     uiButtonEdgeInsetsItem.viewController = @"UIButtonEdgeInsetsViewController";
     
     // UIButton end
-    Item* uiButtonItem = [[Item alloc] initWithTitle:@"UIButton"];
+    Item *uiButtonItem = [[Item alloc] initWithTitle:@"UIButton"];
     uiButtonItem.children = @[uiButtonNormalItem, uiButtonStyleItem, uiButtonEdgeInsetsItem];
     
     // UITextField
-    Item* uiTextFieldNormalItem = [[Item alloc] initWithTitle:@"UITextFieldNormal"];
+    Item *uiTextFieldNormalItem = [[Item alloc] initWithTitle:@"UITextFieldNormal"];
     uiTextFieldNormalItem.viewController = @"UITextFieldNormalViewController";
     
-    Item* uiTextFieldKeyBoardItem = [[Item alloc] initWithTitle:@"UITextFieldKeyBoard"];
+    Item *uiTextFieldKeyBoardItem = [[Item alloc] initWithTitle:@"UITextFieldKeyBoard"];
     uiTextFieldKeyBoardItem.viewController = @"UITextFieldKeyBoardViewController";
     
-    Item* uiTextFieldReturnTypeItem = [[Item alloc] initWithTitle:@"UITextFieldReturnType"];
+    Item *uiTextFieldReturnTypeItem = [[Item alloc] initWithTitle:@"UITextFieldReturnType"];
     uiTextFieldReturnTypeItem.viewController = @"UITextFieldReturnTypeViewController";
     
-    Item* uiTextFieldNotificationItem = [[Item alloc] initWithTitle:@"UITextFieldNotification"];
+    Item *uiTextFieldNotificationItem = [[Item alloc] initWithTitle:@"UITextFieldNotification"];
     uiTextFieldNotificationItem.viewController = @"UITextFieldNotificationViewController";
     
     // UITextField end
-    Item* uiTextFieldItem = [[Item alloc] initWithTitle:@"UITextField"];
+    Item *uiTextFieldItem = [[Item alloc] initWithTitle:@"UITextField"];
     uiTextFieldItem.children = @[uiTextFieldNormalItem, uiTextFieldKeyBoardItem, uiTextFieldReturnTypeItem, uiTextFieldNotificationItem];
     
     // UITextView
-    Item* uiTextViewNormalItem = [[Item alloc] initWithTitle:@"UITextViewNormal"];
+    Item *uiTextViewNormalItem = [[Item alloc] initWithTitle:@"UITextViewNormal"];
     uiTextViewNormalItem.viewController = @"UITextViewNormalViewController";
     
-    Item* uiTextViewInputItem = [[Item alloc] initWithTitle:@"UITextViewInput"];
+    Item *uiTextViewInputItem = [[Item alloc] initWithTitle:@"UITextViewInput"];
     uiTextViewInputItem.viewController = @"UITextViewInputViewController";
     
-    Item* uiTextViewDelegateItem = [[Item alloc] initWithTitle:@"UITextViewDelegate"];
+    Item *uiTextViewDelegateItem = [[Item alloc] initWithTitle:@"UITextViewDelegate"];
     uiTextViewDelegateItem.viewController = @"UITextViewDelegateViewController";
     
     // UITextView end
-    Item* uiTextViewItem = [[Item alloc] initWithTitle:@"UITextView"];
+    Item *uiTextViewItem = [[Item alloc] initWithTitle:@"UITextView"];
     uiTextViewItem.children = @[uiTextViewNormalItem, uiTextViewInputItem, uiTextViewDelegateItem];
     
     // UISwitch
-    Item* uiSwitchItem = [[Item alloc] initWithTitle:@"UISwitch"];
+    Item *uiSwitchItem = [[Item alloc] initWithTitle:@"UISwitch"];
     uiSwitchItem.viewController = @"UISwitchNormalViewController";
     
     // UIPageControl
-    Item* uiPageControlItem = [[Item alloc] initWithTitle:@"UIPageControl"];
+    Item *uiPageControlItem = [[Item alloc] initWithTitle:@"UIPageControl"];
     uiPageControlItem.viewController = @"UIPageControlViewController";
     
     // UISegmentedControl
-    Item* uiSegmentedControlNormalItem = [[Item alloc] initWithTitle:@"UISegmentedControlNormal"];
+    Item *uiSegmentedControlNormalItem = [[Item alloc] initWithTitle:@"UISegmentedControlNormal"];
     uiSegmentedControlNormalItem.viewController = @"UISegmentedControlNormalViewController";
     
-    Item* uiSegmentedControlSetItem = [[Item alloc] initWithTitle:@"UISegmentedControlSet"];
+    Item *uiSegmentedControlSetItem = [[Item alloc] initWithTitle:@"UISegmentedControlSet"];
     uiSegmentedControlSetItem.viewController = @"UISegmentedControlSetViewController";
 
-    Item* uiSegmentedControlOperationItem = [[Item alloc] initWithTitle:@"UISegmentedControlOperation"];
+    Item *uiSegmentedControlOperationItem = [[Item alloc] initWithTitle:@"UISegmentedControlOperation"];
     uiSegmentedControlOperationItem.viewController = @"UISegmentedControlOperationViewController";
     
-    Item* uiSegmentedControlEventItem = [[Item alloc] initWithTitle:@"UISegmentedControlEvent"];
+    Item *uiSegmentedControlEventItem = [[Item alloc] initWithTitle:@"UISegmentedControlEvent"];
     uiSegmentedControlEventItem.viewController = @"UISegmentedControlEventViewController";
     
     // UISegmentedControl end
-    Item* uiSegmentedControlItem = [[Item alloc] initWithTitle:@"UISegmentedControl"];
+    Item *uiSegmentedControlItem = [[Item alloc] initWithTitle:@"UISegmentedControl"];
     uiSegmentedControlItem.children = @[uiSegmentedControlNormalItem, uiSegmentedControlSetItem, uiSegmentedControlOperationItem, uiSegmentedControlEventItem];
     
     // UISlider
-    Item* uiSliderItem = [[Item alloc] initWithTitle:@"UISlider"];
+    Item *uiSliderItem = [[Item alloc] initWithTitle:@"UISlider"];
     uiSliderItem.viewController = @"UISliderViewController";
     
     // UIActivityIndicatorView
-    Item* uiActivityIndicatorViewItem = [[Item alloc] initWithTitle:@"UIActivityIndicatorView"];
+    Item *uiActivityIndicatorViewItem = [[Item alloc] initWithTitle:@"UIActivityIndicatorView"];
     uiActivityIndicatorViewItem.viewController = @"UIActivityIndicatorViewController";
     
     // UIProgressView
-    Item* uiProgressViewItem = [[Item alloc] initWithTitle:@"UIProgressView"];
+    Item *uiProgressViewItem = [[Item alloc] initWithTitle:@"UIProgressView"];
     uiProgressViewItem.viewController = @"UIProgressViewController";
     
     // UIStepper
-    Item* uiStepperItem = [[Item alloc] initWithTitle:@"UIStepper"];
+    Item *uiStepperItem = [[Item alloc] initWithTitle:@"UIStepper"];
     uiStepperItem.viewController = @"UIStepperViewController";
     
     // UIPickerView
-    Item* uiPickerViewItem = [[Item alloc] initWithTitle:@"UIPickerView"];
+    Item *uiPickerViewItem = [[Item alloc] initWithTitle:@"UIPickerView"];
     uiPickerViewItem.viewController = @"UIPickerViewController";
     
     // UIDatePicker
-    Item* uiDatePickerDateItem = [[Item alloc] initWithTitle:@"UIDatePickerDate"];
+    Item *uiDatePickerDateItem = [[Item alloc] initWithTitle:@"UIDatePickerDate"];
     uiDatePickerDateItem.viewController = @"UIDatePickerDateViewController";
     
-    Item* uiDatePickerTimeItem = [[Item alloc] initWithTitle:@"UIDatePickerTime"];
+    Item *uiDatePickerTimeItem = [[Item alloc] initWithTitle:@"UIDatePickerTime"];
     uiDatePickerTimeItem.viewController = @"UIDatePickerTimeViewController";
     
-    Item* uiDatePickerDateAndTimeItem = [[Item alloc] initWithTitle:@"UIDatePickerDateAndTime"];
+    Item *uiDatePickerDateAndTimeItem = [[Item alloc] initWithTitle:@"UIDatePickerDateAndTime"];
     uiDatePickerDateAndTimeItem.viewController = @"UIDatePickerDateAndTimeViewController";
     
-    Item* uiDatePickerCountDownTimerItem = [[Item alloc] initWithTitle:@"UIDatePickerCountDownTimer"];
+    Item *uiDatePickerCountDownTimerItem = [[Item alloc] initWithTitle:@"UIDatePickerCountDownTimer"];
     uiDatePickerCountDownTimerItem.viewController = @"UIDatePickerCountDownTimerViewController";
     
     // UIDatePicker end
-    Item* uiDatePickerItem = [[Item alloc] initWithTitle:@"UIDatePicker"];
+    Item *uiDatePickerItem = [[Item alloc] initWithTitle:@"UIDatePicker"];
     uiDatePickerItem.children = @[uiDatePickerDateItem, uiDatePickerTimeItem, uiDatePickerDateAndTimeItem, uiDatePickerCountDownTimerItem];
     
     // UIAlertController
-    Item* uiAlertControllerItem = [[Item alloc] initWithTitle:@"UIAlertController"];
+    Item *uiAlertControllerItem = [[Item alloc] initWithTitle:@"UIAlertController"];
     uiAlertControllerItem.viewController = @"UIAlertControllerViewController";
     
     // UIScrollView
-    Item* uiScrollViewNormalItem = [[Item alloc] initWithTitle:@"UIScrollViewNormal"];
+    Item *uiScrollViewNormalItem = [[Item alloc] initWithTitle:@"UIScrollViewNormal"];
     uiScrollViewNormalItem.viewController = @"UIScrollViewNormalViewController";
 
-    Item* uiScrollViewZoomItem = [[Item alloc] initWithTitle:@"UIScrollViewZoom"];
+    Item *uiScrollViewZoomItem = [[Item alloc] initWithTitle:@"UIScrollViewZoom"];
     uiScrollViewZoomItem.viewController = @"UIScrollViewZoomViewController";
     
-    Item* uiScrollViewPageItem = [[Item alloc] initWithTitle:@"UIScrollViewPage"];
+    Item *uiScrollViewPageItem = [[Item alloc] initWithTitle:@"UIScrollViewPage"];
     uiScrollViewPageItem.viewController = @"UIScrollViewPageViewController";
     
     // UIScrollView end
-    Item* uiScrollViewItem = [[Item alloc] initWithTitle:@"UIScrollView"];
+    Item *uiScrollViewItem = [[Item alloc] initWithTitle:@"UIScrollView"];
     uiScrollViewItem.children = @[uiScrollViewNormalItem, uiScrollViewZoomItem, uiScrollViewPageItem];
     
     // UICollectionView
-    Item* uiCollectionViewNormalItem = [[Item alloc] initWithTitle:@"UICollectionViewNormal"];
+    Item *uiCollectionViewNormalItem = [[Item alloc] initWithTitle:@"UICollectionViewNormal"];
     uiCollectionViewNormalItem.viewController = @"UICollectionViewNormalViewController";
     
-    Item* uiCollectionViewLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewLayout"];
+    Item *uiCollectionViewLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewLayout"];
     uiCollectionViewLayoutItem.viewController = @"UICollectionViewLayoutViewController";
     
-    Item* uiCollectionViewFlowLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewFlowLayout"];
+    Item *uiCollectionViewFlowLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewFlowLayout"];
     uiCollectionViewFlowLayoutItem.viewController = @"UICollectionViewFlowLayoutViewController";
     
-    Item* uiCollectionViewCircleLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewCircleLayout"];
+    Item *uiCollectionViewCircleLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewCircleLayout"];
     uiCollectionViewCircleLayoutItem.viewController = @"UICollectionViewCircleLayoutViewController";
 
-    Item* uiCollectionViewWheelLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewWheelLayout"];
+    Item *uiCollectionViewWheelLayoutItem = [[Item alloc] initWithTitle:@"UICollectionViewWheelLayout"];
     uiCollectionViewWheelLayoutItem.viewController = @"UICollectionViewWheelLayoutViewController";
 
     // UICollectionView end
-    Item* uiCollectionViewItem = [[Item alloc] initWithTitle:@"UICollectionView"];
+    Item *uiCollectionViewItem = [[Item alloc] initWithTitle:@"UICollectionView"];
     uiCollectionViewItem.children = @[uiCollectionViewNormalItem, uiCollectionViewLayoutItem, uiCollectionViewFlowLayoutItem,
                                       uiCollectionViewCircleLayoutItem, uiCollectionViewWheelLayoutItem];
     
-    Item* widgetItem = [[Item alloc] initWithTitle:@"Widget"];
+    Item *widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,
                             uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem, uiSliderItem,
                             uiActivityIndicatorViewItem, uiProgressViewItem, uiStepperItem, uiPickerViewItem,
@@ -315,98 +315,101 @@
     return widgetItem;
 }
 
--(Item*) applicationItem {
+- (Item *)applicationItem {
     // SafeArea
-    Item* safeAreaItem = [[Item alloc] initWithTitle:@"SafeArea"];
+    Item *safeAreaItem = [[Item alloc] initWithTitle:@"SafeArea"];
     safeAreaItem.viewController = @"SafeAreaNormalViewController";
     
     // Animation
-    Item* animationNormalItem = [[Item alloc] initWithTitle:@"AnimationNormal"];
+    Item *animationNormalItem = [[Item alloc] initWithTitle:@"AnimationNormal"];
     animationNormalItem.viewController = @"AnimationNormalViewController";
 
-    Item* animationTransformItem = [[Item alloc] initWithTitle:@"AnimationTransform"];
+    Item *animationTransformItem = [[Item alloc] initWithTitle:@"AnimationTransform"];
     animationTransformItem.viewController = @"AnimationTransformViewController";
     
-    Item* animationCurveItem = [[Item alloc] initWithTitle:@"AnimationCurve"];
+    Item *animationCurveItem = [[Item alloc] initWithTitle:@"AnimationCurve"];
     animationCurveItem.viewController = @"AnimationCurveViewController";
 
-    Item* animationSpringItem = [[Item alloc] initWithTitle:@"AnimationSpring"];
+    Item *animationSpringItem = [[Item alloc] initWithTitle:@"AnimationSpring"];
     animationSpringItem.viewController = @"AnimationSpringViewController";
     
-    Item* animationTranstionItem = [[Item alloc] initWithTitle:@"AnimationTransition"];
+    Item *animationTranstionItem = [[Item alloc] initWithTitle:@"AnimationTransition"];
     animationTranstionItem.viewController = @"AnimationTransitionViewController";
     
-    Item* animationFrameItem = [[Item alloc] initWithTitle:@"AnimationFrame"];
+    Item *animationFrameItem = [[Item alloc] initWithTitle:@"AnimationFrame"];
     animationFrameItem.viewController = @"AnimationFrameViewController";
     
     // Animtion end
-    Item* animationItem = [[Item alloc] initWithTitle:@"Animation"];
+    Item *animationItem = [[Item alloc] initWithTitle:@"Animation"];
     animationItem.children = @[animationNormalItem, animationTransformItem, animationCurveItem, animationSpringItem,
                                animationTranstionItem, animationFrameItem];
     
     // Layer Animation
-    Item* layerAnimationNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    Item *layerAnimationNormalItem = [[Item alloc] initWithTitle:@"Normal"];
     layerAnimationNormalItem.viewController = @"LayerAnimationNormalViewController";
     
-    Item* layerAnimationTransactionItem = [[Item alloc] initWithTitle:@"Transaction"];
+    Item *layerAnimationTransactionItem = [[Item alloc] initWithTitle:@"Transaction"];
     layerAnimationTransactionItem.viewController = @"LayerAnimationTransactionViewController";
     
-    Item* layerAnimationCustomItem = [[Item alloc] initWithTitle:@"Custom"];
+    Item *layerAnimationCustomItem = [[Item alloc] initWithTitle:@"Custom"];
     layerAnimationCustomItem.viewController = @"LayerAnimationCustomViewController";
     
     // Layer Animtion end
-    Item* layerAnimationItem = [[Item alloc] initWithTitle:@"LayerAnimation"];
+    Item *layerAnimationItem = [[Item alloc] initWithTitle:@"LayerAnimation"];
     layerAnimationItem.children = @[layerAnimationNormalItem, layerAnimationTransactionItem, layerAnimationCustomItem];
     
     // Core Animation
-    Item* basicAnimationItem = [[Item alloc] initWithTitle:@"CABasicAnimation"];
+    Item *basicAnimationItem = [[Item alloc] initWithTitle:@"CABasicAnimation"];
     basicAnimationItem.viewController = @"CABasicAnimationViewController";
     
-    Item* keyframeAnimationValueItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Value"];
+    Item *keyframeAnimationValueItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Value"];
     keyframeAnimationValueItem.viewController = @"CAKeyframeAnimationValueViewController";
     
-    Item* keyframeAnimationPathItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Path"];
+    Item *keyframeAnimationPathItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Path"];
     keyframeAnimationPathItem.viewController = @"CAKeyframeAnimationPathViewController";
     
-    Item* animationGroupPathItem = [[Item alloc] initWithTitle:@"CAAnimationGroup"];
+    Item *animationGroupPathItem = [[Item alloc] initWithTitle:@"CAAnimationGroup"];
     animationGroupPathItem.viewController = @"CAAnimationGroupViewController";
     
     // Core Animation end
-    Item* coreAnimationItem = [[Item alloc] initWithTitle:@"CoreAnimation"];
+    Item *coreAnimationItem = [[Item alloc] initWithTitle:@"CoreAnimation"];
     coreAnimationItem.children = @[basicAnimationItem, keyframeAnimationValueItem, keyframeAnimationPathItem, animationGroupPathItem];
     
-    Item* sandboxItem = [[Item alloc] initWithTitle:@"Sandbox"];
+    Item *sandboxItem = [[Item alloc] initWithTitle:@"Sandbox"];
     sandboxItem.viewController = @"SandboxViewController";
     
     // Core Data
-    Item* coreDataItem = [[Item alloc] initWithTitle:@"CoreData"];
+    Item *coreDataItem = [[Item alloc] initWithTitle:@"CoreData"];
     coreDataItem.viewController = @"CoreDataViewController";
     
+    // Core Graphics
+    Item *coreGraphicsItem = [[Item alloc] initWithTitle:@"CoreGraphics"];
+    
     // Application
-    Item* applicationItem = [[Item alloc] initWithTitle:@"Application"];
+    Item *applicationItem = [[Item alloc] initWithTitle:@"Application"];
     applicationItem.children = @[safeAreaItem, animationItem, layerAnimationItem, coreAnimationItem, sandboxItem, coreDataItem];
 
     return applicationItem;
 }
 
--(Item*) thirdItem {
+- (Item *)thirdItem {
     // MJExtension
-    Item* mjExtensionItem = [[Item alloc] initWithTitle:@"MJExtension"];
+    Item *mjExtensionItem = [[Item alloc] initWithTitle:@"MJExtension"];
     mjExtensionItem.viewController = @"MJExtensionViewController";
     
     // SVProgressHUD
-    Item* svProgressHUDNormalItem = [[Item alloc] initWithTitle:@"SVProgressHUDNormal"];
+    Item *svProgressHUDNormalItem = [[Item alloc] initWithTitle:@"SVProgressHUDNormal"];
     svProgressHUDNormalItem.viewController = @"SVProgressHUDNormalViewController";
     
     // SVProgressHUD end
-    Item* svProgressHUDItem = [[Item alloc] initWithTitle:@"SVProgressHUD"];
+    Item *svProgressHUDItem = [[Item alloc] initWithTitle:@"SVProgressHUD"];
     svProgressHUDItem.children = @[svProgressHUDNormalItem];
     
     // AFNetworking
-    Item* afNetworkingItem = [[Item alloc] initWithTitle:@"AFNetworking"];
+    Item *afNetworkingItem = [[Item alloc] initWithTitle:@"AFNetworking"];
     afNetworkingItem.viewController = @"AFNetworkingViewController";
     
-    Item* thirdItem = [[Item alloc] initWithTitle: @"Third"];
+    Item *thirdItem = [[Item alloc] initWithTitle: @"Third"];
     thirdItem.children = @[mjExtensionItem, svProgressHUDItem, afNetworkingItem];
     
     return thirdItem;
@@ -422,9 +425,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    DemoTableViewCell* tableViewCell = [tableView dequeueReusableCellWithIdentifier:@"DemoTableViewCellId" forIndexPath:indexPath];
+    DemoTableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:@"DemoTableViewCellId" forIndexPath:indexPath];
     
-    Item* item = self.item.children[indexPath.row];
+    Item *item = self.item.children[indexPath.row];
     [tableViewCell setTitle: item.title];
     
     return tableViewCell;
@@ -435,9 +438,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Item* item = self.item.children[indexPath.row];
+    Item *item = self.item.children[indexPath.row];
     if (item.children) {
-        ViewController* viewController = [[ViewController alloc] init];
+        ViewController *viewController = [[ViewController alloc] init];
         viewController.item = item;
         [self.navigationController pushViewController:viewController animated:true];
     } else {

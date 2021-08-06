@@ -22,7 +22,7 @@
     return ColorWithRGB(red, green, blue, alpha);
 }
 
-+ (UIColor*) randomColor {
++ (UIColor *)randomColor {
     CGFloat red = arc4random() % 255 / 255.0;
     CGFloat green = arc4random() % 255 / 255.0;
     CGFloat blue = arc4random() % 255 / 255.0;
@@ -30,7 +30,7 @@
     return randomColor;
 }
 
-- (UIImage*) colorToImage {
+- (UIImage *)colorToImage {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();

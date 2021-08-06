@@ -10,7 +10,7 @@
 
 @interface UIButtonStyleViewController ()
 
-@property (nonatomic, strong) UIButton* btn;
+@property (nonatomic, strong) UIButton *btn;
 
 @end
 
@@ -37,7 +37,7 @@
     
     [self.view addSubview:self.btn];
     
-    UIButton* shadowButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *shadowButton = [UIButton buttonWithType:UIButtonTypeCustom];
     shadowButton.frame = CGRectMake(20, 150, 320, 30);
     [shadowButton setTitle:@"Shadow Color" forState:UIControlStateNormal];
     [shadowButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -46,7 +46,7 @@
     
     [self.view addSubview:shadowButton];
     
-    UIButton* imageButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *imageButton = [UIButton buttonWithType:UIButtonTypeCustom];
     imageButton.frame = CGRectMake(80, 215, 55, 30);
     [imageButton setBackgroundImage:[UIImage imageNamed:@"btn_switch_off"] forState:UIControlStateNormal];
     [imageButton setBackgroundImage:[UIImage imageNamed:@"btn_switch_on"] forState:UIControlStateSelected];
@@ -56,7 +56,7 @@
     
     [self.view addSubview:imageButton];
     
-    UIButton* backgroundButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *backgroundButton = [UIButton buttonWithType:UIButtonTypeCustom];
     backgroundButton.frame = CGRectMake(180, 200, 110, 60);
     [backgroundButton setBackgroundImage:[UIImage imageNamed:@"btn_switch_off"] forState:UIControlStateNormal];
     [backgroundButton setBackgroundImage:[UIImage imageNamed:@"btn_switch_on"] forState:UIControlStateSelected];
@@ -72,7 +72,7 @@
 }
 
 -(void)switchChanged:(id)sender {
-    UIButton* backgroundButton = sender;
+    UIButton *backgroundButton = sender;
     backgroundButton.selected = !backgroundButton.selected;
 }
 

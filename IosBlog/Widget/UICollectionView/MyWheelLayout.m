@@ -10,9 +10,9 @@
 @implementation MyWheelLayout
 
 - (NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
-    NSMutableArray * attributes = [[NSMutableArray alloc]init];
+    NSMutableArray *attributes = [[NSMutableArray alloc]init];
     //遍历设置每个item的布局属性
-    for (int i=0; i<[self.collectionView numberOfItemsInSection:0]; i++) {
+    for (int i = 0; i < [self.collectionView numberOfItemsInSection:0]; i++) {
         [attributes addObject:[self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:i inSection:0]]];
     }
     return attributes;
@@ -20,7 +20,7 @@
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
     //创建一个item布局属性类
-    UICollectionViewLayoutAttributes * atti = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    UICollectionViewLayoutAttributes *atti = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     //获取item的个数
     int itemCounts = (int)[self.collectionView numberOfItemsInSection:0];
     //设置每个item的大小为260*100

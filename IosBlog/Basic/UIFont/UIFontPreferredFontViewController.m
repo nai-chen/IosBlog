@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(25, 100, kDeviceWidth - 50, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(25, 100, kDeviceWidth - 50, 30)];
     label.text = @"UIFontTextStyleTitle1";
     [label setFont: [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1]];
     [self.view addSubview:label];

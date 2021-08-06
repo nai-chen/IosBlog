@@ -26,8 +26,8 @@
     NSLog(@"window.safeArea.edgeInsets = %@", NSStringFromUIEdgeInsets(self.window.safeAreaInsets));
 
     
-    ViewController* viewController = [[ViewController alloc] init];
-    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    ViewController *viewController = [[ViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
     [self.window setRootViewController:nav];
     [self.window makeKeyAndVisible];
     

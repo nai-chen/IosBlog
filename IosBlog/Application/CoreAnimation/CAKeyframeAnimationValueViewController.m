@@ -11,7 +11,7 @@
 @interface CAKeyframeAnimationValueViewController ()
 
 @property (nonatomic, strong) UIView *purpleView;
-@property (nonatomic, strong) UIButton* button;
+@property (nonatomic, strong) UIButton *button;
 
 @end
 

@@ -11,7 +11,7 @@
 
 @interface AnimationNormalViewController ()
 
-@property (nonatomic, strong) UIView* animationView;
+@property (nonatomic, strong) UIView *animationView;
 
 @end
 
@@ -24,47 +24,47 @@
     self.animationView.backgroundColor = [UIColor magentaColor];
     [self.view addSubview:self.animationView];
     
-    UIView* childrenView = [[UIView alloc] initWithFrame:CGRectMake(40, 40, 80, 80)];
+    UIView *childrenView = [[UIView alloc] initWithFrame:CGRectMake(40, 40, 80, 80)];
     childrenView.backgroundColor = [UIColor whiteColor];
     [self.animationView addSubview:childrenView];
     
-    UIButton* frameButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 360, 150, 30)];
+    UIButton *frameButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 360, 150, 30)];
     [frameButton setTitle:@"frame animation" forState:UIControlStateNormal];
     [frameButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [frameButton addTarget:self action:@selector(onFrameAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: frameButton];
     
-    UIButton* boundsButton = [[UIButton alloc] initWithFrame:CGRectMake(175, 360, 150, 30)];
+    UIButton *boundsButton = [[UIButton alloc] initWithFrame:CGRectMake(175, 360, 150, 30)];
     [boundsButton setTitle:@"bounds animation" forState:UIControlStateNormal];
     [boundsButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [boundsButton addTarget:self action:@selector(onBoundsAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: boundsButton];
     
-    UIButton* centerButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 390, 150, 30)];
+    UIButton *centerButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 390, 150, 30)];
     [centerButton setTitle:@"center animation" forState:UIControlStateNormal];
     [centerButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [centerButton addTarget:self action:@selector(onCenterAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: centerButton];
 
-    UIButton* alphaButton = [[UIButton alloc] initWithFrame:CGRectMake(175, 390, 150, 30)];
+    UIButton *alphaButton = [[UIButton alloc] initWithFrame:CGRectMake(175, 390, 150, 30)];
     [alphaButton setTitle:@"alpha animation" forState:UIControlStateNormal];
     [alphaButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [alphaButton addTarget:self action:@selector(onAlphaAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: alphaButton];
 
-    UIButton* backgroundButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 420, 150, 30)];
+    UIButton *backgroundButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 420, 150, 30)];
     [backgroundButton setTitle:@"background animation" forState:UIControlStateNormal];
     [backgroundButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [backgroundButton addTarget:self action:@selector(onBackgroundAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: backgroundButton];
 
-    UIButton* transformButton = [[UIButton alloc] initWithFrame:CGRectMake(175, 420, 150, 30)];
+    UIButton *transformButton = [[UIButton alloc] initWithFrame:CGRectMake(175, 420, 150, 30)];
     [transformButton setTitle:@"transform animation" forState:UIControlStateNormal];
     [transformButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [transformButton addTarget:self action:@selector(onTransformAnimationClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: transformButton];
     
-    UIButton* resetButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 480, 150, 30)];
+    UIButton *resetButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 480, 150, 30)];
     [resetButton setTitle:@"reset" forState:UIControlStateNormal];
     [resetButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [resetButton addTarget:self action:@selector(onResetClick:) forControlEvents:UIControlEventTouchUpInside];

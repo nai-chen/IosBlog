@@ -16,7 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UITextField* textField = [self textFiledWithFrame: CGRectMake(20, 100, 320, 40)];
+    UITextField *textField = [self textFiledWithFrame: CGRectMake(20, 100, 320, 40)];
     textField.backgroundColor = [UIColor grayColor];
     [self.view addSubview:textField];
     
@@ -30,8 +30,8 @@
     [self.view addSubview:textField];
 }
 
--(UITextField*)textFiledWithFrame:(CGRect)frame {
-    UITextField* textField = [[UITextField alloc] initWithFrame:frame];
+-(UITextField *)textFiledWithFrame:(CGRect)frame {
+    UITextField *textField = [[UITextField alloc] initWithFrame:frame];
     textField.textColor = [UIColor whiteColor];
     textField.textAlignment = NSTextAlignmentCenter;
     textField.font = [UIFont systemFontOfSize:14];
@@ -40,8 +40,8 @@
     return textField;
 }
 
--(UITextField*)textFiledWithFrame:(CGRect)frame borderStyle:(UITextBorderStyle)borderStyle {
-    UITextField* textField = [[UITextField alloc] initWithFrame:frame];
+-(UITextField *)textFiledWithFrame:(CGRect)frame borderStyle:(UITextBorderStyle)borderStyle {
+    UITextField *textField = [[UITextField alloc] initWithFrame:frame];
     textField.textColor = [UIColor blackColor];
     textField.textAlignment = NSTextAlignmentCenter;
     textField.font = [UIFont systemFontOfSize:14];

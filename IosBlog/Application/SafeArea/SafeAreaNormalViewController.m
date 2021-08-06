@@ -10,10 +10,10 @@
 @interface SafeAreaNormalViewController ()
 
 /** 红色view 用于置顶 */
-@property (nonatomic, strong) UIView * redView;
+@property (nonatomic, strong) UIView *redView;
 
 /** 橘色view 用于置底 */
-@property (nonatomic, strong) UIView * orangeView;
+@property (nonatomic, strong) UIView *orangeView;
 
 @end
 
@@ -27,13 +27,13 @@
     self.view.backgroundColor = [UIColor yellowColor];
     
     /** 创建红色view */
-    UIView * redView = [UIView new];
+    UIView *redView = [UIView new];
     redView.backgroundColor = [UIColor redColor];
     [self.view addSubview:redView];
     self.redView = redView;
     
     /** 创建橘色view */
-    UIView * orangeView = [UIView new];
+    UIView *orangeView = [UIView new];
     orangeView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:orangeView];
     self.orangeView = orangeView;

@@ -13,13 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (Tool)
 
-+(UIColor*) colorWithHex:(NSInteger)hex alpha:(CGFloat)alpha;
++ (UIColor *)colorWithHex:(NSInteger)hex alpha:(CGFloat)alpha;
 
-+(UIColor*) colorWithHexString:(NSString*)hexString alpha:(CGFloat)alpha;
++ (UIColor *)colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 
-+ (UIColor*) randomColor;
++ (UIColor *)randomColor;
 
--(UIImage*) colorToImage;
+- (UIImage *)colorToImage;
 
 @end
 

@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DemoTableViewCell : UITableViewCell
 
--(void) setTitle:(NSString*) title;
+- (void)setTitle:(NSString *)title;
 
 @end
 
