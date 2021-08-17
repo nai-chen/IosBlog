@@ -73,41 +73,38 @@
     [self.view addSubview: removeObserverWithObjectBtn];
 }
 
-- (void)addObserver:(id)sender {
-    UIButton *btn = (UIButton *) sender;
-    if (btn.tag == 1) {
+- (void)addObserver:(UIButton *)sender {
+    if (sender.tag == 1) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveNotication:) name:@"Notication" object:nil];
         NSLog(@"Add Observer");
-    } else if (btn.tag == 2) {
+    } else if (sender.tag == 2) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveNotication:) name:@"Notication" object:self];
         NSLog(@"Add Observer With Object");
     }
 }
 
-- (void)postNotification:(id)sender {
-    UIButton *btn = (UIButton *) sender;
-    if (btn.tag == 1) {
+- (void)postNotification:(UIButton *)sender {
+    if (sender.tag == 1) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"Notication" object:nil];
         NSLog(@"Post Notication");
-    } else if (btn.tag == 2) {
+    } else if (sender.tag == 2) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"Notication" object:self];
         NSLog(@"Post Notication With Object");
-    } else if (btn.tag == 3) {
+    } else if (sender.tag == 3) {
         NSNotification *notification = [NSNotification notificationWithName:@"Notication" object:self userInfo:@{@"tag" : @(3)}];
         [[NSNotificationCenter defaultCenter] postNotification:notification];
         NSLog(@"Post Notication With UserInfo");
     }
 }
 
-- (void)removeObserver:(id)sender {
-    UIButton *btn = (UIButton *) sender;
-    if (btn.tag == 1) {
+- (void)removeObserver:(UIButton *)sender {
+    if (sender.tag == 1) {
         [[NSNotificationCenter defaultCenter] removeObserver:self];
         NSLog(@"Remove Observer");
-    } else if (btn.tag == 2) {
+    } else if (sender.tag == 2) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:@"Notication" object:nil];
         NSLog(@"Remove Observer with Name");
-    } else if (btn.tag == 3) {
+    } else if (sender.tag == 3) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:@"Notication" object:self];
         NSLog(@"Remove Observer with object");
     }

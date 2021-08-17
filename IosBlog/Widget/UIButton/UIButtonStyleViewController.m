@@ -10,7 +10,7 @@
 
 @interface UIButtonStyleViewController ()
 
-@property (nonatomic, strong) UIButton *btn;
+@property(nonatomic, strong) UIButton *btn;
 
 @end
 
@@ -64,14 +64,13 @@
     backgroundButton.adjustsImageWhenHighlighted = NO;
     
     [self.view addSubview:backgroundButton];
-
 }
 
--(void)singleTap:(id)sender {
+- (void)singleTap:(id)sender {
     self.btn.selected = !self.btn.selected;
 }
 
--(void)switchChanged:(id)sender {
+- (void)switchChanged:(id)sender {
     UIButton *backgroundButton = sender;
     backgroundButton.selected = !backgroundButton.selected;
 }

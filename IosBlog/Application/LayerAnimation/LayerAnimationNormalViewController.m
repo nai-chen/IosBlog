@@ -10,8 +10,8 @@
 
 @interface LayerAnimationNormalViewController ()
 
-@property (nonatomic, strong) CALayer *colorLayer;
-@property (nonatomic, strong) UIButton *button;
+@property(nonatomic, strong) CALayer *colorLayer;
+@property(nonatomic, strong) UIButton *button;
 
 @end
 
@@ -39,7 +39,7 @@
     self.button.frame = CGRectMake(25, kDeviceHeight-insets.bottom-100, kDeviceWidth-50, 50);
 }
 
--(void) onChangeColor: (UIButton*) sender {
+- (void)onChangeColor:(UIButton *)sender {
     CGFloat red = arc4random() % 255 / 255.0;
     CGFloat green = arc4random() % 255 / 255.0;
     CGFloat blue = arc4random() % 255 / 255.0;

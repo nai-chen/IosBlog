@@ -9,7 +9,7 @@
 
 @interface UITextFieldKeyBoardViewController ()<UITextFieldDelegate>
 
-@property (nonatomic, strong) UITextField *textField;
+@property(nonatomic, strong) UITextField *textField;
 
 @end
 
@@ -37,7 +37,7 @@
     [self textFieldWithFrame:CGRectMake(190, 350, 150, 30) hint:@"ASCIICapableNumberPad" andKeyboardType:UIKeyboardTypeASCIICapableNumberPad];
 }
 
--(void) textFieldWithFrame:(CGRect)frame hint:(NSString*) hint andKeyboardType:(UIKeyboardType)type {
+- (void)textFieldWithFrame:(CGRect)frame hint:(NSString *) hint andKeyboardType:(UIKeyboardType)type {
     UITextField *textField = [[UITextField alloc] initWithFrame:frame];
     textField.placeholder = hint;
     textField.borderStyle = UITextBorderStyleRoundedRect;

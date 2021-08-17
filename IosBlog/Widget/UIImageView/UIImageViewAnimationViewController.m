@@ -8,7 +8,7 @@
 #import "UIImageViewAnimationViewController.h"
 
 @interface UIImageViewAnimationViewController ()
-@property (nonatomic, strong) UIImageView *imageView;
+@property(nonatomic, strong) UIImageView *imageView;
 
 @end
 
@@ -48,7 +48,7 @@
     [self.view addSubview: startButton];
 }
 
--(void) buttonClick:(id)sender {
+- (void)buttonClick:(id)sender {
 //    [self.imageView stopAnimating];
     [self.imageView startAnimating];
 }

@@ -10,8 +10,8 @@
 
 @interface CAKeyframeAnimationValueViewController ()
 
-@property (nonatomic, strong) UIView *purpleView;
-@property (nonatomic, strong) UIButton *button;
+@property(nonatomic, strong) UIView *purpleView;
+@property(nonatomic, strong) UIButton *button;
 
 @end
 
@@ -41,7 +41,7 @@
     self.button.frame = CGRectMake(25, kDeviceHeight-insets.bottom-100, kDeviceWidth-50, 50);
 }
 
--(void) onChangeValue:(UIButton*) sender {
+- (void)onChangeValue:(UIButton *)sender {
     //步骤1：创建动画
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"position";

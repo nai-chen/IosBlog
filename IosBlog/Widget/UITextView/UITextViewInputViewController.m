@@ -9,7 +9,7 @@
 
 @interface UITextViewInputViewController ()
 
-@property (nonatomic, strong) UITextView *textView;
+@property(nonatomic, strong) UITextView *textView;
 
 @end
 
@@ -52,7 +52,7 @@
     return textView;
 }
 
--(void) click:(UITapGestureRecognizer*) gestureRecognizer {
+- (void)click:(UITapGestureRecognizer *)recognizer {
     self.textView.text = @"123";
 }
 

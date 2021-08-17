@@ -9,10 +9,10 @@
 
 @interface AnimationCurveViewController ()
 
-@property (nonatomic, strong) UIImageView *easeInOutImageView;
-@property (nonatomic, strong) UIImageView *easeInImageView;
-@property (nonatomic, strong) UIImageView *easeOutImageView;
-@property (nonatomic, strong) UIImageView *linearImageView;
+@property(nonatomic, strong) UIImageView *easeInOutImageView;
+@property(nonatomic, strong) UIImageView *easeInImageView;
+@property(nonatomic, strong) UIImageView *easeOutImageView;
+@property(nonatomic, strong) UIImageView *linearImageView;
 
 @end
 
@@ -70,7 +70,7 @@
     [self.view addSubview: resetButton];
 }
 
--(void) onCurveAnimation: (UIButton*) sender {
+- (void)onCurveAnimation:(UIButton *)sender {
     [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.easeInOutImageView.frame = CGRectMake(50, 100, 32, 32);
     } completion:nil];
@@ -89,7 +89,7 @@
 
 }
 
--(void) onResetClick: (UIButton*) sender {
+- (void)onResetClick:(UIButton *)sender {
     self.easeInOutImageView.frame = CGRectMake(50, 400, 32, 32);
     self.easeInImageView.frame = CGRectMake(125, 400, 32, 32);
     self.easeOutImageView.frame = CGRectMake(200, 400, 32, 32);

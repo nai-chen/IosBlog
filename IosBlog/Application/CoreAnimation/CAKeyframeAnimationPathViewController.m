@@ -10,9 +10,9 @@
 
 @interface CAKeyframeAnimationPathViewController ()
 
-@property (nonatomic, strong) UIBezierPath *bezierPath;
-@property (nonatomic, strong) UIImageView *airPlaneImgView;
-@property (nonatomic, strong) UIButton *button;
+@property(nonatomic, strong) UIBezierPath *bezierPath;
+@property(nonatomic, strong) UIImageView *airPlaneImgView;
+@property(nonatomic, strong) UIButton *button;
 
 @end
 
@@ -57,7 +57,7 @@
     self.button.frame = CGRectMake(25, kDeviceHeight-insets.bottom-100, kDeviceWidth-50, 50);
 }
 
--(void) onChangePath: (UIButton*) sender {
+- (void)onChangePath:(UIButton *)sender {
     //4.设置关键帧动画
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"position";

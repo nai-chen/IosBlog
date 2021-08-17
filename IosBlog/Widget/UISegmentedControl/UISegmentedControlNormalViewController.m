@@ -9,7 +9,7 @@
 
 @interface UISegmentedControlNormalViewController ()
 
-@property (nonatomic, assign) NSArray *titleArray;
+@property(nonatomic, assign) NSArray *titleArray;
 
 @end
 

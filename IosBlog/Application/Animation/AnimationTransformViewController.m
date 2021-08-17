@@ -9,7 +9,7 @@
 
 @interface AnimationTransformViewController ()
 
-@property (nonatomic, strong) UIImageView *imageView;
+@property(nonatomic, strong) UIImageView *imageView;
 
 @end
 
@@ -59,38 +59,38 @@
     [self.view addSubview: resetButton];
 }
 
--(void) onTranslationAnimationClick:(UIButton*)sender {
+- (void)onTranslationAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:2 animations:^{
         self.imageView.transform = CGAffineTransformMakeTranslation(100, 20);
     }];
 }
 
--(void) onScaleAnimationClick:(UIButton*)sender {
+- (void)onScaleAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:2 animations:^{
         self.imageView.transform = CGAffineTransformMakeScale(0.6, 0.6);
     }];
 }
 
--(void) onRotationAnimationClick:(UIButton*)sender {
+- (void)onRotationAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:2 animations:^{
         self.imageView.transform = CGAffineTransformMakeRotation(M_PI_2);
     }];
 }
 
--(void) onRevertAnimationClick:(UIButton*)sender {
+- (void)onRevertAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:2 animations:^{
         self.imageView.transform = CGAffineTransformInvert(CGAffineTransformMakeRotation(M_PI_2));
     }];
 }
 
--(void) onConcatAnimationClick:(UIButton*)sender {
+- (void)onConcatAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:2 animations:^{
         self.imageView.transform = CGAffineTransformConcat(CGAffineTransformMakeRotation(M_PI),
                                            CGAffineTransformMakeScale(0.5, 0.5));
     }];
 }
 
--(void) onResetAnimationClick:(UIButton*)sender {
+- (void)onResetAnimationClick:(UIButton *)sender {
     self.imageView.transform = CGAffineTransformIdentity;
 }
 

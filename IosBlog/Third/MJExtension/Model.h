@@ -16,57 +16,57 @@ typedef enum {
 
 @interface User : NSObject
 
-@property (copy, nonatomic) NSString *name;/* 姓名 */
-@property (copy, nonatomic) NSString *icon;/* 头像 */
-@property (assign, nonatomic) unsigned int age;/* 年龄 */
-@property (copy, nonatomic) NSString *height;/* 身高 */
-@property (strong, nonatomic) NSNumber *money;/* 资产 */
-@property (assign, nonatomic) Sex sex;/* 性别 */
-@property (assign, nonatomic, getter=isGay) BOOL gay;/* 是否是同性恋 */
+@property(nonatomic, copy) NSString *name;/* 姓名 */
+@property(nonatomic, copy) NSString *icon;/* 头像 */
+@property(nonatomic, assign) unsigned int age;/* 年龄 */
+@property(nonatomic, copy) NSString *height;/* 身高 */
+@property(nonatomic, strong) NSNumber *money;/* 资产 */
+@property(nonatomic, assign) Sex sex;/* 性别 */
+@property(nonatomic, assign, getter=isGay) BOOL gay;/* 是否是同性恋 */
 
 @end
 
 //Status模型
 @interface Status : NSObject
 
-@property (copy, nonatomic) NSString *text;
-@property (strong, nonatomic) User *user;/* 其他模型类型 */
-@property (strong, nonatomic) Status *retweetedStatus;/* 自我模型类型 */
+@property(nonatomic, copy) NSString *text;
+@property(nonatomic, strong) User *user;/* 其他模型类型 */
+@property(nonatomic, strong) Status *retweetedStatus;/* 自我模型类型 */
 @end
 
 @interface Ad : NSObject
 
-@property (copy, nonatomic) NSString *image;
-@property (copy, nonatomic) NSString *url;
+@property(nonatomic, copy) NSString *image;
+@property(nonatomic, copy) NSString *url;
 
 @end
 
 @interface StatusResult : NSObject
 
 /** 存放着一堆的微博数据（里面都是Status模型） */
-@property (strong, nonatomic) NSMutableArray *statuses;
+@property(nonatomic, strong) NSMutableArray *statuses;
 /** 存放着一堆的广告数据（里面都是Ad模型） */
-@property (strong, nonatomic) NSArray *ads;
-@property (strong, nonatomic) NSNumber *totalNumber;
+@property(nonatomic, strong) NSArray *ads;
+@property(nonatomic, strong) NSNumber *totalNumber;
 
 @end
 
 //多级映射，用点语法设置
 @interface Bag : NSObject
 
-@property (copy, nonatomic) NSString *name;
-@property (assign, nonatomic) double price;
+@property(nonatomic, copy) NSString *name;
+@property(nonatomic, assign) double price;
 
 @end
 
 @interface Student : NSObject
 
-@property (copy, nonatomic) NSString *ID;
-@property (copy, nonatomic) NSString *desc;
-@property (copy, nonatomic) NSString *nowName;
-@property (copy, nonatomic) NSString *oldName;
-@property (copy, nonatomic) NSString *nameChangedTime;
-@property (strong, nonatomic) Bag *bag;
+@property(nonatomic, copy) NSString *ID;
+@property(nonatomic, copy) NSString *desc;
+@property(nonatomic, copy) NSString *nowName;
+@property(nonatomic, copy) NSString *oldName;
+@property(nonatomic, copy) NSString *nameChangedTime;
+@property(nonatomic, strong) Bag *bag;
 
 @end
 

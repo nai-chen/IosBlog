@@ -10,10 +10,10 @@
 @interface SafeAreaNormalViewController ()
 
 /** 红色view 用于置顶 */
-@property (nonatomic, strong) UIView *redView;
+@property(nonatomic, strong) UIView *redView;
 
 /** 橘色view 用于置底 */
-@property (nonatomic, strong) UIView *orangeView;
+@property(nonatomic, strong) UIView *orangeView;
 
 @end
 

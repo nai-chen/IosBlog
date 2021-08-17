@@ -9,12 +9,12 @@
 
 @interface AnimationSpringViewController ()
 
-@property (nonatomic, strong) UILabel *lowLabel;
-@property (nonatomic, strong) UILabel *middleLabel;
-@property (nonatomic, strong) UILabel *highLabel;
-@property (nonatomic, strong) UIImageView *lowImageView;
-@property (nonatomic, strong) UIImageView *middleImageView;
-@property (nonatomic, strong) UIImageView *highImageView;
+@property(nonatomic, strong) UILabel *lowLabel;
+@property(nonatomic, strong) UILabel *middleLabel;
+@property(nonatomic, strong) UILabel *highLabel;
+@property(nonatomic, strong) UIImageView *lowImageView;
+@property(nonatomic, strong) UIImageView *middleImageView;
+@property(nonatomic, strong) UIImageView *highImageView;
 
 @end
 
@@ -67,7 +67,7 @@
     [self.view addSubview: resetButton];
 }
 
--(void) onDampingRatioAnimationClick:(UIButton*)sender {
+- (void)onDampingRatioAnimationClick:(UIButton *)sender {
     self.lowLabel.text = @"0.2";
     self.middleLabel.text = @"0.5";
     self.highLabel.text = @"1.0";
@@ -89,7 +89,7 @@
 
 }
 
--(void) onVelocityAnimationClick:(UIButton*)sender {
+- (void)onVelocityAnimationClick:(UIButton *)sender {
     self.lowLabel.text = @"5";
     self.middleLabel.text = @"10";
     self.highLabel.text = @"20";
@@ -110,7 +110,7 @@
     } completion:nil];
 }
 
--(void) onResetClick: (UIButton*) sender {
+- (void)onResetClick:(UIButton *)sender {
     self.lowImageView.frame = CGRectMake(25, 400, 32, 32);
     self.middleImageView.frame = CGRectMake(150, 400, 32, 32);
     self.highImageView.frame = CGRectMake(275, 400, 32, 32);

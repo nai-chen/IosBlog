@@ -41,7 +41,7 @@
     [self.view addSubview:btnDelegate];
 }
 
-- (void)onBtnGetClick: (UIButton*) sender {
+- (void)onBtnGetClick:(UIButton *)sender {
     NSURL *url = [NSURL URLWithString: @"http://www.baidu.com"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL: url];
     
@@ -50,7 +50,7 @@
     NSLog(@"get = %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
 }
 
-- (void)onBtnPostClick: (UIButton*) sender {
+- (void)onBtnPostClick:(UIButton *)sender {
     NSURL *url = [NSURL URLWithString: @"http://www.baidu.com/s"];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL: url];
     request.HTTPMethod = @"POST";
@@ -61,7 +61,7 @@
     NSLog(@"post = %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
 }
 
-- (void)onBtnAsyncClick: (UIButton*) sender {
+- (void)onBtnAsyncClick:(UIButton *)sender {
     NSURL *url = [NSURL URLWithString: @"http://www.baidu.com"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL: url];
     
@@ -70,7 +70,7 @@
     }];
 }
 
-- (void)onBtnDelegateClick: (UIButton*) sender {
+- (void)onBtnDelegateClick:(UIButton *)sender {
     NSURL *url = [NSURL URLWithString: @"http://www.baidu.com"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL: url];
     

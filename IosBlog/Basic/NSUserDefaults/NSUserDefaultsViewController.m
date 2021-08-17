@@ -9,7 +9,7 @@
 
 @interface NSUserDefaultsViewController ()
 
-@property (nonatomic, strong) UILabel *valueLabel;
+@property(nonatomic, strong) UILabel *valueLabel;
 @end
 
 @implementation NSUserDefaultsViewController
@@ -37,13 +37,13 @@
     [self.view addSubview:self.valueLabel];
 }
 
--(void) onGetClick: (UIButton*) sender {
+- (void)onGetClick:(UIButton *)sender {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     self.valueLabel.text = [NSString stringWithFormat:@"name=%@, age=%ld",
                     [userDefaults stringForKey:@"name"], [userDefaults integerForKey:@"age"]];
 }
 
--(void) onSetClick: (UIButton*) sender {
+- (void)onSetClick:(UIButton *)sender {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setValue:@"Jack" forKey:@"name"];
     [userDefaults setInteger:20 forKey:@"age"];

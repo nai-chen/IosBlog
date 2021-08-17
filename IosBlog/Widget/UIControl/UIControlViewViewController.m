@@ -9,7 +9,7 @@
 #import "UICustomControl.h"
 
 @interface UIControlViewViewController ()
-@property (nonatomic, strong) UICustomControl *control;
+@property(nonatomic, strong) UICustomControl *control;
 @end
 
 @implementation UIControlViewViewController
@@ -33,11 +33,11 @@
     [button addTarget:self action:@selector(singleTap:) forControlEvents:UIControlEventTouchUpInside];
 }
 
--(void) receive:(id)sender {
+- (void)receive:(id)sender {
     NSLog(@"receive");
 }
 
--(void) singleTap:(id)sender {
+- (void)singleTap:(id)sender {
     NSLog(@"singleTap");
     [self.control sendActionsForControlEvents:UIControlEventTouchUpInside];
 }

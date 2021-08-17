@@ -9,7 +9,7 @@
 
 @interface UICollectionViewNormalViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
-@property (nonatomic, strong) NSArray *data;
+@property(nonatomic, strong) NSArray *data;
 
 @end
 

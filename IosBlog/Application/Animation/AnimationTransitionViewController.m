@@ -9,9 +9,9 @@
 
 @interface AnimationTransitionViewController ()
 
-@property (nonatomic, strong) UIView *magentaView;
-@property (nonatomic, strong) UIView *redView;
-@property (nonatomic, strong) UIView *blueView;
+@property(nonatomic, strong) UIView *magentaView;
+@property(nonatomic, strong) UIView *redView;
+@property(nonatomic, strong) UIView *blueView;
 
 @end
 
@@ -87,54 +87,54 @@
     [self.view addSubview: resetButton];
 }
 
--(void) onCurlUpAnimationClick: (UIButton*)sender {
+- (void)onCurlUpAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionCurlUp animations:^{
         [self.redView removeFromSuperview];
     } completion:nil];
 }
 
--(void) onCurlDownAnimationClick: (UIButton*)sender {
+- (void)onCurlDownAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionCurlDown animations:^{
         [self.magentaView addSubview:self.blueView];
     } completion:nil];
 }
 
--(void) onCrossDissolveAnimationClick: (UIButton*)sender {
+- (void)onCrossDissolveAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
         [self.redView removeFromSuperview];
     } completion:nil];
 }
 
--(void) onFlipFromLeftAnimationClick: (UIButton*)sender {
+- (void)onFlipFromLeftAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
         [self.magentaView addSubview: self.blueView];
     } completion:nil];
 }
 
--(void) onFlipFromRightAnimationClick: (UIButton*)sender {
+- (void)onFlipFromRightAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
         [self.magentaView addSubview: self.blueView];
     } completion:nil];
 }
 
--(void) onFlipFromTopAnimationClick: (UIButton*)sender {
+- (void)onFlipFromTopAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
         [self.magentaView addSubview: self.blueView];
     } completion:nil];
 }
 
--(void) onFlipFromBottomAnimationClick: (UIButton*)sender {
+- (void)onFlipFromBottomAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
         [self.magentaView addSubview: self.blueView];
     } completion:nil];
 }
 
--(void) onTransitionFromViewToViewClick: (UIButton*) sender {
+- (void)onTransitionFromViewToViewClick:(UIButton *) sender {
     [UIView transitionFromView:self.redView toView:self.blueView duration:2
                options:UIViewAnimationOptionTransitionCurlDown completion:nil];
 }
 
--(void) onResetClick: (UIButton*)sender {
+- (void)onResetClick:(UIButton *)sender {
     [self.redView removeFromSuperview];
     [self.blueView removeFromSuperview];
     

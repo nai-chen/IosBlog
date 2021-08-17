@@ -13,10 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Item : NSObject
 
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, strong) NSArray *children;
-@property (nonatomic, strong) UIViewController *vc;
-@property (nonatomic, copy) NSString *viewController;
+@property(nonatomic, copy) NSString *title;
+@property(nonatomic, strong) NSArray *children;
+@property(nonatomic, strong) UIViewController *vc;
+@property(nonatomic, copy) NSString *viewController;
 
 - (instancetype)initWithTitle:(NSString *)title;
 

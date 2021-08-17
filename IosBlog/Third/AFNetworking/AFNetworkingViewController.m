@@ -30,7 +30,7 @@
     [self.view addSubview:btnPost];
 }
 
--(void) onBtnGetClick: (UIButton *) sender {
+- (void)onBtnGetClick:(UIButton *)sender {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
 
@@ -41,7 +41,7 @@
         }];
 }
 
--(void) onBtnPostClick: (UIButton *) sender {
+- (void) onBtnPostClick:(UIButton *)sender {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
 

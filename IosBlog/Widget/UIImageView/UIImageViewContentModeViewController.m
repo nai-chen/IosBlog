@@ -33,7 +33,7 @@
     [self imageView:CGRectMake(250, 460, 110, 110) contentMode: UIViewContentModeBottomRight];
 }
 
--(void) imageView:(CGRect)rect contentMode:(UIViewContentMode)mode {
+- (void)imageView:(CGRect)rect contentMode:(UIViewContentMode)mode {
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:rect];
     imageView.backgroundColor = [UIColor blackColor];
     imageView.image = [UIImage imageNamed:@"icon_iv_sample"];

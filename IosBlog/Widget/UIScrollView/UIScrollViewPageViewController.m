@@ -9,8 +9,8 @@
 
 @interface UIScrollViewPageViewController () <UIScrollViewDelegate>
 
-@property (nonatomic, strong) UIScrollView *scrollView;
-@property (nonatomic, strong) UIPageControl *pageControl;
+@property(nonatomic, strong) UIScrollView *scrollView;
+@property(nonatomic, strong) UIPageControl *pageControl;
 
 @end
 
@@ -49,7 +49,7 @@
     self.pageControl.currentPage = page;
 }
 
-- (void)onPageControlValueChanged:(UIPageControl*) sender {
+- (void)onPageControlValueChanged:(UIPageControl *)sender {
     NSInteger page = sender.currentPage;
     [self.scrollView setContentOffset:CGPointMake(320*page, 0) animated:YES];
 }

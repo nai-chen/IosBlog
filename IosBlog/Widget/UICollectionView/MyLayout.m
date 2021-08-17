@@ -12,7 +12,7 @@
     NSMutableArray *_attributeAttay;
 }
 
--(void) prepareLayout {
+- (void)prepareLayout {
     _attributeAttay = [[NSMutableArray alloc]init];
     [super prepareLayout];
     //演示方便 我们设置为静态的2列

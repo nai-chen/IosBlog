@@ -11,7 +11,7 @@
 
 @interface AnimationNormalViewController ()
 
-@property (nonatomic, strong) UIView *animationView;
+@property(nonatomic, strong) UIView *animationView;
 
 @end
 
@@ -71,43 +71,43 @@
     [self.view addSubview: resetButton];
 }
 
--(void) onFrameAnimationClick: (UIButton*) sender {
+- (void)onFrameAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:1 animations:^(void) {
         self.animationView.frame = CGRectMake(20, 80, 240, 240);
     } completion:nil];
 }
 
--(void) onBoundsAnimationClick: (UIButton*) sender {
+- (void)onBoundsAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:1 animations:^(void) {
         self.animationView.bounds = CGRectMake(30, 30, 160, 160);
     } completion:nil];
 }
 
--(void) onCenterAnimationClick: (UIButton*) sender {
+- (void)onCenterAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:1 animations:^(void) {
         self.animationView.center = CGPointMake(160, 220);
     } completion:nil];
 }
 
--(void) onAlphaAnimationClick: (UIButton*) sender {
+- (void)onAlphaAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:1 animations:^(void) {
         self.animationView.alpha = 0.2;
     } completion:nil];
 }
 
--(void) onBackgroundAnimationClick: (UIButton*) sender {
+- (void)onBackgroundAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:1 animations:^(void) {
         self.animationView.backgroundColor = [UIColor blueColor];
     } completion:nil];
 }
 
--(void) onTransformAnimationClick: (UIButton*) sender {
+- (void)onTransformAnimationClick:(UIButton *)sender {
     [UIView animateWithDuration:1 animations:^(void) {
         self.animationView.transform = CGAffineTransformMakeRotation(M_PI_4);
     } completion:nil];
 }
 
--(void) onResetClick: (UIButton*) sender {
+- (void)onResetClick:(UIButton *)sender {
     self.animationView.frame = CGRectMake(20, 80, 160, 160);
     self.animationView.bounds = CGRectMake(0, 0, 160, 160);
     self.animationView.alpha = 1;

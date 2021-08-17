@@ -39,7 +39,7 @@
     [self.view addSubview:rightCustomSwitch];
 }
 
--(UISwitch *)makeCustomSwitch {
+- (UISwitch *)makeCustomSwitch {
     UISwitch *customSwitch = [[UISwitch alloc] init];
     // 控件开启状态的填充色
     customSwitch.onTintColor = [UIColor magentaColor];
@@ -55,7 +55,7 @@
     return customSwitch;
 }
 
--(void)onSwitchValueChange:(UISwitch *)sender {
+- (void)onSwitchValueChange:(UISwitch *)sender {
     if (sender.isOn) {
         NSLog(@"on");
     } else {

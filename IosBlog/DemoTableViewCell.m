@@ -11,7 +11,7 @@
 
 @interface DemoTableViewCell()
 
-@property (nonatomic, strong) UILabel *titleLabel;
+@property(nonatomic, strong) UILabel *titleLabel;
 
 @end
 

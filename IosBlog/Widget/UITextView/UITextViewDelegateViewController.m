@@ -26,7 +26,7 @@
     [self.view addSubview:textView2];
 }
 
-- (UITextView *) textViewWithFrame:(CGRect)frame {
+- (UITextView *)textViewWithFrame:(CGRect)frame {
     UITextView *textView = [[UITextView alloc] initWithFrame:frame];
     textView.text = @"http://www.baidu.com";
     textView.textColor = [UIColor blackColor];

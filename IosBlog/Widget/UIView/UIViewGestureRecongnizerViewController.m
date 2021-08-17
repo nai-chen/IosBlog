@@ -26,7 +26,7 @@
     [redView addGestureRecognizer: gestureRecognizer];
 }
 
--(void) singleTap:(UITapGestureRecognizer *)sender {
+- (void)singleTap:(UITapGestureRecognizer *)recognizer {
     NSLog(@"SingleTap");
 }
 

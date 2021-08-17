@@ -13,18 +13,19 @@
 
 @interface CoreDataViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) NSManagedObjectModel *model;
-@property (nonatomic, strong) NSPersistentStoreCoordinator *coordinator;
-@property (nonatomic, strong) NSManagedObjectContext *context;
+@property(nonatomic, strong) NSManagedObjectModel *model;
+@property(nonatomic, strong) NSPersistentStoreCoordinator *coordinator;
+@property(nonatomic, strong) NSManagedObjectContext *context;
 
-@property (nonatomic, strong) Staff *selectStaff;
+@property(nonatomic, strong) Staff *selectStaff;
 
-@property (nonatomic, strong) UITextField *nameTextField;
-@property (nonatomic, strong) UITextField *ageTextField;
-@property (nonatomic, strong) UITextField *sexTextField;
+@property(nonatomic, strong) UITextField *nameTextField;
+@property(nonatomic, strong) UITextField *ageTextField;
+@property(nonatomic, strong) UITextField *sexTextField;
 
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSArray *array;
+@property(nonatomic, strong) UITableView *tableView;
+@property(nonatomic, strong) NSArray *array;
+
 @end
 
 @implementation CoreDataViewController

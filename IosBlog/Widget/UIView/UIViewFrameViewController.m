@@ -64,7 +64,7 @@
     [self print:blueView4];
 }
 
--(void) print:(UIView *)view {
+- (void)print:(UIView *)view {
     NSLog(@"frame x = %f, y = %f, width = %f, height = %f", view.frame.origin.x, view.frame.origin.y,
           view.frame.size.width, view.frame.size.height);
     NSLog(@"bounds x = %f, y = %f, width = %f, height = %f", view.bounds.origin.x, view.bounds.origin.y,

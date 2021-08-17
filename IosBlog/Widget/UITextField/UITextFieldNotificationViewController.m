@@ -9,8 +9,8 @@
 
 @interface UITextFieldNotificationViewController () <UITextFieldDelegate>
 
-@property (nonatomic, strong) UITextField *textField;
-@property (nonatomic) BOOL move;
+@property(nonatomic, strong) UITextField *textField;
+@property(nonatomic, assign) BOOL move;
 
 @end
 
@@ -53,7 +53,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
--(void) keyboardWillShow:(NSNotification *) notification {
+- (void)keyboardWillShow:(NSNotification *)notification {
     NSLog(@"keyboardWillShow");
     
     NSDictionary *userinfo = [notification userInfo];
@@ -81,7 +81,7 @@
     }
 }
 
--(void) keyboardWillHide:(NSNotification *) notification {
+- (void)keyboardWillHide:(NSNotification *)notification {
     NSLog(@"keyboardWillHide");
     if (self.move) {
         self.move = FALSE;

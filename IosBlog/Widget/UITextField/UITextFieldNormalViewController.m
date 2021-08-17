@@ -30,7 +30,7 @@
     [self.view addSubview:textField];
 }
 
--(UITextField *)textFiledWithFrame:(CGRect)frame {
+- (UITextField *)textFiledWithFrame:(CGRect)frame {
     UITextField *textField = [[UITextField alloc] initWithFrame:frame];
     textField.textColor = [UIColor whiteColor];
     textField.textAlignment = NSTextAlignmentCenter;
@@ -40,7 +40,7 @@
     return textField;
 }
 
--(UITextField *)textFiledWithFrame:(CGRect)frame borderStyle:(UITextBorderStyle)borderStyle {
+- (UITextField *)textFiledWithFrame:(CGRect)frame borderStyle:(UITextBorderStyle)borderStyle {
     UITextField *textField = [[UITextField alloc] initWithFrame:frame];
     textField.textColor = [UIColor blackColor];
     textField.textAlignment = NSTextAlignmentCenter;

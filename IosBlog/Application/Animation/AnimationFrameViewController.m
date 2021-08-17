@@ -9,7 +9,7 @@
 
 @interface AnimationFrameViewController ()
 
-@property (nonatomic, strong) UIView *magentaView;
+@property(nonatomic, strong) UIView *magentaView;
 
 @end
 
@@ -28,7 +28,8 @@
     [keyFramesButton addTarget:self action:@selector(onKeyFramesAnimation:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: keyFramesButton];
 }
--(void) onKeyFramesAnimation: (UIButton*) sender {
+
+- (void)onKeyFramesAnimation:(UIButton *)sender {
     [UIView animateKeyframesWithDuration:1 delay:0 options:0 animations:^{
         [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:0.2 animations:^{
             self.magentaView.frame = CGRectMake(120, 100, 160, 160);

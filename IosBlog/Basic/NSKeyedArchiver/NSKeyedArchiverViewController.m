@@ -10,7 +10,7 @@
 
 @interface NSKeyedArchiverViewController ()
 
-@property (nonatomic, copy) NSString *dataPath;
+@property(nonatomic, copy) NSString *dataPath;
 
 @end
 

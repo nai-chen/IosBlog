@@ -10,9 +10,9 @@
 
 @interface CAAnimationGroupViewController ()
 
-@property (nonatomic, strong) UIView *colorView;
-@property (nonatomic, strong) UIBezierPath *bezierPath;
-@property (nonatomic, strong) UIButton *button;
+@property(nonatomic, strong) UIView *colorView;
+@property(nonatomic, strong) UIBezierPath *bezierPath;
+@property(nonatomic, strong) UIButton *button;
 
 @end
 
@@ -57,7 +57,7 @@
     self.button.frame = CGRectMake(25, kDeviceHeight-insets.bottom-100, kDeviceWidth-50, 50);
 }
 
--(void) onChangePath: (UIButton*) sender {
+- (void)onChangePath:(UIButton *)sender {
     //移除可能未执行完的动画，防止多重动画导致异常
     [self.colorView.layer removeAnimationForKey:@"groupAnimation"];
     

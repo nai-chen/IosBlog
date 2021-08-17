@@ -68,7 +68,7 @@
     }
 }
 
--(UIPageControl *)makePageControl:(CGRect)rect {
+- (UIPageControl *)makePageControl:(CGRect)rect {
     UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:rect];
     // 未选中小白点的颜色
     pageControl.pageIndicatorTintColor = [UIColor grayColor];
@@ -82,7 +82,7 @@
     return pageControl;
 }
 
--(void)onPageControlValueChange:(UIPageControl *)sender {
+- (void)onPageControlValueChange:(UIPageControl *)sender {
     NSLog(@"currentPage = %ld", sender.currentPage);
 }
 

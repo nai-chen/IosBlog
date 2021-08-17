@@ -9,7 +9,7 @@
 
 @interface UITextFieldReturnTypeViewController () <UITextFieldDelegate>
 
-@property (nonatomic, strong) UITextField *textField;
+@property(nonatomic, strong) UITextField *textField;
 
 @end
 
@@ -42,14 +42,14 @@
     [self.view addGestureRecognizer:tapGestureRecognizer];
 }
 
--(void)keyboardHide:(UITapGestureRecognizer *)tap{
+- (void)keyboardHide:(UITapGestureRecognizer *)tap{
     NSLog(@"keyboardHide");
     if (self.textField) {
         [self.textField resignFirstResponder];
     }
 }
 
--(void) textFieldWithFrame:(CGRect)frame hint:(NSString*) hint andReturnType:(UIReturnKeyType)type {
+- (void)textFieldWithFrame:(CGRect)frame hint:(NSString *) hint andReturnType:(UIReturnKeyType)type {
     UITextField *textField = [[UITextField alloc] initWithFrame:frame];
     textField.placeholder = hint;
     textField.borderStyle = UITextBorderStyleRoundedRect;

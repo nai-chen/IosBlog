@@ -9,9 +9,9 @@
 
 @interface UIPickerViewController ()<UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (nonatomic, retain) NSArray *cityArray;
-@property (nonatomic, assign) NSInteger selectProvince;
-@property (nonatomic, assign) NSInteger selectCity;
+@property(nonatomic, retain) NSArray *cityArray;
+@property(nonatomic, assign) NSInteger selectProvince;
+@property(nonatomic, assign) NSInteger selectCity;
 
 @end
 

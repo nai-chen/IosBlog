@@ -25,7 +25,7 @@
     [self.view addSubview: [self buttonWithFrame:CGRectMake(20, 400, 320, 30) type:UIButtonTypeRoundedRect title:@"round rect button"]];
 }
 
--(UIButton*) buttonWithFrame:(CGRect)frame type:(UIButtonType)buttonType title:(NSString*)title {
+- (UIButton *)buttonWithFrame:(CGRect)frame type:(UIButtonType)buttonType title:(NSString*)title {
     UIButton *btn = [UIButton buttonWithType: buttonType];
     btn.frame = frame;
     [btn setTitle:title forState:UIControlStateNormal];

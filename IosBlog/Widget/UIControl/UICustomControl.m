@@ -23,7 +23,7 @@
     NSLog(@"endTrackingWithTouch");
 }
 
--(void)cancelTrackingWithEvent:(UIEvent *)event {
+- (void)cancelTrackingWithEvent:(UIEvent *)event {
     NSLog(@"cancelTrackingWithEvent");
 }
 

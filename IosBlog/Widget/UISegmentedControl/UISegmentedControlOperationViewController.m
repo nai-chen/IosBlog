@@ -9,7 +9,7 @@
 
 @interface UISegmentedControlOperationViewController ()
 
-@property (nonatomic, retain) UISegmentedControl *operationSegmentedControl;
+@property(nonatomic, retain) UISegmentedControl *operationSegmentedControl;
  
 @end
 

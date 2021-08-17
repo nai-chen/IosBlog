@@ -10,8 +10,8 @@
 
 @interface LayerAnimationTransactionViewController ()
 
-@property (nonatomic, strong) CALayer *colorLayer;
-@property (nonatomic, strong) UIButton *button;
+@property(nonatomic, strong) CALayer *colorLayer;
+@property(nonatomic, strong) UIButton *button;
 
 @end
 
@@ -39,7 +39,7 @@
     self.button.frame = CGRectMake(25, kDeviceHeight-insets.bottom-100, kDeviceWidth-50, 50);
 }
 
--(void) onChangeColor: (UIButton*) sender {
+- (void)onChangeColor:(UIButton *)sender {
     [CATransaction begin];  //入栈
     //1.设置动画执行时间
     [CATransaction setAnimationDuration:3];
