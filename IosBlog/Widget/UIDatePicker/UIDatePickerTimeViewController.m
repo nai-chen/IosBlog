@@ -23,14 +23,16 @@
     [titleLabel setFont: [UIFont boldSystemFontOfSize:17]];
     [self.view addSubview:titleLabel];
      
-    [self datePickerWithStyle:UIDatePickerStyleCompact frame:CGRectMake(10, 100, width, 50)];
-    
-    [self datePickerWithStyle:UIDatePickerStyleWheels frame:CGRectMake(10, 150, width, 200)];
-    
-    [self datePickerWithStyle:UIDatePickerStyleInline frame:CGRectMake(10, 350, width, 200)];
+    if (@available(iOS 14.0, *)) {
+        [self datePickerWithStyle:UIDatePickerStyleCompact frame:CGRectMake(10, 100, width, 50)];
+        
+        [self datePickerWithStyle:UIDatePickerStyleWheels frame:CGRectMake(10, 150, width, 200)];
+        
+        [self datePickerWithStyle:UIDatePickerStyleInline frame:CGRectMake(10, 350, width, 200)];
+    }
 }
 
-- (UIDatePicker *)datePickerWithStyle:(UIDatePickerStyle)style frame:(CGRect)frame {
+- (UIDatePicker *)datePickerWithStyle:(UIDatePickerStyle)style frame:(CGRect)frame NS_AVAILABLE_IOS(14_0) {
     UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:frame];
     datePicker.datePickerMode = UIDatePickerModeTime;
     datePicker.preferredDatePickerStyle = style;

@@ -74,6 +74,8 @@
 		04770672264D29BD004ED1AA /* UIFontPreferredFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770671264D29BD004ED1AA /* UIFontPreferredFontViewController.m */; };
 		04770677264D2E4B004ED1AA /* NSUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770676264D2E4B004ED1AA /* NSUserDefaultsViewController.m */; };
 		047C971A26CCD97A0013235E /* AVPlayerNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C971926CCD97A0013235E /* AVPlayerNormalViewController.m */; };
+		047C972226CCFBEC0013235E /* AVPlayerItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C972126CCFBEC0013235E /* AVPlayerItemViewController.m */; };
+		047C972626CD0A020013235E /* AVPlayerViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C972526CD0A020013235E /* AVPlayerViewControllerViewController.m */; };
 		047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D16261EA547001F4FA1 /* UIStepperViewController.m */; };
 		04879A18264E17C7004FCD92 /* MJExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A17264E17C7004FCD92 /* MJExtensionViewController.m */; };
 		04879A32264E1DD7004FCD92 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A31264E1DD7004FCD92 /* Model.m */; };
@@ -241,6 +243,10 @@
 		04770676264D2E4B004ED1AA /* NSUserDefaultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsViewController.m; sourceTree = "<group>"; };
 		047C971826CCD97A0013235E /* AVPlayerNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerNormalViewController.h; sourceTree = "<group>"; };
 		047C971926CCD97A0013235E /* AVPlayerNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerNormalViewController.m; sourceTree = "<group>"; };
+		047C972026CCFBEC0013235E /* AVPlayerItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerItemViewController.h; sourceTree = "<group>"; };
+		047C972126CCFBEC0013235E /* AVPlayerItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerItemViewController.m; sourceTree = "<group>"; };
+		047C972426CD0A020013235E /* AVPlayerViewControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewControllerViewController.h; sourceTree = "<group>"; };
+		047C972526CD0A020013235E /* AVPlayerViewControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewControllerViewController.m; sourceTree = "<group>"; };
 		047F1D15261EA547001F4FA1 /* UIStepperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStepperViewController.h; sourceTree = "<group>"; };
 		047F1D16261EA547001F4FA1 /* UIStepperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStepperViewController.m; sourceTree = "<group>"; };
 		04879A16264E17C7004FCD92 /* MJExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionViewController.h; sourceTree = "<group>"; };
@@ -710,6 +716,10 @@
 			children = (
 				047C971826CCD97A0013235E /* AVPlayerNormalViewController.h */,
 				047C971926CCD97A0013235E /* AVPlayerNormalViewController.m */,
+				047C972026CCFBEC0013235E /* AVPlayerItemViewController.h */,
+				047C972126CCFBEC0013235E /* AVPlayerItemViewController.m */,
+				047C972426CD0A020013235E /* AVPlayerViewControllerViewController.h */,
+				047C972526CD0A020013235E /* AVPlayerViewControllerViewController.m */,
 			);
 			path = AVPlayer;
 			sourceTree = "<group>";
@@ -1009,6 +1019,7 @@
 				04EC5BC926203F22008A4667 /* UIAlertControllerViewController.m in Sources */,
 				045F306E256FA69C00DA31BC /* AttributeStringNormalViewController.m in Sources */,
 				045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */,
+				047C972226CCFBEC0013235E /* AVPlayerItemViewController.m in Sources */,
 				0476AB8D263BEF8E00EAEADE /* NSURLSessionViewController.m in Sources */,
 				04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */,
 				045256CD26281D6B00E7D8CF /* UICollectionViewWheelLayoutViewController.m in Sources */,
@@ -1018,6 +1029,7 @@
 				045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */,
 				04770651264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m in Sources */,
 				0477066E264D25E5004ED1AA /* UIFontFamilyViewController.m in Sources */,
+				047C972626CD0A020013235E /* AVPlayerViewControllerViewController.m in Sources */,
 				04623776261D520E0034D421 /* UISegmentedControlEventViewController.m in Sources */,
 				045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */,
 				047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */,

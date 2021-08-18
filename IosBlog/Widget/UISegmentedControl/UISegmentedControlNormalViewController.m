@@ -28,7 +28,9 @@
     UISegmentedControl *selectSegmentedControl = [[UISegmentedControl alloc] initWithItems:titleArray];
     selectSegmentedControl.frame = CGRectMake(10, 180, [UIScreen mainScreen].bounds.size.width-20 , 44);
     selectSegmentedControl.selectedSegmentIndex = 1;
-    selectSegmentedControl.selectedSegmentTintColor = [UIColor magentaColor];
+    if (@available(iOS 13.0, *)) {
+        selectSegmentedControl.selectedSegmentTintColor = [UIColor magentaColor];
+    }
     [self.view addSubview:selectSegmentedControl];
     
     UISegmentedControl *momentarySegmentedControl = [[UISegmentedControl alloc] initWithItems:titleArray];

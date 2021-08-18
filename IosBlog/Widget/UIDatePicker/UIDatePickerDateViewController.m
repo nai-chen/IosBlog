@@ -23,21 +23,23 @@
     [titleLabel setFont: [UIFont boldSystemFontOfSize:17]];
     [self.view addSubview:titleLabel];
      
-    [self datePickerWithStyle:UIDatePickerStyleCompact frame:CGRectMake(10, 100, width, 50)];
-    
-    [self datePickerWithStyle:UIDatePickerStyleWheels frame:CGRectMake(10, 150, width, 200)];
-    
-    UIDatePicker *datePicker = [self datePickerWithStyle:UIDatePickerStyleInline frame:CGRectMake(10, 350, width, 200)];
-    
-    NSDate *currentDate = [NSDate date];
-    NSCalendar *calendar = [NSCalendar currentCalendar];
+    if (@available(iOS 14.0, *)) {
+        [self datePickerWithStyle:UIDatePickerStyleCompact frame:CGRectMake(10, 100, width, 50)];
+        
+        [self datePickerWithStyle:UIDatePickerStyleWheels frame:CGRectMake(10, 150, width, 200)];
+        
+        UIDatePicker *datePicker = [self datePickerWithStyle:UIDatePickerStyleInline frame:CGRectMake(10, 350, width, 200)];
+        
+        NSDate *currentDate = [NSDate date];
+        NSCalendar *calendar = [NSCalendar currentCalendar];
 
-    datePicker.minimumDate = [calendar dateByAddingUnit:NSCalendarUnitMonth value:-12 toDate:currentDate options:0];
-    datePicker.maximumDate = [calendar dateByAddingUnit:NSCalendarUnitMonth value:12 toDate:currentDate options:0];
-    datePicker.date = [calendar dateByAddingUnit:NSCalendarUnitMonth value:1 toDate:currentDate options:0];
+        datePicker.minimumDate = [calendar dateByAddingUnit:NSCalendarUnitMonth value:-12 toDate:currentDate options:0];
+        datePicker.maximumDate = [calendar dateByAddingUnit:NSCalendarUnitMonth value:12 toDate:currentDate options:0];
+        datePicker.date = [calendar dateByAddingUnit:NSCalendarUnitMonth value:1 toDate:currentDate options:0];
+    }
 }
 
-- (UIDatePicker *)datePickerWithStyle:(UIDatePickerStyle)style frame:(CGRect)frame {
+- (UIDatePicker *)datePickerWithStyle:(UIDatePickerStyle)style frame:(CGRect)frame NS_AVAILABLE_IOS(14_0) {
     UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:frame];
     datePicker.datePickerMode = UIDatePickerModeDate;
     datePicker.preferredDatePickerStyle = style;

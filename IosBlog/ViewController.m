@@ -172,8 +172,22 @@
     // Core Animation end
     Item *coreAnimationItem = [[Item alloc] initWithTitle:@"CoreAnimation"];
     coreAnimationItem.children = @[basicAnimationItem, keyframeAnimationValueItem, keyframeAnimationPathItem, animationGroupPathItem];
-    
+
     // AVPlayer
+    Item *avPlayerNormalItem = [[Item alloc] initWithTitle:@"AVPlayerNormal"];
+    avPlayerNormalItem.viewController = @"AVPlayerNormalViewController";
+    
+    Item *avPlayerItemItem = [[Item alloc] initWithTitle:@"AVPlayerItem"];
+    avPlayerItemItem.viewController = @"AVPlayerItemViewController";
+    
+    Item *avPlayerViewControllerItem = [[Item alloc] initWithTitle:@"AVPlayerViewController"];
+    avPlayerViewControllerItem.viewController = @"AVPlayerViewControllerViewController";
+
+    
+    // AVPlayer end
+    Item *avPlayerItem = [[Item alloc] initWithTitle:@"AVPlayer"];
+    avPlayerItem.children = @[avPlayerNormalItem, avPlayerItemItem, avPlayerViewControllerItem];
+
     
 //
 //    // Core Graphics
@@ -181,7 +195,7 @@
     
     // Image
     Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
-    imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem];
+    imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem];
 
     return imageItem;
 }
