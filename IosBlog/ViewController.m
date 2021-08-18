@@ -23,20 +23,20 @@
     [super viewDidLoad];
 
     if (!self.item) {
-        // Basic item
-        Item *basicItem = [self basicItem];
+        // Application item
+        Item *applicationItem = [self applicationItem];
+        
+        // Image item
+        Item *imageItem = [self imageItem];
         
         // Widget item
         Item *widgetItem = [self widgetItem];
-        
-        // Application item
-        Item *applicationItem = [self applicationItem];
         
         // Third item
         Item *thirdItem = [self thirdItem];
         
         self.item = [[Item alloc] initWithTitle:@""];
-        self.item.children = @[basicItem, widgetItem, applicationItem, thirdItem];
+        self.item.children = @[applicationItem, imageItem, widgetItem, thirdItem];
     }
     
     _tableView = [[UITableView alloc] init];
@@ -49,7 +49,7 @@
     }];
 }
 
-- (Item *)basicItem {
+- (Item *)applicationItem {
     // UIFont
     Item *uiSystemFontItem = [[Item alloc] initWithTitle:@"UISystemFont"];
     uiSystemFontItem.viewController = @"UISystemFontViewController";
@@ -82,13 +82,13 @@
     Item *attributeStringItem = [[Item alloc] initWithTitle:@"AttributeString"];
     attributeStringItem.children = @[attributeStringNormalItem, AttributeStringParagraphStyleItem];
     
-    // UIColor
-    Item *uiColorItem = [[Item alloc] initWithTitle:@"UIColor"];
-    uiColorItem.viewController = @"UIColorViewController";
-    
     // NSNotificationCenter
     Item *notificationCenterItem = [[Item alloc] initWithTitle:@"NSNotificationCenter"];
     notificationCenterItem.viewController = @"NSNoticationViewController";
+
+    // SafeArea
+    Item *safeAreaItem = [[Item alloc] initWithTitle:@"SafeArea"];
+    safeAreaItem.viewController = @"SafeAreaNormalViewController";
 
     // NSURLConnection
     Item *urlConnectionItem = [[Item alloc] initWithTitle:@"NSURLConnection"];
@@ -98,16 +98,94 @@
     Item *urlSessionItem = [[Item alloc] initWithTitle:@"NSURLSession"];
     urlSessionItem.viewController = @"NSURLSessionViewController";
     
+    // Sandbox
+    Item *sandboxItem = [[Item alloc] initWithTitle:@"Sandbox"];
+    sandboxItem.viewController = @"SandboxViewController";
+    
     // NSKeyedArchiver
-    Item *keyedarchiverItem = [[Item alloc] initWithTitle:@"NSKeyedArchiver"];
-    keyedarchiverItem.viewController = @"NSKeyedArchiverViewController";
+    Item *keyedArchiverItem = [[Item alloc] initWithTitle:@"NSKeyedArchiver"];
+    keyedArchiverItem.viewController = @"NSKeyedArchiverViewController";
     
-    Item *basicItem = [[Item alloc] initWithTitle:@"Basic"];
-    basicItem.children = @[uiFontItem, userDefaultsItem, attributeStringItem, uiColorItem, notificationCenterItem,
-                           urlConnectionItem, urlSessionItem, keyedarchiverItem];
+    Item *applicationItem = [[Item alloc] initWithTitle:@"Application"];
+    applicationItem.children = @[uiFontItem, userDefaultsItem, attributeStringItem, notificationCenterItem, safeAreaItem,
+                           urlConnectionItem, urlSessionItem, sandboxItem, keyedArchiverItem];
     
-    return basicItem;
+    return applicationItem;
 }
+
+- (Item *)imageItem {
+    // UIColor
+    Item *uiColorItem = [[Item alloc] initWithTitle:@"UIColor"];
+    uiColorItem.viewController = @"UIColorViewController";
+    
+    // Animation
+    Item *animationNormalItem = [[Item alloc] initWithTitle:@"AnimationNormal"];
+    animationNormalItem.viewController = @"AnimationNormalViewController";
+
+    Item *animationTransformItem = [[Item alloc] initWithTitle:@"AnimationTransform"];
+    animationTransformItem.viewController = @"AnimationTransformViewController";
+    
+    Item *animationCurveItem = [[Item alloc] initWithTitle:@"AnimationCurve"];
+    animationCurveItem.viewController = @"AnimationCurveViewController";
+
+    Item *animationSpringItem = [[Item alloc] initWithTitle:@"AnimationSpring"];
+    animationSpringItem.viewController = @"AnimationSpringViewController";
+    
+    Item *animationTranstionItem = [[Item alloc] initWithTitle:@"AnimationTransition"];
+    animationTranstionItem.viewController = @"AnimationTransitionViewController";
+    
+    Item *animationFrameItem = [[Item alloc] initWithTitle:@"AnimationFrame"];
+    animationFrameItem.viewController = @"AnimationFrameViewController";
+    
+    // Animtion end
+    Item *animationItem = [[Item alloc] initWithTitle:@"Animation"];
+    animationItem.children = @[animationNormalItem, animationTransformItem, animationCurveItem, animationSpringItem,
+                               animationTranstionItem, animationFrameItem];
+    
+    // Layer Animation
+    Item *layerAnimationNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    layerAnimationNormalItem.viewController = @"LayerAnimationNormalViewController";
+    
+    Item *layerAnimationTransactionItem = [[Item alloc] initWithTitle:@"Transaction"];
+    layerAnimationTransactionItem.viewController = @"LayerAnimationTransactionViewController";
+    
+    Item *layerAnimationCustomItem = [[Item alloc] initWithTitle:@"Custom"];
+    layerAnimationCustomItem.viewController = @"LayerAnimationCustomViewController";
+    
+    // Layer Animtion end
+    Item *layerAnimationItem = [[Item alloc] initWithTitle:@"LayerAnimation"];
+    layerAnimationItem.children = @[layerAnimationNormalItem, layerAnimationTransactionItem, layerAnimationCustomItem];
+    
+    // Core Animation
+    Item *basicAnimationItem = [[Item alloc] initWithTitle:@"CABasicAnimation"];
+    basicAnimationItem.viewController = @"CABasicAnimationViewController";
+    
+    Item *keyframeAnimationValueItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Value"];
+    keyframeAnimationValueItem.viewController = @"CAKeyframeAnimationValueViewController";
+    
+    Item *keyframeAnimationPathItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Path"];
+    keyframeAnimationPathItem.viewController = @"CAKeyframeAnimationPathViewController";
+    
+    Item *animationGroupPathItem = [[Item alloc] initWithTitle:@"CAAnimationGroup"];
+    animationGroupPathItem.viewController = @"CAAnimationGroupViewController";
+    
+    // Core Animation end
+    Item *coreAnimationItem = [[Item alloc] initWithTitle:@"CoreAnimation"];
+    coreAnimationItem.children = @[basicAnimationItem, keyframeAnimationValueItem, keyframeAnimationPathItem, animationGroupPathItem];
+    
+    // AVPlayer
+    
+//
+//    // Core Graphics
+//    Item *coreGraphicsItem = [[Item alloc] initWithTitle:@"CoreGraphics"];
+    
+    // Image
+    Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
+    imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem];
+
+    return imageItem;
+}
+
 
 - (Item *)widgetItem {
     // UIView
@@ -313,83 +391,6 @@
                             uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem, uiCollectionViewItem];
     
     return widgetItem;
-}
-
-- (Item *)applicationItem {
-    // SafeArea
-    Item *safeAreaItem = [[Item alloc] initWithTitle:@"SafeArea"];
-    safeAreaItem.viewController = @"SafeAreaNormalViewController";
-    
-    // Animation
-    Item *animationNormalItem = [[Item alloc] initWithTitle:@"AnimationNormal"];
-    animationNormalItem.viewController = @"AnimationNormalViewController";
-
-    Item *animationTransformItem = [[Item alloc] initWithTitle:@"AnimationTransform"];
-    animationTransformItem.viewController = @"AnimationTransformViewController";
-    
-    Item *animationCurveItem = [[Item alloc] initWithTitle:@"AnimationCurve"];
-    animationCurveItem.viewController = @"AnimationCurveViewController";
-
-    Item *animationSpringItem = [[Item alloc] initWithTitle:@"AnimationSpring"];
-    animationSpringItem.viewController = @"AnimationSpringViewController";
-    
-    Item *animationTranstionItem = [[Item alloc] initWithTitle:@"AnimationTransition"];
-    animationTranstionItem.viewController = @"AnimationTransitionViewController";
-    
-    Item *animationFrameItem = [[Item alloc] initWithTitle:@"AnimationFrame"];
-    animationFrameItem.viewController = @"AnimationFrameViewController";
-    
-    // Animtion end
-    Item *animationItem = [[Item alloc] initWithTitle:@"Animation"];
-    animationItem.children = @[animationNormalItem, animationTransformItem, animationCurveItem, animationSpringItem,
-                               animationTranstionItem, animationFrameItem];
-    
-    // Layer Animation
-    Item *layerAnimationNormalItem = [[Item alloc] initWithTitle:@"Normal"];
-    layerAnimationNormalItem.viewController = @"LayerAnimationNormalViewController";
-    
-    Item *layerAnimationTransactionItem = [[Item alloc] initWithTitle:@"Transaction"];
-    layerAnimationTransactionItem.viewController = @"LayerAnimationTransactionViewController";
-    
-    Item *layerAnimationCustomItem = [[Item alloc] initWithTitle:@"Custom"];
-    layerAnimationCustomItem.viewController = @"LayerAnimationCustomViewController";
-    
-    // Layer Animtion end
-    Item *layerAnimationItem = [[Item alloc] initWithTitle:@"LayerAnimation"];
-    layerAnimationItem.children = @[layerAnimationNormalItem, layerAnimationTransactionItem, layerAnimationCustomItem];
-    
-    // Core Animation
-    Item *basicAnimationItem = [[Item alloc] initWithTitle:@"CABasicAnimation"];
-    basicAnimationItem.viewController = @"CABasicAnimationViewController";
-    
-    Item *keyframeAnimationValueItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Value"];
-    keyframeAnimationValueItem.viewController = @"CAKeyframeAnimationValueViewController";
-    
-    Item *keyframeAnimationPathItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Path"];
-    keyframeAnimationPathItem.viewController = @"CAKeyframeAnimationPathViewController";
-    
-    Item *animationGroupPathItem = [[Item alloc] initWithTitle:@"CAAnimationGroup"];
-    animationGroupPathItem.viewController = @"CAAnimationGroupViewController";
-    
-    // Core Animation end
-    Item *coreAnimationItem = [[Item alloc] initWithTitle:@"CoreAnimation"];
-    coreAnimationItem.children = @[basicAnimationItem, keyframeAnimationValueItem, keyframeAnimationPathItem, animationGroupPathItem];
-    
-    Item *sandboxItem = [[Item alloc] initWithTitle:@"Sandbox"];
-    sandboxItem.viewController = @"SandboxViewController";
-    
-    // Core Data
-    Item *coreDataItem = [[Item alloc] initWithTitle:@"CoreData"];
-    coreDataItem.viewController = @"CoreDataViewController";
-    
-    // Core Graphics
-    Item *coreGraphicsItem = [[Item alloc] initWithTitle:@"CoreGraphics"];
-    
-    // Application
-    Item *applicationItem = [[Item alloc] initWithTitle:@"Application"];
-    applicationItem.children = @[safeAreaItem, animationItem, layerAnimationItem, coreAnimationItem, sandboxItem, coreDataItem];
-
-    return applicationItem;
 }
 
 - (Item *)thirdItem {

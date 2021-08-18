@@ -73,6 +73,7 @@
 		0477066E264D25E5004ED1AA /* UIFontFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477066D264D25E5004ED1AA /* UIFontFamilyViewController.m */; };
 		04770672264D29BD004ED1AA /* UIFontPreferredFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770671264D29BD004ED1AA /* UIFontPreferredFontViewController.m */; };
 		04770677264D2E4B004ED1AA /* NSUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770676264D2E4B004ED1AA /* NSUserDefaultsViewController.m */; };
+		047C971A26CCD97A0013235E /* AVPlayerNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C971926CCD97A0013235E /* AVPlayerNormalViewController.m */; };
 		047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D16261EA547001F4FA1 /* UIStepperViewController.m */; };
 		04879A18264E17C7004FCD92 /* MJExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A17264E17C7004FCD92 /* MJExtensionViewController.m */; };
 		04879A32264E1DD7004FCD92 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A31264E1DD7004FCD92 /* Model.m */; };
@@ -85,8 +86,6 @@
 		04AE384426BBEFE400E33FC5 /* CoreGraphicsFillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE384326BBEFE400E33FC5 /* CoreGraphicsFillViewController.m */; };
 		04AE384826BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */; };
 		04BD2C4E2654A6F100A03652 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04BD2C4C2654A6F100A03652 /* Model.xcdatamodeld */; };
-		04BD2C532654A93900A03652 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD2C522654A93900A03652 /* CoreDataViewController.m */; };
-		04BD2C9626550B9F00A03652 /* CoreDataContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD2C9526550B9F00A03652 /* CoreDataContainerViewController.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -240,6 +239,8 @@
 		04770671264D29BD004ED1AA /* UIFontPreferredFontViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFontPreferredFontViewController.m; sourceTree = "<group>"; };
 		04770675264D2E4B004ED1AA /* NSUserDefaultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsViewController.h; sourceTree = "<group>"; };
 		04770676264D2E4B004ED1AA /* NSUserDefaultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsViewController.m; sourceTree = "<group>"; };
+		047C971826CCD97A0013235E /* AVPlayerNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerNormalViewController.h; sourceTree = "<group>"; };
+		047C971926CCD97A0013235E /* AVPlayerNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerNormalViewController.m; sourceTree = "<group>"; };
 		047F1D15261EA547001F4FA1 /* UIStepperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStepperViewController.h; sourceTree = "<group>"; };
 		047F1D16261EA547001F4FA1 /* UIStepperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStepperViewController.m; sourceTree = "<group>"; };
 		04879A16264E17C7004FCD92 /* MJExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionViewController.h; sourceTree = "<group>"; };
@@ -262,14 +263,6 @@
 		04AE384626BBEFF700E33FC5 /* CoreGraphicsOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsOtherViewController.h; sourceTree = "<group>"; };
 		04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsOtherViewController.m; sourceTree = "<group>"; };
 		04BD2C4D2654A6F100A03652 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		04BD2C512654A93900A03652 /* CoreDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
-		04BD2C522654A93900A03652 /* CoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
-		04BD2C892654F92000A03652 /* Staff+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Staff+CoreDataProperties.m"; path = "/Users/mac/Desktop/GitHub/IosBlog/IosBlog/Application/CoreData/Staff+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		04BD2C8A2654F92000A03652 /* Staff+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Staff+CoreDataProperties.h"; path = "/Users/mac/Desktop/GitHub/IosBlog/IosBlog/Application/CoreData/Staff+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		04BD2C8B2654F92100A03652 /* Staff+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Staff+CoreDataClass.m"; path = "/Users/mac/Desktop/GitHub/IosBlog/IosBlog/Application/CoreData/Staff+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		04BD2C8C2654F92100A03652 /* Staff+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Staff+CoreDataClass.h"; path = "/Users/mac/Desktop/GitHub/IosBlog/IosBlog/Application/CoreData/Staff+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		04BD2C9426550B9F00A03652 /* CoreDataContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataContainerViewController.h; sourceTree = "<group>"; };
-		04BD2C9526550B9F00A03652 /* CoreDataContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataContainerViewController.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
 		04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNormalViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -396,7 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				04701A512626F29300957DC4 /* Application */,
-				045F305D256FA5D700DA31BC /* Basic */,
+				047C971C26CCDA200013235E /* Image */,
 				045F30B7256FA8C500DA31BC /* Third */,
 				045F3071256FA6CD00DA31BC /* Widget */,
 				0461915B257E00380038E674 /* Tool */,
@@ -416,21 +409,6 @@
 				04BD2C4C2654A6F100A03652 /* Model.xcdatamodeld */,
 			);
 			path = IosBlog;
-			sourceTree = "<group>";
-		};
-		045F305D256FA5D700DA31BC /* Basic */ = {
-			isa = PBXGroup;
-			children = (
-				04770662264D2144004ED1AA /* UIFont */,
-				04770674264D2E3D004ED1AA /* NSUserDefaults */,
-				045F305E256FA5F200DA31BC /* AttributeString */,
-				045F3060256FA60800DA31BC /* UIColor */,
-				045F305F256FA5FE00DA31BC /* NSNotificationCenter */,
-				0476AB84263BE42300EAEADE /* NSURLConnection */,
-				0476AB90263BEF9900EAEADE /* NSURLSession */,
-				049B579226539CB0001641E4 /* NSKeyedArchiver */,
-			);
-			path = Basic;
 			sourceTree = "<group>";
 		};
 		045F305E256FA5F200DA31BC /* AttributeString */ = {
@@ -571,8 +549,8 @@
 		045F30B7256FA8C500DA31BC /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				04879A15264E17BB004FCD92 /* MJExtension */,
 				0476AB92263BFAB500EAEADE /* AFNetworking */,
+				04879A15264E17BB004FCD92 /* MJExtension */,
 				045F30B8256FA8D200DA31BC /* SVProgressHUD */,
 			);
 			path = Third;
@@ -627,13 +605,15 @@
 		04701A512626F29300957DC4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				045F305E256FA5F200DA31BC /* AttributeString */,
+				04770674264D2E3D004ED1AA /* NSUserDefaults */,
+				04770662264D2144004ED1AA /* UIFont */,
+				045F305F256FA5FE00DA31BC /* NSNotificationCenter */,
+				0476AB84263BE42300EAEADE /* NSURLConnection */,
+				0476AB90263BEF9900EAEADE /* NSURLSession */,
+				049B579226539CB0001641E4 /* NSKeyedArchiver */,
 				04701A522626F2AB00957DC4 /* SafeArea */,
-				04C4ED392643E57B007C35EF /* Animation */,
-				0477063B264CF9F0004ED1AA /* LayerAnimation */,
-				0477063A264CF891004ED1AA /* CoreAnimation */,
 				049B578D26535E47001641E4 /* Sandbox */,
-				04BD2C502654A90A00A03652 /* CoreData */,
-				04AE383726BBDB6A00E33FC5 /* CoreGraphics */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -682,7 +662,6 @@
 				0477064F264D090B004ED1AA /* CAKeyframeAnimationValueViewController.h */,
 				04770650264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m */,
 				04770654264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.h */,
-				04770655264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m */,
 				04770658264D16FF004ED1AA /* CAAnimationGroupViewController.h */,
 				04770659264D16FF004ED1AA /* CAAnimationGroupViewController.m */,
 			);
@@ -724,6 +703,28 @@
 				04770676264D2E4B004ED1AA /* NSUserDefaultsViewController.m */,
 			);
 			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		047C971726CCD93F0013235E /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				047C971826CCD97A0013235E /* AVPlayerNormalViewController.h */,
+				047C971926CCD97A0013235E /* AVPlayerNormalViewController.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
+		047C971C26CCDA200013235E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				047C971726CCD93F0013235E /* AVPlayer */,
+				04C4ED392643E57B007C35EF /* Animation */,
+				04AE383726BBDB6A00E33FC5 /* CoreGraphics */,
+				045F3060256FA60800DA31BC /* UIColor */,
+				0477063A264CF891004ED1AA /* CoreAnimation */,
+				0477063B264CF9F0004ED1AA /* LayerAnimation */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		047F1D14261EA539001F4FA1 /* UIStepper */ = {
@@ -792,6 +793,7 @@
 		04AE383726BBDB6A00E33FC5 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				04770655264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m */,
 				04AE383E26BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.h */,
 				04AE383F26BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.m */,
 				04AE384226BBEFE400E33FC5 /* CoreGraphicsFillViewController.h */,
@@ -800,21 +802,6 @@
 				04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */,
 			);
 			path = CoreGraphics;
-			sourceTree = "<group>";
-		};
-		04BD2C502654A90A00A03652 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				04BD2C8A2654F92000A03652 /* Staff+CoreDataProperties.h */,
-				04BD2C892654F92000A03652 /* Staff+CoreDataProperties.m */,
-				04BD2C8C2654F92100A03652 /* Staff+CoreDataClass.h */,
-				04BD2C8B2654F92100A03652 /* Staff+CoreDataClass.m */,
-				04BD2C512654A93900A03652 /* CoreDataViewController.h */,
-				04BD2C522654A93900A03652 /* CoreDataViewController.m */,
-				04BD2C9426550B9F00A03652 /* CoreDataContainerViewController.h */,
-				04BD2C9526550B9F00A03652 /* CoreDataContainerViewController.m */,
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 		04C4ED392643E57B007C35EF /* Animation */ = {
@@ -1032,7 +1019,6 @@
 				04770651264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m in Sources */,
 				0477066E264D25E5004ED1AA /* UIFontFamilyViewController.m in Sources */,
 				04623776261D520E0034D421 /* UISegmentedControlEventViewController.m in Sources */,
-				04BD2C9626550B9F00A03652 /* CoreDataContainerViewController.m in Sources */,
 				045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */,
 				047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */,
 				045F306D256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m in Sources */,
@@ -1069,7 +1055,6 @@
 				045F3080256FA7DC00DA31BC /* UIViewCALayerViewController.m in Sources */,
 				04EC5BC426202962008A4667 /* UIDatePickerCountDownTimerViewController.m in Sources */,
 				04AE384026BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.m in Sources */,
-				04BD2C532654A93900A03652 /* CoreDataViewController.m in Sources */,
 				045F3083256FA7DC00DA31BC /* UIViewFrameViewController.m in Sources */,
 				045256BC262819B900E7D8CF /* UICollectionViewFlowLayoutViewController.m in Sources */,
 				049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */,
@@ -1080,6 +1065,7 @@
 				04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */,
 				04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */,
 				04623793261DBB790034D421 /* UIProgressViewController.m in Sources */,
+				047C971A26CCD97A0013235E /* AVPlayerNormalViewController.m in Sources */,
 				04FD1CED264A63CF00F9176E /* AnimationFrameViewController.m in Sources */,
 				04EC5BBB2620254E008A4667 /* UIDatePickerTimeViewController.m in Sources */,
 				0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */,
