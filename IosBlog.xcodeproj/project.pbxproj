@@ -87,7 +87,7 @@
 		04AE384026BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE383F26BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.m */; };
 		04AE384426BBEFE400E33FC5 /* CoreGraphicsFillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE384326BBEFE400E33FC5 /* CoreGraphicsFillViewController.m */; };
 		04AE384826BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */; };
-		04BD2C4E2654A6F100A03652 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04BD2C4C2654A6F100A03652 /* Model.xcdatamodeld */; };
+		04BCA7EB26CE044E00151811 /* UIImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -268,7 +268,8 @@
 		04AE384326BBEFE400E33FC5 /* CoreGraphicsFillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsFillViewController.m; sourceTree = "<group>"; };
 		04AE384626BBEFF700E33FC5 /* CoreGraphicsOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsOtherViewController.h; sourceTree = "<group>"; };
 		04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsOtherViewController.m; sourceTree = "<group>"; };
-		04BD2C4D2654A6F100A03652 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		04BCA7E926CE044E00151811 /* UIImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImagePickerViewController.h; sourceTree = "<group>"; };
+		04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerViewController.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
 		04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNormalViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -412,7 +413,6 @@
 				045F3046256FA33600DA31BC /* LaunchScreen.storyboard */,
 				045F3049256FA33600DA31BC /* Info.plist */,
 				045F304A256FA33600DA31BC /* main.m */,
-				04BD2C4C2654A6F100A03652 /* Model.xcdatamodeld */,
 			);
 			path = IosBlog;
 			sourceTree = "<group>";
@@ -730,9 +730,10 @@
 				047C971726CCD93F0013235E /* AVPlayer */,
 				04C4ED392643E57B007C35EF /* Animation */,
 				04AE383726BBDB6A00E33FC5 /* CoreGraphics */,
-				045F3060256FA60800DA31BC /* UIColor */,
 				0477063A264CF891004ED1AA /* CoreAnimation */,
 				0477063B264CF9F0004ED1AA /* LayerAnimation */,
+				04BCA7E726CE03E000151811 /* UIImagePicker */,
+				045F3060256FA60800DA31BC /* UIColor */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -812,6 +813,15 @@
 				04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */,
 			);
 			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		04BCA7E726CE03E000151811 /* UIImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				04BCA7E926CE044E00151811 /* UIImagePickerViewController.h */,
+				04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */,
+			);
+			path = UIImagePicker;
 			sourceTree = "<group>";
 		};
 		04C4ED392643E57B007C35EF /* Animation */ = {
@@ -1047,6 +1057,7 @@
 				04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */,
 				045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */,
 				04770669264D2575004ED1AA /* UISystemFontViewController.m in Sources */,
+				04BCA7EB26CE044E00151811 /* UIImagePickerViewController.m in Sources */,
 				044A7FC32625919F00F97EF7 /* UICollectionViewNormalViewController.m in Sources */,
 				04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */,
 				044A7FB42625343A00F97EF7 /* UIScrollViewNormalViewController.m in Sources */,
@@ -1090,7 +1101,6 @@
 				04623782261D7A4E0034D421 /* UISliderViewController.m in Sources */,
 				045F3067256FA66A00DA31BC /* NSNoticationViewController.m in Sources */,
 				04770656264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m in Sources */,
-				04BD2C4E2654A6F100A03652 /* Model.xcdatamodeld in Sources */,
 				04701A552626F2BF00957DC4 /* SafeAreaNormalViewController.m in Sources */,
 				04623787261DB2A10034D421 /* UIActivityIndicatorViewController.m in Sources */,
 				04770672264D29BD004ED1AA /* UIFontPreferredFontViewController.m in Sources */,
@@ -1246,7 +1256,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HSV63X6Z4;
 				INFOPLIST_FILE = IosBlog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1254,6 +1266,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blog.demo.IosBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1264,7 +1277,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HSV63X6Z4;
 				INFOPLIST_FILE = IosBlog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1272,6 +1287,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blog.demo.IosBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1298,19 +1314,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		04BD2C4C2654A6F100A03652 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				04BD2C4D2654A6F100A03652 /* Model.xcdatamodel */,
-			);
-			currentVersion = 04BD2C4D2654A6F100A03652 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 045F302D256FA33500DA31BC /* Project object */;
 }

@@ -182,20 +182,22 @@
     
     Item *avPlayerViewControllerItem = [[Item alloc] initWithTitle:@"AVPlayerViewController"];
     avPlayerViewControllerItem.viewController = @"AVPlayerViewControllerViewController";
-
     
     // AVPlayer end
     Item *avPlayerItem = [[Item alloc] initWithTitle:@"AVPlayer"];
     avPlayerItem.children = @[avPlayerNormalItem, avPlayerItemItem, avPlayerViewControllerItem];
 
-    
+    Item *imagePickerItem = [[Item alloc] initWithTitle:@"ImagePicker"];
+    imagePickerItem.viewController = @"UIImagePickerViewController";
 //
 //    // Core Graphics
 //    Item *coreGraphicsItem = [[Item alloc] initWithTitle:@"CoreGraphics"];
     
     // Image
     Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
-    imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem];
+    imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
+                           imagePickerItem
+    ];
 
     return imageItem;
 }
