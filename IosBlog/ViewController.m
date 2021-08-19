@@ -187,16 +187,22 @@
     Item *avPlayerItem = [[Item alloc] initWithTitle:@"AVPlayer"];
     avPlayerItem.children = @[avPlayerNormalItem, avPlayerItemItem, avPlayerViewControllerItem];
 
+    // UIImagePicker
     Item *imagePickerItem = [[Item alloc] initWithTitle:@"ImagePicker"];
     imagePickerItem.viewController = @"UIImagePickerViewController";
-//
+
+    // UIImageSave
+    Item *savedPhotosAlbumItem = [[Item alloc] initWithTitle:@"SavedPhotosAlbum"];
+    savedPhotosAlbumItem.viewController = @"UIImageSaveViewController";
+    
+    //
 //    // Core Graphics
 //    Item *coreGraphicsItem = [[Item alloc] initWithTitle:@"CoreGraphics"];
     
     // Image
     Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
     imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
-                           imagePickerItem
+                           imagePickerItem, savedPhotosAlbumItem
     ];
 
     return imageItem;

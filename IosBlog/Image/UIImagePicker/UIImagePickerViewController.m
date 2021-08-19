@@ -111,12 +111,11 @@
     if ([@"public.image" isEqualToString:mediaType]) {
         if (editedImage) {
             self.pickerImageView.image = editedImage;
-//            UIImageWriteToSavedPhotosAlbum(editedImage, self, @selector(UIImageWriteToSavedPhotosAlbum_image:didFinishSavingWithError:contextInfo:), nil);
         } else {
             self.pickerImageView.image = originalImage;
         }
     } else if ([@"public.movie" isEqualToString:mediaType]) {
-//        UISaveVideoAtPathToSavedPhotosAlbum([mediaURL path], self, @selector(UISaveVideoAtPathToSavedPhotosAlbum_videoPath:didFinishSavingWithError:contextInfo:), nil);
+
     }
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
@@ -126,21 +125,5 @@
     
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
-
-//- (void)UIImageWriteToSavedPhotosAlbum_image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
-//    if (error) {
-//        NSLog(@"UIImageWriteToSavedPhotosAlbum_image %@", error);
-//    } else {
-//        NSLog(@"UIImageWriteToSavedPhotosAlbum_image success");
-//    }
-//}
-//
-//- (void)UISaveVideoAtPathToSavedPhotosAlbum_videoPath:(NSString *)videoPath didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
-//    if (error) {
-//        NSLog(@"UISaveVideoAtPathToSavedPhotosAlbum_videoPath %@", error);
-//    } else {
-//        NSLog(@"UISaveVideoAtPathToSavedPhotosAlbum_videoPath success");
-//    }
-//}
 
 @end

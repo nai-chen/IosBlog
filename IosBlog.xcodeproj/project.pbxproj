@@ -88,6 +88,7 @@
 		04AE384426BBEFE400E33FC5 /* CoreGraphicsFillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE384326BBEFE400E33FC5 /* CoreGraphicsFillViewController.m */; };
 		04AE384826BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */; };
 		04BCA7EB26CE044E00151811 /* UIImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */; };
+		04BCA7F426CE59CA00151811 /* UIImageSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -270,6 +271,8 @@
 		04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsOtherViewController.m; sourceTree = "<group>"; };
 		04BCA7E926CE044E00151811 /* UIImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImagePickerViewController.h; sourceTree = "<group>"; };
 		04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerViewController.m; sourceTree = "<group>"; };
+		04BCA7F226CE59CA00151811 /* UIImageSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageSaveViewController.h; sourceTree = "<group>"; };
+		04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageSaveViewController.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
 		04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNormalViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -732,8 +735,9 @@
 				04AE383726BBDB6A00E33FC5 /* CoreGraphics */,
 				0477063A264CF891004ED1AA /* CoreAnimation */,
 				0477063B264CF9F0004ED1AA /* LayerAnimation */,
-				04BCA7E726CE03E000151811 /* UIImagePicker */,
 				045F3060256FA60800DA31BC /* UIColor */,
+				04BCA7F126CE599700151811 /* UIImageSave */,
+				04BCA7E726CE03E000151811 /* UIImagePicker */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -822,6 +826,15 @@
 				04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */,
 			);
 			path = UIImagePicker;
+			sourceTree = "<group>";
+		};
+		04BCA7F126CE599700151811 /* UIImageSave */ = {
+			isa = PBXGroup;
+			children = (
+				04BCA7F226CE59CA00151811 /* UIImageSaveViewController.h */,
+				04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */,
+			);
+			path = UIImageSave;
 			sourceTree = "<group>";
 		};
 		04C4ED392643E57B007C35EF /* Animation */ = {
@@ -1037,6 +1050,7 @@
 				045F3081256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m in Sources */,
 				045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */,
 				045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */,
+				04BCA7F426CE59CA00151811 /* UIImageSaveViewController.m in Sources */,
 				04770651264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m in Sources */,
 				0477066E264D25E5004ED1AA /* UIFontFamilyViewController.m in Sources */,
 				047C972626CD0A020013235E /* AVPlayerViewControllerViewController.m in Sources */,
