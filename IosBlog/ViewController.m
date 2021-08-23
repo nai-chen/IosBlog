@@ -195,14 +195,31 @@
     Item *savedPhotosAlbumItem = [[Item alloc] initWithTitle:@"SavedPhotosAlbum"];
     savedPhotosAlbumItem.viewController = @"UIImageSaveViewController";
     
-    //
-//    // Core Graphics
-//    Item *coreGraphicsItem = [[Item alloc] initWithTitle:@"CoreGraphics"];
+    // Core Graphics
+    Item *coreGraphicsNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    coreGraphicsNormalItem.viewController = @"CoreGraphicsNormalViewController";
+    
+    Item *coreGraphicsStrokeItem = [[Item alloc] initWithTitle:@"Stroke"];
+    coreGraphicsStrokeItem.viewController = @"CoreGraphicsStrokeViewController";
+    
+    Item *coreGraphicsPathItem = [[Item alloc] initWithTitle:@"Path"];
+    coreGraphicsPathItem.viewController = @"CoreGraphicsPathViewController";
+    
+    Item *coreGraphicsCurveItem = [[Item alloc] initWithTitle:@"Curve"];
+    coreGraphicsCurveItem.viewController = @"CoreGraphicsCurveViewController";
+    
+    Item *coreGraphicsOtherItem = [[Item alloc] initWithTitle:@"Other"];
+    coreGraphicsOtherItem.viewController = @"CoreGraphicsOtherViewController";
+    
+    // Core Graphics end
+    Item *coreGraphicsItem = [[Item alloc] initWithTitle:@"CoreGraphics"];
+    coreGraphicsItem.children = @[coreGraphicsNormalItem, coreGraphicsStrokeItem, coreGraphicsPathItem, coreGraphicsCurveItem, coreGraphicsOtherItem];
+    
     
     // Image
     Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
     imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
-                           imagePickerItem, savedPhotosAlbumItem
+                           imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem
     ];
 
     return imageItem;

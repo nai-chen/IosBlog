@@ -85,10 +85,19 @@
 		049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B579426539CE4001641E4 /* NSKeyedArchiverViewController.m */; };
 		049B57992653A729001641E4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B57982653A729001641E4 /* Person.m */; };
 		04AE384026BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE383F26BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.m */; };
-		04AE384426BBEFE400E33FC5 /* CoreGraphicsFillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE384326BBEFE400E33FC5 /* CoreGraphicsFillViewController.m */; };
-		04AE384826BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */; };
 		04BCA7EB26CE044E00151811 /* UIImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */; };
 		04BCA7F426CE59CA00151811 /* UIImageSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */; };
+		04C3EE0A26CF51A100FB8E8F /* CoreGraphicsNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE0926CF51A100FB8E8F /* CoreGraphicsNormalViewController.m */; };
+		04C3EE0E26CF51C400FB8E8F /* CoreGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE0D26CF51C400FB8E8F /* CoreGraphicsView.m */; };
+		04C3EE1226CF777500FB8E8F /* CoreGraphicsPushPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE1126CF777500FB8E8F /* CoreGraphicsPushPopView.m */; };
+		04C3EE1626CF77D600FB8E8F /* CoreGraphicsSaveRestoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE1526CF77D600FB8E8F /* CoreGraphicsSaveRestoreView.m */; };
+		04C3EE1A26CF7A0900FB8E8F /* CoreGraphicsStrokeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE1926CF7A0900FB8E8F /* CoreGraphicsStrokeView.m */; };
+		04C3EE1F26CF86CB00FB8E8F /* CoreGraphicsPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE1E26CF86CB00FB8E8F /* CoreGraphicsPathViewController.m */; };
+		04C3EE2326CF86EB00FB8E8F /* CoreGraphicsPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE2226CF86EB00FB8E8F /* CoreGraphicsPathView.m */; };
+		04C3EE2726CF9B2200FB8E8F /* CoreGraphicsCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE2626CF9B2200FB8E8F /* CoreGraphicsCurveView.m */; };
+		04C3EE2B26CF9B3300FB8E8F /* CoreGraphicsCurveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE2A26CF9B3300FB8E8F /* CoreGraphicsCurveViewController.m */; };
+		04C3EE2F26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE2E26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.m */; };
+		04C3EE3326CFAB0E00FB8E8F /* CoreGraphicsOtherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE3226CFAB0E00FB8E8F /* CoreGraphicsOtherView.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -265,14 +274,32 @@
 		049B57982653A729001641E4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		04AE383E26BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsStrokeViewController.h; sourceTree = "<group>"; };
 		04AE383F26BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsStrokeViewController.m; sourceTree = "<group>"; };
-		04AE384226BBEFE400E33FC5 /* CoreGraphicsFillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsFillViewController.h; sourceTree = "<group>"; };
-		04AE384326BBEFE400E33FC5 /* CoreGraphicsFillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsFillViewController.m; sourceTree = "<group>"; };
-		04AE384626BBEFF700E33FC5 /* CoreGraphicsOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsOtherViewController.h; sourceTree = "<group>"; };
-		04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsOtherViewController.m; sourceTree = "<group>"; };
 		04BCA7E926CE044E00151811 /* UIImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImagePickerViewController.h; sourceTree = "<group>"; };
 		04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerViewController.m; sourceTree = "<group>"; };
 		04BCA7F226CE59CA00151811 /* UIImageSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageSaveViewController.h; sourceTree = "<group>"; };
 		04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageSaveViewController.m; sourceTree = "<group>"; };
+		04C3EE0826CF51A100FB8E8F /* CoreGraphicsNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsNormalViewController.h; sourceTree = "<group>"; };
+		04C3EE0926CF51A100FB8E8F /* CoreGraphicsNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsNormalViewController.m; sourceTree = "<group>"; };
+		04C3EE0C26CF51C400FB8E8F /* CoreGraphicsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsView.h; sourceTree = "<group>"; };
+		04C3EE0D26CF51C400FB8E8F /* CoreGraphicsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsView.m; sourceTree = "<group>"; };
+		04C3EE1026CF777500FB8E8F /* CoreGraphicsPushPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsPushPopView.h; sourceTree = "<group>"; };
+		04C3EE1126CF777500FB8E8F /* CoreGraphicsPushPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsPushPopView.m; sourceTree = "<group>"; };
+		04C3EE1426CF77D600FB8E8F /* CoreGraphicsSaveRestoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsSaveRestoreView.h; sourceTree = "<group>"; };
+		04C3EE1526CF77D600FB8E8F /* CoreGraphicsSaveRestoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsSaveRestoreView.m; sourceTree = "<group>"; };
+		04C3EE1826CF7A0900FB8E8F /* CoreGraphicsStrokeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsStrokeView.h; sourceTree = "<group>"; };
+		04C3EE1926CF7A0900FB8E8F /* CoreGraphicsStrokeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsStrokeView.m; sourceTree = "<group>"; };
+		04C3EE1D26CF86CB00FB8E8F /* CoreGraphicsPathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsPathViewController.h; sourceTree = "<group>"; };
+		04C3EE1E26CF86CB00FB8E8F /* CoreGraphicsPathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsPathViewController.m; sourceTree = "<group>"; };
+		04C3EE2126CF86EB00FB8E8F /* CoreGraphicsPathView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsPathView.h; sourceTree = "<group>"; };
+		04C3EE2226CF86EB00FB8E8F /* CoreGraphicsPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsPathView.m; sourceTree = "<group>"; };
+		04C3EE2526CF9B2200FB8E8F /* CoreGraphicsCurveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsCurveView.h; sourceTree = "<group>"; };
+		04C3EE2626CF9B2200FB8E8F /* CoreGraphicsCurveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsCurveView.m; sourceTree = "<group>"; };
+		04C3EE2926CF9B3300FB8E8F /* CoreGraphicsCurveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsCurveViewController.h; sourceTree = "<group>"; };
+		04C3EE2A26CF9B3300FB8E8F /* CoreGraphicsCurveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsCurveViewController.m; sourceTree = "<group>"; };
+		04C3EE2D26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsOtherViewController.h; sourceTree = "<group>"; };
+		04C3EE2E26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsOtherViewController.m; sourceTree = "<group>"; };
+		04C3EE3126CFAB0E00FB8E8F /* CoreGraphicsOtherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsOtherView.h; sourceTree = "<group>"; };
+		04C3EE3226CFAB0E00FB8E8F /* CoreGraphicsOtherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsOtherView.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
 		04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNormalViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -671,6 +698,7 @@
 				0477064F264D090B004ED1AA /* CAKeyframeAnimationValueViewController.h */,
 				04770650264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m */,
 				04770654264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.h */,
+				04770655264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m */,
 				04770658264D16FF004ED1AA /* CAAnimationGroupViewController.h */,
 				04770659264D16FF004ED1AA /* CAAnimationGroupViewController.m */,
 			);
@@ -808,13 +836,30 @@
 		04AE383726BBDB6A00E33FC5 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				04770655264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m */,
+				04C3EE0826CF51A100FB8E8F /* CoreGraphicsNormalViewController.h */,
+				04C3EE0926CF51A100FB8E8F /* CoreGraphicsNormalViewController.m */,
+				04C3EE0C26CF51C400FB8E8F /* CoreGraphicsView.h */,
+				04C3EE0D26CF51C400FB8E8F /* CoreGraphicsView.m */,
+				04C3EE1026CF777500FB8E8F /* CoreGraphicsPushPopView.h */,
+				04C3EE1126CF777500FB8E8F /* CoreGraphicsPushPopView.m */,
+				04C3EE1426CF77D600FB8E8F /* CoreGraphicsSaveRestoreView.h */,
+				04C3EE1526CF77D600FB8E8F /* CoreGraphicsSaveRestoreView.m */,
 				04AE383E26BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.h */,
 				04AE383F26BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.m */,
-				04AE384226BBEFE400E33FC5 /* CoreGraphicsFillViewController.h */,
-				04AE384326BBEFE400E33FC5 /* CoreGraphicsFillViewController.m */,
-				04AE384626BBEFF700E33FC5 /* CoreGraphicsOtherViewController.h */,
-				04AE384726BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m */,
+				04C3EE1826CF7A0900FB8E8F /* CoreGraphicsStrokeView.h */,
+				04C3EE1926CF7A0900FB8E8F /* CoreGraphicsStrokeView.m */,
+				04C3EE1D26CF86CB00FB8E8F /* CoreGraphicsPathViewController.h */,
+				04C3EE1E26CF86CB00FB8E8F /* CoreGraphicsPathViewController.m */,
+				04C3EE2126CF86EB00FB8E8F /* CoreGraphicsPathView.h */,
+				04C3EE2226CF86EB00FB8E8F /* CoreGraphicsPathView.m */,
+				04C3EE2926CF9B3300FB8E8F /* CoreGraphicsCurveViewController.h */,
+				04C3EE2A26CF9B3300FB8E8F /* CoreGraphicsCurveViewController.m */,
+				04C3EE2526CF9B2200FB8E8F /* CoreGraphicsCurveView.h */,
+				04C3EE2626CF9B2200FB8E8F /* CoreGraphicsCurveView.m */,
+				04C3EE2D26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.h */,
+				04C3EE2E26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.m */,
+				04C3EE3126CFAB0E00FB8E8F /* CoreGraphicsOtherView.h */,
+				04C3EE3226CFAB0E00FB8E8F /* CoreGraphicsOtherView.m */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1035,8 +1080,11 @@
 			files = (
 				04639EF72649324E008AD774 /* AnimationTransitionViewController.m in Sources */,
 				045F30AA256FA88900DA31BC /* UIControlViewViewController.m in Sources */,
+				04C3EE2B26CF9B3300FB8E8F /* CoreGraphicsCurveViewController.m in Sources */,
+				04C3EE0E26CF51C400FB8E8F /* CoreGraphicsView.m in Sources */,
 				04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */,
 				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
+				04C3EE1226CF777500FB8E8F /* CoreGraphicsPushPopView.m in Sources */,
 				04770649264D007E004ED1AA /* LayerAnimationCustomViewController.m in Sources */,
 				045F309A256FA85900DA31BC /* UILabelOtherViewController.m in Sources */,
 				04EC5BC926203F22008A4667 /* UIAlertControllerViewController.m in Sources */,
@@ -1051,6 +1099,7 @@
 				045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */,
 				045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */,
 				04BCA7F426CE59CA00151811 /* UIImageSaveViewController.m in Sources */,
+				04C3EE2326CF86EB00FB8E8F /* CoreGraphicsPathView.m in Sources */,
 				04770651264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m in Sources */,
 				0477066E264D25E5004ED1AA /* UIFontFamilyViewController.m in Sources */,
 				047C972626CD0A020013235E /* AVPlayerViewControllerViewController.m in Sources */,
@@ -1067,6 +1116,7 @@
 				049B579026535E66001641E4 /* SandboxViewController.m in Sources */,
 				04879A18264E17C7004FCD92 /* MJExtensionViewController.m in Sources */,
 				04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */,
+				04C3EE1A26CF7A0900FB8E8F /* CoreGraphicsStrokeView.m in Sources */,
 				04639EF3264926A2008AD774 /* AnimationSpringViewController.m in Sources */,
 				04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */,
 				045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */,
@@ -1080,9 +1130,9 @@
 				045F3040256FA33500DA31BC /* ViewController.m in Sources */,
 				045F3090256FA82800DA31BC /* UITextFieldReturnTypeViewController.m in Sources */,
 				045F303A256FA33500DA31BC /* AppDelegate.m in Sources */,
+				04C3EE1F26CF86CB00FB8E8F /* CoreGraphicsPathViewController.m in Sources */,
 				045F30A4256FA87800DA31BC /* UIImageViewContentModeViewController.m in Sources */,
 				045F304B256FA33600DA31BC /* main.m in Sources */,
-				04AE384426BBEFE400E33FC5 /* CoreGraphicsFillViewController.m in Sources */,
 				045F309B256FA85900DA31BC /* UILabelBreakModeViewController.m in Sources */,
 				04CBE30D261C5EE10068982B /* UISegmentedControlSetViewController.m in Sources */,
 				0476AB95263BFAC200EAEADE /* AFNetworkingViewController.m in Sources */,
@@ -1096,7 +1146,6 @@
 				045256BC262819B900E7D8CF /* UICollectionViewFlowLayoutViewController.m in Sources */,
 				049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */,
 				04EC5BAC261FEED7008A4667 /* UIPickerViewController.m in Sources */,
-				04AE384826BBEFF700E33FC5 /* CoreGraphicsOtherViewController.m in Sources */,
 				045256D126281D8200E7D8CF /* MyWheelLayout.m in Sources */,
 				04879A3E264E797E004FCD92 /* UIFontLangTingViewController.m in Sources */,
 				04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */,
@@ -1108,6 +1157,7 @@
 				0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */,
 				04CD2FB2264539530034360C /* AnimationCurveViewController.m in Sources */,
 				04639EEF2648D1C9008AD774 /* AnimationTransformViewController.m in Sources */,
+				04C3EE2F26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.m in Sources */,
 				04879A32264E1DD7004FCD92 /* Model.m in Sources */,
 				045256C1262819F200E7D8CF /* MyLayout.m in Sources */,
 				045F30B3256FA89A00DA31BC /* UIButtonEdgeInsetsViewController.m in Sources */,
@@ -1115,12 +1165,16 @@
 				04623782261D7A4E0034D421 /* UISliderViewController.m in Sources */,
 				045F3067256FA66A00DA31BC /* NSNoticationViewController.m in Sources */,
 				04770656264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m in Sources */,
+				04C3EE0A26CF51A100FB8E8F /* CoreGraphicsNormalViewController.m in Sources */,
 				04701A552626F2BF00957DC4 /* SafeAreaNormalViewController.m in Sources */,
+				04C3EE1626CF77D600FB8E8F /* CoreGraphicsSaveRestoreView.m in Sources */,
 				04623787261DB2A10034D421 /* UIActivityIndicatorViewController.m in Sources */,
 				04770672264D29BD004ED1AA /* UIFontPreferredFontViewController.m in Sources */,
 				045F305A256FA55A00DA31BC /* UIColor+Tool.m in Sources */,
 				04770677264D2E4B004ED1AA /* NSUserDefaultsViewController.m in Sources */,
+				04C3EE2726CF9B2200FB8E8F /* CoreGraphicsCurveView.m in Sources */,
 				0477063E264CFA11004ED1AA /* LayerAnimationNormalViewController.m in Sources */,
+				04C3EE3326CFAB0E00FB8E8F /* CoreGraphicsOtherView.m in Sources */,
 				04EC5BB726201B96008A4667 /* UIDatePickerDateViewController.m in Sources */,
 				045256C526281C3B00E7D8CF /* UICollectionViewCircleLayoutViewController.m in Sources */,
 				049B57992653A729001641E4 /* Person.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  CoreGraphicsOtherViewController.h
+//  CoreGraphicsOtherView.h
 //  IosBlog
 //
 //  Created by PeterChen on 2021/8/20.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CoreGraphicsOtherViewController : UIViewController
+@interface CoreGraphicsOtherView : UIView
 
 @end
 

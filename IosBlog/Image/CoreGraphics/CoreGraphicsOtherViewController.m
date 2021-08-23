@@ -2,10 +2,12 @@
 //  CoreGraphicsOtherViewController.m
 //  IosBlog
 //
-//  Created by PeterChen on 2021/8/5.
+//  Created by PeterChen on 2021/8/20.
 //
 
 #import "CoreGraphicsOtherViewController.h"
+
+#import "CoreGraphicsOtherView.h"
 
 @interface CoreGraphicsOtherViewController ()
 
@@ -15,17 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
 
-/*
-#pragma mark - Navigation
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:[[CoreGraphicsOtherView alloc] initWithFrame:CGRectMake(20, 100, 300, 500)]];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
 @end

@@ -7,6 +7,8 @@
 
 #import "CoreGraphicsStrokeViewController.h"
 
+#import "CoreGraphicsStrokeView.h"
+
 @interface CoreGraphicsStrokeViewController ()
 
 @end
@@ -15,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:[[CoreGraphicsStrokeView alloc] initWithFrame:CGRectMake(20, 100, 300, 500)]];
 }
 
 @end
