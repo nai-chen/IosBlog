@@ -216,10 +216,24 @@
     coreGraphicsItem.children = @[coreGraphicsNormalItem, coreGraphicsStrokeItem, coreGraphicsPathItem, coreGraphicsCurveItem, coreGraphicsOtherItem];
     
     
+    // UIBezierPathNormalViewController
+    Item *bezierPathNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    bezierPathNormalItem.viewController = @"UIBezierPathNormalViewController";
+    
+    Item *bezierPathAreaItem = [[Item alloc] initWithTitle:@"Area"];
+    bezierPathAreaItem.viewController = @"UIBezierPathAreaViewController";
+    
+    Item *bezierPathCurveItem = [[Item alloc] initWithTitle:@"Curve"];
+    bezierPathCurveItem.viewController = @"UIBezierPathCurveViewController";
+    
+    // UIBezierPathNormalViewController end
+    Item *bezierPathItem = [[Item alloc] initWithTitle:@"UIBezierPath"];
+    bezierPathItem.children = @[bezierPathNormalItem, bezierPathAreaItem, bezierPathCurveItem];
+    
     // Image
     Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
     imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
-                           imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem
+                           imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem, bezierPathItem
     ];
 
     return imageItem;

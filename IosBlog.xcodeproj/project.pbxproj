@@ -73,6 +73,12 @@
 		0477066E264D25E5004ED1AA /* UIFontFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477066D264D25E5004ED1AA /* UIFontFamilyViewController.m */; };
 		04770672264D29BD004ED1AA /* UIFontPreferredFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770671264D29BD004ED1AA /* UIFontPreferredFontViewController.m */; };
 		04770677264D2E4B004ED1AA /* NSUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04770676264D2E4B004ED1AA /* NSUserDefaultsViewController.m */; };
+		047BD1D626D36E6000733CFD /* UIBezierPathNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1D526D36E6000733CFD /* UIBezierPathNormalViewController.m */; };
+		047BD1DA26D36E7800733CFD /* UIBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1D926D36E7800733CFD /* UIBezierPathView.m */; };
+		047BD1DF26D37D2600733CFD /* UIBezierPathAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1DE26D37D2600733CFD /* UIBezierPathAreaViewController.m */; };
+		047BD1E326D37D3A00733CFD /* UIBezierPathAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1E226D37D3A00733CFD /* UIBezierPathAreaView.m */; };
+		047BD1EB26D382FF00733CFD /* UIBezierPathCurveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1EA26D382FF00733CFD /* UIBezierPathCurveViewController.m */; };
+		047BD1EF26D3832900733CFD /* UIBezierPathCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1EE26D3832900733CFD /* UIBezierPathCurveView.m */; };
 		047C971A26CCD97A0013235E /* AVPlayerNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C971926CCD97A0013235E /* AVPlayerNormalViewController.m */; };
 		047C972226CCFBEC0013235E /* AVPlayerItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C972126CCFBEC0013235E /* AVPlayerItemViewController.m */; };
 		047C972626CD0A020013235E /* AVPlayerViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C972526CD0A020013235E /* AVPlayerViewControllerViewController.m */; };
@@ -251,6 +257,18 @@
 		04770671264D29BD004ED1AA /* UIFontPreferredFontViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFontPreferredFontViewController.m; sourceTree = "<group>"; };
 		04770675264D2E4B004ED1AA /* NSUserDefaultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsViewController.h; sourceTree = "<group>"; };
 		04770676264D2E4B004ED1AA /* NSUserDefaultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsViewController.m; sourceTree = "<group>"; };
+		047BD1D426D36E6000733CFD /* UIBezierPathNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBezierPathNormalViewController.h; sourceTree = "<group>"; };
+		047BD1D526D36E6000733CFD /* UIBezierPathNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathNormalViewController.m; sourceTree = "<group>"; };
+		047BD1D826D36E7800733CFD /* UIBezierPathView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBezierPathView.h; sourceTree = "<group>"; };
+		047BD1D926D36E7800733CFD /* UIBezierPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathView.m; sourceTree = "<group>"; };
+		047BD1DD26D37D2600733CFD /* UIBezierPathAreaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBezierPathAreaViewController.h; sourceTree = "<group>"; };
+		047BD1DE26D37D2600733CFD /* UIBezierPathAreaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathAreaViewController.m; sourceTree = "<group>"; };
+		047BD1E126D37D3A00733CFD /* UIBezierPathAreaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBezierPathAreaView.h; sourceTree = "<group>"; };
+		047BD1E226D37D3A00733CFD /* UIBezierPathAreaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathAreaView.m; sourceTree = "<group>"; };
+		047BD1E926D382FF00733CFD /* UIBezierPathCurveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBezierPathCurveViewController.h; sourceTree = "<group>"; };
+		047BD1EA26D382FF00733CFD /* UIBezierPathCurveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathCurveViewController.m; sourceTree = "<group>"; };
+		047BD1ED26D3832900733CFD /* UIBezierPathCurveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBezierPathCurveView.h; sourceTree = "<group>"; };
+		047BD1EE26D3832900733CFD /* UIBezierPathCurveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathCurveView.m; sourceTree = "<group>"; };
 		047C971826CCD97A0013235E /* AVPlayerNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerNormalViewController.h; sourceTree = "<group>"; };
 		047C971926CCD97A0013235E /* AVPlayerNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerNormalViewController.m; sourceTree = "<group>"; };
 		047C972026CCFBEC0013235E /* AVPlayerItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerItemViewController.h; sourceTree = "<group>"; };
@@ -742,6 +760,25 @@
 			path = NSUserDefaults;
 			sourceTree = "<group>";
 		};
+		047BD1CE26D36E0F00733CFD /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				047BD1D426D36E6000733CFD /* UIBezierPathNormalViewController.h */,
+				047BD1D526D36E6000733CFD /* UIBezierPathNormalViewController.m */,
+				047BD1D826D36E7800733CFD /* UIBezierPathView.h */,
+				047BD1D926D36E7800733CFD /* UIBezierPathView.m */,
+				047BD1DD26D37D2600733CFD /* UIBezierPathAreaViewController.h */,
+				047BD1DE26D37D2600733CFD /* UIBezierPathAreaViewController.m */,
+				047BD1E126D37D3A00733CFD /* UIBezierPathAreaView.h */,
+				047BD1E226D37D3A00733CFD /* UIBezierPathAreaView.m */,
+				047BD1E926D382FF00733CFD /* UIBezierPathCurveViewController.h */,
+				047BD1EA26D382FF00733CFD /* UIBezierPathCurveViewController.m */,
+				047BD1ED26D3832900733CFD /* UIBezierPathCurveView.h */,
+				047BD1EE26D3832900733CFD /* UIBezierPathCurveView.m */,
+			);
+			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
 		047C971726CCD93F0013235E /* AVPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -764,6 +801,7 @@
 				0477063A264CF891004ED1AA /* CoreAnimation */,
 				0477063B264CF9F0004ED1AA /* LayerAnimation */,
 				045F3060256FA60800DA31BC /* UIColor */,
+				047BD1CE26D36E0F00733CFD /* UIBezierPath */,
 				04BCA7F126CE599700151811 /* UIImageSave */,
 				04BCA7E726CE03E000151811 /* UIImagePicker */,
 			);
@@ -1081,6 +1119,7 @@
 				04639EF72649324E008AD774 /* AnimationTransitionViewController.m in Sources */,
 				045F30AA256FA88900DA31BC /* UIControlViewViewController.m in Sources */,
 				04C3EE2B26CF9B3300FB8E8F /* CoreGraphicsCurveViewController.m in Sources */,
+				047BD1E326D37D3A00733CFD /* UIBezierPathAreaView.m in Sources */,
 				04C3EE0E26CF51C400FB8E8F /* CoreGraphicsView.m in Sources */,
 				04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */,
 				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
@@ -1095,7 +1134,9 @@
 				04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */,
 				045256CD26281D6B00E7D8CF /* UICollectionViewWheelLayoutViewController.m in Sources */,
 				04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */,
+				047BD1EF26D3832900733CFD /* UIBezierPathCurveView.m in Sources */,
 				045F3081256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m in Sources */,
+				047BD1EB26D382FF00733CFD /* UIBezierPathCurveViewController.m in Sources */,
 				045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */,
 				045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */,
 				04BCA7F426CE59CA00151811 /* UIImageSaveViewController.m in Sources */,
@@ -1131,6 +1172,7 @@
 				045F3090256FA82800DA31BC /* UITextFieldReturnTypeViewController.m in Sources */,
 				045F303A256FA33500DA31BC /* AppDelegate.m in Sources */,
 				04C3EE1F26CF86CB00FB8E8F /* CoreGraphicsPathViewController.m in Sources */,
+				047BD1DA26D36E7800733CFD /* UIBezierPathView.m in Sources */,
 				045F30A4256FA87800DA31BC /* UIImageViewContentModeViewController.m in Sources */,
 				045F304B256FA33600DA31BC /* main.m in Sources */,
 				045F309B256FA85900DA31BC /* UILabelBreakModeViewController.m in Sources */,
@@ -1139,6 +1181,7 @@
 				045F308D256FA82800DA31BC /* UITextFieldKeyBoardViewController.m in Sources */,
 				044A7FAF26252E0C00F97EF7 /* UIScrollViewZoomViewController.m in Sources */,
 				044A7FB82625425700F97EF7 /* UIScrollViewPageViewController.m in Sources */,
+				047BD1D626D36E6000733CFD /* UIBezierPathNormalViewController.m in Sources */,
 				045F3080256FA7DC00DA31BC /* UIViewCALayerViewController.m in Sources */,
 				04EC5BC426202962008A4667 /* UIDatePickerCountDownTimerViewController.m in Sources */,
 				04AE384026BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.m in Sources */,
@@ -1152,6 +1195,7 @@
 				04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */,
 				04623793261DBB790034D421 /* UIProgressViewController.m in Sources */,
 				047C971A26CCD97A0013235E /* AVPlayerNormalViewController.m in Sources */,
+				047BD1DF26D37D2600733CFD /* UIBezierPathAreaViewController.m in Sources */,
 				04FD1CED264A63CF00F9176E /* AnimationFrameViewController.m in Sources */,
 				04EC5BBB2620254E008A4667 /* UIDatePickerTimeViewController.m in Sources */,
 				0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */,

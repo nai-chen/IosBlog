@@ -117,7 +117,7 @@
         NSForegroundColorAttributeName : [UIColor blackColor]
     };
     [@"P" drawInRect:CGRectMake(20, 330, 50, 20) withAttributes:attrs];
-    [@"(cp1x, cp1y)" drawInRect:CGRectMake(105, 255, 80, 20) withAttributes:attrs];
+    [@"(cp1x, cp1y)" drawInRect:CGRectMake(105, 265, 80, 20) withAttributes:attrs];
     [@"(cp2x, cp2y)" drawInRect:CGRectMake(180, 400, 80, 20) withAttributes:attrs];
     [@"(x, y)" drawInRect:CGRectMake(200, 330, 50, 20) withAttributes:attrs];
 

@@ -77,6 +77,8 @@
     CGContextAddLineToPoint(context, 10, 155);
     CGContextStrokePath(context);
 
+//    CGContextSetMiterLimit(context, 10);
+    
     CGContextSetLineJoin(context, kCGLineJoinRound);
     CGContextMoveToPoint(context, 80, 105);
     CGContextAddLineToPoint(context, 130, 130);
