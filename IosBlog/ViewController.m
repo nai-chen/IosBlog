@@ -230,10 +230,24 @@
     Item *bezierPathItem = [[Item alloc] initWithTitle:@"UIBezierPath"];
     bezierPathItem.children = @[bezierPathNormalItem, bezierPathAreaItem, bezierPathCurveItem];
     
+    // CALayer
+    Item *caShapeLayerItem = [[Item alloc] initWithTitle:@"CAShapeLayer"];
+    caShapeLayerItem.viewController = @"CAShapeLayerViewController";
+    
+    Item *gridientLayerItem = [[Item alloc] initWithTitle:@"GridentLayer"];
+    gridientLayerItem.viewController = @"CAGradientLayerViewController";
+    
+    Item *maskItem = [[Item alloc] initWithTitle:@"CALayer Mask"];
+    maskItem.viewController = @"CALayerMaskViewController";
+    
+    // CALayer end
+    Item *caLayerItem = [[Item alloc] initWithTitle:@"CALayer"];
+    caLayerItem.children = @[caShapeLayerItem, gridientLayerItem, maskItem];
+    
     // Image
     Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
     imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
-                           imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem, bezierPathItem
+                           imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem, bezierPathItem, caLayerItem
     ];
 
     return imageItem;

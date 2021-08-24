@@ -79,6 +79,7 @@
 		047BD1E326D37D3A00733CFD /* UIBezierPathAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1E226D37D3A00733CFD /* UIBezierPathAreaView.m */; };
 		047BD1EB26D382FF00733CFD /* UIBezierPathCurveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1EA26D382FF00733CFD /* UIBezierPathCurveViewController.m */; };
 		047BD1EF26D3832900733CFD /* UIBezierPathCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1EE26D3832900733CFD /* UIBezierPathCurveView.m */; };
+		047BD1F526D3A08D00733CFD /* CAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1F426D3A08D00733CFD /* CAShapeLayerViewController.m */; };
 		047C971A26CCD97A0013235E /* AVPlayerNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C971926CCD97A0013235E /* AVPlayerNormalViewController.m */; };
 		047C972226CCFBEC0013235E /* AVPlayerItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C972126CCFBEC0013235E /* AVPlayerItemViewController.m */; };
 		047C972626CD0A020013235E /* AVPlayerViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C972526CD0A020013235E /* AVPlayerViewControllerViewController.m */; };
@@ -87,6 +88,8 @@
 		04879A32264E1DD7004FCD92 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A31264E1DD7004FCD92 /* Model.m */; };
 		04879A3A264E78E1004FCD92 /* 兰亭黑简.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04879A39264E788D004FCD92 /* 兰亭黑简.TTF */; };
 		04879A3E264E797E004FCD92 /* UIFontLangTingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A3D264E797E004FCD92 /* UIFontLangTingViewController.m */; };
+		0491E12B26D4B78100BFA4BD /* CAGradientLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491E12A26D4B78100BFA4BD /* CAGradientLayerViewController.m */; };
+		0491E12F26D4CC1000BFA4BD /* CALayerMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491E12E26D4CC1000BFA4BD /* CALayerMaskViewController.m */; };
 		049B579026535E66001641E4 /* SandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B578F26535E66001641E4 /* SandboxViewController.m */; };
 		049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B579426539CE4001641E4 /* NSKeyedArchiverViewController.m */; };
 		049B57992653A729001641E4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B57982653A729001641E4 /* Person.m */; };
@@ -269,6 +272,8 @@
 		047BD1EA26D382FF00733CFD /* UIBezierPathCurveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathCurveViewController.m; sourceTree = "<group>"; };
 		047BD1ED26D3832900733CFD /* UIBezierPathCurveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBezierPathCurveView.h; sourceTree = "<group>"; };
 		047BD1EE26D3832900733CFD /* UIBezierPathCurveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathCurveView.m; sourceTree = "<group>"; };
+		047BD1F326D3A08D00733CFD /* CAShapeLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerViewController.h; sourceTree = "<group>"; };
+		047BD1F426D3A08D00733CFD /* CAShapeLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerViewController.m; sourceTree = "<group>"; };
 		047C971826CCD97A0013235E /* AVPlayerNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerNormalViewController.h; sourceTree = "<group>"; };
 		047C971926CCD97A0013235E /* AVPlayerNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerNormalViewController.m; sourceTree = "<group>"; };
 		047C972026CCFBEC0013235E /* AVPlayerItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerItemViewController.h; sourceTree = "<group>"; };
@@ -284,6 +289,10 @@
 		04879A39264E788D004FCD92 /* 兰亭黑简.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "兰亭黑简.TTF"; sourceTree = "<group>"; };
 		04879A3C264E797E004FCD92 /* UIFontLangTingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFontLangTingViewController.h; sourceTree = "<group>"; };
 		04879A3D264E797E004FCD92 /* UIFontLangTingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFontLangTingViewController.m; sourceTree = "<group>"; };
+		0491E12926D4B78100BFA4BD /* CAGradientLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerViewController.h; sourceTree = "<group>"; };
+		0491E12A26D4B78100BFA4BD /* CAGradientLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerViewController.m; sourceTree = "<group>"; };
+		0491E12D26D4CC1000BFA4BD /* CALayerMaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayerMaskViewController.h; sourceTree = "<group>"; };
+		0491E12E26D4CC1000BFA4BD /* CALayerMaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerMaskViewController.m; sourceTree = "<group>"; };
 		049B578E26535E66001641E4 /* SandboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandboxViewController.h; sourceTree = "<group>"; };
 		049B578F26535E66001641E4 /* SandboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxViewController.m; sourceTree = "<group>"; };
 		049B579326539CE4001641E4 /* NSKeyedArchiverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSKeyedArchiverViewController.h; sourceTree = "<group>"; };
@@ -797,6 +806,7 @@
 			children = (
 				047C971726CCD93F0013235E /* AVPlayer */,
 				04C4ED392643E57B007C35EF /* Animation */,
+				0491E12726D492E500BFA4BD /* CALayer */,
 				04AE383726BBDB6A00E33FC5 /* CoreGraphics */,
 				0477063A264CF891004ED1AA /* CoreAnimation */,
 				0477063B264CF9F0004ED1AA /* LayerAnimation */,
@@ -849,6 +859,19 @@
 				04879A39264E788D004FCD92 /* 兰亭黑简.TTF */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		0491E12726D492E500BFA4BD /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				047BD1F326D3A08D00733CFD /* CAShapeLayerViewController.h */,
+				047BD1F426D3A08D00733CFD /* CAShapeLayerViewController.m */,
+				0491E12926D4B78100BFA4BD /* CAGradientLayerViewController.h */,
+				0491E12A26D4B78100BFA4BD /* CAGradientLayerViewController.m */,
+				0491E12D26D4CC1000BFA4BD /* CALayerMaskViewController.h */,
+				0491E12E26D4CC1000BFA4BD /* CALayerMaskViewController.m */,
+			);
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 		049B578D26535E47001641E4 /* Sandbox */ = {
@@ -1134,6 +1157,7 @@
 				04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */,
 				045256CD26281D6B00E7D8CF /* UICollectionViewWheelLayoutViewController.m in Sources */,
 				04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */,
+				0491E12F26D4CC1000BFA4BD /* CALayerMaskViewController.m in Sources */,
 				047BD1EF26D3832900733CFD /* UIBezierPathCurveView.m in Sources */,
 				045F3081256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m in Sources */,
 				047BD1EB26D382FF00733CFD /* UIBezierPathCurveViewController.m in Sources */,
@@ -1186,6 +1210,7 @@
 				04EC5BC426202962008A4667 /* UIDatePickerCountDownTimerViewController.m in Sources */,
 				04AE384026BBEFD400E33FC5 /* CoreGraphicsStrokeViewController.m in Sources */,
 				045F3083256FA7DC00DA31BC /* UIViewFrameViewController.m in Sources */,
+				047BD1F526D3A08D00733CFD /* CAShapeLayerViewController.m in Sources */,
 				045256BC262819B900E7D8CF /* UICollectionViewFlowLayoutViewController.m in Sources */,
 				049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */,
 				04EC5BAC261FEED7008A4667 /* UIPickerViewController.m in Sources */,
@@ -1194,6 +1219,7 @@
 				04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */,
 				04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */,
 				04623793261DBB790034D421 /* UIProgressViewController.m in Sources */,
+				0491E12B26D4B78100BFA4BD /* CAGradientLayerViewController.m in Sources */,
 				047C971A26CCD97A0013235E /* AVPlayerNormalViewController.m in Sources */,
 				047BD1DF26D37D2600733CFD /* UIBezierPathAreaViewController.m in Sources */,
 				04FD1CED264A63CF00F9176E /* AnimationFrameViewController.m in Sources */,
