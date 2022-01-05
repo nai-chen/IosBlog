@@ -451,11 +451,39 @@
     uiCollectionViewItem.children = @[uiCollectionViewNormalItem, uiCollectionViewLayoutItem, uiCollectionViewFlowLayoutItem,
                                       uiCollectionViewCircleLayoutItem, uiCollectionViewWheelLayoutItem];
     
+    // UITableView
+    Item *uiTableViewPlainItem = [[Item alloc] initWithTitle:@"UITableViewPlain"];
+    uiTableViewPlainItem.viewController = @"UITableViewPlainViewController";
+    
+    Item *uiTableViewGroupedItem = [[Item alloc] initWithTitle:@"UITableViewGrouped"];
+    uiTableViewGroupedItem.viewController = @"UITableViewGroupedViewController";
+    
+    Item *uiTableViewCellItem = [[Item alloc] initWithTitle:@"UITableViewCell"];
+    uiTableViewCellItem.viewController = @"UITableViewCellViewController";
+
+    Item *uiTableViewEditItem = [[Item alloc] initWithTitle:@"UITableViewEdit"];
+    uiTableViewEditItem.viewController = @"UITableViewEditViewController";
+    
+    Item *uiTableViewEdit2Item = [[Item alloc] initWithTitle:@"UITableViewEdit2"];
+    uiTableViewEdit2Item.viewController = @"UITableViewEdit2ViewController";
+
+    Item *uiTableViewEdit3Item = [[Item alloc] initWithTitle:@"UITableViewEdit3"];
+    uiTableViewEdit3Item.viewController = @"UITableViewEdit3ViewController";
+    
+    Item *uiTableViewMoveItem = [[Item alloc] initWithTitle:@"UITableViewMove"];
+    uiTableViewMoveItem.viewController = @"UITableViewMoveViewController";
+
+    Item *uiTableViewItem = [[Item alloc] initWithTitle:@"UITableView"];
+    uiTableViewItem.children = @[uiTableViewPlainItem, uiTableViewGroupedItem, uiTableViewCellItem, uiTableViewEditItem,
+                                 uiTableViewEdit2Item, uiTableViewEdit3Item, uiTableViewMoveItem];
+    // UITableView end
+    
     Item *widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,
                             uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem, uiSliderItem,
                             uiActivityIndicatorViewItem, uiProgressViewItem, uiStepperItem, uiPickerViewItem,
-                            uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem, uiCollectionViewItem];
+                            uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem, uiCollectionViewItem,
+                            uiTableViewItem];
     
     return widgetItem;
 }

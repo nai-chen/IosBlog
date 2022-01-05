@@ -32,14 +32,14 @@
     UIButton *saveAssetsLibraryPhotoButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 150, 250, 20)];
     [saveAssetsLibraryPhotoButton setTitle:@"save assets library photo" forState:UIControlStateNormal];
     [saveAssetsLibraryPhotoButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
-    [saveAssetsLibraryPhotoButton addTarget:self action:@selector(onAssetsLibrarySavePhotoClick:) forControlEvents:UIControlEventTouchUpInside];
+    [saveAssetsLibraryPhotoButton addTarget:self action:@selector(onSaveAssetsLibraryPhotoClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:saveAssetsLibraryPhotoButton];
     
     
     UIButton *photoLibrarySavePhotoButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 180, 250, 20)];
     [photoLibrarySavePhotoButton setTitle:@"save photo library photo" forState:UIControlStateNormal];
     [photoLibrarySavePhotoButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
-    [photoLibrarySavePhotoButton addTarget:self action:@selector(onPhotoLibrarySavePhotoClick:) forControlEvents:UIControlEventTouchUpInside];
+    [photoLibrarySavePhotoButton addTarget:self action:@selector(onSavePhotoLibraryPhotoClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:photoLibrarySavePhotoButton];
     
 

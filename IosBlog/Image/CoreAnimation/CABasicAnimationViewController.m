@@ -62,7 +62,7 @@
     [CATransaction begin];
     [CATransaction setDisableActions:true];
     self.colorLayer.backgroundColor = (__bridge CGColorRef)anim.toValue;
-    [CATransaction commit];
+    [CATransaction commit]; 
 }
 
 @end
