@@ -50,7 +50,7 @@
     if (component == 0) {
         return self.cityArray.count;
     } else {
-        NSArray *city = self.cityArray[component][@"city"];
+        NSArray *city = self.cityArray[self.selectProvince][@"city"];
         return city.count;
     }
 }
