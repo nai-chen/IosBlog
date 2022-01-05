@@ -56,6 +56,9 @@
 - (void)onAlertThreeAction:(UIButton *)sender {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"标题" message:@"这是一个测试"
                                     preferredStyle:UIAlertControllerStyleAlert];
+//    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+//        textField.placeholder = @"请输入";
+//    }];
     [alert addAction:[UIAlertAction actionWithTitle:@"默认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
         NSLog(@"默认按钮");
     }]];
