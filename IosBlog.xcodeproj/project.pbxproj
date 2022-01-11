@@ -59,6 +59,9 @@
 		04639EEF2648D1C9008AD774 /* AnimationTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04639EEE2648D1C9008AD774 /* AnimationTransformViewController.m */; };
 		04639EF3264926A2008AD774 /* AnimationSpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04639EF2264926A2008AD774 /* AnimationSpringViewController.m */; };
 		04639EF72649324E008AD774 /* AnimationTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04639EF62649324E008AD774 /* AnimationTransitionViewController.m */; };
+		046C50092786B6CD0020E453 /* PresentModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C50082786B6CD0020E453 /* PresentModalViewController.m */; };
+		046C500D2786B8120020E453 /* PresentModalDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C500C2786B8120020E453 /* PresentModalDialogViewController.m */; };
+		046C50112786BDD90020E453 /* PresentModalPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C50102786BDD90020E453 /* PresentModalPopupViewController.m */; };
 		04701A4E2626C2A100957DC4 /* UICollectionViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04701A4D2626C2A100957DC4 /* UICollectionViewLayoutViewController.m */; };
 		04701A552626F2BF00957DC4 /* SafeAreaNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04701A542626F2BF00957DC4 /* SafeAreaNormalViewController.m */; };
 		0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476AB86263BE45A00EAEADE /* NSURLConnectionViewController.m */; };
@@ -102,6 +105,10 @@
 		04B3D140278449EF00FB7C36 /* UITableViewEdit3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B3D13F278449EF00FB7C36 /* UITableViewEdit3ViewController.m */; };
 		04BCA7EB26CE044E00151811 /* UIImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */; };
 		04BCA7F426CE59CA00151811 /* UIImageSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */; };
+		04C322C1278D2C9700665E53 /* PushModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C322C0278D2C9700665E53 /* PushModalViewController.m */; };
+		04C322C5278D2CAA00665E53 /* Pushed1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C322C4278D2CAA00665E53 /* Pushed1ViewController.m */; };
+		04C322C9278D2CB500665E53 /* Pushed2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C322C8278D2CB500665E53 /* Pushed2ViewController.m */; };
+		04C322D7278D667100665E53 /* PresentModalPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C322D6278D667000665E53 /* PresentModalPopoverViewController.m */; };
 		04C3EE0A26CF51A100FB8E8F /* CoreGraphicsNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE0926CF51A100FB8E8F /* CoreGraphicsNormalViewController.m */; };
 		04C3EE0E26CF51C400FB8E8F /* CoreGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE0D26CF51C400FB8E8F /* CoreGraphicsView.m */; };
 		04C3EE1226CF777500FB8E8F /* CoreGraphicsPushPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE1126CF777500FB8E8F /* CoreGraphicsPushPopView.m */; };
@@ -238,6 +245,12 @@
 		04639EF2264926A2008AD774 /* AnimationSpringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationSpringViewController.m; sourceTree = "<group>"; };
 		04639EF52649324E008AD774 /* AnimationTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTransitionViewController.h; sourceTree = "<group>"; };
 		04639EF62649324E008AD774 /* AnimationTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTransitionViewController.m; sourceTree = "<group>"; };
+		046C50072786B6CD0020E453 /* PresentModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentModalViewController.h; sourceTree = "<group>"; };
+		046C50082786B6CD0020E453 /* PresentModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentModalViewController.m; sourceTree = "<group>"; };
+		046C500B2786B8120020E453 /* PresentModalDialogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentModalDialogViewController.h; sourceTree = "<group>"; };
+		046C500C2786B8120020E453 /* PresentModalDialogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentModalDialogViewController.m; sourceTree = "<group>"; };
+		046C500F2786BDD90020E453 /* PresentModalPopupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentModalPopupViewController.h; sourceTree = "<group>"; };
+		046C50102786BDD90020E453 /* PresentModalPopupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentModalPopupViewController.m; sourceTree = "<group>"; };
 		04701A4C2626C2A100957DC4 /* UICollectionViewLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLayoutViewController.h; sourceTree = "<group>"; };
 		04701A4D2626C2A100957DC4 /* UICollectionViewLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLayoutViewController.m; sourceTree = "<group>"; };
 		04701A532626F2BF00957DC4 /* SafeAreaNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeAreaNormalViewController.h; sourceTree = "<group>"; };
@@ -324,6 +337,14 @@
 		04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerViewController.m; sourceTree = "<group>"; };
 		04BCA7F226CE59CA00151811 /* UIImageSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageSaveViewController.h; sourceTree = "<group>"; };
 		04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageSaveViewController.m; sourceTree = "<group>"; };
+		04C322BF278D2C9700665E53 /* PushModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushModalViewController.h; sourceTree = "<group>"; };
+		04C322C0278D2C9700665E53 /* PushModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushModalViewController.m; sourceTree = "<group>"; };
+		04C322C3278D2CAA00665E53 /* Pushed1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pushed1ViewController.h; sourceTree = "<group>"; };
+		04C322C4278D2CAA00665E53 /* Pushed1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pushed1ViewController.m; sourceTree = "<group>"; };
+		04C322C7278D2CB500665E53 /* Pushed2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pushed2ViewController.h; sourceTree = "<group>"; };
+		04C322C8278D2CB500665E53 /* Pushed2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pushed2ViewController.m; sourceTree = "<group>"; };
+		04C322D5278D667000665E53 /* PresentModalPopoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentModalPopoverViewController.h; sourceTree = "<group>"; };
+		04C322D6278D667000665E53 /* PresentModalPopoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentModalPopoverViewController.m; sourceTree = "<group>"; };
 		04C3EE0826CF51A100FB8E8F /* CoreGraphicsNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsNormalViewController.h; sourceTree = "<group>"; };
 		04C3EE0926CF51A100FB8E8F /* CoreGraphicsNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsNormalViewController.m; sourceTree = "<group>"; };
 		04C3EE0C26CF51C400FB8E8F /* CoreGraphicsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsView.h; sourceTree = "<group>"; };
@@ -708,6 +729,21 @@
 			path = UIProgressView;
 			sourceTree = "<group>";
 		};
+		046C50062786B6BA0020E453 /* PresentModal */ = {
+			isa = PBXGroup;
+			children = (
+				046C50072786B6CD0020E453 /* PresentModalViewController.h */,
+				046C50082786B6CD0020E453 /* PresentModalViewController.m */,
+				046C500B2786B8120020E453 /* PresentModalDialogViewController.h */,
+				046C500C2786B8120020E453 /* PresentModalDialogViewController.m */,
+				046C500F2786BDD90020E453 /* PresentModalPopupViewController.h */,
+				046C50102786BDD90020E453 /* PresentModalPopupViewController.m */,
+				04C322D5278D667000665E53 /* PresentModalPopoverViewController.h */,
+				04C322D6278D667000665E53 /* PresentModalPopoverViewController.m */,
+			);
+			path = PresentModal;
+			sourceTree = "<group>";
+		};
 		04701A512626F29300957DC4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -720,6 +756,8 @@
 				049B579226539CB0001641E4 /* NSKeyedArchiver */,
 				04701A522626F2AB00957DC4 /* SafeArea */,
 				049B578D26535E47001641E4 /* Sandbox */,
+				04C322BE278D2C5900665E53 /* PushModal */,
+				046C50062786B6BA0020E453 /* PresentModal */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -986,6 +1024,19 @@
 			path = UIImageSave;
 			sourceTree = "<group>";
 		};
+		04C322BE278D2C5900665E53 /* PushModal */ = {
+			isa = PBXGroup;
+			children = (
+				04C322BF278D2C9700665E53 /* PushModalViewController.h */,
+				04C322C0278D2C9700665E53 /* PushModalViewController.m */,
+				04C322C3278D2CAA00665E53 /* Pushed1ViewController.h */,
+				04C322C4278D2CAA00665E53 /* Pushed1ViewController.m */,
+				04C322C7278D2CB500665E53 /* Pushed2ViewController.h */,
+				04C322C8278D2CB500665E53 /* Pushed2ViewController.m */,
+			);
+			path = PushModal;
+			sourceTree = "<group>";
+		};
 		04C4ED392643E57B007C35EF /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1192,6 +1243,7 @@
 				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
 				04C3EE1226CF777500FB8E8F /* CoreGraphicsPushPopView.m in Sources */,
 				04770649264D007E004ED1AA /* LayerAnimationCustomViewController.m in Sources */,
+				04C322C9278D2CB500665E53 /* Pushed2ViewController.m in Sources */,
 				045F309A256FA85900DA31BC /* UILabelOtherViewController.m in Sources */,
 				04EC5BC926203F22008A4667 /* UIAlertControllerViewController.m in Sources */,
 				045F306E256FA69C00DA31BC /* AttributeStringNormalViewController.m in Sources */,
@@ -1201,6 +1253,7 @@
 				04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */,
 				045256CD26281D6B00E7D8CF /* UICollectionViewWheelLayoutViewController.m in Sources */,
 				04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */,
+				046C50112786BDD90020E453 /* PresentModalPopupViewController.m in Sources */,
 				0491E12F26D4CC1000BFA4BD /* CALayerMaskViewController.m in Sources */,
 				047BD1EF26D3832900733CFD /* UIBezierPathCurveView.m in Sources */,
 				045F3081256FA7DC00DA31BC /* UIViewClipsToBoundsViewController.m in Sources */,
@@ -1212,7 +1265,9 @@
 				04770651264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m in Sources */,
 				0477066E264D25E5004ED1AA /* UIFontFamilyViewController.m in Sources */,
 				047C972626CD0A020013235E /* AVPlayerViewControllerViewController.m in Sources */,
+				04C322C5278D2CAA00665E53 /* Pushed1ViewController.m in Sources */,
 				04623776261D520E0034D421 /* UISegmentedControlEventViewController.m in Sources */,
+				046C500D2786B8120020E453 /* PresentModalDialogViewController.m in Sources */,
 				045F30BB256FA92300DA31BC /* SVProgressHUDNormalViewController.m in Sources */,
 				047F1D17261EA547001F4FA1 /* UIStepperViewController.m in Sources */,
 				045F306D256FA69C00DA31BC /* AttributeStringParagraphStyleViewController.m in Sources */,
@@ -1225,7 +1280,10 @@
 				045F308E256FA82800DA31BC /* UITextFieldNormalViewController.m in Sources */,
 				049B579026535E66001641E4 /* SandboxViewController.m in Sources */,
 				04879A18264E17C7004FCD92 /* MJExtensionViewController.m in Sources */,
+				04C322C1278D2C9700665E53 /* PushModalViewController.m in Sources */,
 				04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */,
+				046C50092786B6CD0020E453 /* PresentModalViewController.m in Sources */,
+				04C322D7278D667100665E53 /* PresentModalPopoverViewController.m in Sources */,
 				04C3EE1A26CF7A0900FB8E8F /* CoreGraphicsStrokeView.m in Sources */,
 				04639EF3264926A2008AD774 /* AnimationSpringViewController.m in Sources */,
 				04D7663927853BE100491246 /* UITableViewMoveViewController.m in Sources */,
