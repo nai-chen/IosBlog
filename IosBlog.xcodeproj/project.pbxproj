@@ -105,6 +105,7 @@
 		04B3D140278449EF00FB7C36 /* UITableViewEdit3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B3D13F278449EF00FB7C36 /* UITableViewEdit3ViewController.m */; };
 		04BCA7EB26CE044E00151811 /* UIImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */; };
 		04BCA7F426CE59CA00151811 /* UIImageSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */; };
+		04C2C25F278FB544001B542C /* SVProgressHUDStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2C25E278FB544001B542C /* SVProgressHUDStyleViewController.m */; };
 		04C322C1278D2C9700665E53 /* PushModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C322C0278D2C9700665E53 /* PushModalViewController.m */; };
 		04C322C5278D2CAA00665E53 /* Pushed1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C322C4278D2CAA00665E53 /* Pushed1ViewController.m */; };
 		04C322C9278D2CB500665E53 /* Pushed2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C322C8278D2CB500665E53 /* Pushed2ViewController.m */; };
@@ -337,6 +338,8 @@
 		04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerViewController.m; sourceTree = "<group>"; };
 		04BCA7F226CE59CA00151811 /* UIImageSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageSaveViewController.h; sourceTree = "<group>"; };
 		04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageSaveViewController.m; sourceTree = "<group>"; };
+		04C2C25D278FB544001B542C /* SVProgressHUDStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDStyleViewController.h; sourceTree = "<group>"; };
+		04C2C25E278FB544001B542C /* SVProgressHUDStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDStyleViewController.m; sourceTree = "<group>"; };
 		04C322BF278D2C9700665E53 /* PushModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushModalViewController.h; sourceTree = "<group>"; };
 		04C322C0278D2C9700665E53 /* PushModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushModalViewController.m; sourceTree = "<group>"; };
 		04C322C3278D2CAA00665E53 /* Pushed1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pushed1ViewController.h; sourceTree = "<group>"; };
@@ -688,6 +691,8 @@
 			children = (
 				045F30BA256FA92300DA31BC /* SVProgressHUDNormalViewController.h */,
 				045F30B9256FA92300DA31BC /* SVProgressHUDNormalViewController.m */,
+				04C2C25D278FB544001B542C /* SVProgressHUDStyleViewController.h */,
+				04C2C25E278FB544001B542C /* SVProgressHUDStyleViewController.m */,
 			);
 			path = SVProgressHUD;
 			sourceTree = "<group>";
@@ -1241,6 +1246,7 @@
 				04C3EE0E26CF51C400FB8E8F /* CoreGraphicsView.m in Sources */,
 				04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */,
 				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
+				04C2C25F278FB544001B542C /* SVProgressHUDStyleViewController.m in Sources */,
 				04C3EE1226CF777500FB8E8F /* CoreGraphicsPushPopView.m in Sources */,
 				04770649264D007E004ED1AA /* LayerAnimationCustomViewController.m in Sources */,
 				04C322C9278D2CB500665E53 /* Pushed2ViewController.m in Sources */,

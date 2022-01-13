@@ -498,6 +498,10 @@
 }
 
 - (Item *)thirdItem {
+    // AFNetworking
+    Item *afNetworkingItem = [[Item alloc] initWithTitle:@"AFNetworking"];
+    afNetworkingItem.viewController = @"AFNetworkingViewController";
+
     // MJExtension
     Item *mjExtensionItem = [[Item alloc] initWithTitle:@"MJExtension"];
     mjExtensionItem.viewController = @"MJExtensionViewController";
@@ -506,16 +510,15 @@
     Item *svProgressHUDNormalItem = [[Item alloc] initWithTitle:@"SVProgressHUDNormal"];
     svProgressHUDNormalItem.viewController = @"SVProgressHUDNormalViewController";
     
+    Item *svProgressHUDStyleItem = [[Item alloc] initWithTitle:@"SVProgressHUDStyle"];
+    svProgressHUDStyleItem.viewController = @"SVProgressHUDStyleViewController";
+    
     // SVProgressHUD end
     Item *svProgressHUDItem = [[Item alloc] initWithTitle:@"SVProgressHUD"];
-    svProgressHUDItem.children = @[svProgressHUDNormalItem];
-    
-    // AFNetworking
-    Item *afNetworkingItem = [[Item alloc] initWithTitle:@"AFNetworking"];
-    afNetworkingItem.viewController = @"AFNetworkingViewController";
+    svProgressHUDItem.children = @[svProgressHUDNormalItem, svProgressHUDStyleItem];
     
     Item *thirdItem = [[Item alloc] initWithTitle: @"Third"];
-    thirdItem.children = @[mjExtensionItem, svProgressHUDItem, afNetworkingItem];
+    thirdItem.children = @[afNetworkingItem, mjExtensionItem, svProgressHUDItem];
     
     return thirdItem;
 }
