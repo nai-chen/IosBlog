@@ -517,8 +517,29 @@
     Item *svProgressHUDItem = [[Item alloc] initWithTitle:@"SVProgressHUD"];
     svProgressHUDItem.children = @[svProgressHUDNormalItem, svProgressHUDStyleItem];
     
+    // MJRefresh
+    Item *mjRefreshStateItem = [[Item alloc] initWithTitle:@"MJRefreshState"];
+    mjRefreshStateItem.viewController = @"MJRefreshStateViewController";
+    
+    Item *mjRefreshNormalItem = [[Item alloc] initWithTitle:@"MJRefreshNormal"];
+    mjRefreshNormalItem.viewController = @"MJRefreshNormalViewController";
+    
+    Item *mjRefreshGifItem = [[Item alloc] initWithTitle:@"MJRefreshGif"];
+    mjRefreshGifItem.viewController = @"MJRefreshGifViewController";
+    
+    Item *mjRefreshAutoItem = [[Item alloc] initWithTitle:@"MJRefreshAuto"];
+    mjRefreshAutoItem.viewController = @"MJRefreshAutoViewController";
+    
+    // MJRefresh end
+    Item *mjRefreshItem = [[Item alloc] initWithTitle:@"MJRefresh"];
+    mjRefreshItem.children = @[mjRefreshStateItem, mjRefreshNormalItem, mjRefreshGifItem, mjRefreshAutoItem];
+
+    // OpenUDID
+    Item * openUDIDItem = [[Item alloc] initWithTitle:@"OpenUDID"];
+    openUDIDItem.viewController = @"OpenUDIDViewController";
+    
     Item *thirdItem = [[Item alloc] initWithTitle: @"Third"];
-    thirdItem.children = @[afNetworkingItem, mjExtensionItem, svProgressHUDItem];
+    thirdItem.children = @[afNetworkingItem, mjExtensionItem, svProgressHUDItem, mjRefreshItem, openUDIDItem];
     
     return thirdItem;
 }

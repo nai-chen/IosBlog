@@ -95,6 +95,7 @@
 		04879A3E264E797E004FCD92 /* UIFontLangTingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A3D264E797E004FCD92 /* UIFontLangTingViewController.m */; };
 		0491E12B26D4B78100BFA4BD /* CAGradientLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491E12A26D4B78100BFA4BD /* CAGradientLayerViewController.m */; };
 		0491E12F26D4CC1000BFA4BD /* CALayerMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491E12E26D4CC1000BFA4BD /* CALayerMaskViewController.m */; };
+		049817F327950DC400BA54AB /* OpenUDIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049817F227950DC400BA54AB /* OpenUDIDViewController.m */; };
 		049B579026535E66001641E4 /* SandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B578F26535E66001641E4 /* SandboxViewController.m */; };
 		049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B579426539CE4001641E4 /* NSKeyedArchiverViewController.m */; };
 		049B57992653A729001641E4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B57982653A729001641E4 /* Person.m */; };
@@ -121,6 +122,10 @@
 		04C3EE2B26CF9B3300FB8E8F /* CoreGraphicsCurveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE2A26CF9B3300FB8E8F /* CoreGraphicsCurveViewController.m */; };
 		04C3EE2F26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE2E26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.m */; };
 		04C3EE3326CFAB0E00FB8E8F /* CoreGraphicsOtherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3EE3226CFAB0E00FB8E8F /* CoreGraphicsOtherView.m */; };
+		04C44F7F27910C8700CC8EAB /* MJRefreshNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F7E27910C8700CC8EAB /* MJRefreshNormalViewController.m */; };
+		04C44F8A27913F9800CC8EAB /* MJRefreshStateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F8927913F9800CC8EAB /* MJRefreshStateViewController.m */; };
+		04C44F8F279151A100CC8EAB /* MJRefreshGifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F8E279151A100CC8EAB /* MJRefreshGifViewController.m */; };
+		04C44F9927916CDD00CC8EAB /* MJRefreshAutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F9827916CDD00CC8EAB /* MJRefreshAutoViewController.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
@@ -138,7 +143,7 @@
 		04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A225C15921006798D5 /* UITextViewInputViewController.m */; };
 		04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A625C15E4D006798D5 /* UITextViewDelegateViewController.m */; };
 		04FD1CED264A63CF00F9176E /* AnimationFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD1CEC264A63CF00F9176E /* AnimationFrameViewController.m */; };
-		921983AA05F7E29B05BCA2E1 /* libPods-IosBlog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BDF9B69106A61200EE3D10 /* libPods-IosBlog.a */; };
+		6E07A3148E138984B226BA00 /* Pods_IosBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48262DDE256FB2AD1DB8157 /* Pods_IosBlog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -318,6 +323,8 @@
 		0491E12A26D4B78100BFA4BD /* CAGradientLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerViewController.m; sourceTree = "<group>"; };
 		0491E12D26D4CC1000BFA4BD /* CALayerMaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayerMaskViewController.h; sourceTree = "<group>"; };
 		0491E12E26D4CC1000BFA4BD /* CALayerMaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerMaskViewController.m; sourceTree = "<group>"; };
+		049817F127950DC400BA54AB /* OpenUDIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenUDIDViewController.h; sourceTree = "<group>"; };
+		049817F227950DC400BA54AB /* OpenUDIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenUDIDViewController.m; sourceTree = "<group>"; };
 		049B578E26535E66001641E4 /* SandboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandboxViewController.h; sourceTree = "<group>"; };
 		049B578F26535E66001641E4 /* SandboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxViewController.m; sourceTree = "<group>"; };
 		049B579326539CE4001641E4 /* NSKeyedArchiverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSKeyedArchiverViewController.h; sourceTree = "<group>"; };
@@ -370,6 +377,14 @@
 		04C3EE2E26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsOtherViewController.m; sourceTree = "<group>"; };
 		04C3EE3126CFAB0E00FB8E8F /* CoreGraphicsOtherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsOtherView.h; sourceTree = "<group>"; };
 		04C3EE3226CFAB0E00FB8E8F /* CoreGraphicsOtherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsOtherView.m; sourceTree = "<group>"; };
+		04C44F7D27910C8700CC8EAB /* MJRefreshNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalViewController.h; sourceTree = "<group>"; };
+		04C44F7E27910C8700CC8EAB /* MJRefreshNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalViewController.m; sourceTree = "<group>"; };
+		04C44F8827913F9800CC8EAB /* MJRefreshStateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateViewController.h; sourceTree = "<group>"; };
+		04C44F8927913F9800CC8EAB /* MJRefreshStateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateViewController.m; sourceTree = "<group>"; };
+		04C44F8D279151A100CC8EAB /* MJRefreshGifViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifViewController.h; sourceTree = "<group>"; };
+		04C44F8E279151A100CC8EAB /* MJRefreshGifViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifViewController.m; sourceTree = "<group>"; };
+		04C44F9727916CDD00CC8EAB /* MJRefreshAutoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoViewController.h; sourceTree = "<group>"; };
+		04C44F9827916CDD00CC8EAB /* MJRefreshAutoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoViewController.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
 		04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNormalViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
@@ -406,7 +421,7 @@
 		04FD1CEC264A63CF00F9176E /* AnimationFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationFrameViewController.m; sourceTree = "<group>"; };
 		3488934F00A8985485936B73 /* Pods-IosBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.debug.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.debug.xcconfig"; sourceTree = "<group>"; };
 		A642423E7AD405A3E0489109 /* Pods-IosBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.release.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.release.xcconfig"; sourceTree = "<group>"; };
-		D9BDF9B69106A61200EE3D10 /* libPods-IosBlog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosBlog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48262DDE256FB2AD1DB8157 /* Pods_IosBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,7 +429,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				921983AA05F7E29B05BCA2E1 /* libPods-IosBlog.a in Frameworks */,
+				6E07A3148E138984B226BA00 /* Pods_IosBlog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +697,8 @@
 				0476AB92263BFAB500EAEADE /* AFNetworking */,
 				04879A15264E17BB004FCD92 /* MJExtension */,
 				045F30B8256FA8D200DA31BC /* SVProgressHUD */,
+				04C44F7C27910C6600CC8EAB /* MJRefresh */,
+				049817F027950DA400BA54AB /* OpenUDID */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -960,6 +977,15 @@
 			path = CALayer;
 			sourceTree = "<group>";
 		};
+		049817F027950DA400BA54AB /* OpenUDID */ = {
+			isa = PBXGroup;
+			children = (
+				049817F127950DC400BA54AB /* OpenUDIDViewController.h */,
+				049817F227950DC400BA54AB /* OpenUDIDViewController.m */,
+			);
+			path = OpenUDID;
+			sourceTree = "<group>";
+		};
 		049B578D26535E47001641E4 /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -1042,6 +1068,21 @@
 			path = PushModal;
 			sourceTree = "<group>";
 		};
+		04C44F7C27910C6600CC8EAB /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				04C44F8827913F9800CC8EAB /* MJRefreshStateViewController.h */,
+				04C44F8927913F9800CC8EAB /* MJRefreshStateViewController.m */,
+				04C44F7D27910C8700CC8EAB /* MJRefreshNormalViewController.h */,
+				04C44F7E27910C8700CC8EAB /* MJRefreshNormalViewController.m */,
+				04C44F8D279151A100CC8EAB /* MJRefreshGifViewController.h */,
+				04C44F8E279151A100CC8EAB /* MJRefreshGifViewController.m */,
+				04C44F9727916CDD00CC8EAB /* MJRefreshAutoViewController.h */,
+				04C44F9827916CDD00CC8EAB /* MJRefreshAutoViewController.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
 		04C4ED392643E57B007C35EF /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1119,7 +1160,7 @@
 		C62BD4679EF0DCB0B33E0175 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D9BDF9B69106A61200EE3D10 /* libPods-IosBlog.a */,
+				F48262DDE256FB2AD1DB8157 /* Pods_IosBlog.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1135,7 +1176,7 @@
 				045F3031256FA33500DA31BC /* Sources */,
 				045F3032256FA33500DA31BC /* Frameworks */,
 				045F3033256FA33500DA31BC /* Resources */,
-				5B22220B10120762F0E79955 /* [CP] Copy Pods Resources */,
+				9B2C84AD91D688139E69AF45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1214,21 +1255,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5B22220B10120762F0E79955 /* [CP] Copy Pods Resources */ = {
+		9B2C84AD91D688139E69AF45 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IosBlog/Pods-IosBlog-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-IosBlog/Pods-IosBlog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IosBlog/Pods-IosBlog-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-IosBlog/Pods-IosBlog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IosBlog/Pods-IosBlog-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IosBlog/Pods-IosBlog-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1266,6 +1307,7 @@
 				047BD1EB26D382FF00733CFD /* UIBezierPathCurveViewController.m in Sources */,
 				045F30B5256FA89A00DA31BC /* UIButtonStyleViewController.m in Sources */,
 				045F3063256FA63600DA31BC /* UIColorViewController.m in Sources */,
+				04C44F8F279151A100CC8EAB /* MJRefreshGifViewController.m in Sources */,
 				04BCA7F426CE59CA00151811 /* UIImageSaveViewController.m in Sources */,
 				04C3EE2326CF86EB00FB8E8F /* CoreGraphicsPathView.m in Sources */,
 				04770651264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m in Sources */,
@@ -1294,6 +1336,7 @@
 				04639EF3264926A2008AD774 /* AnimationSpringViewController.m in Sources */,
 				04D7663927853BE100491246 /* UITableViewMoveViewController.m in Sources */,
 				04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */,
+				04C44F8A27913F9800CC8EAB /* MJRefreshStateViewController.m in Sources */,
 				045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */,
 				04770669264D2575004ED1AA /* UISystemFontViewController.m in Sources */,
 				04BCA7EB26CE044E00151811 /* UIImagePickerViewController.m in Sources */,
@@ -1310,9 +1353,11 @@
 				04C3EE1F26CF86CB00FB8E8F /* CoreGraphicsPathViewController.m in Sources */,
 				047BD1DA26D36E7800733CFD /* UIBezierPathView.m in Sources */,
 				045F30A4256FA87800DA31BC /* UIImageViewContentModeViewController.m in Sources */,
+				04C44F7F27910C8700CC8EAB /* MJRefreshNormalViewController.m in Sources */,
 				045F304B256FA33600DA31BC /* main.m in Sources */,
 				045F309B256FA85900DA31BC /* UILabelBreakModeViewController.m in Sources */,
 				04CBE30D261C5EE10068982B /* UISegmentedControlSetViewController.m in Sources */,
+				049817F327950DC400BA54AB /* OpenUDIDViewController.m in Sources */,
 				0476AB95263BFAC200EAEADE /* AFNetworkingViewController.m in Sources */,
 				045F308D256FA82800DA31BC /* UITextFieldKeyBoardViewController.m in Sources */,
 				04B3D140278449EF00FB7C36 /* UITableViewEdit3ViewController.m in Sources */,
@@ -1335,6 +1380,7 @@
 				04623793261DBB790034D421 /* UIProgressViewController.m in Sources */,
 				0491E12B26D4B78100BFA4BD /* CAGradientLayerViewController.m in Sources */,
 				047C971A26CCD97A0013235E /* AVPlayerNormalViewController.m in Sources */,
+				04C44F9927916CDD00CC8EAB /* MJRefreshAutoViewController.m in Sources */,
 				047BD1DF26D37D2600733CFD /* UIBezierPathAreaViewController.m in Sources */,
 				04FD1CED264A63CF00F9176E /* AnimationFrameViewController.m in Sources */,
 				04EC5BBB2620254E008A4667 /* UIDatePickerTimeViewController.m in Sources */,

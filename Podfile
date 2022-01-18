@@ -1,6 +1,14 @@
-platform:ios, '8.0'
-target 'IosBlog'
-pod 'Masonry'
+platform:ios, '11.0'
+use_frameworks!
+
+target 'IosBlog' do
+
+pod 'OpenUDID'
+pod 'AFNetworking'
 pod 'MJExtension'
 pod 'SVProgressHUD'
-pod 'AFNetworking'
+pod 'Masonry'
+pod 'MJRefresh'
+pod 'SDWebImage'
+
+end
