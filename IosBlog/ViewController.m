@@ -253,10 +253,25 @@
     Item *caLayerItem = [[Item alloc] initWithTitle:@"CALayer"];
     caLayerItem.children = @[caShapeLayerItem, gridientLayerItem, maskItem];
     
+    // AVAudioPlayer
+    Item *avAudioPlayerNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    avAudioPlayerNormalItem.viewController = @"AVAudioPlayerNormalViewController";
+    
+    Item *avAudioPlayerCategoryItem = [[Item alloc] initWithTitle:@"Category"];
+    avAudioPlayerCategoryItem.viewController = @"AVAudioPlayerCategoryViewController";
+    
+    Item *avAudioPlayerNotificationItem = [[Item alloc] initWithTitle:@"Notification"];
+    avAudioPlayerNotificationItem.viewController = @"AVAudioPlayerNotificationViewController";
+    
+    // AVAudioPlayer end
+    Item *avAudioPlayerItem = [[Item alloc] initWithTitle:@"AVAudioPlayer"];
+    avAudioPlayerItem.children = @[avAudioPlayerNormalItem, avAudioPlayerCategoryItem, avAudioPlayerNotificationItem];
+    
     // Image
     Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
     imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
-                           imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem, bezierPathItem, caLayerItem
+                           imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem, bezierPathItem, caLayerItem,
+                           avAudioPlayerItem
     ];
 
     return imageItem;

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04015F792615D31C00E2EA46 /* UISwitchNormalViewController.m */; };
+		0415A0DD279E49AB00FDEDD8 /* 笨小孩.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0415A0DC279E49AB00FDEDD8 /* 笨小孩.mp3 */; };
 		04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04213F9E2617051F00A27650 /* UIPageControlViewController.m */; };
 		043B8592277C49A000799AEE /* UITableViewPlainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B8591277C49A000799AEE /* UITableViewPlainViewController.m */; };
 		043B8597277C54DB00799AEE /* UITableViewGroupedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B8596277C54DB00799AEE /* UITableViewGroupedViewController.m */; };
@@ -127,6 +128,9 @@
 		04C44F8F279151A100CC8EAB /* MJRefreshGifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F8E279151A100CC8EAB /* MJRefreshGifViewController.m */; };
 		04C44F9927916CDD00CC8EAB /* MJRefreshAutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F9827916CDD00CC8EAB /* MJRefreshAutoViewController.m */; };
 		04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */; };
+		04C60BCF27B0F9F100817078 /* AVAudioPlayerNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C60BCE27B0F9F100817078 /* AVAudioPlayerNormalViewController.m */; };
+		04C60BD327B0FAAA00817078 /* AVAudioPlayerCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C60BD227B0FAAA00817078 /* AVAudioPlayerCategoryViewController.m */; };
+		04C60BD727B0FAC100817078 /* AVAudioPlayerNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C60BD627B0FAC100817078 /* AVAudioPlayerNotificationViewController.m */; };
 		04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */; };
 		04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE308261C5A080068982B /* UISegmentedControlOperationViewController.m */; };
 		04CBE30D261C5EE10068982B /* UISegmentedControlSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CBE30C261C5EE10068982B /* UISegmentedControlSetViewController.m */; };
@@ -149,6 +153,7 @@
 /* Begin PBXFileReference section */
 		04015F782615D31C00E2EA46 /* UISwitchNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISwitchNormalViewController.h; sourceTree = "<group>"; };
 		04015F792615D31C00E2EA46 /* UISwitchNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchNormalViewController.m; sourceTree = "<group>"; };
+		0415A0DC279E49AB00FDEDD8 /* 笨小孩.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "笨小孩.mp3"; sourceTree = "<group>"; };
 		04213F9D2617051F00A27650 /* UIPageControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIPageControlViewController.h; sourceTree = "<group>"; };
 		04213F9E2617051F00A27650 /* UIPageControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIPageControlViewController.m; sourceTree = "<group>"; };
 		043B8590277C49A000799AEE /* UITableViewPlainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewPlainViewController.h; sourceTree = "<group>"; };
@@ -387,6 +392,12 @@
 		04C44F9827916CDD00CC8EAB /* MJRefreshAutoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoViewController.m; sourceTree = "<group>"; };
 		04C4ED3A2643E5E7007C35EF /* AnimationNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationNormalViewController.h; sourceTree = "<group>"; };
 		04C4ED3B2643E5E7007C35EF /* AnimationNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNormalViewController.m; sourceTree = "<group>"; };
+		04C60BCD27B0F9F100817078 /* AVAudioPlayerNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVAudioPlayerNormalViewController.h; sourceTree = "<group>"; };
+		04C60BCE27B0F9F100817078 /* AVAudioPlayerNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVAudioPlayerNormalViewController.m; sourceTree = "<group>"; };
+		04C60BD127B0FAAA00817078 /* AVAudioPlayerCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVAudioPlayerCategoryViewController.h; sourceTree = "<group>"; };
+		04C60BD227B0FAAA00817078 /* AVAudioPlayerCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVAudioPlayerCategoryViewController.m; sourceTree = "<group>"; };
+		04C60BD527B0FAC100817078 /* AVAudioPlayerNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVAudioPlayerNotificationViewController.h; sourceTree = "<group>"; };
+		04C60BD627B0FAC100817078 /* AVAudioPlayerNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVAudioPlayerNotificationViewController.m; sourceTree = "<group>"; };
 		04CBE2FD261C4B2A0068982B /* UISegmentedControlNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlNormalViewController.h; sourceTree = "<group>"; };
 		04CBE2FE261C4B2A0068982B /* UISegmentedControlNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlNormalViewController.m; sourceTree = "<group>"; };
 		04CBE307261C5A080068982B /* UISegmentedControlOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlOperationViewController.h; sourceTree = "<group>"; };
@@ -514,6 +525,7 @@
 		045F302C256FA33500DA31BC = {
 			isa = PBXGroup;
 			children = (
+				046C984E2796C1AB00FDD70C /* Music */,
 				04879A38264E787B004FCD92 /* Font */,
 				045F3037256FA33500DA31BC /* IosBlog */,
 				045F3036256FA33500DA31BC /* Products */,
@@ -766,6 +778,27 @@
 			path = PresentModal;
 			sourceTree = "<group>";
 		};
+		046C98482796C10300FDD70C /* AVAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				04C60BCD27B0F9F100817078 /* AVAudioPlayerNormalViewController.h */,
+				04C60BCE27B0F9F100817078 /* AVAudioPlayerNormalViewController.m */,
+				04C60BD127B0FAAA00817078 /* AVAudioPlayerCategoryViewController.h */,
+				04C60BD227B0FAAA00817078 /* AVAudioPlayerCategoryViewController.m */,
+				04C60BD527B0FAC100817078 /* AVAudioPlayerNotificationViewController.h */,
+				04C60BD627B0FAC100817078 /* AVAudioPlayerNotificationViewController.m */,
+			);
+			path = AVAudioPlayer;
+			sourceTree = "<group>";
+		};
+		046C984E2796C1AB00FDD70C /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				0415A0DC279E49AB00FDEDD8 /* 笨小孩.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 		04701A512626F29300957DC4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -907,16 +940,17 @@
 		047C971C26CCDA200013235E /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				047C971726CCD93F0013235E /* AVPlayer */,
-				04C4ED392643E57B007C35EF /* Animation */,
-				0491E12726D492E500BFA4BD /* CALayer */,
-				04AE383726BBDB6A00E33FC5 /* CoreGraphics */,
-				0477063A264CF891004ED1AA /* CoreAnimation */,
-				0477063B264CF9F0004ED1AA /* LayerAnimation */,
 				045F3060256FA60800DA31BC /* UIColor */,
-				047BD1CE26D36E0F00733CFD /* UIBezierPath */,
-				04BCA7F126CE599700151811 /* UIImageSave */,
+				04C4ED392643E57B007C35EF /* Animation */,
+				0477063B264CF9F0004ED1AA /* LayerAnimation */,
+				0477063A264CF891004ED1AA /* CoreAnimation */,
+				047C971726CCD93F0013235E /* AVPlayer */,
 				04BCA7E726CE03E000151811 /* UIImagePicker */,
+				04BCA7F126CE599700151811 /* UIImageSave */,
+				04AE383726BBDB6A00E33FC5 /* CoreGraphics */,
+				047BD1CE26D36E0F00733CFD /* UIBezierPath */,
+				0491E12726D492E500BFA4BD /* CALayer */,
+				046C98482796C10300FDD70C /* AVAudioPlayer */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -1224,6 +1258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04879A3A264E78E1004FCD92 /* 兰亭黑简.TTF in Resources */,
+				0415A0DD279E49AB00FDEDD8 /* 笨小孩.mp3 in Resources */,
 				045F3048256FA33600DA31BC /* LaunchScreen.storyboard in Resources */,
 				045F3045256FA33600DA31BC /* Assets.xcassets in Resources */,
 				045F3043256FA33500DA31BC /* Main.storyboard in Resources */,
@@ -1297,6 +1332,7 @@
 				045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */,
 				047C972226CCFBEC0013235E /* AVPlayerItemViewController.m in Sources */,
 				0476AB8D263BEF8E00EAEADE /* NSURLSessionViewController.m in Sources */,
+				04C60BD327B0FAAA00817078 /* AVAudioPlayerCategoryViewController.m in Sources */,
 				04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */,
 				045256CD26281D6B00E7D8CF /* UICollectionViewWheelLayoutViewController.m in Sources */,
 				04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */,
@@ -1397,6 +1433,7 @@
 				04770656264D0AE3004ED1AA /* CAKeyframeAnimationPathViewController.m in Sources */,
 				04C3EE0A26CF51A100FB8E8F /* CoreGraphicsNormalViewController.m in Sources */,
 				04701A552626F2BF00957DC4 /* SafeAreaNormalViewController.m in Sources */,
+				04C60BD727B0FAC100817078 /* AVAudioPlayerNotificationViewController.m in Sources */,
 				04C3EE1626CF77D600FB8E8F /* CoreGraphicsSaveRestoreView.m in Sources */,
 				04623787261DB2A10034D421 /* UIActivityIndicatorViewController.m in Sources */,
 				04770672264D29BD004ED1AA /* UIFontPreferredFontViewController.m in Sources */,
@@ -1406,6 +1443,7 @@
 				0477063E264CFA11004ED1AA /* LayerAnimationNormalViewController.m in Sources */,
 				04C3EE3326CFAB0E00FB8E8F /* CoreGraphicsOtherView.m in Sources */,
 				04EC5BB726201B96008A4667 /* UIDatePickerDateViewController.m in Sources */,
+				04C60BCF27B0F9F100817078 /* AVAudioPlayerNormalViewController.m in Sources */,
 				045256C526281C3B00E7D8CF /* UICollectionViewCircleLayoutViewController.m in Sources */,
 				049B57992653A729001641E4 /* Person.m in Sources */,
 				045F308F256FA82800DA31BC /* UITextFieldNotificationViewController.m in Sources */,
