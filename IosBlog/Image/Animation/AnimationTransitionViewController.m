@@ -11,7 +11,7 @@
 
 @property(nonatomic, strong) UIView *magentaView;
 @property(nonatomic, strong) UIView *redView;
-@property(nonatomic, strong) UIView *blueView;
+@property(nonatomic, strong) UIView *greenView;
 
 @end
 
@@ -28,9 +28,8 @@
     self.redView.backgroundColor = [UIColor redColor];
     [self.magentaView addSubview: self.redView];
     
-    self.blueView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 160, 160)];
-    self.blueView.backgroundColor = [UIColor blueColor];
-//    [self.magentaView addSubview: self.blueView];
+    self.greenView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 160, 160)];
+    self.greenView.backgroundColor = [UIColor greenColor];
 
     UIButton *curlUpButton = [[UIButton alloc] initWithFrame:CGRectMake(25, 300, 250, 30)];
     [curlUpButton setTitle:@"CurlUp animation" forState:UIControlStateNormal];
@@ -89,56 +88,58 @@
 
 - (void)onCurlUpAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionCurlUp animations:^{
-        [self.redView removeFromSuperview];
+        self.redView.backgroundColor = [UIColor blueColor];
     } completion:nil];
 }
 
 - (void)onCurlDownAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionCurlDown animations:^{
-        [self.magentaView addSubview:self.blueView];
+        self.redView.backgroundColor = [UIColor blueColor];
     } completion:nil];
 }
 
 - (void)onCrossDissolveAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
-        [self.redView removeFromSuperview];
+        self.redView.backgroundColor = [UIColor blueColor];
     } completion:nil];
 }
 
 - (void)onFlipFromLeftAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
-        [self.magentaView addSubview: self.blueView];
+        self.redView.backgroundColor = [UIColor blueColor];
     } completion:nil];
 }
 
 - (void)onFlipFromRightAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-        [self.magentaView addSubview: self.blueView];
+        self.redView.backgroundColor = [UIColor blueColor];
     } completion:nil];
 }
 
 - (void)onFlipFromTopAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
-        [self.magentaView addSubview: self.blueView];
+        self.redView.backgroundColor = [UIColor blueColor];
     } completion:nil];
 }
 
 - (void)onFlipFromBottomAnimationClick:(UIButton *)sender {
     [UIView transitionWithView:self.magentaView duration:2 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
-        [self.magentaView addSubview: self.blueView];
+        self.redView.backgroundColor = [UIColor blueColor];
     } completion:nil];
 }
 
 - (void)onTransitionFromViewToViewClick:(UIButton *) sender {
-    [UIView transitionFromView:self.redView toView:self.blueView duration:2
+    [self.magentaView addSubview:self.greenView];
+    [UIView transitionFromView:self.redView toView:self.greenView duration:2
                options:UIViewAnimationOptionTransitionCurlDown completion:nil];
 }
 
 - (void)onResetClick:(UIButton *)sender {
     [self.redView removeFromSuperview];
-    [self.blueView removeFromSuperview];
+    self.redView.backgroundColor = [UIColor redColor];
+    [self.magentaView addSubview:self.redView];
     
-    [self.magentaView addSubview: self.redView];
+    [self.greenView removeFromSuperview];
 }
 
 @end

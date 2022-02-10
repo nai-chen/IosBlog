@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     self.audioSession = [AVAudioSession sharedInstance];
-    [self.audioSession setActive:YES error:nil];
+//    [self.audioSession setActive:YES error:nil];
     
     for (AVAudioSessionCategory category in [self.audioSession availableCategories]) {
         NSLog(@"AVAudioSessionCategory %@", category);
@@ -92,9 +92,10 @@
     [self stopAudio];
 
     [self.audioSession setCategory:category error:nil];
+    [self.audioSession setActive:YES error:nil];
     
     if ([self.audioPlayer prepareToPlay]) {
-        NSLog(@"prepareToPlay success");
+        NSLog(@"prepareToPlay success %@", self.audioSession.category);
     } else {
         NSLog(@"prepareToPlay fail");
     }
