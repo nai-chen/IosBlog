@@ -10,6 +10,7 @@
 		04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04015F792615D31C00E2EA46 /* UISwitchNormalViewController.m */; };
 		0415A0DD279E49AB00FDEDD8 /* 笨小孩.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0415A0DC279E49AB00FDEDD8 /* 笨小孩.mp3 */; };
 		04213F9F2617051F00A27650 /* UIPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04213F9E2617051F00A27650 /* UIPageControlViewController.m */; };
+		042B8C5327BB443C0080A186 /* CAEmitterExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B8C5227BB443C0080A186 /* CAEmitterExampleViewController.m */; };
 		043B8592277C49A000799AEE /* UITableViewPlainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B8591277C49A000799AEE /* UITableViewPlainViewController.m */; };
 		043B8597277C54DB00799AEE /* UITableViewGroupedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B8596277C54DB00799AEE /* UITableViewGroupedViewController.m */; };
 		044A7FAF26252E0C00F97EF7 /* UIScrollViewZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A7FAE26252E0C00F97EF7 /* UIScrollViewZoomViewController.m */; };
@@ -107,6 +108,10 @@
 		04B3D140278449EF00FB7C36 /* UITableViewEdit3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B3D13F278449EF00FB7C36 /* UITableViewEdit3ViewController.m */; };
 		04BCA7EB26CE044E00151811 /* UIImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */; };
 		04BCA7F426CE59CA00151811 /* UIImageSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */; };
+		04BF242B27B9E984008CEEF1 /* CAEmitterLayerNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF242A27B9E984008CEEF1 /* CAEmitterLayerNormalViewController.m */; };
+		04BF242F27BA4752008CEEF1 /* CAEmitterLayerPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF242E27BA4752008CEEF1 /* CAEmitterLayerPropertyViewController.m */; };
+		04BF243327BA55FA008CEEF1 /* CAEmitterCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF243227BA55FA008CEEF1 /* CAEmitterCellViewController.m */; };
+		04BF243727BA57D7008CEEF1 /* CAEmitterAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF243627BA57D7008CEEF1 /* CAEmitterAnimationViewController.m */; };
 		04C2C25F278FB544001B542C /* SVProgressHUDStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2C25E278FB544001B542C /* SVProgressHUDStyleViewController.m */; };
 		04C322C1278D2C9700665E53 /* PushModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C322C0278D2C9700665E53 /* PushModalViewController.m */; };
 		04C322C5278D2CAA00665E53 /* Pushed1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C322C4278D2CAA00665E53 /* Pushed1ViewController.m */; };
@@ -156,6 +161,8 @@
 		0415A0DC279E49AB00FDEDD8 /* 笨小孩.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "笨小孩.mp3"; sourceTree = "<group>"; };
 		04213F9D2617051F00A27650 /* UIPageControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIPageControlViewController.h; sourceTree = "<group>"; };
 		04213F9E2617051F00A27650 /* UIPageControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIPageControlViewController.m; sourceTree = "<group>"; };
+		042B8C5127BB443C0080A186 /* CAEmitterExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAEmitterExampleViewController.h; sourceTree = "<group>"; };
+		042B8C5227BB443C0080A186 /* CAEmitterExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEmitterExampleViewController.m; sourceTree = "<group>"; };
 		043B8590277C49A000799AEE /* UITableViewPlainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewPlainViewController.h; sourceTree = "<group>"; };
 		043B8591277C49A000799AEE /* UITableViewPlainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewPlainViewController.m; sourceTree = "<group>"; };
 		043B8595277C54DB00799AEE /* UITableViewGroupedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewGroupedViewController.h; sourceTree = "<group>"; };
@@ -350,6 +357,14 @@
 		04BCA7EA26CE044E00151811 /* UIImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerViewController.m; sourceTree = "<group>"; };
 		04BCA7F226CE59CA00151811 /* UIImageSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageSaveViewController.h; sourceTree = "<group>"; };
 		04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageSaveViewController.m; sourceTree = "<group>"; };
+		04BF242927B9E984008CEEF1 /* CAEmitterLayerNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerNormalViewController.h; sourceTree = "<group>"; };
+		04BF242A27B9E984008CEEF1 /* CAEmitterLayerNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerNormalViewController.m; sourceTree = "<group>"; };
+		04BF242D27BA4752008CEEF1 /* CAEmitterLayerPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerPropertyViewController.h; sourceTree = "<group>"; };
+		04BF242E27BA4752008CEEF1 /* CAEmitterLayerPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerPropertyViewController.m; sourceTree = "<group>"; };
+		04BF243127BA55FA008CEEF1 /* CAEmitterCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAEmitterCellViewController.h; sourceTree = "<group>"; };
+		04BF243227BA55FA008CEEF1 /* CAEmitterCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEmitterCellViewController.m; sourceTree = "<group>"; };
+		04BF243527BA57D7008CEEF1 /* CAEmitterAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAEmitterAnimationViewController.h; sourceTree = "<group>"; };
+		04BF243627BA57D7008CEEF1 /* CAEmitterAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEmitterAnimationViewController.m; sourceTree = "<group>"; };
 		04C2C25D278FB544001B542C /* SVProgressHUDStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDStyleViewController.h; sourceTree = "<group>"; };
 		04C2C25E278FB544001B542C /* SVProgressHUDStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDStyleViewController.m; sourceTree = "<group>"; };
 		04C322BF278D2C9700665E53 /* PushModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushModalViewController.h; sourceTree = "<group>"; };
@@ -951,6 +966,7 @@
 				047BD1CE26D36E0F00733CFD /* UIBezierPath */,
 				0491E12726D492E500BFA4BD /* CALayer */,
 				046C98482796C10300FDD70C /* AVAudioPlayer */,
+				04BF242827B9E96B008CEEF1 /* CAEmitterLayer */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -1087,6 +1103,23 @@
 				04BCA7F326CE59CA00151811 /* UIImageSaveViewController.m */,
 			);
 			path = UIImageSave;
+			sourceTree = "<group>";
+		};
+		04BF242827B9E96B008CEEF1 /* CAEmitterLayer */ = {
+			isa = PBXGroup;
+			children = (
+				04BF242927B9E984008CEEF1 /* CAEmitterLayerNormalViewController.h */,
+				04BF242A27B9E984008CEEF1 /* CAEmitterLayerNormalViewController.m */,
+				04BF242D27BA4752008CEEF1 /* CAEmitterLayerPropertyViewController.h */,
+				04BF242E27BA4752008CEEF1 /* CAEmitterLayerPropertyViewController.m */,
+				04BF243127BA55FA008CEEF1 /* CAEmitterCellViewController.h */,
+				04BF243227BA55FA008CEEF1 /* CAEmitterCellViewController.m */,
+				042B8C5127BB443C0080A186 /* CAEmitterExampleViewController.h */,
+				042B8C5227BB443C0080A186 /* CAEmitterExampleViewController.m */,
+				04BF243527BA57D7008CEEF1 /* CAEmitterAnimationViewController.h */,
+				04BF243627BA57D7008CEEF1 /* CAEmitterAnimationViewController.m */,
+			);
+			path = CAEmitterLayer;
 			sourceTree = "<group>";
 		};
 		04C322BE278D2C5900665E53 /* PushModal */ = {
@@ -1315,6 +1348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04639EF72649324E008AD774 /* AnimationTransitionViewController.m in Sources */,
+				04BF243327BA55FA008CEEF1 /* CAEmitterCellViewController.m in Sources */,
 				045F30AA256FA88900DA31BC /* UIControlViewViewController.m in Sources */,
 				04C3EE2B26CF9B3300FB8E8F /* CoreGraphicsCurveViewController.m in Sources */,
 				043B8597277C54DB00799AEE /* UITableViewGroupedViewController.m in Sources */,
@@ -1332,6 +1366,7 @@
 				045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */,
 				047C972226CCFBEC0013235E /* AVPlayerItemViewController.m in Sources */,
 				0476AB8D263BEF8E00EAEADE /* NSURLSessionViewController.m in Sources */,
+				04BF242B27B9E984008CEEF1 /* CAEmitterLayerNormalViewController.m in Sources */,
 				04C60BD327B0FAAA00817078 /* AVAudioPlayerCategoryViewController.m in Sources */,
 				04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */,
 				045256CD26281D6B00E7D8CF /* UICollectionViewWheelLayoutViewController.m in Sources */,
@@ -1348,6 +1383,7 @@
 				04C3EE2326CF86EB00FB8E8F /* CoreGraphicsPathView.m in Sources */,
 				04770651264D090B004ED1AA /* CAKeyframeAnimationValueViewController.m in Sources */,
 				0477066E264D25E5004ED1AA /* UIFontFamilyViewController.m in Sources */,
+				042B8C5327BB443C0080A186 /* CAEmitterExampleViewController.m in Sources */,
 				047C972626CD0A020013235E /* AVPlayerViewControllerViewController.m in Sources */,
 				04C322C5278D2CAA00665E53 /* Pushed1ViewController.m in Sources */,
 				04623776261D520E0034D421 /* UISegmentedControlEventViewController.m in Sources */,
@@ -1379,6 +1415,7 @@
 				043B8592277C49A000799AEE /* UITableViewPlainViewController.m in Sources */,
 				044A7FC32625919F00F97EF7 /* UICollectionViewNormalViewController.m in Sources */,
 				04B3D12F2783F0D000FB7C36 /* UITableViewCellViewController.m in Sources */,
+				04BF243727BA57D7008CEEF1 /* CAEmitterAnimationViewController.m in Sources */,
 				04C4ED3C2643E5E7007C35EF /* AnimationNormalViewController.m in Sources */,
 				044A7FB42625343A00F97EF7 /* UIScrollViewNormalViewController.m in Sources */,
 				045F3056256FA49100DA31BC /* Item.m in Sources */,
@@ -1409,6 +1446,7 @@
 				045256BC262819B900E7D8CF /* UICollectionViewFlowLayoutViewController.m in Sources */,
 				049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */,
 				04EC5BAC261FEED7008A4667 /* UIPickerViewController.m in Sources */,
+				04BF242F27BA4752008CEEF1 /* CAEmitterLayerPropertyViewController.m in Sources */,
 				045256D126281D8200E7D8CF /* MyWheelLayout.m in Sources */,
 				04879A3E264E797E004FCD92 /* UIFontLangTingViewController.m in Sources */,
 				04CBE309261C5A080068982B /* UISegmentedControlOperationViewController.m in Sources */,

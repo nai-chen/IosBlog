@@ -267,11 +267,28 @@
     Item *avAudioPlayerItem = [[Item alloc] initWithTitle:@"AVAudioPlayer"];
     avAudioPlayerItem.children = @[avAudioPlayerNormalItem, avAudioPlayerCategoryItem, avAudioPlayerNotificationItem];
     
+    // CAEmitterLayer
+    Item *emitterLayerNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    emitterLayerNormalItem.viewController = @"CAEmitterLayerNormalViewController";
+    
+    Item *emitterLayerPropertyItem = [[Item alloc] initWithTitle:@"Property"];
+    emitterLayerPropertyItem.viewController = @"CAEmitterLayerPropertyViewController";
+    
+    Item *emitterCellItem = [[Item alloc] initWithTitle:@"Cell"];
+    emitterCellItem.viewController = @"CAEmitterCellViewController";
+    
+    Item *emitterExampleItem = [[Item alloc] initWithTitle:@"Example"];
+    emitterExampleItem.viewController = @"CAEmitterExampleViewController";
+    
+    // CAEmitterLayer end
+    Item *emitterLayerItem = [[Item alloc] initWithTitle:@"CAEmitterLayer"];
+    emitterLayerItem.children = @[emitterLayerNormalItem, emitterLayerPropertyItem, emitterCellItem, emitterExampleItem];
+    
     // Image
     Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
     imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
                            imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem, bezierPathItem, caLayerItem,
-                           avAudioPlayerItem
+                           avAudioPlayerItem, emitterLayerItem
     ];
 
     return imageItem;
