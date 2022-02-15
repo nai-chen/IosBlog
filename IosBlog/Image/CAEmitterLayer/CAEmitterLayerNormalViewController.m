@@ -6,7 +6,6 @@
 //
 
 #import "CAEmitterLayerNormalViewController.h"
-#import "CAEmitterAnimationViewController.h"
 
 @interface CAEmitterLayerNormalViewController ()
 
@@ -75,11 +74,16 @@
     
     [startButton addTarget:self action:@selector(onStartClick:) forControlEvents:UIControlEventTouchUpInside];
         
+    CALayer *backgroundLayer = [CALayer layer];
+    backgroundLayer.frame = CGRectMake(self.view.center.x - 100, 325, 200, 50);
+    backgroundLayer.backgroundColor = [UIColor magentaColor].CGColor;
+    [self.view.layer addSublayer:backgroundLayer];
+    
     self.emitterLayer = [CAEmitterLayer layer];
     self.emitterLayer.frame = self.view.bounds;
 
     // 发射源中心点位置，默认是 (0, 0, 0)
-    self.emitterLayer.emitterPosition = CGPointMake(self.view.center.x, 150);
+    self.emitterLayer.emitterPosition = CGPointMake(self.view.center.x, 350);
     self.emitterLayer.emitterZPosition = 10;
     
     // 发射源大小，宽、高和纵向深度。默认是 (0, 0, 0)
@@ -107,9 +111,7 @@
     
     self.emitterLayer.emitterCells = @[cell];
 
-    CAEmitterAnimationViewController *vc = [[CAEmitterAnimationViewController alloc] init];
-    vc.emitterLayer = self.emitterLayer;
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.view.layer addSublayer:self.emitterLayer];
 }
 
 @end
