@@ -26,7 +26,7 @@
     
     [snowButton addTarget:self action:@selector(onSnowClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *explodeButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 150, 100, 30)];
+    UIButton *explodeButton = [[UIButton alloc] initWithFrame:CGRectMake(150, 100, 100, 30)];
     [explodeButton setTitle:@"explode" forState:UIControlStateNormal];
     [explodeButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.view addSubview:explodeButton];
@@ -40,22 +40,26 @@
 
 - (void)onSnowClick:(UIButton *)sender {
     CAEmitterLayer *emitterLayer = [CAEmitterLayer layer];
+    emitterLayer.contents = (id)[UIImage imageNamed:@"icon_iv_sample"].CGImage;
     emitterLayer.frame = self.view.bounds;
-    emitterLayer.emitterPosition = CGPointMake(self.view.center.x, 100);
-    emitterLayer.emitterSize = CGSizeMake(self.view.bounds.size.width-50, 10);
+    emitterLayer.emitterPosition = CGPointMake(self.view.center.x, -10);
+    emitterLayer.emitterSize = CGSizeMake(self.view.bounds.size.width-100, 10);
     
     emitterLayer.emitterShape = kCAEmitterLayerLine;
-    emitterLayer.emitterMode = kCAEmitterLayerSurface;
+    emitterLayer.emitterMode = kCAEmitterLayerLine;
+    emitterLayer.renderMode = kCAEmitterLayerAdditive;
     
     CAEmitterCell *cell = [CAEmitterCell emitterCell];
-    cell.contents = (id)[UIImage imageNamed:@"launch"].CGImage;
-    cell.birthRate = 10;
-    cell.lifetime = 10;
+    cell.contents = (id)[UIImage imageNamed:@"snow_white"].CGImage;
+    cell.birthRate = 50;
+    cell.lifetime = 20;
     cell.lifetimeRange = 2;
-    cell.scale = 0.2;
-    cell.scaleRange = 0.05;
-    cell.yAcceleration = 20;
-    cell.alphaSpeed = -0.1;
+    cell.scale = 0.3;
+    cell.scaleRange = 0.2;
+    cell.yAcceleration = 50;
+    cell.alphaSpeed = -0.05;
+    cell.velocity = 75;
+    cell.emissionRange = 0.5 * M_PI_4;
     
     emitterLayer.emitterCells = @[cell];
     
