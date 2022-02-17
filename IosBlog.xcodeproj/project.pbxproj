@@ -97,6 +97,7 @@
 		04879A3E264E797E004FCD92 /* UIFontLangTingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04879A3D264E797E004FCD92 /* UIFontLangTingViewController.m */; };
 		0491E12B26D4B78100BFA4BD /* CAGradientLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491E12A26D4B78100BFA4BD /* CAGradientLayerViewController.m */; };
 		0491E12F26D4CC1000BFA4BD /* CALayerMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491E12E26D4CC1000BFA4BD /* CALayerMaskViewController.m */; };
+		0491E9E627BDDF4800264DF8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0491E9E427BDDF4800264DF8 /* Model.xcdatamodeld */; };
 		049817F327950DC400BA54AB /* OpenUDIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049817F227950DC400BA54AB /* OpenUDIDViewController.m */; };
 		049B579026535E66001641E4 /* SandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B578F26535E66001641E4 /* SandboxViewController.m */; };
 		049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B579426539CE4001641E4 /* NSKeyedArchiverViewController.m */; };
@@ -148,6 +149,7 @@
 		04EC5BBF2620281A008A4667 /* UIDatePickerDateAndTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC5BBE2620281A008A4667 /* UIDatePickerDateAndTimeViewController.m */; };
 		04EC5BC426202962008A4667 /* UIDatePickerCountDownTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC5BC326202962008A4667 /* UIDatePickerCountDownTimerViewController.m */; };
 		04EC5BC926203F22008A4667 /* UIAlertControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC5BC826203F22008A4667 /* UIAlertControllerViewController.m */; };
+		04F3054E27BD02680090EFEE /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3054D27BD02680090EFEE /* CoreDataViewController.m */; };
 		04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5639E25C138B2006798D5 /* UITextViewNormalViewController.m */; };
 		04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A225C15921006798D5 /* UITextViewInputViewController.m */; };
 		04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A625C15E4D006798D5 /* UITextViewDelegateViewController.m */; };
@@ -335,6 +337,7 @@
 		0491E12A26D4B78100BFA4BD /* CAGradientLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerViewController.m; sourceTree = "<group>"; };
 		0491E12D26D4CC1000BFA4BD /* CALayerMaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayerMaskViewController.h; sourceTree = "<group>"; };
 		0491E12E26D4CC1000BFA4BD /* CALayerMaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerMaskViewController.m; sourceTree = "<group>"; };
+		0491E9E527BDDF4800264DF8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		049817F127950DC400BA54AB /* OpenUDIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenUDIDViewController.h; sourceTree = "<group>"; };
 		049817F227950DC400BA54AB /* OpenUDIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenUDIDViewController.m; sourceTree = "<group>"; };
 		049B578E26535E66001641E4 /* SandboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandboxViewController.h; sourceTree = "<group>"; };
@@ -437,6 +440,8 @@
 		04EC5BC326202962008A4667 /* UIDatePickerCountDownTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerCountDownTimerViewController.m; sourceTree = "<group>"; };
 		04EC5BC726203F22008A4667 /* UIAlertControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAlertControllerViewController.h; sourceTree = "<group>"; };
 		04EC5BC826203F22008A4667 /* UIAlertControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAlertControllerViewController.m; sourceTree = "<group>"; };
+		04F3054C27BD02680090EFEE /* CoreDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
+		04F3054D27BD02680090EFEE /* CoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
 		04F5639D25C138B2006798D5 /* UITextViewNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewNormalViewController.h; sourceTree = "<group>"; };
 		04F5639E25C138B2006798D5 /* UITextViewNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewNormalViewController.m; sourceTree = "<group>"; };
 		04F563A125C15921006798D5 /* UITextViewInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewInputViewController.h; sourceTree = "<group>"; };
@@ -540,6 +545,7 @@
 		045F302C256FA33500DA31BC = {
 			isa = PBXGroup;
 			children = (
+				04F3052E27BCF5450090EFEE /* Data */,
 				046C984E2796C1AB00FDD70C /* Music */,
 				04879A38264E787B004FCD92 /* Font */,
 				045F3037256FA33500DA31BC /* IosBlog */,
@@ -825,6 +831,7 @@
 				0476AB84263BE42300EAEADE /* NSURLConnection */,
 				0476AB90263BEF9900EAEADE /* NSURLSession */,
 				049B579226539CB0001641E4 /* NSKeyedArchiver */,
+				04F3054B27BD02560090EFEE /* CoreData */,
 				049B578D26535E47001641E4 /* Sandbox */,
 				04C322BE278D2C5900665E53 /* PushModal */,
 				046C50062786B6BA0020E453 /* PresentModal */,
@@ -1202,6 +1209,23 @@
 			path = UIAlertController;
 			sourceTree = "<group>";
 		};
+		04F3052E27BCF5450090EFEE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0491E9E427BDDF4800264DF8 /* Model.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		04F3054B27BD02560090EFEE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				04F3054C27BD02680090EFEE /* CoreDataViewController.h */,
+				04F3054D27BD02680090EFEE /* CoreDataViewController.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		04F5639C25C13881006798D5 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1477,10 +1501,12 @@
 				04770672264D29BD004ED1AA /* UIFontPreferredFontViewController.m in Sources */,
 				045F305A256FA55A00DA31BC /* UIColor+Tool.m in Sources */,
 				04770677264D2E4B004ED1AA /* NSUserDefaultsViewController.m in Sources */,
+				04F3054E27BD02680090EFEE /* CoreDataViewController.m in Sources */,
 				04C3EE2726CF9B2200FB8E8F /* CoreGraphicsCurveView.m in Sources */,
 				0477063E264CFA11004ED1AA /* LayerAnimationNormalViewController.m in Sources */,
 				04C3EE3326CFAB0E00FB8E8F /* CoreGraphicsOtherView.m in Sources */,
 				04EC5BB726201B96008A4667 /* UIDatePickerDateViewController.m in Sources */,
+				0491E9E627BDDF4800264DF8 /* Model.xcdatamodeld in Sources */,
 				04C60BCF27B0F9F100817078 /* AVAudioPlayerNormalViewController.m in Sources */,
 				045256C526281C3B00E7D8CF /* UICollectionViewCircleLayoutViewController.m in Sources */,
 				049B57992653A729001641E4 /* Person.m in Sources */,
@@ -1688,6 +1714,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0491E9E427BDDF4800264DF8 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0491E9E527BDDF4800264DF8 /* Model.xcdatamodel */,
+			);
+			currentVersion = 0491E9E527BDDF4800264DF8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 045F302D256FA33500DA31BC /* Project object */;
 }

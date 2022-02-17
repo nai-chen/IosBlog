@@ -106,6 +106,10 @@
     Item *keyedArchiverItem = [[Item alloc] initWithTitle:@"NSKeyedArchiver"];
     keyedArchiverItem.viewController = @"NSKeyedArchiverViewController";
 
+    // CoreData
+    Item *coreDataItem = [[Item alloc] initWithTitle:@"CoreData"];
+    coreDataItem.viewController = @"CoreDataViewController";
+    
     // PushModal
     Item *pushModalItem = [[Item alloc] initWithTitle:@"PushModal"];
     pushModalItem.viewController = @"PushModalViewController";
@@ -116,7 +120,7 @@
     
     Item *applicationItem = [[Item alloc] initWithTitle:@"Application"];
     applicationItem.children = @[uiFontItem, userDefaultsItem, attributeStringItem, notificationCenterItem, safeAreaItem,
-                           urlConnectionItem, urlSessionItem, sandboxItem, keyedArchiverItem,
+                           urlConnectionItem, urlSessionItem, sandboxItem, keyedArchiverItem, coreDataItem,
                            pushModalItem, presentModalItem];
     
     return applicationItem;

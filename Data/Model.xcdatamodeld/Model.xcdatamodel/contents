@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1615" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="StudentModel" representedClassName="StudentModel" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TeacherModel"/>
+    </entity>
+    <entity name="TeacherModel" representedClassName="TeacherModel" syncable="YES" codeGenerationType="class"/>
+    <elements>
+        <element name="StudentModel" positionX="-135.70703125" positionY="-439.15625" width="128" height="88"/>
+        <element name="TeacherModel" positionX="-9" positionY="-297" width="128" height="43"/>
+    </elements>
+</model>
