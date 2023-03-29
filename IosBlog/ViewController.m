@@ -23,14 +23,16 @@
     [super viewDidLoad];
 
     if (!self.item) {
-        // Application item
-        Item *applicationItem = [self applicationItem];
+        // Component item
+        Item *applicationItem = [self componentItem];
+        
+        // Widget item
+        Item *widgetItem = [self widgetItem];
         
         // Image item
         Item *imageItem = [self imageItem];
         
-        // Widget item
-        Item *widgetItem = [self widgetItem];
+        // Application item
         
         // Third item
         Item *thirdItem = [self thirdItem];
@@ -49,38 +51,11 @@
     }];
 }
 
-- (Item *)applicationItem {
-    // UIFont
-    Item *uiSystemFontItem = [[Item alloc] initWithTitle:@"UISystemFont"];
-    uiSystemFontItem.viewController = @"UISystemFontViewController";
-    
-    Item *uiFontFamilyItem = [[Item alloc] initWithTitle:@"UIFontFamily"];
-    uiFontFamilyItem.viewController = @"UIFontFamilyViewController";
-    
-    Item *uiPreferredFontItem = [[Item alloc] initWithTitle:@"UIPreferredFont"];
-    uiPreferredFontItem.viewController = @"UIFontPreferredFontViewController";
-    
-    Item *uiFontLangTingItem = [[Item alloc] initWithTitle:@"UIFontLangTing"];
-    uiFontLangTingItem.viewController = @"UIFontLangTingViewController";
-    
-    // UIFont end
-    Item *uiFontItem = [[Item alloc] initWithTitle:@"UIFont"];
-    uiFontItem.children = @[uiSystemFontItem, uiFontFamilyItem, uiPreferredFontItem, uiFontLangTingItem];
-    
+- (Item *)componentItem {
     // UserDefaults
     Item *userDefaultsItem = [[Item alloc] initWithTitle:@"UserDefaults"];
     userDefaultsItem.viewController = @"NSUserDefaultsViewController";
     
-    // AttributeString
-    Item *attributeStringNormalItem = [[Item alloc] initWithTitle:@"AttributeStringNormal"];
-    attributeStringNormalItem.viewController = @"AttributeStringNormalViewController";
-    
-    Item *AttributeStringParagraphStyleItem = [[Item alloc] initWithTitle:@"AttributeStringParagraphStyle"];
-    AttributeStringParagraphStyleItem.viewController = @"AttributeStringParagraphStyleViewController";
-    
-    // AttributeString end
-    Item *attributeStringItem = [[Item alloc] initWithTitle:@"AttributeString"];
-    attributeStringItem.children = @[attributeStringNormalItem, AttributeStringParagraphStyleItem];
     
     // NSNotificationCenter
     Item *notificationCenterItem = [[Item alloc] initWithTitle:@"NSNotificationCenter"];
@@ -118,188 +93,32 @@
     Item *presentModalItem = [[Item alloc] initWithTitle:@"PresentModal"];
     presentModalItem.viewController = @"PresentModalViewController";
     
-    Item *applicationItem = [[Item alloc] initWithTitle:@"Application"];
-    applicationItem.children = @[uiFontItem, userDefaultsItem, attributeStringItem, notificationCenterItem, safeAreaItem,
+    Item *componentItem = [[Item alloc] initWithTitle:@"Component"];
+    componentItem.children = @[userDefaultsItem, notificationCenterItem, safeAreaItem,
                            urlConnectionItem, urlSessionItem, sandboxItem, keyedArchiverItem, coreDataItem,
                            pushModalItem, presentModalItem];
     
-    return applicationItem;
+    return componentItem;
 }
-
-- (Item *)imageItem {
-    // UIColor
-    Item *uiColorItem = [[Item alloc] initWithTitle:@"UIColor"];
-    uiColorItem.viewController = @"UIColorViewController";
-    
-    // Animation
-    Item *animationNormalItem = [[Item alloc] initWithTitle:@"AnimationNormal"];
-    animationNormalItem.viewController = @"AnimationNormalViewController";
-
-    Item *animationTransformItem = [[Item alloc] initWithTitle:@"AnimationTransform"];
-    animationTransformItem.viewController = @"AnimationTransformViewController";
-    
-    Item *animationCurveItem = [[Item alloc] initWithTitle:@"AnimationCurve"];
-    animationCurveItem.viewController = @"AnimationCurveViewController";
-
-    Item *animationSpringItem = [[Item alloc] initWithTitle:@"AnimationSpring"];
-    animationSpringItem.viewController = @"AnimationSpringViewController";
-    
-    Item *animationTranstionItem = [[Item alloc] initWithTitle:@"AnimationTransition"];
-    animationTranstionItem.viewController = @"AnimationTransitionViewController";
-    
-    Item *animationFrameItem = [[Item alloc] initWithTitle:@"AnimationFrame"];
-    animationFrameItem.viewController = @"AnimationFrameViewController";
-    
-    // Animtion end
-    Item *animationItem = [[Item alloc] initWithTitle:@"Animation"];
-    animationItem.children = @[animationNormalItem, animationTransformItem, animationCurveItem, animationSpringItem,
-                               animationTranstionItem, animationFrameItem];
-    
-    // Layer Animation
-    Item *layerAnimationNormalItem = [[Item alloc] initWithTitle:@"Normal"];
-    layerAnimationNormalItem.viewController = @"LayerAnimationNormalViewController";
-    
-    Item *layerAnimationTransactionItem = [[Item alloc] initWithTitle:@"Transaction"];
-    layerAnimationTransactionItem.viewController = @"LayerAnimationTransactionViewController";
-    
-    Item *layerAnimationCustomItem = [[Item alloc] initWithTitle:@"Custom"];
-    layerAnimationCustomItem.viewController = @"LayerAnimationCustomViewController";
-    
-    // Layer Animtion end
-    Item *layerAnimationItem = [[Item alloc] initWithTitle:@"LayerAnimation"];
-    layerAnimationItem.children = @[layerAnimationNormalItem, layerAnimationTransactionItem, layerAnimationCustomItem];
-    
-    // Core Animation
-    Item *basicAnimationItem = [[Item alloc] initWithTitle:@"CABasicAnimation"];
-    basicAnimationItem.viewController = @"CABasicAnimationViewController";
-    
-    Item *keyframeAnimationValueItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Value"];
-    keyframeAnimationValueItem.viewController = @"CAKeyframeAnimationValueViewController";
-    
-    Item *keyframeAnimationPathItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Path"];
-    keyframeAnimationPathItem.viewController = @"CAKeyframeAnimationPathViewController";
-    
-    Item *animationGroupPathItem = [[Item alloc] initWithTitle:@"CAAnimationGroup"];
-    animationGroupPathItem.viewController = @"CAAnimationGroupViewController";
-    
-    // Core Animation end
-    Item *coreAnimationItem = [[Item alloc] initWithTitle:@"CoreAnimation"];
-    coreAnimationItem.children = @[basicAnimationItem, keyframeAnimationValueItem, keyframeAnimationPathItem, animationGroupPathItem];
-
-    // AVPlayer
-    Item *avPlayerNormalItem = [[Item alloc] initWithTitle:@"AVPlayerNormal"];
-    avPlayerNormalItem.viewController = @"AVPlayerNormalViewController";
-    
-    Item *avPlayerItemItem = [[Item alloc] initWithTitle:@"AVPlayerItem"];
-    avPlayerItemItem.viewController = @"AVPlayerItemViewController";
-    
-    Item *avPlayerViewControllerItem = [[Item alloc] initWithTitle:@"AVPlayerViewController"];
-    avPlayerViewControllerItem.viewController = @"AVPlayerViewControllerViewController";
-    
-    // AVPlayer end
-    Item *avPlayerItem = [[Item alloc] initWithTitle:@"AVPlayer"];
-    avPlayerItem.children = @[avPlayerNormalItem, avPlayerItemItem, avPlayerViewControllerItem];
-
-    // UIImagePicker
-    Item *imagePickerItem = [[Item alloc] initWithTitle:@"ImagePicker"];
-    imagePickerItem.viewController = @"UIImagePickerViewController";
-
-    // UIImageSave
-    Item *savedPhotosAlbumItem = [[Item alloc] initWithTitle:@"SavedPhotosAlbum"];
-    savedPhotosAlbumItem.viewController = @"UIImageSaveViewController";
-    
-    // Core Graphics
-    Item *coreGraphicsNormalItem = [[Item alloc] initWithTitle:@"Normal"];
-    coreGraphicsNormalItem.viewController = @"CoreGraphicsNormalViewController";
-    
-    Item *coreGraphicsStrokeItem = [[Item alloc] initWithTitle:@"Stroke"];
-    coreGraphicsStrokeItem.viewController = @"CoreGraphicsStrokeViewController";
-    
-    Item *coreGraphicsPathItem = [[Item alloc] initWithTitle:@"Path"];
-    coreGraphicsPathItem.viewController = @"CoreGraphicsPathViewController";
-    
-    Item *coreGraphicsCurveItem = [[Item alloc] initWithTitle:@"Curve"];
-    coreGraphicsCurveItem.viewController = @"CoreGraphicsCurveViewController";
-    
-    Item *coreGraphicsOtherItem = [[Item alloc] initWithTitle:@"Other"];
-    coreGraphicsOtherItem.viewController = @"CoreGraphicsOtherViewController";
-    
-    // Core Graphics end
-    Item *coreGraphicsItem = [[Item alloc] initWithTitle:@"CoreGraphics"];
-    coreGraphicsItem.children = @[coreGraphicsNormalItem, coreGraphicsStrokeItem, coreGraphicsPathItem, coreGraphicsCurveItem, coreGraphicsOtherItem];
-    
-    
-    // UIBezierPathNormalViewController
-    Item *bezierPathNormalItem = [[Item alloc] initWithTitle:@"Normal"];
-    bezierPathNormalItem.viewController = @"UIBezierPathNormalViewController";
-    
-    Item *bezierPathAreaItem = [[Item alloc] initWithTitle:@"Area"];
-    bezierPathAreaItem.viewController = @"UIBezierPathAreaViewController";
-    
-    Item *bezierPathCurveItem = [[Item alloc] initWithTitle:@"Curve"];
-    bezierPathCurveItem.viewController = @"UIBezierPathCurveViewController";
-    
-    // UIBezierPathNormalViewController end
-    Item *bezierPathItem = [[Item alloc] initWithTitle:@"UIBezierPath"];
-    bezierPathItem.children = @[bezierPathNormalItem, bezierPathAreaItem, bezierPathCurveItem];
-    
-    // CALayer
-    Item *caShapeLayerItem = [[Item alloc] initWithTitle:@"CAShapeLayer"];
-    caShapeLayerItem.viewController = @"CAShapeLayerViewController";
-    
-    Item *gridientLayerItem = [[Item alloc] initWithTitle:@"GridentLayer"];
-    gridientLayerItem.viewController = @"CAGradientLayerViewController";
-    
-    Item *maskItem = [[Item alloc] initWithTitle:@"CALayer Mask"];
-    maskItem.viewController = @"CALayerMaskViewController";
-    
-    // CALayer end
-    Item *caLayerItem = [[Item alloc] initWithTitle:@"CALayer"];
-    caLayerItem.children = @[caShapeLayerItem, gridientLayerItem, maskItem];
-    
-    // AVAudioPlayer
-    Item *avAudioPlayerNormalItem = [[Item alloc] initWithTitle:@"Normal"];
-    avAudioPlayerNormalItem.viewController = @"AVAudioPlayerNormalViewController";
-    
-    Item *avAudioPlayerCategoryItem = [[Item alloc] initWithTitle:@"Category"];
-    avAudioPlayerCategoryItem.viewController = @"AVAudioPlayerCategoryViewController";
-    
-    Item *avAudioPlayerNotificationItem = [[Item alloc] initWithTitle:@"Notification"];
-    avAudioPlayerNotificationItem.viewController = @"AVAudioPlayerNotificationViewController";
-    
-    // AVAudioPlayer end
-    Item *avAudioPlayerItem = [[Item alloc] initWithTitle:@"AVAudioPlayer"];
-    avAudioPlayerItem.children = @[avAudioPlayerNormalItem, avAudioPlayerCategoryItem, avAudioPlayerNotificationItem];
-    
-    // CAEmitterLayer
-    Item *emitterLayerNormalItem = [[Item alloc] initWithTitle:@"Normal"];
-    emitterLayerNormalItem.viewController = @"CAEmitterLayerNormalViewController";
-    
-    Item *emitterLayerPropertyItem = [[Item alloc] initWithTitle:@"Property"];
-    emitterLayerPropertyItem.viewController = @"CAEmitterLayerPropertyViewController";
-    
-    Item *emitterCellItem = [[Item alloc] initWithTitle:@"Cell"];
-    emitterCellItem.viewController = @"CAEmitterCellViewController";
-    
-    Item *emitterExampleItem = [[Item alloc] initWithTitle:@"Example"];
-    emitterExampleItem.viewController = @"CAEmitterExampleViewController";
-    
-    // CAEmitterLayer end
-    Item *emitterLayerItem = [[Item alloc] initWithTitle:@"CAEmitterLayer"];
-    emitterLayerItem.children = @[emitterLayerNormalItem, emitterLayerPropertyItem, emitterCellItem, emitterExampleItem];
-    
-    // Image
-    Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
-    imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
-                           imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem, bezierPathItem, caLayerItem,
-                           avAudioPlayerItem, emitterLayerItem
-    ];
-
-    return imageItem;
-}
-
 
 - (Item *)widgetItem {
+    // UIFont
+    Item *uiSystemFontItem = [[Item alloc] initWithTitle:@"UISystemFont"];
+    uiSystemFontItem.viewController = @"UISystemFontViewController";
+    
+    Item *uiFontFamilyItem = [[Item alloc] initWithTitle:@"UIFontFamily"];
+    uiFontFamilyItem.viewController = @"UIFontFamilyViewController";
+    
+    Item *uiPreferredFontItem = [[Item alloc] initWithTitle:@"UIPreferredFont"];
+    uiPreferredFontItem.viewController = @"UIFontPreferredFontViewController";
+    
+    Item *uiFontLangTingItem = [[Item alloc] initWithTitle:@"UIFontLangTing"];
+    uiFontLangTingItem.viewController = @"UIFontLangTingViewController";
+    
+    // UIFont end
+    Item *uiFontItem = [[Item alloc] initWithTitle:@"UIFont"];
+    uiFontItem.children = @[uiSystemFontItem, uiFontFamilyItem, uiPreferredFontItem, uiFontLangTingItem];
+
     // UIView
     Item *uiViewFrameItem = [[Item alloc] initWithTitle:@"UIViewFrame"];
     uiViewFrameItem.viewController = @"UIViewFrameViewController";
@@ -333,7 +152,18 @@
     // UILabel end
     Item *uiLabelItem = [[Item alloc] initWithTitle:@"UILabel"];
     uiLabelItem.children = @[uiLabelTextAlignmentItem, uiLabelBreakModeItem, uiLabelBoundsItem, uiLabelOtherItem];
+        
+    // AttributeString
+    Item *attributeStringNormalItem = [[Item alloc] initWithTitle:@"AttributeStringNormal"];
+    attributeStringNormalItem.viewController = @"AttributeStringNormalViewController";
     
+    Item *AttributeStringParagraphStyleItem = [[Item alloc] initWithTitle:@"AttributeStringParagraphStyle"];
+    AttributeStringParagraphStyleItem.viewController = @"AttributeStringParagraphStyleViewController";
+    
+    // AttributeString end
+    Item *attributeStringItem = [[Item alloc] initWithTitle:@"AttributeString"];
+    attributeStringItem.children = @[attributeStringNormalItem, AttributeStringParagraphStyleItem];
+
     // UIImageView
     Item *uiImageAnimationViewItem = [[Item alloc] initWithTitle:@"UIImageViewAnimation"];
     uiImageAnimationViewItem.viewController = @"UIImageViewAnimationViewController";
@@ -524,13 +354,185 @@
     // UITableView end
     
     Item *widgetItem = [[Item alloc] initWithTitle:@"Widget"];
-    widgetItem.children = @[uiViewItem, uiLabelItem, uiImageViewItem, uiControlItem, uiButtonItem, uiTextFieldItem,
-                            uiTextViewItem, uiSwitchItem, uiPageControlItem, uiSegmentedControlItem, uiSliderItem,
-                            uiActivityIndicatorViewItem, uiProgressViewItem, uiStepperItem, uiPickerViewItem,
-                            uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem, uiCollectionViewItem,
-                            uiTableViewItem];
+    widgetItem.children = @[uiFontItem, uiViewItem, uiLabelItem, attributeStringItem, uiImageViewItem,
+                            uiControlItem, uiButtonItem, uiTextFieldItem, uiTextViewItem, uiSwitchItem,
+                            uiPageControlItem, uiSegmentedControlItem, uiSliderItem, uiActivityIndicatorViewItem, uiProgressViewItem,
+                            uiStepperItem, uiPickerViewItem, uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem,
+                            uiCollectionViewItem, uiTableViewItem];
     
     return widgetItem;
+}
+
+- (Item *)imageItem {
+    // UIColor
+    Item *uiColorItem = [[Item alloc] initWithTitle:@"UIColor"];
+    uiColorItem.viewController = @"UIColorViewController";
+    
+    // Animation
+    Item *animationNormalItem = [[Item alloc] initWithTitle:@"AnimationNormal"];
+    animationNormalItem.viewController = @"AnimationNormalViewController";
+
+    Item *animationTransformItem = [[Item alloc] initWithTitle:@"AnimationTransform"];
+    animationTransformItem.viewController = @"AnimationTransformViewController";
+    
+    Item *animationCurveItem = [[Item alloc] initWithTitle:@"AnimationCurve"];
+    animationCurveItem.viewController = @"AnimationCurveViewController";
+
+    Item *animationSpringItem = [[Item alloc] initWithTitle:@"AnimationSpring"];
+    animationSpringItem.viewController = @"AnimationSpringViewController";
+    
+    Item *animationTranstionItem = [[Item alloc] initWithTitle:@"AnimationTransition"];
+    animationTranstionItem.viewController = @"AnimationTransitionViewController";
+    
+    Item *animationFrameItem = [[Item alloc] initWithTitle:@"AnimationFrame"];
+    animationFrameItem.viewController = @"AnimationFrameViewController";
+    
+    // Animtion end
+    Item *animationItem = [[Item alloc] initWithTitle:@"Animation"];
+    animationItem.children = @[animationNormalItem, animationTransformItem, animationCurveItem, animationSpringItem,
+                               animationTranstionItem, animationFrameItem];
+    
+    // Layer Animation
+    Item *layerAnimationNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    layerAnimationNormalItem.viewController = @"LayerAnimationNormalViewController";
+    
+    Item *layerAnimationTransactionItem = [[Item alloc] initWithTitle:@"Transaction"];
+    layerAnimationTransactionItem.viewController = @"LayerAnimationTransactionViewController";
+    
+    Item *layerAnimationCustomItem = [[Item alloc] initWithTitle:@"Custom"];
+    layerAnimationCustomItem.viewController = @"LayerAnimationCustomViewController";
+    
+    // Layer Animtion end
+    Item *layerAnimationItem = [[Item alloc] initWithTitle:@"LayerAnimation"];
+    layerAnimationItem.children = @[layerAnimationNormalItem, layerAnimationTransactionItem, layerAnimationCustomItem];
+    
+    // Core Animation
+    Item *basicAnimationItem = [[Item alloc] initWithTitle:@"CABasicAnimation"];
+    basicAnimationItem.viewController = @"CABasicAnimationViewController";
+    
+    Item *keyframeAnimationValueItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Value"];
+    keyframeAnimationValueItem.viewController = @"CAKeyframeAnimationValueViewController";
+    
+    Item *keyframeAnimationPathItem = [[Item alloc] initWithTitle:@"CAKeyframeAnimation_Path"];
+    keyframeAnimationPathItem.viewController = @"CAKeyframeAnimationPathViewController";
+    
+    Item *animationGroupPathItem = [[Item alloc] initWithTitle:@"CAAnimationGroup"];
+    animationGroupPathItem.viewController = @"CAAnimationGroupViewController";
+    
+    // Core Animation end
+    Item *coreAnimationItem = [[Item alloc] initWithTitle:@"CoreAnimation"];
+    coreAnimationItem.children = @[basicAnimationItem, keyframeAnimationValueItem, keyframeAnimationPathItem, animationGroupPathItem];
+
+    // AVPlayer
+    Item *avPlayerNormalItem = [[Item alloc] initWithTitle:@"AVPlayerNormal"];
+    avPlayerNormalItem.viewController = @"AVPlayerNormalViewController";
+    
+    Item *avPlayerItemItem = [[Item alloc] initWithTitle:@"AVPlayerItem"];
+    avPlayerItemItem.viewController = @"AVPlayerItemViewController";
+    
+    Item *avPlayerViewControllerItem = [[Item alloc] initWithTitle:@"AVPlayerViewController"];
+    avPlayerViewControllerItem.viewController = @"AVPlayerViewControllerViewController";
+    
+    // AVPlayer end
+    Item *avPlayerItem = [[Item alloc] initWithTitle:@"AVPlayer"];
+    avPlayerItem.children = @[avPlayerNormalItem, avPlayerItemItem, avPlayerViewControllerItem];
+
+    // UIImagePicker
+    Item *imagePickerItem = [[Item alloc] initWithTitle:@"ImagePicker"];
+    imagePickerItem.viewController = @"UIImagePickerViewController";
+
+    // UIImageSave
+    Item *savedPhotosAlbumItem = [[Item alloc] initWithTitle:@"SavedPhotosAlbum"];
+    savedPhotosAlbumItem.viewController = @"UIImageSaveViewController";
+    
+    // Core Graphics
+    Item *coreGraphicsNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    coreGraphicsNormalItem.viewController = @"CoreGraphicsNormalViewController";
+    
+    Item *coreGraphicsStrokeItem = [[Item alloc] initWithTitle:@"Stroke"];
+    coreGraphicsStrokeItem.viewController = @"CoreGraphicsStrokeViewController";
+    
+    Item *coreGraphicsPathItem = [[Item alloc] initWithTitle:@"Path"];
+    coreGraphicsPathItem.viewController = @"CoreGraphicsPathViewController";
+    
+    Item *coreGraphicsCurveItem = [[Item alloc] initWithTitle:@"Curve"];
+    coreGraphicsCurveItem.viewController = @"CoreGraphicsCurveViewController";
+    
+    Item *coreGraphicsOtherItem = [[Item alloc] initWithTitle:@"Other"];
+    coreGraphicsOtherItem.viewController = @"CoreGraphicsOtherViewController";
+    
+    // Core Graphics end
+    Item *coreGraphicsItem = [[Item alloc] initWithTitle:@"CoreGraphics"];
+    coreGraphicsItem.children = @[coreGraphicsNormalItem, coreGraphicsStrokeItem, coreGraphicsPathItem, coreGraphicsCurveItem, coreGraphicsOtherItem];
+    
+    
+    // UIBezierPathNormalViewController
+    Item *bezierPathNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    bezierPathNormalItem.viewController = @"UIBezierPathNormalViewController";
+    
+    Item *bezierPathAreaItem = [[Item alloc] initWithTitle:@"Area"];
+    bezierPathAreaItem.viewController = @"UIBezierPathAreaViewController";
+    
+    Item *bezierPathCurveItem = [[Item alloc] initWithTitle:@"Curve"];
+    bezierPathCurveItem.viewController = @"UIBezierPathCurveViewController";
+    
+    // UIBezierPathNormalViewController end
+    Item *bezierPathItem = [[Item alloc] initWithTitle:@"UIBezierPath"];
+    bezierPathItem.children = @[bezierPathNormalItem, bezierPathAreaItem, bezierPathCurveItem];
+    
+    // CALayer
+    Item *caShapeLayerItem = [[Item alloc] initWithTitle:@"CAShapeLayer"];
+    caShapeLayerItem.viewController = @"CAShapeLayerViewController";
+    
+    Item *gridientLayerItem = [[Item alloc] initWithTitle:@"GridentLayer"];
+    gridientLayerItem.viewController = @"CAGradientLayerViewController";
+    
+    Item *maskItem = [[Item alloc] initWithTitle:@"CALayer Mask"];
+    maskItem.viewController = @"CALayerMaskViewController";
+    
+    // CALayer end
+    Item *caLayerItem = [[Item alloc] initWithTitle:@"CALayer"];
+    caLayerItem.children = @[caShapeLayerItem, gridientLayerItem, maskItem];
+    
+    // AVAudioPlayer
+    Item *avAudioPlayerNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    avAudioPlayerNormalItem.viewController = @"AVAudioPlayerNormalViewController";
+    
+    Item *avAudioPlayerCategoryItem = [[Item alloc] initWithTitle:@"Category"];
+    avAudioPlayerCategoryItem.viewController = @"AVAudioPlayerCategoryViewController";
+    
+    Item *avAudioPlayerNotificationItem = [[Item alloc] initWithTitle:@"Notification"];
+    avAudioPlayerNotificationItem.viewController = @"AVAudioPlayerNotificationViewController";
+    
+    // AVAudioPlayer end
+    Item *avAudioPlayerItem = [[Item alloc] initWithTitle:@"AVAudioPlayer"];
+    avAudioPlayerItem.children = @[avAudioPlayerNormalItem, avAudioPlayerCategoryItem, avAudioPlayerNotificationItem];
+    
+    // CAEmitterLayer
+    Item *emitterLayerNormalItem = [[Item alloc] initWithTitle:@"Normal"];
+    emitterLayerNormalItem.viewController = @"CAEmitterLayerNormalViewController";
+    
+    Item *emitterLayerPropertyItem = [[Item alloc] initWithTitle:@"Property"];
+    emitterLayerPropertyItem.viewController = @"CAEmitterLayerPropertyViewController";
+    
+    Item *emitterCellItem = [[Item alloc] initWithTitle:@"Cell"];
+    emitterCellItem.viewController = @"CAEmitterCellViewController";
+    
+    Item *emitterExampleItem = [[Item alloc] initWithTitle:@"Example"];
+    emitterExampleItem.viewController = @"CAEmitterExampleViewController";
+    
+    // CAEmitterLayer end
+    Item *emitterLayerItem = [[Item alloc] initWithTitle:@"CAEmitterLayer"];
+    emitterLayerItem.children = @[emitterLayerNormalItem, emitterLayerPropertyItem, emitterCellItem, emitterExampleItem];
+    
+    // Image
+    Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
+    imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
+                           imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem, bezierPathItem, caLayerItem,
+                           avAudioPlayerItem, emitterLayerItem
+    ];
+
+    return imageItem;
 }
 
 - (Item *)thirdItem {

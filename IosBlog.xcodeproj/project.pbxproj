@@ -566,7 +566,7 @@
 		045F3037256FA33500DA31BC /* IosBlog */ = {
 			isa = PBXGroup;
 			children = (
-				04701A512626F29300957DC4 /* Application */,
+				04701A512626F29300957DC4 /* Component */,
 				047C971C26CCDA200013235E /* Image */,
 				045F30B7256FA8C500DA31BC /* Third */,
 				045F3071256FA6CD00DA31BC /* Widget */,
@@ -620,8 +620,10 @@
 		045F3071256FA6CD00DA31BC /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				04770662264D2144004ED1AA /* UIFont */,
 				045F3077256FA70800DA31BC /* UIView */,
 				045F3075256FA6F500DA31BC /* UILabel */,
+				045F305E256FA5F200DA31BC /* AttributeString */,
 				045F3074256FA6EC00DA31BC /* UIImageView */,
 				045F3073256FA6E400DA31BC /* UIControl */,
 				045F3072256FA6DA00DA31BC /* UIButton */,
@@ -820,12 +822,10 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
-		04701A512626F29300957DC4 /* Application */ = {
+		04701A512626F29300957DC4 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				04770662264D2144004ED1AA /* UIFont */,
 				04770674264D2E3D004ED1AA /* NSUserDefaults */,
-				045F305E256FA5F200DA31BC /* AttributeString */,
 				045F305F256FA5FE00DA31BC /* NSNotificationCenter */,
 				04701A522626F2AB00957DC4 /* SafeArea */,
 				0476AB84263BE42300EAEADE /* NSURLConnection */,
@@ -836,7 +836,7 @@
 				04C322BE278D2C5900665E53 /* PushModal */,
 				046C50062786B6BA0020E453 /* PresentModal */,
 			);
-			path = Application;
+			path = Component;
 			sourceTree = "<group>";
 		};
 		04701A522626F2AB00957DC4 /* SafeArea */ = {
@@ -1658,16 +1658,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5HSV63X6Z4;
 				INFOPLIST_FILE = IosBlog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ios Blog";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blog.demo.IosBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1679,16 +1685,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5HSV63X6Z4;
 				INFOPLIST_FILE = IosBlog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ios Blog";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blog.demo.IosBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
