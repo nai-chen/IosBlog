@@ -6,3 +6,5 @@ ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/OpenUDID/OpenUDID.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework
+${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework

@@ -573,11 +573,15 @@
     mjRefreshItem.children = @[mjRefreshStateItem, mjRefreshNormalItem, mjRefreshGifItem, mjRefreshAutoItem];
 
     // OpenUDID
-    Item * openUDIDItem = [[Item alloc] initWithTitle:@"OpenUDID"];
+    Item *openUDIDItem = [[Item alloc] initWithTitle:@"OpenUDID"];
     openUDIDItem.viewController = @"OpenUDIDViewController";
     
+    // YBImageBrowser
+    Item *imageBrowserItem = [[Item alloc] initWithTitle:@"ImageBrowser"];
+    imageBrowserItem.viewController = @"YBImageBrowserViewController";
+    
     Item *thirdItem = [[Item alloc] initWithTitle: @"Third"];
-    thirdItem.children = @[afNetworkingItem, mjExtensionItem, svProgressHUDItem, mjRefreshItem, openUDIDItem];
+    thirdItem.children = @[afNetworkingItem, mjExtensionItem, svProgressHUDItem, mjRefreshItem, openUDIDItem, imageBrowserItem];
     
     return thirdItem;
 }

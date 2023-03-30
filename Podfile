@@ -10,5 +10,8 @@ pod 'SVProgressHUD'
 pod 'Masonry'
 pod 'MJRefresh'
 pod 'SDWebImage'
+pod 'YBImageBrowser'
+pod 'YBImageBrowser/Video'
+pod 'YYImage', :git => 'https://github.com/QiuYeHong90/YYImage.git'
 
 end

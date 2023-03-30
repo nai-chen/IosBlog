@@ -154,6 +154,10 @@
 		04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A225C15921006798D5 /* UITextViewInputViewController.m */; };
 		04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A625C15E4D006798D5 /* UITextViewDelegateViewController.m */; };
 		04FD1CED264A63CF00F9176E /* AnimationFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD1CEC264A63CF00F9176E /* AnimationFrameViewController.m */; };
+		693E77DF29D580E00006966F /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 693E77DD29D580E00006966F /* image_2.jpg */; };
+		693E77E029D580E00006966F /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 693E77DE29D580E00006966F /* image_1.jpg */; };
+		6945093429D5704800E5E518 /* YBImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6945093329D5704800E5E518 /* YBImageBrowserViewController.m */; };
+		6945093729D574C400E5E518 /* ImageBrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6945093629D574C400E5E518 /* ImageBrowserCollectionViewCell.m */; };
 		6E07A3148E138984B226BA00 /* Pods_IosBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48262DDE256FB2AD1DB8157 /* Pods_IosBlog.framework */; };
 /* End PBXBuildFile section */
 
@@ -451,6 +455,12 @@
 		04FD1CEB264A63CF00F9176E /* AnimationFrameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationFrameViewController.h; sourceTree = "<group>"; };
 		04FD1CEC264A63CF00F9176E /* AnimationFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationFrameViewController.m; sourceTree = "<group>"; };
 		3488934F00A8985485936B73 /* Pods-IosBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.debug.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.debug.xcconfig"; sourceTree = "<group>"; };
+		693E77DD29D580E00006966F /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
+		693E77DE29D580E00006966F /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
+		6945093229D5704800E5E518 /* YBImageBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBImageBrowserViewController.h; sourceTree = "<group>"; };
+		6945093329D5704800E5E518 /* YBImageBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBImageBrowserViewController.m; sourceTree = "<group>"; };
+		6945093529D574C400E5E518 /* ImageBrowserCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageBrowserCollectionViewCell.h; sourceTree = "<group>"; };
+		6945093629D574C400E5E518 /* ImageBrowserCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserCollectionViewCell.m; sourceTree = "<group>"; };
 		A642423E7AD405A3E0489109 /* Pods-IosBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.release.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.release.xcconfig"; sourceTree = "<group>"; };
 		F48262DDE256FB2AD1DB8157 /* Pods_IosBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -734,6 +744,7 @@
 				045F30B8256FA8D200DA31BC /* SVProgressHUD */,
 				04C44F7C27910C6600CC8EAB /* MJRefresh */,
 				049817F027950DA400BA54AB /* OpenUDID */,
+				6945093129D56FF300E5E518 /* YBImageBrowser */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -1212,6 +1223,8 @@
 		04F3052E27BCF5450090EFEE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				693E77DE29D580E00006966F /* image_1.jpg */,
+				693E77DD29D580E00006966F /* image_2.jpg */,
 				0491E9E427BDDF4800264DF8 /* Model.xcdatamodeld */,
 			);
 			path = Data;
@@ -1246,6 +1259,17 @@
 				A642423E7AD405A3E0489109 /* Pods-IosBlog.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6945093129D56FF300E5E518 /* YBImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				6945093229D5704800E5E518 /* YBImageBrowserViewController.h */,
+				6945093329D5704800E5E518 /* YBImageBrowserViewController.m */,
+				6945093529D574C400E5E518 /* ImageBrowserCollectionViewCell.h */,
+				6945093629D574C400E5E518 /* ImageBrowserCollectionViewCell.m */,
+			);
+			path = YBImageBrowser;
 			sourceTree = "<group>";
 		};
 		C62BD4679EF0DCB0B33E0175 /* Frameworks */ = {
@@ -1316,9 +1340,11 @@
 			files = (
 				04879A3A264E78E1004FCD92 /* 兰亭黑简.TTF in Resources */,
 				0415A0DD279E49AB00FDEDD8 /* 笨小孩.mp3 in Resources */,
+				693E77DF29D580E00006966F /* image_2.jpg in Resources */,
 				045F3048256FA33600DA31BC /* LaunchScreen.storyboard in Resources */,
 				045F3045256FA33600DA31BC /* Assets.xcassets in Resources */,
 				045F3043256FA33500DA31BC /* Main.storyboard in Resources */,
+				693E77E029D580E00006966F /* image_1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1390,6 +1416,7 @@
 				045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */,
 				047C972226CCFBEC0013235E /* AVPlayerItemViewController.m in Sources */,
 				0476AB8D263BEF8E00EAEADE /* NSURLSessionViewController.m in Sources */,
+				6945093429D5704800E5E518 /* YBImageBrowserViewController.m in Sources */,
 				04BF242B27B9E984008CEEF1 /* CAEmitterLayerNormalViewController.m in Sources */,
 				04C60BD327B0FAAA00817078 /* AVAudioPlayerCategoryViewController.m in Sources */,
 				04CBE2FF261C4B2A0068982B /* UISegmentedControlNormalViewController.m in Sources */,
@@ -1484,6 +1511,7 @@
 				04EC5BBB2620254E008A4667 /* UIDatePickerTimeViewController.m in Sources */,
 				0476AB87263BE45A00EAEADE /* NSURLConnectionViewController.m in Sources */,
 				04CD2FB2264539530034360C /* AnimationCurveViewController.m in Sources */,
+				6945093729D574C400E5E518 /* ImageBrowserCollectionViewCell.m in Sources */,
 				04639EEF2648D1C9008AD774 /* AnimationTransformViewController.m in Sources */,
 				04C3EE2F26CFAAF500FB8E8F /* CoreGraphicsOtherViewController.m in Sources */,
 				04879A32264E1DD7004FCD92 /* Model.m in Sources */,
@@ -1657,9 +1685,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5HSV63X6Z4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IosBlog/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Ios Blog";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1684,9 +1712,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5HSV63X6Z4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IosBlog/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Ios Blog";
 				LD_RUNPATH_SEARCH_PATHS = (
