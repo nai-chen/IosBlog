@@ -49,6 +49,7 @@
     dialogVc.modalPresentationStyle = UIModalPresentationOverFullScreen;
     dialogVc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
+    self.definesPresentationContext = YES;
     [self presentViewController:dialogVc animated:YES completion:^{
         NSLog(@"dialog show");
     }];
@@ -59,6 +60,7 @@
     popupVc.modalPresentationStyle = UIModalPresentationOverFullScreen;
     popupVc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
+    self.definesPresentationContext = YES;
     [self presentViewController:popupVc animated:YES completion:^{
         NSLog(@"popup show");
     }];

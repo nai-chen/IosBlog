@@ -23,8 +23,11 @@
     [super viewDidLoad];
 
     if (!self.item) {
+        // Application item
+        Item *applicationItem = [self applicationItem];
+        
         // Component item
-        Item *applicationItem = [self componentItem];
+        Item *componentItem = [self componentItem];
         
         // Widget item
         Item *widgetItem = [self widgetItem];
@@ -38,7 +41,7 @@
         Item *thirdItem = [self thirdItem];
         
         self.item = [[Item alloc] initWithTitle:@""];
-        self.item.children = @[applicationItem, imageItem, widgetItem, thirdItem];
+        self.item.children = @[applicationItem, componentItem, imageItem, widgetItem, thirdItem];
     }
     
     _tableView = [[UITableView alloc] init];
@@ -49,6 +52,17 @@
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.bottom.equalTo(self.view);
     }];
+}
+
+- (Item *)applicationItem {
+    // UKOverlayView
+    Item *overlayViewItem = [[Item alloc] initWithTitle:@"UKOverlayView"];
+    overlayViewItem.viewController = @"UKOverlayViewController";
+    
+    Item *applicationItem = [[Item alloc] initWithTitle:@"Application"];
+    applicationItem.children = @[overlayViewItem];
+    
+    return applicationItem;
 }
 
 - (Item *)componentItem {
@@ -353,12 +367,16 @@
                                  uiTableViewEdit2Item, uiTableViewEdit3Item, uiTableViewMoveItem];
     // UITableView end
     
+    // UKMobileVerifyView
+    Item *uiMobileVerifyViewItem = [[Item alloc] initWithTitle:@"MobileVerifyView"];
+    uiMobileVerifyViewItem.viewController = @"UKMobileVerifyViewController";
+    
     Item *widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiFontItem, uiViewItem, uiLabelItem, attributeStringItem, uiImageViewItem,
                             uiControlItem, uiButtonItem, uiTextFieldItem, uiTextViewItem, uiSwitchItem,
                             uiPageControlItem, uiSegmentedControlItem, uiSliderItem, uiActivityIndicatorViewItem, uiProgressViewItem,
                             uiStepperItem, uiPickerViewItem, uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem,
-                            uiCollectionViewItem, uiTableViewItem];
+                            uiCollectionViewItem, uiTableViewItem, uiMobileVerifyViewItem];
     
     return widgetItem;
 }
