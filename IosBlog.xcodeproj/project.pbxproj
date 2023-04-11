@@ -154,10 +154,14 @@
 		04F563A325C15921006798D5 /* UITextViewInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A225C15921006798D5 /* UITextViewInputViewController.m */; };
 		04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F563A625C15E4D006798D5 /* UITextViewDelegateViewController.m */; };
 		04FD1CED264A63CF00F9176E /* AnimationFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD1CEC264A63CF00F9176E /* AnimationFrameViewController.m */; };
+		6926FB8829E5027800D79993 /* UKNormalTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6926FB8729E5027800D79993 /* UKNormalTabViewController.m */; };
+		6926FB8B29E502E300D79993 /* UKCustomTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6926FB8A29E502E300D79993 /* UKCustomTabViewController.m */; };
 		693E77DF29D580E00006966F /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 693E77DD29D580E00006966F /* image_2.jpg */; };
 		693E77E029D580E00006966F /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 693E77DE29D580E00006966F /* image_1.jpg */; };
 		6945093429D5704800E5E518 /* YBImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6945093329D5704800E5E518 /* YBImageBrowserViewController.m */; };
 		6945093729D574C400E5E518 /* ImageBrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6945093629D574C400E5E518 /* ImageBrowserCollectionViewCell.m */; };
+		69B0B30D29E4110200B7BB29 /* UKTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B0B30C29E4110200B7BB29 /* UKTabView.m */; };
+		69B0B31029E4163300B7BB29 /* UKCustomTabItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B0B30F29E4163300B7BB29 /* UKCustomTabItemView.m */; };
 		69CD9B8029DFB90D0098798F /* UKMobileVerifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CD9B7F29DFB90D0098798F /* UKMobileVerifyView.m */; };
 		69CD9B8329DFB94E0098798F /* UKMobileVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CD9B8229DFB94E0098798F /* UKMobileVerifyViewController.m */; };
 		69CD9B8829DFF41D0098798F /* UKOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CD9B8729DFF41D0098798F /* UKOverlayViewController.m */; };
@@ -459,12 +463,20 @@
 		04FD1CEB264A63CF00F9176E /* AnimationFrameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationFrameViewController.h; sourceTree = "<group>"; };
 		04FD1CEC264A63CF00F9176E /* AnimationFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationFrameViewController.m; sourceTree = "<group>"; };
 		3488934F00A8985485936B73 /* Pods-IosBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.debug.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.debug.xcconfig"; sourceTree = "<group>"; };
+		6926FB8629E5027800D79993 /* UKNormalTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKNormalTabViewController.h; sourceTree = "<group>"; };
+		6926FB8729E5027800D79993 /* UKNormalTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKNormalTabViewController.m; sourceTree = "<group>"; };
+		6926FB8929E502E300D79993 /* UKCustomTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKCustomTabViewController.h; sourceTree = "<group>"; };
+		6926FB8A29E502E300D79993 /* UKCustomTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKCustomTabViewController.m; sourceTree = "<group>"; };
 		693E77DD29D580E00006966F /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
 		693E77DE29D580E00006966F /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
 		6945093229D5704800E5E518 /* YBImageBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBImageBrowserViewController.h; sourceTree = "<group>"; };
 		6945093329D5704800E5E518 /* YBImageBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBImageBrowserViewController.m; sourceTree = "<group>"; };
 		6945093529D574C400E5E518 /* ImageBrowserCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageBrowserCollectionViewCell.h; sourceTree = "<group>"; };
 		6945093629D574C400E5E518 /* ImageBrowserCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserCollectionViewCell.m; sourceTree = "<group>"; };
+		69B0B30B29E4110200B7BB29 /* UKTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKTabView.h; sourceTree = "<group>"; };
+		69B0B30C29E4110200B7BB29 /* UKTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKTabView.m; sourceTree = "<group>"; };
+		69B0B30E29E4163300B7BB29 /* UKCustomTabItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKCustomTabItemView.h; sourceTree = "<group>"; };
+		69B0B30F29E4163300B7BB29 /* UKCustomTabItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKCustomTabItemView.m; sourceTree = "<group>"; };
 		69CD9B7E29DFB90D0098798F /* UKMobileVerifyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKMobileVerifyView.h; sourceTree = "<group>"; };
 		69CD9B7F29DFB90D0098798F /* UKMobileVerifyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKMobileVerifyView.m; sourceTree = "<group>"; };
 		69CD9B8129DFB94E0098798F /* UKMobileVerifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKMobileVerifyViewController.h; sourceTree = "<group>"; };
@@ -590,9 +602,9 @@
 			children = (
 				69CD9B8429DFF3F90098798F /* Application */,
 				04701A512626F29300957DC4 /* Component */,
-				047C971C26CCDA200013235E /* Image */,
 				045F30B7256FA8C500DA31BC /* Third */,
 				045F3071256FA6CD00DA31BC /* Widget */,
+				047C971C26CCDA200013235E /* Image */,
 				0461915B257E00380038E674 /* Tool */,
 				045F3038256FA33500DA31BC /* AppDelegate.h */,
 				045F3039256FA33500DA31BC /* AppDelegate.m */,
@@ -666,6 +678,7 @@
 				044A7FBF2625917A00F97EF7 /* UICollectionView */,
 				043B858F277C497E00799AEE /* UITableView */,
 				69CD9B7D29DFB8D90098798F /* UKMobileVerifyView */,
+				69B0B30729E410D300B7BB29 /* UKTabView */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -1286,6 +1299,21 @@
 			path = YBImageBrowser;
 			sourceTree = "<group>";
 		};
+		69B0B30729E410D300B7BB29 /* UKTabView */ = {
+			isa = PBXGroup;
+			children = (
+				6926FB8629E5027800D79993 /* UKNormalTabViewController.h */,
+				6926FB8729E5027800D79993 /* UKNormalTabViewController.m */,
+				6926FB8929E502E300D79993 /* UKCustomTabViewController.h */,
+				6926FB8A29E502E300D79993 /* UKCustomTabViewController.m */,
+				69B0B30B29E4110200B7BB29 /* UKTabView.h */,
+				69B0B30C29E4110200B7BB29 /* UKTabView.m */,
+				69B0B30E29E4163300B7BB29 /* UKCustomTabItemView.h */,
+				69B0B30F29E4163300B7BB29 /* UKCustomTabItemView.m */,
+			);
+			path = UKTabView;
+			sourceTree = "<group>";
+		};
 		69CD9B7D29DFB8D90098798F /* UKMobileVerifyView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1449,6 +1477,7 @@
 				047BD1E326D37D3A00733CFD /* UIBezierPathAreaView.m in Sources */,
 				04C3EE0E26CF51C400FB8E8F /* CoreGraphicsView.m in Sources */,
 				04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */,
+				6926FB8B29E502E300D79993 /* UKCustomTabViewController.m in Sources */,
 				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
 				04C2C25F278FB544001B542C /* SVProgressHUDStyleViewController.m in Sources */,
 				04C3EE1226CF777500FB8E8F /* CoreGraphicsPushPopView.m in Sources */,
@@ -1501,6 +1530,7 @@
 				04015F7A2615D31C00E2EA46 /* UISwitchNormalViewController.m in Sources */,
 				046C50092786B6CD0020E453 /* PresentModalViewController.m in Sources */,
 				04C322D7278D667100665E53 /* PresentModalPopoverViewController.m in Sources */,
+				69B0B31029E4163300B7BB29 /* UKCustomTabItemView.m in Sources */,
 				04C3EE1A26CF7A0900FB8E8F /* CoreGraphicsStrokeView.m in Sources */,
 				04639EF3264926A2008AD774 /* AnimationSpringViewController.m in Sources */,
 				04D7663927853BE100491246 /* UITableViewMoveViewController.m in Sources */,
@@ -1541,6 +1571,7 @@
 				04B3D13C27843A9500FB7C36 /* UITableViewEdit2ViewController.m in Sources */,
 				047BD1F526D3A08D00733CFD /* CAShapeLayerViewController.m in Sources */,
 				045256BC262819B900E7D8CF /* UICollectionViewFlowLayoutViewController.m in Sources */,
+				6926FB8829E5027800D79993 /* UKNormalTabViewController.m in Sources */,
 				049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */,
 				04EC5BAC261FEED7008A4667 /* UIPickerViewController.m in Sources */,
 				04BF242F27BA4752008CEEF1 /* CAEmitterLayerPropertyViewController.m in Sources */,
@@ -1582,6 +1613,7 @@
 				04C3EE3326CFAB0E00FB8E8F /* CoreGraphicsOtherView.m in Sources */,
 				69CD9B8B29DFF4370098798F /* UKOverlayView.m in Sources */,
 				04EC5BB726201B96008A4667 /* UIDatePickerDateViewController.m in Sources */,
+				69B0B30D29E4110200B7BB29 /* UKTabView.m in Sources */,
 				0491E9E627BDDF4800264DF8 /* Model.xcdatamodeld in Sources */,
 				04C60BCF27B0F9F100817078 /* AVAudioPlayerNormalViewController.m in Sources */,
 				045256C526281C3B00E7D8CF /* UICollectionViewCircleLayoutViewController.m in Sources */,
@@ -1736,6 +1768,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = IosBlog/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Ios Blog";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1763,6 +1796,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = IosBlog/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Ios Blog";
 				LD_RUNPATH_SEARCH_PATHS = (
