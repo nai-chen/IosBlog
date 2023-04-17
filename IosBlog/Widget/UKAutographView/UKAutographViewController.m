@@ -182,7 +182,7 @@
 }
 
 - (void)confirmClick:(UIButton *)sender {
-    UIImage *autographImage = [self.autographView save];/var/folders/wz/blmv9rsx6b39m59g4mcvg7v40000gp/T/simulator_screenshot_8A268390-1898-4451-8884-BBCBD6225651.png
+    UIImage *autographImage = [self.autographView save];
     self.showImageView.image = autographImage;
     self.showImageView.hidden = NO;
 }
