@@ -162,6 +162,8 @@
 		693E77E029D580E00006966F /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 693E77DE29D580E00006966F /* image_1.jpg */; };
 		6945093429D5704800E5E518 /* YBImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6945093329D5704800E5E518 /* YBImageBrowserViewController.m */; };
 		6945093729D574C400E5E518 /* ImageBrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6945093629D574C400E5E518 /* ImageBrowserCollectionViewCell.m */; };
+		698AAC0429ED2F5A00C1E8DE /* UKAutographViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 698AAC0329ED2F5A00C1E8DE /* UKAutographViewController.m */; };
+		698AAC0729ED2F6E00C1E8DE /* UKAutographView.m in Sources */ = {isa = PBXBuildFile; fileRef = 698AAC0629ED2F6E00C1E8DE /* UKAutographView.m */; };
 		698FE06429E79A5900D5BBB1 /* NestedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 698FE06329E79A5900D5BBB1 /* NestedTableViewController.m */; };
 		698FE06B29E7E38200D5BBB1 /* NestedTabTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 698FE06A29E7E38200D5BBB1 /* NestedTabTableViewController.m */; };
 		69B0B30D29E4110200B7BB29 /* UKTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B0B30C29E4110200B7BB29 /* UKTabView.m */; };
@@ -482,6 +484,10 @@
 		6945093329D5704800E5E518 /* YBImageBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBImageBrowserViewController.m; sourceTree = "<group>"; };
 		6945093529D574C400E5E518 /* ImageBrowserCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageBrowserCollectionViewCell.h; sourceTree = "<group>"; };
 		6945093629D574C400E5E518 /* ImageBrowserCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserCollectionViewCell.m; sourceTree = "<group>"; };
+		698AAC0229ED2F5A00C1E8DE /* UKAutographViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKAutographViewController.h; sourceTree = "<group>"; };
+		698AAC0329ED2F5A00C1E8DE /* UKAutographViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKAutographViewController.m; sourceTree = "<group>"; };
+		698AAC0529ED2F6E00C1E8DE /* UKAutographView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKAutographView.h; sourceTree = "<group>"; };
+		698AAC0629ED2F6E00C1E8DE /* UKAutographView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKAutographView.m; sourceTree = "<group>"; };
 		698FE06229E79A5900D5BBB1 /* NestedTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedTableViewController.h; sourceTree = "<group>"; };
 		698FE06329E79A5900D5BBB1 /* NestedTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestedTableViewController.m; sourceTree = "<group>"; };
 		698FE06529E7A16000D5BBB1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -696,6 +702,7 @@
 				043B858F277C497E00799AEE /* UITableView */,
 				69CD9B7D29DFB8D90098798F /* UKMobileVerifyView */,
 				69B0B30729E410D300B7BB29 /* UKTabView */,
+				698AAC0129ED2DAA00C1E8DE /* UKAutographView */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -1316,6 +1323,17 @@
 			path = YBImageBrowser;
 			sourceTree = "<group>";
 		};
+		698AAC0129ED2DAA00C1E8DE /* UKAutographView */ = {
+			isa = PBXGroup;
+			children = (
+				698AAC0229ED2F5A00C1E8DE /* UKAutographViewController.h */,
+				698AAC0329ED2F5A00C1E8DE /* UKAutographViewController.m */,
+				698AAC0529ED2F6E00C1E8DE /* UKAutographView.h */,
+				698AAC0629ED2F6E00C1E8DE /* UKAutographView.m */,
+			);
+			path = UKAutographView;
+			sourceTree = "<group>";
+		};
 		69B0B30729E410D300B7BB29 /* UKTabView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1506,6 +1524,7 @@
 			files = (
 				04639EF72649324E008AD774 /* AnimationTransitionViewController.m in Sources */,
 				04BF243327BA55FA008CEEF1 /* CAEmitterCellViewController.m in Sources */,
+				698AAC0429ED2F5A00C1E8DE /* UKAutographViewController.m in Sources */,
 				045F30AA256FA88900DA31BC /* UIControlViewViewController.m in Sources */,
 				04C3EE2B26CF9B3300FB8E8F /* CoreGraphicsCurveViewController.m in Sources */,
 				043B8597277C54DB00799AEE /* UITableViewGroupedViewController.m in Sources */,
@@ -1572,6 +1591,7 @@
 				04639EF3264926A2008AD774 /* AnimationSpringViewController.m in Sources */,
 				04D7663927853BE100491246 /* UITableViewMoveViewController.m in Sources */,
 				04F563A725C15E4D006798D5 /* UITextViewDelegateViewController.m in Sources */,
+				698AAC0729ED2F6E00C1E8DE /* UKAutographView.m in Sources */,
 				04C44F8A27913F9800CC8EAB /* MJRefreshStateViewController.m in Sources */,
 				698FE06429E79A5900D5BBB1 /* NestedTableViewController.m in Sources */,
 				045F30A3256FA87800DA31BC /* UIImageViewAnimationViewController.m in Sources */,

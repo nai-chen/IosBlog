@@ -384,7 +384,7 @@
     Item *uiMobileVerifyViewItem = [[Item alloc] initWithTitle:@"MobileVerifyView"];
     uiMobileVerifyViewItem.viewController = @"UKMobileVerifyViewController";
     
-    // UKTabView;
+    // UKTabView
     Item *uiNormalTabViewItem = [[Item alloc] initWithTitle:@"NormalTabView"];
     uiNormalTabViewItem.viewController = @"UKNormalTabViewController";
 
@@ -393,13 +393,21 @@
     
     Item *uiTabViewItem = [[Item alloc] initWithTitle:@"TabView"];
     uiTabViewItem.children = @[uiNormalTabViewItem, uiCustomTabViewItem];
+    // UKTabView end
+    
+    
+    // UKAutographView
+    Item *uiAutographViewItem = [[Item alloc] initWithTitle:@"UKAutographView"];
+    uiAutographViewItem.viewController = @"UKAutographViewController";
+
     
     Item *widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiFontItem, uiViewItem, uiLabelItem, attributeStringItem, uiImageViewItem,
                             uiControlItem, uiButtonItem, uiTextFieldItem, uiTextViewItem, uiSwitchItem,
                             uiPageControlItem, uiSegmentedControlItem, uiSliderItem, uiActivityIndicatorViewItem, uiProgressViewItem,
                             uiStepperItem, uiPickerViewItem, uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem,
-                            uiCollectionViewItem, uiTableViewItem, uiMobileVerifyViewItem, uiTabViewItem];
+                            uiCollectionViewItem, uiTableViewItem, uiMobileVerifyViewItem, uiTabViewItem,
+                            uiAutographViewItem];
     
     return widgetItem;
 }
