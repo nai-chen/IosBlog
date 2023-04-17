@@ -7,7 +7,6 @@
 
 #import "ImageBrowserCollectionViewCell.h"
 #import "SDWebImage.h"
-#import "Masonry.h"
 
 @implementation ImageBrowserCollectionViewCell
 

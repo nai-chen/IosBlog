@@ -7,8 +7,6 @@
 
 #import "UITableViewGroupedViewController.h"
 
-#import "Masonry.h"
-
 @interface UITableViewGroupedViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) UITableView *tableView;

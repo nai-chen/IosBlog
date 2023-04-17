@@ -6,7 +6,6 @@
 //
 
 #import "UKCustomTabItemView.h"
-#import "Masonry.h"
 
 @interface UKCustomTabItemView()
 

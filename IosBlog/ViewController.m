@@ -6,7 +6,6 @@
 //
 
 #import "ViewController.h"
-#import "Masonry.h"
 
 #import "Item.h"
 #import "DemoTableViewCell.h"
@@ -59,8 +58,22 @@
     Item *overlayViewItem = [[Item alloc] initWithTitle:@"UKOverlayView"];
     overlayViewItem.viewController = @"UKOverlayViewController";
     
+    // NestedScrollView
+    Item *nestedTableViewItem = [[Item alloc] initWithTitle:@"NestedTableView"];
+    nestedTableViewItem.viewController = @"NestedTableViewController";
+
+    Item *nestedTabTableViewItem = [[Item alloc] initWithTitle:@"NestedTabTableView"];
+    nestedTabTableViewItem.viewController = @"NestedTabTableViewController";
+    
+    Item *nestedScrollViewItem = [[Item alloc] initWithTitle:@"NestedScrollView"];
+    nestedScrollViewItem.viewController = @"NestedScrollViewController";
+
+    Item *nestedViewItem = [[Item alloc] initWithTitle:@"NestedView"];
+    nestedViewItem.children = @[nestedTableViewItem, nestedTabTableViewItem, nestedScrollViewItem];
+    // NestedScrollView end
+    
     Item *applicationItem = [[Item alloc] initWithTitle:@"Application"];
-    applicationItem.children = @[overlayViewItem];
+    applicationItem.children = @[overlayViewItem, nestedViewItem];
     
     return applicationItem;
 }

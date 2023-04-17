@@ -7,8 +7,6 @@
 
 #import "UITableViewMoveViewController.h"
 
-#import "Masonry.h"
-
 @interface UITableViewMoveViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) UITableView *tableView;

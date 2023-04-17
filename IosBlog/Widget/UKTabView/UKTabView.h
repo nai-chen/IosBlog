@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol UKTabViewDelegate <NSObject>
 
-- (void)onTabView:(UKTabView *)tabView position:(NSInteger)position;
+- (void)onTabViewSelected:(UKTabView *)tabView position:(NSInteger)position;
 
 @end
 

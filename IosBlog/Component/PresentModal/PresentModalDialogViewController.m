@@ -7,8 +7,6 @@
 
 #import "PresentModalDialogViewController.h"
 
-#import "Masonry.h"
-
 @interface PresentModalDialogViewController ()
 
 @end

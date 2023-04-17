@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  IosBlog
+//
+//  Created by PC010055 on 2023/4/13.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AppDelegate.h"
+#import "Masonry.h"
+
+#define kShareAppDelegate       ((AppDelegate *)([UIApplication sharedApplication].delegate))
+
+#define kScreenWidth            kShareAppDelegate.windowWidth
+#define kScreenHeight           kShareAppDelegate.windowHeight
+#define kStatusBarHeight        kShareAppDelegate.windowStatusBarHeight
+#define kBottomSafeHeight       kShareAppDelegate.windowBottomSafeHeight
+
+#endif /* PrefixHeader_pch */

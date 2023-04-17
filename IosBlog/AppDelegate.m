@@ -24,8 +24,12 @@
     NSLog(@"window.frame = %@", NSStringFromCGRect(self.window.frame));
     NSLog(@"window.safeArea.layoutFrame = %@", NSStringFromCGRect(self.window.safeAreaLayoutGuide.layoutFrame));
     NSLog(@"window.safeArea.edgeInsets = %@", NSStringFromUIEdgeInsets(self.window.safeAreaInsets));
-
     
+    self.windowWidth = self.window.frame.size.width;
+    self.windowHeight = self.window.frame.size.height;
+    self.windowStatusBarHeight = self.window.safeAreaInsets.top;
+    self.windowBottomSafeHeight = self.window.safeAreaInsets.bottom;
+
     ViewController *viewController = [[ViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
     [self.window setRootViewController:nav];

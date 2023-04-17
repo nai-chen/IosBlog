@@ -7,8 +7,6 @@
 
 #import "UITableViewCellViewController.h"
 
-#import "Masonry.h"
-
 @interface UITableViewCellViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) UITableView *tableView;

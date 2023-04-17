@@ -8,7 +8,6 @@
 #import "MJRefreshStateViewController.h"
 
 #import "MJRefresh.h"
-#import "Masonry.h"
 
 @interface MJRefreshStateViewController () <UITableViewDataSource, UITableViewDelegate>
 

@@ -7,8 +7,6 @@
 
 #import "PresentModalPopupViewController.h"
 
-#import "Masonry.h"
-
 @interface PresentModalPopupViewController ()
 
 @property(nonatomic, strong) UIView *contentView;

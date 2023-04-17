@@ -8,7 +8,6 @@
 #import "MJRefreshAutoViewController.h"
 
 #import "MJRefresh.h"
-#import "Masonry.h"
 
 @interface MJRefreshAutoViewController () <UITableViewDataSource, UITableViewDelegate>
 

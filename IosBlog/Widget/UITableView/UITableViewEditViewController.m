@@ -7,8 +7,6 @@
 
 #import "UITableViewEditViewController.h"
 
-#import "Masonry.h"
-
 @interface UITableViewEditViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) UIBarButtonItem *rightButton;

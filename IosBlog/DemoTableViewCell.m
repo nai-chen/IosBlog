@@ -7,8 +7,6 @@
 
 #import "DemoTableViewCell.h"
 
-#import "Masonry.h"
-
 @interface DemoTableViewCell()
 
 @property(nonatomic, strong) UILabel *titleLabel;

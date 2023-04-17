@@ -6,7 +6,6 @@
 //
 
 #import "UKTabView.h"
-#import "Masonry.h"
 
 @interface UKTabItemView ()
 
@@ -126,6 +125,8 @@
 }
 
 - (void)setupInitialUI {
+    self.backgroundColor = [UIColor whiteColor];
+    
     self.indicatorWidth = 0;
     self.indicatorHeight = 0;
     self.indicatorRadius = 0;
@@ -276,7 +277,7 @@
 - (void)onTabItemViewSelected:(UKTabItemView *)tabItemView {
     [self setSelection:tabItemView.tag];
 
-    [self.delegate onTabView:self position:self.selection];
+    [self.delegate onTabViewSelected:self position:self.selection];
 }
 
 @end

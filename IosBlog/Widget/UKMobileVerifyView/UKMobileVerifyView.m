@@ -7,8 +7,6 @@
 
 #import "UKMobileVerifyView.h"
 
-#import "Masonry.h"
-
 @interface UKMobileVerifyView() <UITextFieldDelegate>
 
 @property(nonatomic, strong) UITextField *inputTextField;

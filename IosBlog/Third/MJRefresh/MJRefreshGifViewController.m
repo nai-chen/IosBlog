@@ -8,7 +8,6 @@
 #import "MJRefreshGifViewController.h"
 
 #import "MJRefresh.h"
-#import "Masonry.h"
 
 @interface MJRefreshGifViewController () <UITableViewDataSource, UITableViewDelegate>
 

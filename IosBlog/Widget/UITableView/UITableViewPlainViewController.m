@@ -7,8 +7,6 @@
 
 #import "UITableViewPlainViewController.h"
 
-#import "Masonry.h"
-
 @interface UITableViewPlainViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) UITableView *tableView;

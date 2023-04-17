@@ -55,7 +55,7 @@
 }
 
 #pragma mark - UKTabViewDelegate -
-- (void)onTabView:(UKTabView *)tabView position:(NSInteger)position {
+- (void)onTabViewSelected:(UKTabView *)tabView position:(NSInteger)position {
     [self.scrollView setContentOffset:CGPointMake(320 * position, 0) animated:YES];
 }
 
