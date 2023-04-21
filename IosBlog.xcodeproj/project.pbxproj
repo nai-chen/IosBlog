@@ -169,10 +169,14 @@
 		69B0B30D29E4110200B7BB29 /* UKTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B0B30C29E4110200B7BB29 /* UKTabView.m */; };
 		69B0B31029E4163300B7BB29 /* UKCustomTabItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B0B30F29E4163300B7BB29 /* UKCustomTabItemView.m */; };
 		69BE24B029E6B24F006B4BEC /* NestedScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BE24AF29E6B24F006B4BEC /* NestedScrollViewController.m */; };
+		69C1E43C29EEA053000F11B1 /* UKInputTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C1E43B29EEA053000F11B1 /* UKInputTableViewController.m */; };
+		69C1E43F29EEA073000F11B1 /* UKInputTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C1E43E29EEA073000F11B1 /* UKInputTableView.m */; };
+		69C1E44229EEA0A8000F11B1 /* UKInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C1E44129EEA0A8000F11B1 /* UKInputTableViewCell.m */; };
 		69CD9B8029DFB90D0098798F /* UKMobileVerifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CD9B7F29DFB90D0098798F /* UKMobileVerifyView.m */; };
 		69CD9B8329DFB94E0098798F /* UKMobileVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CD9B8229DFB94E0098798F /* UKMobileVerifyViewController.m */; };
 		69CD9B8829DFF41D0098798F /* UKOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CD9B8729DFF41D0098798F /* UKOverlayViewController.m */; };
 		69CD9B8B29DFF4370098798F /* UKOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CD9B8A29DFF4370098798F /* UKOverlayView.m */; };
+		69E6C37E29EFDE0D00818A71 /* AVCaptureDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E6C37D29EFDE0D00818A71 /* AVCaptureDeviceViewController.m */; };
 		6E07A3148E138984B226BA00 /* Pods_IosBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48262DDE256FB2AD1DB8157 /* Pods_IosBlog.framework */; };
 /* End PBXBuildFile section */
 
@@ -499,6 +503,12 @@
 		69B0B30F29E4163300B7BB29 /* UKCustomTabItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKCustomTabItemView.m; sourceTree = "<group>"; };
 		69BE24AE29E6B24F006B4BEC /* NestedScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedScrollViewController.h; sourceTree = "<group>"; };
 		69BE24AF29E6B24F006B4BEC /* NestedScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestedScrollViewController.m; sourceTree = "<group>"; };
+		69C1E43A29EEA053000F11B1 /* UKInputTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKInputTableViewController.h; sourceTree = "<group>"; };
+		69C1E43B29EEA053000F11B1 /* UKInputTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKInputTableViewController.m; sourceTree = "<group>"; };
+		69C1E43D29EEA073000F11B1 /* UKInputTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKInputTableView.h; sourceTree = "<group>"; };
+		69C1E43E29EEA073000F11B1 /* UKInputTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKInputTableView.m; sourceTree = "<group>"; };
+		69C1E44029EEA0A8000F11B1 /* UKInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKInputTableViewCell.h; sourceTree = "<group>"; };
+		69C1E44129EEA0A8000F11B1 /* UKInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKInputTableViewCell.m; sourceTree = "<group>"; };
 		69CD9B7E29DFB90D0098798F /* UKMobileVerifyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKMobileVerifyView.h; sourceTree = "<group>"; };
 		69CD9B7F29DFB90D0098798F /* UKMobileVerifyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKMobileVerifyView.m; sourceTree = "<group>"; };
 		69CD9B8129DFB94E0098798F /* UKMobileVerifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKMobileVerifyViewController.h; sourceTree = "<group>"; };
@@ -507,6 +517,8 @@
 		69CD9B8729DFF41D0098798F /* UKOverlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKOverlayViewController.m; sourceTree = "<group>"; };
 		69CD9B8929DFF4370098798F /* UKOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UKOverlayView.h; sourceTree = "<group>"; };
 		69CD9B8A29DFF4370098798F /* UKOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKOverlayView.m; sourceTree = "<group>"; };
+		69E6C37C29EFDE0D00818A71 /* AVCaptureDeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVCaptureDeviceViewController.h; sourceTree = "<group>"; };
+		69E6C37D29EFDE0D00818A71 /* AVCaptureDeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCaptureDeviceViewController.m; sourceTree = "<group>"; };
 		A642423E7AD405A3E0489109 /* Pods-IosBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlog.release.xcconfig"; path = "Target Support Files/Pods-IosBlog/Pods-IosBlog.release.xcconfig"; sourceTree = "<group>"; };
 		F48262DDE256FB2AD1DB8157 /* Pods_IosBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1036,6 +1048,7 @@
 				0491E12726D492E500BFA4BD /* CALayer */,
 				046C98482796C10300FDD70C /* AVAudioPlayer */,
 				04BF242827B9E96B008CEEF1 /* CAEmitterLayer */,
+				69E6C37B29EFDDF000818A71 /* AVCaptureDevice */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -1366,6 +1379,19 @@
 			path = NestedScrollView;
 			sourceTree = "<group>";
 		};
+		69C1E43929EEA035000F11B1 /* UKInputTableView */ = {
+			isa = PBXGroup;
+			children = (
+				69C1E43A29EEA053000F11B1 /* UKInputTableViewController.h */,
+				69C1E43B29EEA053000F11B1 /* UKInputTableViewController.m */,
+				69C1E43D29EEA073000F11B1 /* UKInputTableView.h */,
+				69C1E43E29EEA073000F11B1 /* UKInputTableView.m */,
+				69C1E44029EEA0A8000F11B1 /* UKInputTableViewCell.h */,
+				69C1E44129EEA0A8000F11B1 /* UKInputTableViewCell.m */,
+			);
+			path = UKInputTableView;
+			sourceTree = "<group>";
+		};
 		69CD9B7D29DFB8D90098798F /* UKMobileVerifyView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1382,6 +1408,7 @@
 			children = (
 				69CD9B8529DFF40F0098798F /* UKOverlayView */,
 				69BE24AD29E6B21E006B4BEC /* NestedScrollView */,
+				69C1E43929EEA035000F11B1 /* UKInputTableView */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -1395,6 +1422,15 @@
 				69CD9B8A29DFF4370098798F /* UKOverlayView.m */,
 			);
 			path = UKOverlayView;
+			sourceTree = "<group>";
+		};
+		69E6C37B29EFDDF000818A71 /* AVCaptureDevice */ = {
+			isa = PBXGroup;
+			children = (
+				69E6C37C29EFDE0D00818A71 /* AVCaptureDeviceViewController.h */,
+				69E6C37D29EFDE0D00818A71 /* AVCaptureDeviceViewController.m */,
+			);
+			path = AVCaptureDevice;
 			sourceTree = "<group>";
 		};
 		C62BD4679EF0DCB0B33E0175 /* Frameworks */ = {
@@ -1531,6 +1567,7 @@
 				047BD1E326D37D3A00733CFD /* UIBezierPathAreaView.m in Sources */,
 				04C3EE0E26CF51C400FB8E8F /* CoreGraphicsView.m in Sources */,
 				04F5639F25C138B2006798D5 /* UITextViewNormalViewController.m in Sources */,
+				69E6C37E29EFDE0D00818A71 /* AVCaptureDeviceViewController.m in Sources */,
 				6926FB8B29E502E300D79993 /* UKCustomTabViewController.m in Sources */,
 				04DD890C256FAA9A00B007ED /* DemoTableViewCell.m in Sources */,
 				04C2C25F278FB544001B542C /* SVProgressHUDStyleViewController.m in Sources */,
@@ -1542,6 +1579,7 @@
 				045F306E256FA69C00DA31BC /* AttributeStringNormalViewController.m in Sources */,
 				69BE24B029E6B24F006B4BEC /* NestedScrollViewController.m in Sources */,
 				045F30AB256FA88900DA31BC /* UICustomControl.m in Sources */,
+				69C1E44229EEA0A8000F11B1 /* UKInputTableViewCell.m in Sources */,
 				047C972226CCFBEC0013235E /* AVPlayerItemViewController.m in Sources */,
 				0476AB8D263BEF8E00EAEADE /* NSURLSessionViewController.m in Sources */,
 				6945093429D5704800E5E518 /* YBImageBrowserViewController.m in Sources */,
@@ -1606,6 +1644,7 @@
 				045F3056256FA49100DA31BC /* Item.m in Sources */,
 				045256C926281C5300E7D8CF /* MyCircleLayout.m in Sources */,
 				045F3040256FA33500DA31BC /* ViewController.m in Sources */,
+				69C1E43F29EEA073000F11B1 /* UKInputTableView.m in Sources */,
 				045F3090256FA82800DA31BC /* UITextFieldReturnTypeViewController.m in Sources */,
 				045F303A256FA33500DA31BC /* AppDelegate.m in Sources */,
 				04C3EE1F26CF86CB00FB8E8F /* CoreGraphicsPathViewController.m in Sources */,
@@ -1632,6 +1671,7 @@
 				6926FB8829E5027800D79993 /* UKNormalTabViewController.m in Sources */,
 				049B579526539CE4001641E4 /* NSKeyedArchiverViewController.m in Sources */,
 				04EC5BAC261FEED7008A4667 /* UIPickerViewController.m in Sources */,
+				69C1E43C29EEA053000F11B1 /* UKInputTableViewController.m in Sources */,
 				04BF242F27BA4752008CEEF1 /* CAEmitterLayerPropertyViewController.m in Sources */,
 				045256D126281D8200E7D8CF /* MyWheelLayout.m in Sources */,
 				04879A3E264E797E004FCD92 /* UIFontLangTingViewController.m in Sources */,

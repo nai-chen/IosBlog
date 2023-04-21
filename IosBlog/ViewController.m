@@ -72,8 +72,12 @@
     nestedViewItem.children = @[nestedTableViewItem, nestedTabTableViewItem, nestedScrollViewItem];
     // NestedScrollView end
     
+    // UKInputTableView
+    Item *inputTableViewItem = [[Item alloc] initWithTitle:@"UKInputTableView"];
+    inputTableViewItem.viewController = @"UKInputTableViewController";
+    
     Item *applicationItem = [[Item alloc] initWithTitle:@"Application"];
-    applicationItem.children = @[overlayViewItem, nestedViewItem];
+    applicationItem.children = @[overlayViewItem, nestedViewItem, inputTableViewItem];
     
     return applicationItem;
 }
@@ -573,12 +577,16 @@
     // CAEmitterLayer end
     Item *emitterLayerItem = [[Item alloc] initWithTitle:@"CAEmitterLayer"];
     emitterLayerItem.children = @[emitterLayerNormalItem, emitterLayerPropertyItem, emitterCellItem, emitterExampleItem];
-    
+
+    // AVCaptureDevice
+    Item *avCaptureDeviceItem = [[Item alloc] initWithTitle:@"AVCaptureDevice"];
+    avCaptureDeviceItem.viewController = @"AVCaptureDeviceViewController";
+
     // Image
     Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
     imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
                            imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem, bezierPathItem, caLayerItem,
-                           avAudioPlayerItem, emitterLayerItem
+                           avAudioPlayerItem, emitterLayerItem, avCaptureDeviceItem
     ];
 
     return imageItem;
