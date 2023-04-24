@@ -399,10 +399,13 @@
     uiTabViewItem.children = @[uiNormalTabViewItem, uiCustomTabViewItem];
     // UKTabView end
     
-    
     // UKAutographView
     Item *uiAutographViewItem = [[Item alloc] initWithTitle:@"UKAutographView"];
     uiAutographViewItem.viewController = @"UKAutographViewController";
+    
+    // UKCalendarView
+    Item *uiCalendarViewItem = [[Item alloc] initWithTitle:@"UKCalendarView"];
+    uiCalendarViewItem.viewController = @"UKCalendarViewController";
 
     
     Item *widgetItem = [[Item alloc] initWithTitle:@"Widget"];
@@ -411,7 +414,7 @@
                             uiPageControlItem, uiSegmentedControlItem, uiSliderItem, uiActivityIndicatorViewItem, uiProgressViewItem,
                             uiStepperItem, uiPickerViewItem, uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem,
                             uiCollectionViewItem, uiTableViewItem, uiMobileVerifyViewItem, uiTabViewItem,
-                            uiAutographViewItem];
+                            uiAutographViewItem, uiCalendarViewItem];
     
     return widgetItem;
 }
