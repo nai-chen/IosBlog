@@ -34,13 +34,8 @@
         // Image item
         Item *imageItem = [self imageItem];
         
-        // Application item
-        
-        // Third item
-        Item *thirdItem = [self thirdItem];
-        
         self.item = [[Item alloc] initWithTitle:@""];
-        self.item.children = @[applicationItem, componentItem, imageItem, widgetItem, thirdItem];
+        self.item.children = @[applicationItem, componentItem, imageItem, widgetItem];
     }
     
     _tableView = [[UITableView alloc] init];
@@ -54,6 +49,19 @@
 }
 
 - (Item *)applicationItem {
+    // MJExtension
+    Item *mjExtensionItem = [[Item alloc] initWithTitle:@"MJExtension"];
+    mjExtensionItem.viewController = @"MJExtensionViewController";
+
+    // OpenUDID
+    Item *openUDIDItem = [[Item alloc] initWithTitle:@"OpenUDID"];
+    openUDIDItem.viewController = @"OpenUDIDViewController";
+    
+    // AFNetworking
+    Item *afNetworkingItem = [[Item alloc] initWithTitle:@"AFNetworking"];
+    afNetworkingItem.viewController = @"AFNetworkingViewController";
+
+
     // UKOverlayView
     Item *overlayViewItem = [[Item alloc] initWithTitle:@"UKOverlayView"];
     overlayViewItem.viewController = @"UKOverlayViewController";
@@ -77,7 +85,8 @@
     inputTableViewItem.viewController = @"UKInputTableViewController";
     
     Item *applicationItem = [[Item alloc] initWithTitle:@"Application"];
-    applicationItem.children = @[overlayViewItem, nestedViewItem, inputTableViewItem];
+    applicationItem.children = @[mjExtensionItem, openUDIDItem, afNetworkingItem, overlayViewItem, nestedViewItem,
+                                 inputTableViewItem];
     
     return applicationItem;
 }
@@ -388,6 +397,34 @@
     Item *uiMobileVerifyViewItem = [[Item alloc] initWithTitle:@"MobileVerifyView"];
     uiMobileVerifyViewItem.viewController = @"UKMobileVerifyViewController";
     
+    // SVProgressHUD
+    Item *svProgressHUDNormalItem = [[Item alloc] initWithTitle:@"SVProgressHUDNormal"];
+    svProgressHUDNormalItem.viewController = @"SVProgressHUDNormalViewController";
+
+    Item *svProgressHUDStyleItem = [[Item alloc] initWithTitle:@"SVProgressHUDStyle"];
+    svProgressHUDStyleItem.viewController = @"SVProgressHUDStyleViewController";
+
+    // SVProgressHUD end
+    Item *svProgressHUDItem = [[Item alloc] initWithTitle:@"SVProgressHUD"];
+    svProgressHUDItem.children = @[svProgressHUDNormalItem, svProgressHUDStyleItem];
+
+    // MJRefresh
+    Item *mjRefreshStateItem = [[Item alloc] initWithTitle:@"MJRefreshState"];
+    mjRefreshStateItem.viewController = @"MJRefreshStateViewController";
+
+    Item *mjRefreshNormalItem = [[Item alloc] initWithTitle:@"MJRefreshNormal"];
+    mjRefreshNormalItem.viewController = @"MJRefreshNormalViewController";
+
+    Item *mjRefreshGifItem = [[Item alloc] initWithTitle:@"MJRefreshGif"];
+    mjRefreshGifItem.viewController = @"MJRefreshGifViewController";
+
+    Item *mjRefreshAutoItem = [[Item alloc] initWithTitle:@"MJRefreshAuto"];
+    mjRefreshAutoItem.viewController = @"MJRefreshAutoViewController";
+
+    // MJRefresh end
+    Item *mjRefreshItem = [[Item alloc] initWithTitle:@"MJRefresh"];
+    mjRefreshItem.children = @[mjRefreshStateItem, mjRefreshNormalItem, mjRefreshGifItem, mjRefreshAutoItem];
+    
     // UKTabView
     Item *uiNormalTabViewItem = [[Item alloc] initWithTitle:@"NormalTabView"];
     uiNormalTabViewItem.viewController = @"UKNormalTabViewController";
@@ -406,7 +443,6 @@
     // UKCalendarView
     Item *uiCalendarViewItem = [[Item alloc] initWithTitle:@"UKCalendarView"];
     uiCalendarViewItem.viewController = @"UKCalendarViewController";
-
     
     Item *widgetItem = [[Item alloc] initWithTitle:@"Widget"];
     widgetItem.children = @[uiFontItem, uiViewItem, uiLabelItem, attributeStringItem, uiImageViewItem,
@@ -414,8 +450,8 @@
                             uiPageControlItem, uiSegmentedControlItem, uiSliderItem, uiActivityIndicatorViewItem, uiProgressViewItem,
                             uiStepperItem, uiPickerViewItem, uiDatePickerItem, uiAlertControllerItem, uiScrollViewItem,
                             uiCollectionViewItem, uiTableViewItem, uiMobileVerifyViewItem, uiTabViewItem,
-                            uiAutographViewItem, uiCalendarViewItem];
-    
+                            svProgressHUDItem, mjRefreshItem, uiAutographViewItem, uiCalendarViewItem];
+
     return widgetItem;
 }
 
@@ -580,6 +616,11 @@
     // CAEmitterLayer end
     Item *emitterLayerItem = [[Item alloc] initWithTitle:@"CAEmitterLayer"];
     emitterLayerItem.children = @[emitterLayerNormalItem, emitterLayerPropertyItem, emitterCellItem, emitterExampleItem];
+    
+
+    // YBImageBrowser
+    Item *imageBrowserItem = [[Item alloc] initWithTitle:@"ImageBrowser"];
+    imageBrowserItem.viewController = @"YBImageBrowserViewController";
 
     // AVCaptureDevice
     Item *avCaptureDeviceItem = [[Item alloc] initWithTitle:@"AVCaptureDevice"];
@@ -589,61 +630,10 @@
     Item *imageItem = [[Item alloc] initWithTitle:@"Image"];
     imageItem.children = @[uiColorItem, animationItem, layerAnimationItem, coreAnimationItem, avPlayerItem,
                            imagePickerItem, savedPhotosAlbumItem, coreGraphicsItem, bezierPathItem, caLayerItem,
-                           avAudioPlayerItem, emitterLayerItem, avCaptureDeviceItem
+                           avAudioPlayerItem, emitterLayerItem, imageBrowserItem, avCaptureDeviceItem
     ];
 
     return imageItem;
-}
-
-- (Item *)thirdItem {
-    // AFNetworking
-    Item *afNetworkingItem = [[Item alloc] initWithTitle:@"AFNetworking"];
-    afNetworkingItem.viewController = @"AFNetworkingViewController";
-
-    // MJExtension
-    Item *mjExtensionItem = [[Item alloc] initWithTitle:@"MJExtension"];
-    mjExtensionItem.viewController = @"MJExtensionViewController";
-    
-    // SVProgressHUD
-    Item *svProgressHUDNormalItem = [[Item alloc] initWithTitle:@"SVProgressHUDNormal"];
-    svProgressHUDNormalItem.viewController = @"SVProgressHUDNormalViewController";
-    
-    Item *svProgressHUDStyleItem = [[Item alloc] initWithTitle:@"SVProgressHUDStyle"];
-    svProgressHUDStyleItem.viewController = @"SVProgressHUDStyleViewController";
-    
-    // SVProgressHUD end
-    Item *svProgressHUDItem = [[Item alloc] initWithTitle:@"SVProgressHUD"];
-    svProgressHUDItem.children = @[svProgressHUDNormalItem, svProgressHUDStyleItem];
-    
-    // MJRefresh
-    Item *mjRefreshStateItem = [[Item alloc] initWithTitle:@"MJRefreshState"];
-    mjRefreshStateItem.viewController = @"MJRefreshStateViewController";
-    
-    Item *mjRefreshNormalItem = [[Item alloc] initWithTitle:@"MJRefreshNormal"];
-    mjRefreshNormalItem.viewController = @"MJRefreshNormalViewController";
-    
-    Item *mjRefreshGifItem = [[Item alloc] initWithTitle:@"MJRefreshGif"];
-    mjRefreshGifItem.viewController = @"MJRefreshGifViewController";
-    
-    Item *mjRefreshAutoItem = [[Item alloc] initWithTitle:@"MJRefreshAuto"];
-    mjRefreshAutoItem.viewController = @"MJRefreshAutoViewController";
-    
-    // MJRefresh end
-    Item *mjRefreshItem = [[Item alloc] initWithTitle:@"MJRefresh"];
-    mjRefreshItem.children = @[mjRefreshStateItem, mjRefreshNormalItem, mjRefreshGifItem, mjRefreshAutoItem];
-
-    // OpenUDID
-    Item *openUDIDItem = [[Item alloc] initWithTitle:@"OpenUDID"];
-    openUDIDItem.viewController = @"OpenUDIDViewController";
-    
-    // YBImageBrowser
-    Item *imageBrowserItem = [[Item alloc] initWithTitle:@"ImageBrowser"];
-    imageBrowserItem.viewController = @"YBImageBrowserViewController";
-    
-    Item *thirdItem = [[Item alloc] initWithTitle: @"Third"];
-    thirdItem.children = @[afNetworkingItem, mjExtensionItem, svProgressHUDItem, mjRefreshItem, openUDIDItem, imageBrowserItem];
-    
-    return thirdItem;
 }
 
 #pragma mark - UITableView -

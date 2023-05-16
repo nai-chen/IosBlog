@@ -645,7 +645,6 @@
 			children = (
 				69CD9B8429DFF3F90098798F /* Application */,
 				04701A512626F29300957DC4 /* Component */,
-				045F30B7256FA8C500DA31BC /* Third */,
 				045F3071256FA6CD00DA31BC /* Widget */,
 				047C971C26CCDA200013235E /* Image */,
 				0461915B257E00380038E674 /* Tool */,
@@ -721,6 +720,8 @@
 				044A7FAC26252C0D00F97EF7 /* UIScrollView */,
 				044A7FBF2625917A00F97EF7 /* UICollectionView */,
 				043B858F277C497E00799AEE /* UITableView */,
+				045F30B8256FA8D200DA31BC /* SVProgressHUD */,
+				04C44F7C27910C6600CC8EAB /* MJRefresh */,
 				69CD9B7D29DFB8D90098798F /* UKMobileVerifyView */,
 				69B0B30729E410D300B7BB29 /* UKTabView */,
 				698AAC0129ED2DAA00C1E8DE /* UKAutographView */,
@@ -807,19 +808,6 @@
 				045F307C256FA7DC00DA31BC /* UIViewGestureRecongnizerViewController.m */,
 			);
 			path = UIView;
-			sourceTree = "<group>";
-		};
-		045F30B7256FA8C500DA31BC /* Third */ = {
-			isa = PBXGroup;
-			children = (
-				0476AB92263BFAB500EAEADE /* AFNetworking */,
-				04879A15264E17BB004FCD92 /* MJExtension */,
-				045F30B8256FA8D200DA31BC /* SVProgressHUD */,
-				04C44F7C27910C6600CC8EAB /* MJRefresh */,
-				049817F027950DA400BA54AB /* OpenUDID */,
-				6945093129D56FF300E5E518 /* YBImageBrowser */,
-			);
-			path = Third;
 			sourceTree = "<group>";
 		};
 		045F30B8256FA8D200DA31BC /* SVProgressHUD */ = {
@@ -1058,6 +1046,7 @@
 				0491E12726D492E500BFA4BD /* CALayer */,
 				046C98482796C10300FDD70C /* AVAudioPlayer */,
 				04BF242827B9E96B008CEEF1 /* CAEmitterLayer */,
+				6945093129D56FF300E5E518 /* YBImageBrowser */,
 				69E6C37B29EFDDF000818A71 /* AVCaptureDevice */,
 			);
 			path = Image;
@@ -1429,6 +1418,9 @@
 		69CD9B8429DFF3F90098798F /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				04879A15264E17BB004FCD92 /* MJExtension */,
+				049817F027950DA400BA54AB /* OpenUDID */,
+				0476AB92263BFAB500EAEADE /* AFNetworking */,
 				69CD9B8529DFF40F0098798F /* UKOverlayView */,
 				69BE24AD29E6B21E006B4BEC /* NestedScrollView */,
 				69C1E43929EEA035000F11B1 /* UKInputTableView */,
